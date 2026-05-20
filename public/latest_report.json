@@ -1,0 +1,2044 @@
+{
+  "generated_at": "2026-05-20T18:18:42.013356+00:00",
+  "dashboard_title": "Kevin Stock Research Agent",
+  "dashboard_url": "https://kevintaylormccaffrey-debug.github.io/AI-Trader/dashboard.html",
+  "disclaimer": "Not financial advice. Human review required. This agent does not execute trades.",
+  "portfolio_summary": {
+    "portfolio_name": "Kevin Main Portfolio",
+    "cash_ticker": "SPAXX",
+    "cash_allocation_pct": 25.5,
+    "cash_yield_7d": 3.24,
+    "invested_allocation_pct": 74.5,
+    "unrealized_gain_loss_pct": 34.3,
+    "sell_watch_count": 1,
+    "high_priority_alert_count": 1
+  },
+  "holdings": [
+    {
+      "ticker": "LSCC",
+      "company": "Lattice Semiconductor",
+      "time_horizon": "long",
+      "sector": "semiconductors",
+      "thesis": "Low-power FPGA and AI edge semiconductor growth",
+      "max_loss_pct": 15,
+      "status": "active",
+      "watch_priority": "high",
+      "daily_change_pct": null,
+      "unrealized_gain_loss_pct": 101.57,
+      "position_weight_pct": 17.47,
+      "market_data_source": "stooq",
+      "market_data_as_of": "2026-05-20T20:02:55Z",
+      "earnings_date": null,
+      "news_summary": {
+        "item_count": 5,
+        "top_tags": [
+          "sector move",
+          "other",
+          "product launch"
+        ],
+        "average_sentiment": 0.18,
+        "average_risk": 32.2,
+        "summary": "KLA Corporation, Monolithic Power Systems, onsemi, Semtech, and Lattice Semiconductor Stocks Trade Down, What You Need To Know | 3 Mid-Cap Stocks We Find Risky"
+      },
+      "scores": {
+        "overall_score": 60.1,
+        "components": {
+          "price_momentum": {
+            "score": 50,
+            "reason": "Insufficient price history; momentum treated as neutral.",
+            "details": {}
+          },
+          "news_sentiment": {
+            "score": 56.2,
+            "reason": "Recent news is mixed, low-signal, or balanced.",
+            "details": {
+              "average_sentiment": 0.18,
+              "average_risk": 32.2,
+              "top_tags": [
+                "earnings",
+                "other",
+                "product launch",
+                "sector move"
+              ]
+            }
+          },
+          "downside_from_cost_basis": {
+            "score": 83.3,
+            "reason": "Position is above cost basis.",
+            "details": {
+              "pnl_pct_from_cost": 101.57,
+              "max_loss_pct": 15.0
+            }
+          },
+          "earnings_proximity": {
+            "score": 50,
+            "reason": "Upcoming earnings date unavailable; score treated as neutral.",
+            "details": {}
+          },
+          "sector_trend": {
+            "score": 50.0,
+            "reason": "semiconductors proxy SMH: Insufficient price history; momentum treated as neutral.",
+            "details": {
+              "matched_sector": "semiconductors",
+              "proxy_ticker": "SMH"
+            }
+          },
+          "thesis_risk": {
+            "score": 71.0,
+            "reason": "Thesis risk based on sector, status, news risk, and price confirmation. Signals: growth sector expectations, news risk contained.",
+            "details": {
+              "signals": [
+                "growth sector expectations",
+                "news risk contained"
+              ]
+            }
+          },
+          "valuation_caution": {
+            "score": 48,
+            "reason": "Large gain from cost basis can raise valuation and position-sizing risk.",
+            "details": {
+              "price_to_cost_basis": 2.02
+            }
+          }
+        }
+      },
+      "action": "hold",
+      "action_reasoning": "Hold thesis intact, with routine monitoring.",
+      "action_triggers": [],
+      "price_band": "$100-$150",
+      "portfolio_weight_pct": 17.47
+    },
+    {
+      "ticker": "PATH",
+      "company": "UiPath",
+      "time_horizon": "medium",
+      "sector": "AI automation software",
+      "thesis": "Enterprise automation and AI workflow adoption",
+      "max_loss_pct": 12,
+      "status": "active",
+      "watch_priority": "high",
+      "daily_change_pct": null,
+      "unrealized_gain_loss_pct": -30.08,
+      "position_weight_pct": 8.4,
+      "market_data_source": "stooq",
+      "market_data_as_of": "2026-05-20T20:03:02Z",
+      "earnings_date": null,
+      "news_summary": {
+        "item_count": 5,
+        "top_tags": [
+          "other",
+          "analyst action",
+          "sector move"
+        ],
+        "average_sentiment": 0.09,
+        "average_risk": 34.2,
+        "summary": "LPG Stock Jumps As Dividend And Analyst Upgrade Fuel Rally - StocksToTrade | Statement from UiPath on the passing of Board Member S. \"Soma\" Somasegar"
+      },
+      "scores": {
+        "overall_score": 42.7,
+        "components": {
+          "price_momentum": {
+            "score": 50,
+            "reason": "Insufficient price history; momentum treated as neutral.",
+            "details": {}
+          },
+          "news_sentiment": {
+            "score": 53.1,
+            "reason": "Recent news is mixed, low-signal, or balanced.",
+            "details": {
+              "average_sentiment": 0.09,
+              "average_risk": 34.2,
+              "top_tags": [
+                "analyst action",
+                "earnings",
+                "other",
+                "sector move"
+              ]
+            }
+          },
+          "downside_from_cost_basis": {
+            "score": 0,
+            "reason": "Position is below cost basis; compare to max-loss rule.",
+            "details": {
+              "pnl_pct_from_cost": -30.08,
+              "max_loss_pct": 12.0
+            }
+          },
+          "earnings_proximity": {
+            "score": 50,
+            "reason": "Upcoming earnings date unavailable; score treated as neutral.",
+            "details": {}
+          },
+          "sector_trend": {
+            "score": 50.0,
+            "reason": "ai proxy QQQ: Insufficient price history; momentum treated as neutral.",
+            "details": {
+              "matched_sector": "ai",
+              "proxy_ticker": "QQQ"
+            }
+          },
+          "thesis_risk": {
+            "score": 61.0,
+            "reason": "Thesis risk based on sector, status, news risk, and price confirmation. Signals: growth sector expectations, news risk contained, price action challenges thesis.",
+            "details": {
+              "signals": [
+                "growth sector expectations",
+                "news risk contained",
+                "price action challenges thesis"
+              ]
+            }
+          },
+          "valuation_caution": {
+            "score": 60.0,
+            "reason": "No explicit valuation warning; still review multiples before action.",
+            "details": {
+              "price_to_cost_basis": 0.7
+            }
+          }
+        }
+      },
+      "action": "sell watch",
+      "action_reasoning": "Human review required: price is below the configured max-loss threshold.",
+      "action_triggers": [
+        "price is below the configured max-loss threshold"
+      ],
+      "price_band": "$10-$15",
+      "portfolio_weight_pct": 8.4
+    },
+    {
+      "ticker": "VOO",
+      "company": "Vanguard S&P 500 ETF",
+      "time_horizon": "long",
+      "sector": "index fund",
+      "thesis": "Core long-term market exposure",
+      "max_loss_pct": 20,
+      "status": "core_holding",
+      "watch_priority": "low",
+      "daily_change_pct": null,
+      "unrealized_gain_loss_pct": 41.38,
+      "position_weight_pct": 24.52,
+      "market_data_source": "stooq",
+      "market_data_as_of": "2026-05-20T20:03:06Z",
+      "earnings_date": null,
+      "news_summary": {
+        "item_count": 5,
+        "top_tags": [
+          "sector move",
+          "other"
+        ],
+        "average_sentiment": 0.02,
+        "average_risk": 37.6,
+        "summary": "Vanguard\u2019s 0.05% International Stock ETF Just Outpaced the S&P 500 for the First Time in Five Years | DIA and VOO Track Almost the Same Market Yet VOO Returned 318.99% While DIA Made 176.86% Over Ten Years"
+      },
+      "scores": {
+        "overall_score": 59.7,
+        "components": {
+          "price_momentum": {
+            "score": 50,
+            "reason": "Insufficient price history; momentum treated as neutral.",
+            "details": {}
+          },
+          "news_sentiment": {
+            "score": 50.7,
+            "reason": "Recent news is mixed, low-signal, or balanced.",
+            "details": {
+              "average_sentiment": 0.02,
+              "average_risk": 37.6,
+              "top_tags": [
+                "other",
+                "sector move"
+              ]
+            }
+          },
+          "downside_from_cost_basis": {
+            "score": 72.4,
+            "reason": "Position is above cost basis.",
+            "details": {
+              "pnl_pct_from_cost": 41.38,
+              "max_loss_pct": 20.0
+            }
+          },
+          "earnings_proximity": {
+            "score": 50,
+            "reason": "Upcoming earnings date unavailable; score treated as neutral.",
+            "details": {}
+          },
+          "sector_trend": {
+            "score": 50.0,
+            "reason": "index fund proxy VTI: Insufficient price history; momentum treated as neutral.",
+            "details": {
+              "matched_sector": "index fund",
+              "proxy_ticker": "VTI"
+            }
+          },
+          "thesis_risk": {
+            "score": 78.0,
+            "reason": "Thesis risk based on sector, status, news risk, and price confirmation. Signals: core holding.",
+            "details": {
+              "signals": [
+                "core holding"
+              ]
+            }
+          },
+          "valuation_caution": {
+            "score": 72,
+            "reason": "Diversified ETF valuation risk is tracked through broad market exposure.",
+            "details": {
+              "price_to_cost_basis": 1.41
+            }
+          }
+        }
+      },
+      "action": "hold",
+      "action_reasoning": "Core holding; continue monitoring broad-market exposure and allocation.",
+      "action_triggers": [],
+      "price_band": "$500-$750",
+      "portfolio_weight_pct": 24.52
+    },
+    {
+      "ticker": "VTI",
+      "company": "Vanguard Total Stock Market ETF",
+      "time_horizon": "long",
+      "sector": "index fund",
+      "thesis": "Broad US market exposure",
+      "max_loss_pct": 20,
+      "status": "core_holding",
+      "watch_priority": "low",
+      "daily_change_pct": null,
+      "unrealized_gain_loss_pct": 38.14,
+      "position_weight_pct": 24.12,
+      "market_data_source": "stooq",
+      "market_data_as_of": "2026-05-20T20:03:05Z",
+      "earnings_date": null,
+      "news_summary": {
+        "item_count": 5,
+        "top_tags": [
+          "other",
+          "analyst action",
+          "sector move"
+        ],
+        "average_sentiment": 0.0,
+        "average_risk": 37.8,
+        "summary": "\u2018Major Catalyst Ahead,\u2019 Says Top Analyst About Rocket Lab (RKLB) Stock - TipRanks | VTI vs VOO: Which One Is the Smarter Buy Today?"
+      },
+      "scores": {
+        "overall_score": 59.5,
+        "components": {
+          "price_momentum": {
+            "score": 50,
+            "reason": "Insufficient price history; momentum treated as neutral.",
+            "details": {}
+          },
+          "news_sentiment": {
+            "score": 50.0,
+            "reason": "Recent news is mixed, low-signal, or balanced.",
+            "details": {
+              "average_sentiment": 0.0,
+              "average_risk": 37.8,
+              "top_tags": [
+                "analyst action",
+                "dilution",
+                "other",
+                "sector move"
+              ]
+            }
+          },
+          "downside_from_cost_basis": {
+            "score": 71.9,
+            "reason": "Position is above cost basis.",
+            "details": {
+              "pnl_pct_from_cost": 38.14,
+              "max_loss_pct": 20.0
+            }
+          },
+          "earnings_proximity": {
+            "score": 50,
+            "reason": "Upcoming earnings date unavailable; score treated as neutral.",
+            "details": {}
+          },
+          "sector_trend": {
+            "score": 50.0,
+            "reason": "index fund proxy VTI: Insufficient price history; momentum treated as neutral.",
+            "details": {
+              "matched_sector": "index fund",
+              "proxy_ticker": "VTI"
+            }
+          },
+          "thesis_risk": {
+            "score": 78.0,
+            "reason": "Thesis risk based on sector, status, news risk, and price confirmation. Signals: core holding.",
+            "details": {
+              "signals": [
+                "core holding"
+              ]
+            }
+          },
+          "valuation_caution": {
+            "score": 72,
+            "reason": "Diversified ETF valuation risk is tracked through broad market exposure.",
+            "details": {
+              "price_to_cost_basis": 1.38
+            }
+          }
+        }
+      },
+      "action": "hold",
+      "action_reasoning": "Core holding; continue monitoring broad-market exposure and allocation.",
+      "action_triggers": [],
+      "price_band": "$250-$500",
+      "portfolio_weight_pct": 24.12
+    }
+  ],
+  "watchlist": [
+    {
+      "ticker": "NVDA",
+      "company": "NVIDIA",
+      "sector": "AI datacenter semiconductors",
+      "thesis": "Datacenter GPU, networking, and AI platform leadership",
+      "watch_priority": "high",
+      "status": "research_only",
+      "valuation_note": "Premium valuation can make drawdowns sharp if AI growth expectations reset.",
+      "daily_change_pct": null,
+      "market_data_source": "stooq",
+      "earnings_date": null,
+      "news_summary": {
+        "item_count": 5,
+        "top_tags": [
+          "earnings",
+          "sector move",
+          "product launch"
+        ],
+        "average_sentiment": 0.13,
+        "average_risk": 34.4,
+        "summary": "Nvidia Earnings Face AI Rally Test After 60% Chip Index Surge | OpenAI IPO Filing Could Come 'Very Soon:' Report"
+      },
+      "scores": {
+        "overall_score": 52.9,
+        "components": {
+          "price_momentum": {
+            "score": 50,
+            "reason": "Insufficient price history; momentum treated as neutral.",
+            "details": {}
+          },
+          "news_sentiment": {
+            "score": 54.6,
+            "reason": "Recent news is mixed, low-signal, or balanced.",
+            "details": {
+              "average_sentiment": 0.13,
+              "average_risk": 34.4,
+              "top_tags": [
+                "analyst action",
+                "earnings",
+                "product launch",
+                "sector move"
+              ]
+            }
+          },
+          "downside_from_cost_basis": {
+            "score": 50,
+            "reason": "No owned cost basis; downside-from-cost is not applicable for research candidates.",
+            "details": {
+              "not_applicable": true
+            }
+          },
+          "earnings_proximity": {
+            "score": 50,
+            "reason": "Upcoming earnings date unavailable; score treated as neutral.",
+            "details": {}
+          },
+          "sector_trend": {
+            "score": 50.0,
+            "reason": "semiconductors proxy SMH: Insufficient price history; momentum treated as neutral.",
+            "details": {
+              "matched_sector": "semiconductors",
+              "proxy_ticker": "SMH"
+            }
+          },
+          "thesis_risk": {
+            "score": 71.0,
+            "reason": "Thesis risk based on sector, status, news risk, and price confirmation. Signals: growth sector expectations, news risk contained.",
+            "details": {
+              "signals": [
+                "growth sector expectations",
+                "news risk contained"
+              ]
+            }
+          },
+          "valuation_caution": {
+            "score": 44,
+            "reason": "Valuation warning is explicitly elevated.",
+            "details": {
+              "valuation_note": "Premium valuation can make drawdowns sharp if AI growth expectations reset."
+            }
+          }
+        },
+        "action": "research only",
+        "reasoning": "Research candidate only; no trade execution or blind buy alert."
+      },
+      "action": "research only",
+      "action_reasoning": "Watchlist item only; review manually before any portfolio decision.",
+      "price_band": "$150-$250"
+    },
+    {
+      "ticker": "AMD",
+      "company": "Advanced Micro Devices",
+      "sector": "AI and datacenter semiconductors",
+      "thesis": "CPU/GPU share gains and AI accelerator adoption",
+      "watch_priority": "high",
+      "status": "research_only",
+      "valuation_note": "Execution risk around AI accelerator ramp and competitive pressure.",
+      "daily_change_pct": null,
+      "market_data_source": "stooq",
+      "earnings_date": null,
+      "news_summary": {
+        "item_count": 5,
+        "top_tags": [
+          "sector move",
+          "other",
+          "earnings"
+        ],
+        "average_sentiment": 0.09,
+        "average_risk": 34.2,
+        "summary": "Chip Stocks Rise as Samsung Strike Risk Threatens Supply | Nvidia, Micron and AMD Leads Chip Rally Samsung Strike Threat Shakes Chip Supply"
+      },
+      "scores": {
+        "overall_score": 53.9,
+        "components": {
+          "price_momentum": {
+            "score": 50,
+            "reason": "Insufficient price history; momentum treated as neutral.",
+            "details": {}
+          },
+          "news_sentiment": {
+            "score": 53.1,
+            "reason": "Recent news is mixed, low-signal, or balanced.",
+            "details": {
+              "average_sentiment": 0.09,
+              "average_risk": 34.2,
+              "top_tags": [
+                "earnings",
+                "other",
+                "sector move"
+              ]
+            }
+          },
+          "downside_from_cost_basis": {
+            "score": 50,
+            "reason": "No owned cost basis; downside-from-cost is not applicable for research candidates.",
+            "details": {
+              "not_applicable": true
+            }
+          },
+          "earnings_proximity": {
+            "score": 50,
+            "reason": "Upcoming earnings date unavailable; score treated as neutral.",
+            "details": {}
+          },
+          "sector_trend": {
+            "score": 50.0,
+            "reason": "semiconductors proxy SMH: Insufficient price history; momentum treated as neutral.",
+            "details": {
+              "matched_sector": "semiconductors",
+              "proxy_ticker": "SMH"
+            }
+          },
+          "thesis_risk": {
+            "score": 71.0,
+            "reason": "Thesis risk based on sector, status, news risk, and price confirmation. Signals: growth sector expectations, news risk contained.",
+            "details": {
+              "signals": [
+                "growth sector expectations",
+                "news risk contained"
+              ]
+            }
+          },
+          "valuation_caution": {
+            "score": 60.0,
+            "reason": "No explicit valuation warning; still review multiples before action.",
+            "details": {
+              "valuation_note": "Execution risk around AI accelerator ramp and competitive pressure."
+            }
+          }
+        },
+        "action": "research only",
+        "reasoning": "Research candidate only; no trade execution or blind buy alert."
+      },
+      "action": "research only",
+      "action_reasoning": "Watchlist item only; review manually before any portfolio decision.",
+      "price_band": "$250-$500"
+    },
+    {
+      "ticker": "ANET",
+      "company": "Arista Networks",
+      "sector": "datacenter networking",
+      "thesis": "AI datacenter networking demand and cloud customer expansion",
+      "watch_priority": "medium",
+      "status": "research_only",
+      "valuation_note": "Cloud capex concentration can create cyclicality.",
+      "daily_change_pct": null,
+      "market_data_source": "stooq",
+      "earnings_date": null,
+      "news_summary": {
+        "item_count": 5,
+        "top_tags": [
+          "analyst action",
+          "sector move",
+          "earnings"
+        ],
+        "average_sentiment": -0.12,
+        "average_risk": 43.6,
+        "summary": "Arista Networks Positioned as a Leader in the 2026 Gartner\u00ae Magic Quadrant\u2122 for Enterprise Wired and Wireless LAN | 5 Stocks With High ROE to Profit as Markets Skid on Tech Slump"
+      },
+      "scores": {
+        "overall_score": 51.9,
+        "components": {
+          "price_momentum": {
+            "score": 50,
+            "reason": "Insufficient price history; momentum treated as neutral.",
+            "details": {}
+          },
+          "news_sentiment": {
+            "score": 45.7,
+            "reason": "Recent news is mixed, low-signal, or balanced.",
+            "details": {
+              "average_sentiment": -0.12,
+              "average_risk": 43.6,
+              "top_tags": [
+                "analyst action",
+                "earnings",
+                "sector move"
+              ]
+            }
+          },
+          "downside_from_cost_basis": {
+            "score": 50,
+            "reason": "No owned cost basis; downside-from-cost is not applicable for research candidates.",
+            "details": {
+              "not_applicable": true
+            }
+          },
+          "earnings_proximity": {
+            "score": 50,
+            "reason": "Upcoming earnings date unavailable; score treated as neutral.",
+            "details": {}
+          },
+          "sector_trend": {
+            "score": 50.0,
+            "reason": "datacenter proxy XLK: Insufficient price history; momentum treated as neutral.",
+            "details": {
+              "matched_sector": "datacenter",
+              "proxy_ticker": "XLK"
+            }
+          },
+          "thesis_risk": {
+            "score": 66.0,
+            "reason": "Thesis risk based on sector, status, news risk, and price confirmation. Signals: growth sector expectations.",
+            "details": {
+              "signals": [
+                "growth sector expectations"
+              ]
+            }
+          },
+          "valuation_caution": {
+            "score": 60.0,
+            "reason": "No explicit valuation warning; still review multiples before action.",
+            "details": {
+              "valuation_note": "Cloud capex concentration can create cyclicality."
+            }
+          }
+        },
+        "action": "research only",
+        "reasoning": "Research candidate only; no trade execution or blind buy alert."
+      },
+      "action": "research only",
+      "action_reasoning": "Watchlist item only; review manually before any portfolio decision.",
+      "price_band": "$100-$150"
+    },
+    {
+      "ticker": "NOW",
+      "company": "ServiceNow",
+      "sector": "enterprise automation software",
+      "thesis": "Workflow automation platform with AI-assisted enterprise productivity",
+      "watch_priority": "medium",
+      "status": "research_only",
+      "valuation_note": "High software multiple requires durable growth and margin discipline.",
+      "daily_change_pct": null,
+      "market_data_source": "stooq",
+      "earnings_date": null,
+      "news_summary": {
+        "item_count": 5,
+        "top_tags": [
+          "sector move",
+          "earnings",
+          "analyst action"
+        ],
+        "average_sentiment": -0.12,
+        "average_risk": 44.8,
+        "summary": "Jim Cramer Says Workday Has Become a \u201cPoster Boy\u201d For AI Displacement | After a 50% Drop, Is ServiceNow Stock Worth Buying?"
+      },
+      "scores": {
+        "overall_score": 50.7,
+        "components": {
+          "price_momentum": {
+            "score": 50,
+            "reason": "Insufficient price history; momentum treated as neutral.",
+            "details": {}
+          },
+          "news_sentiment": {
+            "score": 45.7,
+            "reason": "Recent news is mixed, low-signal, or balanced.",
+            "details": {
+              "average_sentiment": -0.12,
+              "average_risk": 44.8,
+              "top_tags": [
+                "analyst action",
+                "earnings",
+                "sector move"
+              ]
+            }
+          },
+          "downside_from_cost_basis": {
+            "score": 50,
+            "reason": "No owned cost basis; downside-from-cost is not applicable for research candidates.",
+            "details": {
+              "not_applicable": true
+            }
+          },
+          "earnings_proximity": {
+            "score": 50,
+            "reason": "Upcoming earnings date unavailable; score treated as neutral.",
+            "details": {}
+          },
+          "sector_trend": {
+            "score": 50.0,
+            "reason": "automation proxy IGV: Insufficient price history; momentum treated as neutral.",
+            "details": {
+              "matched_sector": "automation",
+              "proxy_ticker": "IGV"
+            }
+          },
+          "thesis_risk": {
+            "score": 66.0,
+            "reason": "Thesis risk based on sector, status, news risk, and price confirmation. Signals: growth sector expectations.",
+            "details": {
+              "signals": [
+                "growth sector expectations"
+              ]
+            }
+          },
+          "valuation_caution": {
+            "score": 44,
+            "reason": "Valuation warning is explicitly elevated.",
+            "details": {
+              "valuation_note": "High software multiple requires durable growth and margin discipline."
+            }
+          }
+        },
+        "action": "research only",
+        "reasoning": "Research candidate only; no trade execution or blind buy alert."
+      },
+      "action": "research only",
+      "action_reasoning": "Watchlist item only; review manually before any portfolio decision.",
+      "price_band": "$100-$150"
+    }
+  ],
+  "news_catalysts": [
+    {
+      "ticker": "NVDA",
+      "title": "Nvidia Earnings Face AI Rally Test After 60% Chip Index Surge",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-earnings-face-ai-rally-181627880.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-05-20T18:16:27+00:00",
+      "tag": "earnings",
+      "sentiment_score": 0.0,
+      "risk_score": 41,
+      "sentiment_reason": "Mixed or low-signal headline; human review needed."
+    },
+    {
+      "ticker": "NVDA",
+      "title": "OpenAI IPO Filing Could Come 'Very Soon:' Report",
+      "url": "https://finance.yahoo.com/m/3afb5f79-8655-3eba-a15a-eee8d03b0f94/openai-ipo-filing-could-come.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-05-20T18:15:33+00:00",
+      "tag": "sector move",
+      "sentiment_score": 0.0,
+      "risk_score": 35,
+      "sentiment_reason": "Mixed or low-signal headline; human review needed."
+    },
+    {
+      "ticker": "NVDA",
+      "title": "OpenAI Commits $234 Million To Singapore AI Expansion",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/openai-commits-234-million-singapore-181457660.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-05-20T18:14:57+00:00",
+      "tag": "product launch",
+      "sentiment_score": 0.22,
+      "risk_score": 30,
+      "sentiment_reason": "Positive wording or catalyst language detected."
+    },
+    {
+      "ticker": "NVDA",
+      "title": "Alibaba Unveils 144GB AI Chip, Accelerates Annual Upgrade Push",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/alibaba-unveils-144gb-ai-chip-181448502.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-05-20T18:14:48+00:00",
+      "tag": "analyst action",
+      "sentiment_score": 0.44,
+      "risk_score": 25,
+      "sentiment_reason": "Positive wording or catalyst language detected."
+    },
+    {
+      "ticker": "NOW",
+      "title": "Jim Cramer Says Workday Has Become a \u201cPoster Boy\u201d For AI Displacement",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/jim-cramer-says-workday-become-180447930.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-05-20T18:04:47+00:00",
+      "tag": "sector move",
+      "sentiment_score": 0.0,
+      "risk_score": 35,
+      "sentiment_reason": "Mixed or low-signal headline; human review needed."
+    },
+    {
+      "ticker": "NVDA",
+      "title": "Jim Cramer Says \u201cNVIDIA\u2019s at the Heart of the Data Center\u201d Ahead of Its Earnings",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/jim-cramer-says-nvidia-heart-180433352.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-05-20T18:04:33+00:00",
+      "tag": "earnings",
+      "sentiment_score": 0.0,
+      "risk_score": 41,
+      "sentiment_reason": "Mixed or low-signal headline; human review needed."
+    },
+    {
+      "ticker": "NOW",
+      "title": "After a 50% Drop, Is ServiceNow Stock Worth Buying?",
+      "url": "https://www.trefis.com/articles/599853/after-a-50-drop-is-servicenow-stock-worth-buying/2026-05-20?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-05-20T17:59:54+00:00",
+      "tag": "earnings",
+      "sentiment_score": -0.34,
+      "risk_score": 64,
+      "sentiment_reason": "Negative wording or risk language detected."
+    },
+    {
+      "ticker": "VOO",
+      "title": "Vanguard\u2019s 0.05% International Stock ETF Just Outpaced the S&P 500 for the First Time in Five Years",
+      "url": "https://247wallst.com/investing/2026/05/20/vanguards-0-05-international-stock-etf-just-outpaced-the-sp-500-for-the-first-time-in-five-years/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-05-20T17:41:47+00:00",
+      "tag": "sector move",
+      "sentiment_score": 0.0,
+      "risk_score": 35,
+      "sentiment_reason": "Mixed or low-signal headline; human review needed."
+    },
+    {
+      "ticker": "AMD",
+      "title": "Chip Stocks Rise as Samsung Strike Risk Threatens Supply",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/chip-stocks-rise-samsung-strike-165727713.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-05-20T16:57:27+00:00",
+      "tag": "sector move",
+      "sentiment_score": 0.0,
+      "risk_score": 35,
+      "sentiment_reason": "Mixed or low-signal headline; human review needed."
+    },
+    {
+      "ticker": "AMD",
+      "title": "Nvidia, Micron and AMD Leads Chip Rally Samsung Strike Threat Shakes Chip Supply",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/nvidia-micron-amd-leads-chip-165629244.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-05-20T16:56:29+00:00",
+      "tag": "sector move",
+      "sentiment_score": 0.0,
+      "risk_score": 35,
+      "sentiment_reason": "Mixed or low-signal headline; human review needed."
+    },
+    {
+      "ticker": "AMD",
+      "title": "AMD Stock Has Doubled This Year. Is It Still a Buy?",
+      "url": "https://www.fool.com/investing/2026/05/20/amd-stock-has-doubled-this-year-is-it-still-a-buy/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-05-20T16:50:00+00:00",
+      "tag": "other",
+      "sentiment_score": 0.0,
+      "risk_score": 35,
+      "sentiment_reason": "Mixed or low-signal headline; human review needed."
+    },
+    {
+      "ticker": "AMD",
+      "title": "Nvidia Earnings Are Set to Shine Again. The Stock Needs Something More.",
+      "url": "https://finance.yahoo.com/m/7f9e992b-2f22-35ec-9456-15595f332308/nvidia-earnings-are-set-to.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-05-20T16:44:00+00:00",
+      "tag": "earnings",
+      "sentiment_score": 0.22,
+      "risk_score": 36,
+      "sentiment_reason": "Positive wording or catalyst language detected."
+    },
+    {
+      "ticker": "PATH",
+      "title": "LPG Stock Jumps As Dividend And Analyst Upgrade Fuel Rally - StocksToTrade",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE03Mk4yTEprMnJlV1l5SjZlWFRNYi11YUxmWFVqRFdwUnJoN3REVmxYejQ3UV9kSUpQLWZqUUh1TUV5aGI3OHN6OENsUjFoa2p2MllHZW5Vb244bGZTRjBlbi1kdXJZMGlubVdBa01BcVU5RVVn?oc=5",
+      "source": "StocksToTrade",
+      "published_at": "2026-05-20T16:33:00+00:00",
+      "tag": "analyst action",
+      "sentiment_score": 0.22,
+      "risk_score": 30,
+      "sentiment_reason": "Positive wording or catalyst language detected."
+    },
+    {
+      "ticker": "ANET",
+      "title": "Arista Networks Positioned as a Leader in the 2026 Gartner\u00ae Magic Quadrant\u2122 for Enterprise Wired and Wireless LAN",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/arista-networks-positioned-leader-2026-163000531.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-05-20T16:30:00+00:00",
+      "tag": "sector move",
+      "sentiment_score": 0.0,
+      "risk_score": 35,
+      "sentiment_reason": "Mixed or low-signal headline; human review needed."
+    },
+    {
+      "ticker": "NOW",
+      "title": "ServiceNow (NOW) Stock Trades Up, Here Is Why",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/servicenow-now-stock-trades-why-162855461.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-05-20T16:28:55+00:00",
+      "tag": "analyst action",
+      "sentiment_score": 0.0,
+      "risk_score": 35,
+      "sentiment_reason": "Mixed or low-signal headline; human review needed."
+    },
+    {
+      "ticker": "NOW",
+      "title": "Semiconductor, retail and biotech stocks climb on sector catalysts - MSN",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOWHdJSENGSy1GYVVBak9DZUFmdmtMVDFGVHZLQ3BvUWtkWUdRTzJycVhrNXAtX0t3YTZEMElyNG9lME5YbHZhOVJkaWdBM0hwdkNPVEdwLUoyQjB4bWJEWU83Yldoa1pvdklhOThzbGpzSk13em5CLWdFUnVyMUEtSVNBckUwb2pfd1FLZm0wdnh1XzNUQjhZbVMwRGFaOEpENzlXdG9oZVZFSlZBbXNwU0E2Tm1PWXFnOThWRUlHUjBoVUlIdmdlZE9BTTR4MXMzczhaNU1UZTJraC1XUVE?oc=5",
+      "source": "MSN",
+      "published_at": "2026-05-20T16:11:11+00:00",
+      "tag": "sector move",
+      "sentiment_score": 0.0,
+      "risk_score": 35,
+      "sentiment_reason": "Mixed or low-signal headline; human review needed."
+    },
+    {
+      "ticker": "AMD",
+      "title": "AMD Is Up 8% Today: Is It Outperforming Other Chip Stocks Like Intel and NVIDIA?",
+      "url": "https://247wallst.com/investing/2026/05/20/amd-is-up-8-today-is-it-outperforming-other-chip-stocks-like-intel-and-nvidia/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-05-20T16:08:26+00:00",
+      "tag": "sector move",
+      "sentiment_score": 0.22,
+      "risk_score": 30,
+      "sentiment_reason": "Positive wording or catalyst language detected."
+    },
+    {
+      "ticker": "NOW",
+      "title": "Does Earnings Miss, Fee Debate And Insider Selling Change The Bull Case For Copart (CPRT)? - simplywall.st",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPcU8wVWh0N1QtWldUU2ZRVEMyM1M3SDUtVTFBS3BBaHNuVWNfLU5HVTNUTVR5XzFNNmd6a0pURC1tMzhRYk5EZjRtUlJSYXMyeWJvZ0RLUG1wQ3F4X3kxVUQtREQxS3pfUjY2ZDBaVXFWNzR0VGh4TkQtamsyQ2k1R09EdUZOUlo2WUhIaEp1cFlCS1h2SmZkMzZ3amQ3SjlqSjdHSWJXbGVJTkF6SnRmd1o2WkhCRXJuTF9VM2l0MVlCYVdGbmRUV0lyTW84TkIyRlRwcllPc9IB1wFBVV95cUxPcU8wVWh0N1QtWldUU2ZRVEMyM1M3SDUtVTFBS3BBaHNuVWNfLU5HVTNUTVR5XzFNNmd6a0pURC1tMzhRYk5EZjRtUlJSYXMyeWJvZ0RLUG1wQ3F4X3kxVUQtREQxS3pfUjY2ZDBaVXFWNzR0VGh4TkQtamsyQ2k1R09EdUZOUlo2WUhIaEp1cFlCS1h2SmZkMzZ3amQ3SjlqSjdHSWJXbGVJTkF6SnRmd1o2WkhCRXJuTF9VM2l0MVlCYVdGbmRUV0lyTW84TkIyRlRwcllPcw?oc=5",
+      "source": "simplywall.st",
+      "published_at": "2026-05-20T15:47:01+00:00",
+      "tag": "earnings",
+      "sentiment_score": -0.28,
+      "risk_score": 55,
+      "sentiment_reason": "Negative wording or risk language detected."
+    },
+    {
+      "ticker": "PATH",
+      "title": "Statement from UiPath on the passing of Board Member S. \"Soma\" Somasegar",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/statement-uipath-passing-board-member-153800592.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-05-20T15:38:00+00:00",
+      "tag": "other",
+      "sentiment_score": 0.0,
+      "risk_score": 35,
+      "sentiment_reason": "Mixed or low-signal headline; human review needed."
+    },
+    {
+      "ticker": "VOO",
+      "title": "DIA and VOO Track Almost the Same Market Yet VOO Returned 318.99% While DIA Made 176.86% Over Ten Years",
+      "url": "https://247wallst.com/investing/2026/05/20/dia-and-voo-track-almost-the-same-market-yet-voo-returned-318-99-while-dia-made-176-86-over-ten-years/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-05-20T15:10:19+00:00",
+      "tag": "other",
+      "sentiment_score": 0.0,
+      "risk_score": 35,
+      "sentiment_reason": "Mixed or low-signal headline; human review needed."
+    },
+    {
+      "ticker": "ANET",
+      "title": "5 Stocks With High ROE to Profit as Markets Skid on Tech Slump",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/5-stocks-high-roe-profit-150600900.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-05-20T15:06:00+00:00",
+      "tag": "earnings",
+      "sentiment_score": -0.28,
+      "risk_score": 55,
+      "sentiment_reason": "Negative wording or risk language detected."
+    },
+    {
+      "ticker": "PATH",
+      "title": "Is UiPath's Expanding ARR Strengthening Long-Term Stability?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/uipaths-expanding-arr-strengthening-long-143600941.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-05-20T14:36:00+00:00",
+      "tag": "sector move",
+      "sentiment_score": 0.22,
+      "risk_score": 30,
+      "sentiment_reason": "Positive wording or catalyst language detected."
+    },
+    {
+      "ticker": "VOO",
+      "title": "Which Is the Better Growth ETF, Vanguard's Large-Cap VOOG or State Street's Small-Cap SLYG?",
+      "url": "https://www.fool.com/coverage/etfs/2026/05/20/which-is-the-better-growth-etf-vanguard-s-large-cap-voog-or-state-street-s-small-cap-slyg/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-05-20T14:01:01+00:00",
+      "tag": "sector move",
+      "sentiment_score": 0.22,
+      "risk_score": 30,
+      "sentiment_reason": "Positive wording or catalyst language detected."
+    },
+    {
+      "ticker": "ANET",
+      "title": "Can Proliferating WaveLogic 6 Adoption Fuel Ciena's Top Line? - The Globe and Mail",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQQzhLMkVFdHlDSEFJSEFXNUdYOXY3Ylg4LTU5VkxnQ1FZOHVuNHlra1VueHkwRzJTa0VWQWo5dmRDZDhFUnp3MGEwNGVWWWJYeFJhNG52czFvcnViUXdHNkg2QlJkekxZbDdpb0JtQUFnMXlQd0N2STE3XzM2Y0NaLVFaVlc2QUR1Z3dEMTZkdkNmTjctY3FEM2wtcWtFRm9YSXkyNmhYRkJxWDl3QVVTT1hEMVczOEgyQlV5dC1GX3dTNUZrTWRZR2p0aDNzTkZKOWloVkRaWHJvcVE4?oc=5",
+      "source": "The Globe and Mail",
+      "published_at": "2026-05-20T13:42:55+00:00",
+      "tag": "analyst action",
+      "sentiment_score": 0.0,
+      "risk_score": 35,
+      "sentiment_reason": "Mixed or low-signal headline; human review needed."
+    },
+    {
+      "ticker": "PATH",
+      "title": "Richtech Robotics Stock Drops 5.9% as Earnings Loom - Meyka",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQSzFoNFFvYV83czU3NjlUQWtsNzFlcE82ZDVPZWkzQzRDX2VsdE5yMHFNVGdKVi1wYlh1eklRcDJMU2prQXhGVmlaZzBJUEVseEkxWDYxV3hWVXhaYUlobWtubGJXZVJlX1hWU3RaQUlpMlZhbVJHUE1FbGdWZVJ5ZjY1aEw?oc=5",
+      "source": "Meyka",
+      "published_at": "2026-05-20T13:18:45+00:00",
+      "tag": "earnings",
+      "sentiment_score": 0.0,
+      "risk_score": 41,
+      "sentiment_reason": "Mixed or low-signal headline; human review needed."
+    },
+    {
+      "ticker": "ANET",
+      "title": "Can Proliferating WaveLogic 6 Adoption Fuel Ciena's Top Line?",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/proliferating-wavelogic-6-adoption-fuel-123700662.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-05-20T12:37:00+00:00",
+      "tag": "analyst action",
+      "sentiment_score": -0.06,
+      "risk_score": 44,
+      "sentiment_reason": "Mixed or low-signal headline; human review needed."
+    },
+    {
+      "ticker": "PATH",
+      "title": "UiPath Secures Winning Bid in Seattle Children\u2019s Charity Auction for the 2026 World Cup Experience at Seattle\u2019s Lumen Field",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/uipath-secures-winning-bid-seattle-123000243.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-05-20T12:30:00+00:00",
+      "tag": "other",
+      "sentiment_score": 0.0,
+      "risk_score": 35,
+      "sentiment_reason": "Mixed or low-signal headline; human review needed."
+    },
+    {
+      "ticker": "ANET",
+      "title": "How The AI Data Center Story Is Reframing Arista Networks (ANET) Valuation And Expectations",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/ai-data-center-story-reframing-061946085.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-05-20T06:19:46+00:00",
+      "tag": "analyst action",
+      "sentiment_score": -0.28,
+      "risk_score": 49,
+      "sentiment_reason": "Negative wording or risk language detected."
+    },
+    {
+      "ticker": "VOO",
+      "title": "Jeff Hook\u2019s Blunt Warning: Private Equity Fees Are Destroying Returns for Retail Investors",
+      "url": "https://247wallst.com/investing/2026/05/19/jeff-hooks-blunt-warning-private-equity-fees-are-destroying-returns-for-retail-investors/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-05-20T00:25:31+00:00",
+      "tag": "sector move",
+      "sentiment_score": -0.28,
+      "risk_score": 49,
+      "sentiment_reason": "Negative wording or risk language detected."
+    },
+    {
+      "ticker": "VOO",
+      "title": "Japan ETFs Are Up 41%. Here\u2019s How to Play the Takaichi Boom",
+      "url": "http://www.etf.com/sections/news/japan-etfs-are-41-heres-how-play-takaichi-boom?utm_source=yahoo-finance&utm_medium=rss&utm_campaign=yahoo-finance-rss&.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-05-19T20:32:23+00:00",
+      "tag": "sector move",
+      "sentiment_score": 0.16,
+      "risk_score": 39,
+      "sentiment_reason": "Mixed or low-signal headline; human review needed."
+    },
+    {
+      "ticker": "LSCC",
+      "title": "KLA Corporation, Monolithic Power Systems, onsemi, Semtech, and Lattice Semiconductor Stocks Trade Down, What You Need To Know",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/kla-corporation-monolithic-power-systems-151655801.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-05-19T15:16:55+00:00",
+      "tag": "sector move",
+      "sentiment_score": 0.0,
+      "risk_score": 35,
+      "sentiment_reason": "Mixed or low-signal headline; human review needed."
+    },
+    {
+      "ticker": "VTI",
+      "title": "\u2018Major Catalyst Ahead,\u2019 Says Top Analyst About Rocket Lab (RKLB) Stock - TipRanks",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPQnR0Y3Q3clFOa3Fwb3J2clBJRmxnWGQwcldUN180OXA2VVE0LUNwak1icGtIYUp6cFNEV2xhTDUwMDUyWnNqbHRDaldEVlR3cmFZV2l1OFZ3dWJXMjBLQ2JOeDJ5MTJlenBtaEIta2pROG00amh1LXpiWGxkOXRTLWt3M3g5cl96d0dsbmpHOUlVdHl1MTNWU1psdw?oc=5",
+      "source": "TipRanks",
+      "published_at": "2026-05-19T12:36:00+00:00",
+      "tag": "analyst action",
+      "sentiment_score": 0.0,
+      "risk_score": 35,
+      "sentiment_reason": "Mixed or low-signal headline; human review needed."
+    },
+    {
+      "ticker": "VTI",
+      "title": "VTI vs VOO: Which One Is the Smarter Buy Today?",
+      "url": "https://www.fool.com/investing/2026/05/19/vti-vs-voo-which-one-is-the-smarter-buy-today/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-05-19T10:05:00+00:00",
+      "tag": "other",
+      "sentiment_score": 0.0,
+      "risk_score": 35,
+      "sentiment_reason": "Mixed or low-signal headline; human review needed."
+    },
+    {
+      "ticker": "VTI",
+      "title": "The Tax-Loss Harvest That Cost a 66-Year-Old Retiree $2,400 in Wash-Sale Penalties She Never Saw Coming",
+      "url": "https://247wallst.com/personal-finance/2026/05/18/the-tax-loss-harvest-that-cost-a-66-year-old-retiree-2400-in-wash-sale-penalties-she-never-saw-coming/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-05-18T21:23:35+00:00",
+      "tag": "sector move",
+      "sentiment_score": 0.0,
+      "risk_score": 35,
+      "sentiment_reason": "Mixed or low-signal headline; human review needed."
+    },
+    {
+      "ticker": "VTI",
+      "title": "The SpaceX IPO Is Coming. This Is the Vanguard ETF It'll Probably Show Up In First.",
+      "url": "https://www.fool.com/investing/2026/05/18/spacex-ipo-is-coming-this-is-vanguard-etf-first/?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-05-18T21:20:00+00:00",
+      "tag": "dilution",
+      "sentiment_score": 0.0,
+      "risk_score": 49,
+      "sentiment_reason": "Mixed or low-signal headline; human review needed."
+    },
+    {
+      "ticker": "VTI",
+      "title": "What Is an ETF? Everything Beginners Need to Know in 2026",
+      "url": "http://www.etf.com/sections/etf-basics/what-etf-everything-beginners-need-know-2026?utm_source=yahoo-finance&utm_medium=rss&utm_campaign=yahoo-finance-rss&.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-05-18T19:15:50+00:00",
+      "tag": "other",
+      "sentiment_score": 0.0,
+      "risk_score": 35,
+      "sentiment_reason": "Mixed or low-signal headline; human review needed."
+    },
+    {
+      "ticker": "LSCC",
+      "title": "3 Mid-Cap Stocks We Find Risky",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/3-mid-cap-stocks-risky-074855096.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-05-18T07:48:55+00:00",
+      "tag": "sector move",
+      "sentiment_score": 0.0,
+      "risk_score": 35,
+      "sentiment_reason": "Mixed or low-signal headline; human review needed."
+    },
+    {
+      "ticker": "LSCC",
+      "title": "Best Momentum Stocks to Buy for May 15th",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/best-momentum-stocks-buy-may-140000448.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-05-15T14:00:00+00:00",
+      "tag": "other",
+      "sentiment_score": 0.22,
+      "risk_score": 30,
+      "sentiment_reason": "Positive wording or catalyst language detected."
+    },
+    {
+      "ticker": "LSCC",
+      "title": "Stock Market Winners Tend To Have The 'New' In Spades. Here's Where To Find Them.",
+      "url": "https://finance.yahoo.com/m/2bea70c0-2b9a-3070-a92d-2cd567170a47/stock-market-winners-tend-to.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-05-15T12:15:33+00:00",
+      "tag": "product launch",
+      "sentiment_score": 0.22,
+      "risk_score": 30,
+      "sentiment_reason": "Positive wording or catalyst language detected."
+    },
+    {
+      "ticker": "LSCC",
+      "title": "What Lattice Semiconductor (LSCC)'s AI and Data Center\u2011Driven Q1 Beat Means For Shareholders",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/lattice-semiconductor-lscc-ai-data-101805034.html?.tsrc=rss",
+      "source": "Yahoo Finance",
+      "published_at": "2026-05-15T10:18:05+00:00",
+      "tag": "earnings",
+      "sentiment_score": 0.44,
+      "risk_score": 31,
+      "sentiment_reason": "Positive wording or catalyst language detected."
+    }
+  ],
+  "sell_watch": [
+    {
+      "ticker": "PATH",
+      "company": "UiPath",
+      "time_horizon": "medium",
+      "sector": "AI automation software",
+      "thesis": "Enterprise automation and AI workflow adoption",
+      "max_loss_pct": 12,
+      "status": "active",
+      "watch_priority": "high",
+      "daily_change_pct": null,
+      "unrealized_gain_loss_pct": -30.08,
+      "position_weight_pct": 8.4,
+      "market_data_source": "stooq",
+      "market_data_as_of": "2026-05-20T20:03:02Z",
+      "earnings_date": null,
+      "news_summary": {
+        "item_count": 5,
+        "top_tags": [
+          "other",
+          "analyst action",
+          "sector move"
+        ],
+        "average_sentiment": 0.09,
+        "average_risk": 34.2,
+        "summary": "LPG Stock Jumps As Dividend And Analyst Upgrade Fuel Rally - StocksToTrade | Statement from UiPath on the passing of Board Member S. \"Soma\" Somasegar"
+      },
+      "news": [
+        {
+          "ticker": "PATH",
+          "title": "LPG Stock Jumps As Dividend And Analyst Upgrade Fuel Rally - StocksToTrade",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE03Mk4yTEprMnJlV1l5SjZlWFRNYi11YUxmWFVqRFdwUnJoN3REVmxYejQ3UV9kSUpQLWZqUUh1TUV5aGI3OHN6OENsUjFoa2p2MllHZW5Vb244bGZTRjBlbi1kdXJZMGlubVdBa01BcVU5RVVn?oc=5",
+          "source": "StocksToTrade",
+          "published_at": "2026-05-20T16:33:00+00:00",
+          "summary": "<a href=\"https://news.google.com/rss/articles/CBMidEFVX3lxTE03Mk4yTEprMnJlV1l5SjZlWFRNYi11YUxmWFVqRFdwUnJoN3REVmxYejQ3UV9kSUpQLWZqUUh1TUV5aGI3OHN6OENsUjFoa2p2MllHZW5Vb244bGZTRjBlbi1kdXJZMGlubVdBa01BcVU5RVVn?oc=5\" target=\"_blank\">LPG Stock Jumps As Dividend And Analyst Upgrade Fuel Rally</a>\u00a0\u00a0<font color=\"#6f6f6f\">StocksToTrade</font>",
+          "tag": "analyst action",
+          "sentiment_score": 0.22,
+          "risk_score": 30,
+          "sentiment_reason": "Positive wording or catalyst language detected."
+        },
+        {
+          "ticker": "PATH",
+          "title": "Statement from UiPath on the passing of Board Member S. \"Soma\" Somasegar",
+          "url": "https://finance.yahoo.com/sectors/technology/articles/statement-uipath-passing-board-member-153800592.html?.tsrc=rss",
+          "source": "Yahoo Finance",
+          "published_at": "2026-05-20T15:38:00+00:00",
+          "summary": "NEW YORK, May 20, 2026--UiPath issued a statement on the untimely passing of Board Member S. \"Soma\" Somasegar on May 19, 2026.",
+          "tag": "other",
+          "sentiment_score": 0.0,
+          "risk_score": 35,
+          "sentiment_reason": "Mixed or low-signal headline; human review needed."
+        },
+        {
+          "ticker": "PATH",
+          "title": "Is UiPath's Expanding ARR Strengthening Long-Term Stability?",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/uipaths-expanding-arr-strengthening-long-143600941.html?.tsrc=rss",
+          "source": "Yahoo Finance",
+          "published_at": "2026-05-20T14:36:00+00:00",
+          "summary": "PATH's ARR climbs from $1.38B to $1.85B through Q4 2026, signaling stronger enterprise automation adoption despite AI spending concerns.",
+          "tag": "sector move",
+          "sentiment_score": 0.22,
+          "risk_score": 30,
+          "sentiment_reason": "Positive wording or catalyst language detected."
+        },
+        {
+          "ticker": "PATH",
+          "title": "Richtech Robotics Stock Drops 5.9% as Earnings Loom - Meyka",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQSzFoNFFvYV83czU3NjlUQWtsNzFlcE82ZDVPZWkzQzRDX2VsdE5yMHFNVGdKVi1wYlh1eklRcDJMU2prQXhGVmlaZzBJUEVseEkxWDYxV3hWVXhaYUlobWtubGJXZVJlX1hWU3RaQUlpMlZhbVJHUE1FbGdWZVJ5ZjY1aEw?oc=5",
+          "source": "Meyka",
+          "published_at": "2026-05-20T13:18:45+00:00",
+          "summary": "<a href=\"https://news.google.com/rss/articles/CBMihAFBVV95cUxQSzFoNFFvYV83czU3NjlUQWtsNzFlcE82ZDVPZWkzQzRDX2VsdE5yMHFNVGdKVi1wYlh1eklRcDJMU2prQXhGVmlaZzBJUEVseEkxWDYxV3hWVXhaYUlobWtubGJXZVJlX1hWU3RaQUlpMlZhbVJHUE1FbGdWZVJ5ZjY1aEw?oc=5\" target=\"_blank\">Richtech Robotics Stock Drops 5.9% as Earnings Loom</a>\u00a0\u00a0<font color=\"#6f6f6f\">Meyka</font>",
+          "tag": "earnings",
+          "sentiment_score": 0.0,
+          "risk_score": 41,
+          "sentiment_reason": "Mixed or low-signal headline; human review needed."
+        },
+        {
+          "ticker": "PATH",
+          "title": "UiPath Secures Winning Bid in Seattle Children\u2019s Charity Auction for the 2026 World Cup Experience at Seattle\u2019s Lumen Field",
+          "url": "https://finance.yahoo.com/sectors/technology/articles/uipath-secures-winning-bid-seattle-123000243.html?.tsrc=rss",
+          "source": "Yahoo Finance",
+          "published_at": "2026-05-20T12:30:00+00:00",
+          "summary": "BELLEVUE, Wash., May 20, 2026--UiPath submitted winning bid in Seattle Children\u2019s auction, securing a luxury suite experience for the 2026 FIFA World Cup at Seattle\u2019s Lumen Field.",
+          "tag": "other",
+          "sentiment_score": 0.0,
+          "risk_score": 35,
+          "sentiment_reason": "Mixed or low-signal headline; human review needed."
+        }
+      ],
+      "scores": {
+        "overall_score": 42.7,
+        "components": {
+          "price_momentum": {
+            "score": 50,
+            "reason": "Insufficient price history; momentum treated as neutral.",
+            "details": {}
+          },
+          "news_sentiment": {
+            "score": 53.1,
+            "reason": "Recent news is mixed, low-signal, or balanced.",
+            "details": {
+              "average_sentiment": 0.09,
+              "average_risk": 34.2,
+              "top_tags": [
+                "analyst action",
+                "earnings",
+                "other",
+                "sector move"
+              ]
+            }
+          },
+          "downside_from_cost_basis": {
+            "score": 0,
+            "reason": "Position is below cost basis; compare to max-loss rule.",
+            "details": {
+              "pnl_pct_from_cost": -30.08,
+              "max_loss_pct": 12.0
+            }
+          },
+          "earnings_proximity": {
+            "score": 50,
+            "reason": "Upcoming earnings date unavailable; score treated as neutral.",
+            "details": {}
+          },
+          "sector_trend": {
+            "score": 50.0,
+            "reason": "ai proxy QQQ: Insufficient price history; momentum treated as neutral.",
+            "details": {
+              "matched_sector": "ai",
+              "proxy_ticker": "QQQ"
+            }
+          },
+          "thesis_risk": {
+            "score": 61.0,
+            "reason": "Thesis risk based on sector, status, news risk, and price confirmation. Signals: growth sector expectations, news risk contained, price action challenges thesis.",
+            "details": {
+              "signals": [
+                "growth sector expectations",
+                "news risk contained",
+                "price action challenges thesis"
+              ]
+            }
+          },
+          "valuation_caution": {
+            "score": 60.0,
+            "reason": "No explicit valuation warning; still review multiples before action.",
+            "details": {
+              "price_to_cost_basis": 0.7
+            }
+          }
+        }
+      },
+      "action": "sell watch",
+      "action_reasoning": "Human review required: price is below the configured max-loss threshold.",
+      "action_triggers": [
+        "price is below the configured max-loss threshold"
+      ],
+      "price_band": "$10-$15",
+      "portfolio_weight_pct": 8.4
+    }
+  ],
+  "high_priority_alerts": [
+    {
+      "ticker": "PATH",
+      "company": "UiPath",
+      "time_horizon": "medium",
+      "sector": "AI automation software",
+      "thesis": "Enterprise automation and AI workflow adoption",
+      "max_loss_pct": 12,
+      "status": "active",
+      "watch_priority": "high",
+      "daily_change_pct": null,
+      "unrealized_gain_loss_pct": -30.08,
+      "position_weight_pct": 8.4,
+      "market_data_source": "stooq",
+      "market_data_as_of": "2026-05-20T20:03:02Z",
+      "earnings_date": null,
+      "news_summary": {
+        "item_count": 5,
+        "top_tags": [
+          "other",
+          "analyst action",
+          "sector move"
+        ],
+        "average_sentiment": 0.09,
+        "average_risk": 34.2,
+        "summary": "LPG Stock Jumps As Dividend And Analyst Upgrade Fuel Rally - StocksToTrade | Statement from UiPath on the passing of Board Member S. \"Soma\" Somasegar"
+      },
+      "news": [
+        {
+          "ticker": "PATH",
+          "title": "LPG Stock Jumps As Dividend And Analyst Upgrade Fuel Rally - StocksToTrade",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE03Mk4yTEprMnJlV1l5SjZlWFRNYi11YUxmWFVqRFdwUnJoN3REVmxYejQ3UV9kSUpQLWZqUUh1TUV5aGI3OHN6OENsUjFoa2p2MllHZW5Vb244bGZTRjBlbi1kdXJZMGlubVdBa01BcVU5RVVn?oc=5",
+          "source": "StocksToTrade",
+          "published_at": "2026-05-20T16:33:00+00:00",
+          "summary": "<a href=\"https://news.google.com/rss/articles/CBMidEFVX3lxTE03Mk4yTEprMnJlV1l5SjZlWFRNYi11YUxmWFVqRFdwUnJoN3REVmxYejQ3UV9kSUpQLWZqUUh1TUV5aGI3OHN6OENsUjFoa2p2MllHZW5Vb244bGZTRjBlbi1kdXJZMGlubVdBa01BcVU5RVVn?oc=5\" target=\"_blank\">LPG Stock Jumps As Dividend And Analyst Upgrade Fuel Rally</a>\u00a0\u00a0<font color=\"#6f6f6f\">StocksToTrade</font>",
+          "tag": "analyst action",
+          "sentiment_score": 0.22,
+          "risk_score": 30,
+          "sentiment_reason": "Positive wording or catalyst language detected."
+        },
+        {
+          "ticker": "PATH",
+          "title": "Statement from UiPath on the passing of Board Member S. \"Soma\" Somasegar",
+          "url": "https://finance.yahoo.com/sectors/technology/articles/statement-uipath-passing-board-member-153800592.html?.tsrc=rss",
+          "source": "Yahoo Finance",
+          "published_at": "2026-05-20T15:38:00+00:00",
+          "summary": "NEW YORK, May 20, 2026--UiPath issued a statement on the untimely passing of Board Member S. \"Soma\" Somasegar on May 19, 2026.",
+          "tag": "other",
+          "sentiment_score": 0.0,
+          "risk_score": 35,
+          "sentiment_reason": "Mixed or low-signal headline; human review needed."
+        },
+        {
+          "ticker": "PATH",
+          "title": "Is UiPath's Expanding ARR Strengthening Long-Term Stability?",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/uipaths-expanding-arr-strengthening-long-143600941.html?.tsrc=rss",
+          "source": "Yahoo Finance",
+          "published_at": "2026-05-20T14:36:00+00:00",
+          "summary": "PATH's ARR climbs from $1.38B to $1.85B through Q4 2026, signaling stronger enterprise automation adoption despite AI spending concerns.",
+          "tag": "sector move",
+          "sentiment_score": 0.22,
+          "risk_score": 30,
+          "sentiment_reason": "Positive wording or catalyst language detected."
+        },
+        {
+          "ticker": "PATH",
+          "title": "Richtech Robotics Stock Drops 5.9% as Earnings Loom - Meyka",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQSzFoNFFvYV83czU3NjlUQWtsNzFlcE82ZDVPZWkzQzRDX2VsdE5yMHFNVGdKVi1wYlh1eklRcDJMU2prQXhGVmlaZzBJUEVseEkxWDYxV3hWVXhaYUlobWtubGJXZVJlX1hWU3RaQUlpMlZhbVJHUE1FbGdWZVJ5ZjY1aEw?oc=5",
+          "source": "Meyka",
+          "published_at": "2026-05-20T13:18:45+00:00",
+          "summary": "<a href=\"https://news.google.com/rss/articles/CBMihAFBVV95cUxQSzFoNFFvYV83czU3NjlUQWtsNzFlcE82ZDVPZWkzQzRDX2VsdE5yMHFNVGdKVi1wYlh1eklRcDJMU2prQXhGVmlaZzBJUEVseEkxWDYxV3hWVXhaYUlobWtubGJXZVJlX1hWU3RaQUlpMlZhbVJHUE1FbGdWZVJ5ZjY1aEw?oc=5\" target=\"_blank\">Richtech Robotics Stock Drops 5.9% as Earnings Loom</a>\u00a0\u00a0<font color=\"#6f6f6f\">Meyka</font>",
+          "tag": "earnings",
+          "sentiment_score": 0.0,
+          "risk_score": 41,
+          "sentiment_reason": "Mixed or low-signal headline; human review needed."
+        },
+        {
+          "ticker": "PATH",
+          "title": "UiPath Secures Winning Bid in Seattle Children\u2019s Charity Auction for the 2026 World Cup Experience at Seattle\u2019s Lumen Field",
+          "url": "https://finance.yahoo.com/sectors/technology/articles/uipath-secures-winning-bid-seattle-123000243.html?.tsrc=rss",
+          "source": "Yahoo Finance",
+          "published_at": "2026-05-20T12:30:00+00:00",
+          "summary": "BELLEVUE, Wash., May 20, 2026--UiPath submitted winning bid in Seattle Children\u2019s auction, securing a luxury suite experience for the 2026 FIFA World Cup at Seattle\u2019s Lumen Field.",
+          "tag": "other",
+          "sentiment_score": 0.0,
+          "risk_score": 35,
+          "sentiment_reason": "Mixed or low-signal headline; human review needed."
+        }
+      ],
+      "scores": {
+        "overall_score": 42.7,
+        "components": {
+          "price_momentum": {
+            "score": 50,
+            "reason": "Insufficient price history; momentum treated as neutral.",
+            "details": {}
+          },
+          "news_sentiment": {
+            "score": 53.1,
+            "reason": "Recent news is mixed, low-signal, or balanced.",
+            "details": {
+              "average_sentiment": 0.09,
+              "average_risk": 34.2,
+              "top_tags": [
+                "analyst action",
+                "earnings",
+                "other",
+                "sector move"
+              ]
+            }
+          },
+          "downside_from_cost_basis": {
+            "score": 0,
+            "reason": "Position is below cost basis; compare to max-loss rule.",
+            "details": {
+              "pnl_pct_from_cost": -30.08,
+              "max_loss_pct": 12.0
+            }
+          },
+          "earnings_proximity": {
+            "score": 50,
+            "reason": "Upcoming earnings date unavailable; score treated as neutral.",
+            "details": {}
+          },
+          "sector_trend": {
+            "score": 50.0,
+            "reason": "ai proxy QQQ: Insufficient price history; momentum treated as neutral.",
+            "details": {
+              "matched_sector": "ai",
+              "proxy_ticker": "QQQ"
+            }
+          },
+          "thesis_risk": {
+            "score": 61.0,
+            "reason": "Thesis risk based on sector, status, news risk, and price confirmation. Signals: growth sector expectations, news risk contained, price action challenges thesis.",
+            "details": {
+              "signals": [
+                "growth sector expectations",
+                "news risk contained",
+                "price action challenges thesis"
+              ]
+            }
+          },
+          "valuation_caution": {
+            "score": 60.0,
+            "reason": "No explicit valuation warning; still review multiples before action.",
+            "details": {
+              "price_to_cost_basis": 0.7
+            }
+          }
+        }
+      },
+      "action": "sell watch",
+      "action_reasoning": "Human review required: price is below the configured max-loss threshold.",
+      "action_triggers": [
+        "price is below the configured max-loss threshold"
+      ],
+      "price_band": "$10-$15",
+      "portfolio_weight_pct": 8.4
+    }
+  ],
+  "discovery_ideas": [
+    {
+      "ticker": "TSM",
+      "company": "Taiwan Semiconductor Manufacturing",
+      "sector": "semiconductor foundry",
+      "why_it_matches": "Advanced foundry leadership supports AI accelerators, CPUs, and edge chips.",
+      "catalyst": "Advanced-node demand and AI chip production volume.",
+      "risk": "Geopolitical concentration and cyclical foundry utilization.",
+      "valuation_warning": "Valuation can expand with AI demand; geopolitical discount may persist.",
+      "confidence_level": "medium",
+      "labels": [
+        "semiconductors",
+        "AI",
+        "large cap"
+      ],
+      "daily_change_pct": null,
+      "market_data_source": "stooq",
+      "earnings_date": null,
+      "news_summary": {
+        "item_count": 5,
+        "top_tags": [
+          "sector move"
+        ],
+        "average_sentiment": 0.0,
+        "average_risk": 35.0,
+        "summary": "Monolithic Power Systems and Allegro MicroSystems Shares Are Falling, What You Need To Know | Nova, Amtech, and Entegris Stocks Trade Down, What You Need To Know"
+      },
+      "scores": {
+        "overall_score": 53.8,
+        "components": {
+          "price_momentum": {
+            "score": 50,
+            "reason": "Insufficient price history; momentum treated as neutral.",
+            "details": {}
+          },
+          "news_sentiment": {
+            "score": 50.0,
+            "reason": "Recent news is mixed, low-signal, or balanced.",
+            "details": {
+              "average_sentiment": 0.0,
+              "average_risk": 35.0,
+              "top_tags": [
+                "sector move"
+              ]
+            }
+          },
+          "downside_from_cost_basis": {
+            "score": 50,
+            "reason": "No owned cost basis; downside-from-cost is not applicable for research candidates.",
+            "details": {
+              "not_applicable": true
+            }
+          },
+          "earnings_proximity": {
+            "score": 50,
+            "reason": "Upcoming earnings date unavailable; score treated as neutral.",
+            "details": {}
+          },
+          "sector_trend": {
+            "score": 58,
+            "reason": "Sector has strategic AI/datacenter relevance, but proxy trend was unavailable.",
+            "details": {}
+          },
+          "thesis_risk": {
+            "score": 66.0,
+            "reason": "Thesis risk based on sector, status, news risk, and price confirmation. Signals: growth sector expectations.",
+            "details": {
+              "signals": [
+                "growth sector expectations"
+              ]
+            }
+          },
+          "valuation_caution": {
+            "score": 60.0,
+            "reason": "No explicit valuation warning; still review multiples before action.",
+            "details": {
+              "valuation_note": "Valuation can expand with AI demand; geopolitical discount may persist."
+            }
+          }
+        },
+        "action": "research only",
+        "reasoning": "Research candidate only; no trade execution or blind buy alert."
+      },
+      "price_band": "$250-$500"
+    },
+    {
+      "ticker": "CDNS",
+      "company": "Cadence Design Systems",
+      "sector": "semiconductor design automation",
+      "why_it_matches": "EDA software is a picks-and-shovels beneficiary of advanced chip design complexity.",
+      "catalyst": "AI-assisted chip design tools and continued advanced-node demand.",
+      "risk": "High software multiple and semiconductor cycle sensitivity.",
+      "valuation_warning": "Premium software valuation; pullbacks can be sharp if growth slows.",
+      "confidence_level": "medium",
+      "labels": [
+        "automation",
+        "semiconductors",
+        "AI",
+        "large cap"
+      ],
+      "daily_change_pct": null,
+      "market_data_source": "stooq",
+      "earnings_date": null,
+      "news_summary": {
+        "item_count": 5,
+        "top_tags": [
+          "sector move",
+          "analyst action"
+        ],
+        "average_sentiment": 0.18,
+        "average_risk": 31.0,
+        "summary": "Is It Too Late To Consider Buying Cadence Design Systems, Inc. (NASDAQ:CDNS)? | Arm Holdings Has Doubled in 2026. Is It Outperforming Other Chip-IP Stocks Like Synopsys, Cadence, and Qualcomm?"
+      },
+      "scores": {
+        "overall_score": 53.2,
+        "components": {
+          "price_momentum": {
+            "score": 50,
+            "reason": "Insufficient price history; momentum treated as neutral.",
+            "details": {}
+          },
+          "news_sentiment": {
+            "score": 56.2,
+            "reason": "Recent news is mixed, low-signal, or balanced.",
+            "details": {
+              "average_sentiment": 0.18,
+              "average_risk": 31.0,
+              "top_tags": [
+                "analyst action",
+                "sector move"
+              ]
+            }
+          },
+          "downside_from_cost_basis": {
+            "score": 50,
+            "reason": "No owned cost basis; downside-from-cost is not applicable for research candidates.",
+            "details": {
+              "not_applicable": true
+            }
+          },
+          "earnings_proximity": {
+            "score": 50,
+            "reason": "Upcoming earnings date unavailable; score treated as neutral.",
+            "details": {}
+          },
+          "sector_trend": {
+            "score": 50.0,
+            "reason": "automation proxy IGV: Insufficient price history; momentum treated as neutral.",
+            "details": {
+              "matched_sector": "automation",
+              "proxy_ticker": "IGV"
+            }
+          },
+          "thesis_risk": {
+            "score": 71.0,
+            "reason": "Thesis risk based on sector, status, news risk, and price confirmation. Signals: growth sector expectations, news risk contained.",
+            "details": {
+              "signals": [
+                "growth sector expectations",
+                "news risk contained"
+              ]
+            }
+          },
+          "valuation_caution": {
+            "score": 44,
+            "reason": "Valuation warning is explicitly elevated.",
+            "details": {
+              "valuation_note": "Premium software valuation; pullbacks can be sharp if growth slows."
+            }
+          }
+        },
+        "action": "research only",
+        "reasoning": "Research candidate only; no trade execution or blind buy alert."
+      },
+      "price_band": "$250-$500"
+    },
+    {
+      "ticker": "SNPS",
+      "company": "Synopsys",
+      "sector": "semiconductor design automation",
+      "why_it_matches": "EDA and IP exposure to advanced chips, AI hardware, and verification complexity.",
+      "catalyst": "Design complexity, AI-enabled EDA, and IP demand.",
+      "risk": "Valuation, integration risk, and semiconductor capex cycles.",
+      "valuation_warning": "Premium valuation; confirm growth durability before acting.",
+      "confidence_level": "medium",
+      "labels": [
+        "automation",
+        "semiconductors",
+        "AI",
+        "large cap"
+      ],
+      "daily_change_pct": null,
+      "market_data_source": "stooq",
+      "earnings_date": null,
+      "news_summary": {
+        "item_count": 5,
+        "top_tags": [
+          "other",
+          "analyst action",
+          "earnings"
+        ],
+        "average_sentiment": 0.13,
+        "average_risk": 33.2,
+        "summary": "Wall Street Bulls Look Optimistic About Synopsys (SNPS): Should You Buy? | Synopsys, Inc. (SNPS) Is a Trending Stock: Facts to Know Before Betting on It"
+      },
+      "scores": {
+        "overall_score": 52.9,
+        "components": {
+          "price_momentum": {
+            "score": 50,
+            "reason": "Insufficient price history; momentum treated as neutral.",
+            "details": {}
+          },
+          "news_sentiment": {
+            "score": 54.6,
+            "reason": "Recent news is mixed, low-signal, or balanced.",
+            "details": {
+              "average_sentiment": 0.13,
+              "average_risk": 33.2,
+              "top_tags": [
+                "analyst action",
+                "earnings",
+                "other",
+                "sector move"
+              ]
+            }
+          },
+          "downside_from_cost_basis": {
+            "score": 50,
+            "reason": "No owned cost basis; downside-from-cost is not applicable for research candidates.",
+            "details": {
+              "not_applicable": true
+            }
+          },
+          "earnings_proximity": {
+            "score": 50,
+            "reason": "Upcoming earnings date unavailable; score treated as neutral.",
+            "details": {}
+          },
+          "sector_trend": {
+            "score": 50.0,
+            "reason": "automation proxy IGV: Insufficient price history; momentum treated as neutral.",
+            "details": {
+              "matched_sector": "automation",
+              "proxy_ticker": "IGV"
+            }
+          },
+          "thesis_risk": {
+            "score": 71.0,
+            "reason": "Thesis risk based on sector, status, news risk, and price confirmation. Signals: growth sector expectations, news risk contained.",
+            "details": {
+              "signals": [
+                "growth sector expectations",
+                "news risk contained"
+              ]
+            }
+          },
+          "valuation_caution": {
+            "score": 44,
+            "reason": "Valuation warning is explicitly elevated.",
+            "details": {
+              "valuation_note": "Premium valuation; confirm growth durability before acting."
+            }
+          }
+        },
+        "action": "research only",
+        "reasoning": "Research candidate only; no trade execution or blind buy alert."
+      },
+      "price_band": "$250-$500"
+    },
+    {
+      "ticker": "DDOG",
+      "company": "Datadog",
+      "sector": "cloud observability software",
+      "why_it_matches": "Cloud monitoring and AI observability fit high-growth infrastructure software.",
+      "catalyst": "AI workload monitoring, cloud optimization, and platform expansion.",
+      "risk": "Software spending cycles and premium valuation.",
+      "valuation_warning": "High-growth software multiple requires durable net retention.",
+      "confidence_level": "medium",
+      "labels": [
+        "high-growth tech",
+        "AI",
+        "software",
+        "mid cap"
+      ],
+      "daily_change_pct": null,
+      "market_data_source": "stooq",
+      "earnings_date": null,
+      "news_summary": {
+        "item_count": 5,
+        "top_tags": [
+          "earnings",
+          "product launch"
+        ],
+        "average_sentiment": 0.15,
+        "average_risk": 39.4,
+        "summary": "After a 50% Drop, Is ServiceNow Stock Worth Buying? | Wedbush Remains Bullish On Dynatrace (DT) With $48 PT And Outperform Rating"
+      },
+      "scores": {
+        "overall_score": 52.9,
+        "components": {
+          "price_momentum": {
+            "score": 50,
+            "reason": "Insufficient price history; momentum treated as neutral.",
+            "details": {}
+          },
+          "news_sentiment": {
+            "score": 55.3,
+            "reason": "Recent news is mixed, low-signal, or balanced.",
+            "details": {
+              "average_sentiment": 0.15,
+              "average_risk": 39.4,
+              "top_tags": [
+                "earnings",
+                "product launch"
+              ]
+            }
+          },
+          "downside_from_cost_basis": {
+            "score": 50,
+            "reason": "No owned cost basis; downside-from-cost is not applicable for research candidates.",
+            "details": {
+              "not_applicable": true
+            }
+          },
+          "earnings_proximity": {
+            "score": 50,
+            "reason": "Upcoming earnings date unavailable; score treated as neutral.",
+            "details": {}
+          },
+          "sector_trend": {
+            "score": 50.0,
+            "reason": "software proxy IGV: Insufficient price history; momentum treated as neutral.",
+            "details": {
+              "matched_sector": "software",
+              "proxy_ticker": "IGV"
+            }
+          },
+          "thesis_risk": {
+            "score": 70.0,
+            "reason": "Thesis risk based on sector, status, news risk, and price confirmation.",
+            "details": {
+              "signals": []
+            }
+          },
+          "valuation_caution": {
+            "score": 44,
+            "reason": "Valuation warning is explicitly elevated.",
+            "details": {
+              "valuation_note": "High-growth software multiple requires durable net retention."
+            }
+          }
+        },
+        "action": "research only",
+        "reasoning": "Research candidate only; no trade execution or blind buy alert."
+      },
+      "price_band": "$150-$250"
+    },
+    {
+      "ticker": "ARM",
+      "company": "Arm Holdings",
+      "sector": "semiconductor IP",
+      "why_it_matches": "Low-power compute architecture aligns with edge AI and mobile/datacenter efficiency.",
+      "catalyst": "AI device cycles and royalty growth from higher-value chip designs.",
+      "risk": "Very high expectations, customer concentration, and royalty model sensitivity.",
+      "valuation_warning": "Often trades at a rich growth multiple; valuation caution is high.",
+      "confidence_level": "medium",
+      "labels": [
+        "semiconductors",
+        "AI",
+        "large cap"
+      ],
+      "daily_change_pct": null,
+      "market_data_source": "stooq",
+      "earnings_date": null,
+      "news_summary": {
+        "item_count": 5,
+        "top_tags": [
+          "earnings",
+          "lawsuit",
+          "product launch"
+        ],
+        "average_sentiment": 0.02,
+        "average_risk": 44.0,
+        "summary": "Stock Market Today: Dow Gains 500 Points As Oil Dives, Nvidia Rises; Airlines Soar (Live Coverage) | Arm (ARM) Faces FTC Probe and ESOP Expansion Is Its Licensing Edge at Risk?"
+      },
+      "scores": {
+        "overall_score": 52.7,
+        "components": {
+          "price_momentum": {
+            "score": 50,
+            "reason": "Insufficient price history; momentum treated as neutral.",
+            "details": {}
+          },
+          "news_sentiment": {
+            "score": 50.7,
+            "reason": "Recent news is mixed, low-signal, or balanced.",
+            "details": {
+              "average_sentiment": 0.02,
+              "average_risk": 44.0,
+              "top_tags": [
+                "earnings",
+                "lawsuit",
+                "product launch"
+              ]
+            }
+          },
+          "downside_from_cost_basis": {
+            "score": 50,
+            "reason": "No owned cost basis; downside-from-cost is not applicable for research candidates.",
+            "details": {
+              "not_applicable": true
+            }
+          },
+          "earnings_proximity": {
+            "score": 50,
+            "reason": "Upcoming earnings date unavailable; score treated as neutral.",
+            "details": {}
+          },
+          "sector_trend": {
+            "score": 58,
+            "reason": "Sector has strategic AI/datacenter relevance, but proxy trend was unavailable.",
+            "details": {}
+          },
+          "thesis_risk": {
+            "score": 66.0,
+            "reason": "Thesis risk based on sector, status, news risk, and price confirmation. Signals: growth sector expectations.",
+            "details": {
+              "signals": [
+                "growth sector expectations"
+              ]
+            }
+          },
+          "valuation_caution": {
+            "score": 44,
+            "reason": "Valuation warning is explicitly elevated.",
+            "details": {
+              "valuation_note": "Often trades at a rich growth multiple; valuation caution is high."
+            }
+          }
+        },
+        "action": "research only",
+        "reasoning": "Research candidate only; no trade execution or blind buy alert."
+      },
+      "price_band": "$250-$500"
+    }
+  ],
+  "sector_signals": {
+    "semiconductors": {
+      "score": 50,
+      "reason": "semiconductors proxy SMH: Insufficient price history; momentum treated as neutral.",
+      "details": {
+        "proxy_ticker": "SMH"
+      }
+    },
+    "ai": {
+      "score": 50,
+      "reason": "ai proxy QQQ: Insufficient price history; momentum treated as neutral.",
+      "details": {
+        "proxy_ticker": "QQQ"
+      }
+    },
+    "automation": {
+      "score": 50,
+      "reason": "automation proxy IGV: Insufficient price history; momentum treated as neutral.",
+      "details": {
+        "proxy_ticker": "IGV"
+      }
+    },
+    "datacenter": {
+      "score": 50,
+      "reason": "datacenter proxy XLK: Insufficient price history; momentum treated as neutral.",
+      "details": {
+        "proxy_ticker": "XLK"
+      }
+    },
+    "high-growth tech": {
+      "score": 50,
+      "reason": "high-growth tech proxy QQQ: Insufficient price history; momentum treated as neutral.",
+      "details": {
+        "proxy_ticker": "QQQ"
+      }
+    },
+    "index fund": {
+      "score": 50,
+      "reason": "index fund proxy VTI: Insufficient price history; momentum treated as neutral.",
+      "details": {
+        "proxy_ticker": "VTI"
+      }
+    },
+    "software": {
+      "score": 50,
+      "reason": "software proxy IGV: Insufficient price history; momentum treated as neutral.",
+      "details": {
+        "proxy_ticker": "IGV"
+      }
+    }
+  },
+  "methodology": {
+    "summary": "Scores are transparent rule-based research signals. Higher component scores generally mean lower concern or stronger confirmation. They are not buy/sell instructions.",
+    "weights": {
+      "price_momentum": 0.18,
+      "news_sentiment": 0.18,
+      "downside_from_cost_basis": 0.2,
+      "earnings_proximity": 0.1,
+      "sector_trend": 0.14,
+      "thesis_risk": 0.12,
+      "valuation_caution": 0.08
+    },
+    "components": [
+      "price_momentum",
+      "news_sentiment",
+      "downside_from_cost_basis",
+      "earnings_proximity",
+      "sector_trend",
+      "thesis_risk",
+      "valuation_caution"
+    ],
+    "safety_rules": [
+      "Never execute trades.",
+      "Never claim guaranteed returns.",
+      "Never issue blind buy-now alerts.",
+      "Use research-candidate, sell-watch, risk-elevated, and hold-thesis-intact language.",
+      "Include uncertainty because data can lag and signals can be wrong."
+    ],
+    "data_sources": [
+      "Stooq public CSV for prices and price history, with portfolio fallback prices if unavailable.",
+      "Yahoo Finance and Google News RSS feeds for recent headlines.",
+      "Yahoo quote summary calendar events for best-effort earnings dates."
+    ]
+  },
+  "privacy": {
+    "sanitized": true,
+    "summary": "Public report redacts exact shares, cost basis, dollar values, and exact prices. Use private latest_report.json for full personal figures."
+  }
+}

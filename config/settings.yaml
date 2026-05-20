@@ -1,0 +1,61 @@
+portfolio_path: data/portfolio.json
+watchlist_path: data/watchlist.json
+output_dir: output
+dashboard_path: output/dashboard.html
+report_path: output/latest_report.json
+public_output_dir: public
+public_dashboard_path: public/dashboard.html
+public_report_path: public/latest_report.json
+
+dashboard:
+  title: Kevin Stock Research Agent
+  # GitHub Actions also sets DASHBOARD_URL dynamically; this is used for local runs.
+  url: "https://kevintaylormccaffrey-debug.github.io/AI-Trader/dashboard.html"
+
+market_data:
+  timeout_seconds: 12
+  price_provider: stooq
+  history_days: 90
+  user_agent: KevinStockResearchAgent/0.1
+  sector_proxy_map:
+    semiconductors: SMH
+    ai: QQQ
+    automation: IGV
+    datacenter: XLK
+    high-growth tech: QQQ
+    index fund: VTI
+    software: IGV
+
+news:
+  lookback_days: 7
+  max_items_per_ticker: 5
+  timeout_seconds: 12
+  sources:
+    - yahoo
+    - google
+
+discovery:
+  max_ideas: 5
+  minimum_price: 5
+  excluded_labels:
+    - penny stock
+    - meme stock
+    - biotech lottery ticket
+
+scoring:
+  weights:
+    price_momentum: 0.18
+    news_sentiment: 0.18
+    downside_from_cost_basis: 0.20
+    earnings_proximity: 0.10
+    sector_trend: 0.14
+    thesis_risk: 0.12
+    valuation_caution: 0.08
+  add_watch_threshold: 64
+  sell_watch_threshold: 35
+  elevated_risk_threshold: 45
+
+alerts:
+  discord_enabled: true
+  max_discord_chars: 1900
+  timezone: America/New_York

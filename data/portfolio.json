@@ -1,0 +1,80 @@
+{
+  "portfolio_name": "Kevin Main Portfolio",
+  "cash_position": {
+    "ticker": "SPAXX",
+    "value": 25.0,
+    "yield_7d": 3.24
+  },
+  "holdings": [
+    {
+      "ticker": "LSCC",
+      "company": "Lattice Semiconductor",
+      "shares": 1,
+      "cost_basis": 100,
+      "current_price": 120,
+      "time_horizon": "long",
+      "sector": "semiconductors",
+      "thesis": "Low-power FPGA and AI edge semiconductor growth",
+      "max_loss_pct": 15,
+      "status": "active",
+      "watch_priority": "high"
+    },
+    {
+      "ticker": "PATH",
+      "company": "UiPath",
+      "shares": 1,
+      "cost_basis": 100,
+      "current_price": 88,
+      "time_horizon": "medium",
+      "sector": "AI automation software",
+      "thesis": "Enterprise automation and AI workflow adoption",
+      "max_loss_pct": 12,
+      "status": "active",
+      "watch_priority": "high"
+    },
+    {
+      "ticker": "VOO",
+      "company": "Vanguard S&P 500 ETF",
+      "shares": 1,
+      "cost_basis": 100,
+      "current_price": 125,
+      "time_horizon": "long",
+      "sector": "index fund",
+      "thesis": "Core long-term market exposure",
+      "max_loss_pct": 20,
+      "status": "core_holding",
+      "watch_priority": "low"
+    },
+    {
+      "ticker": "VTI",
+      "company": "Vanguard Total Stock Market ETF",
+      "shares": 1,
+      "cost_basis": 100,
+      "current_price": 125,
+      "time_horizon": "long",
+      "sector": "index fund",
+      "thesis": "Broad US market exposure",
+      "max_loss_pct": 20,
+      "status": "core_holding",
+      "watch_priority": "low"
+    }
+  ],
+  "discovery_preferences": {
+    "preferred_sectors": [
+      "semiconductors",
+      "AI",
+      "automation",
+      "datacenter",
+      "high-growth tech"
+    ],
+    "avoid_sectors": [
+      "biotech penny stocks",
+      "meme stocks"
+    ],
+    "market_cap_focus": [
+      "mid cap",
+      "large cap"
+    ],
+    "risk_tolerance": "moderate_aggressive"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "watchlist_name": "Kevin Research Watchlist",
+  "tickers": [
+    {
+      "ticker": "NVDA",
+      "company": "NVIDIA",
+      "sector": "AI datacenter semiconductors",
+      "thesis": "Datacenter GPU, networking, and AI platform leadership",
+      "watch_priority": "high",
+      "status": "research_only",
+      "valuation_note": "Premium valuation can make drawdowns sharp if AI growth expectations reset."
+    },
+    {
+      "ticker": "AMD",
+      "company": "Advanced Micro Devices",
+      "sector": "AI and datacenter semiconductors",
+      "thesis": "CPU/GPU share gains and AI accelerator adoption",
+      "watch_priority": "high",
+      "status": "research_only",
+      "valuation_note": "Execution risk around AI accelerator ramp and competitive pressure."
+    },
+    {
+      "ticker": "ANET",
+      "company": "Arista Networks",
+      "sector": "datacenter networking",
+      "thesis": "AI datacenter networking demand and cloud customer expansion",
+      "watch_priority": "medium",
+      "status": "research_only",
+      "valuation_note": "Cloud capex concentration can create cyclicality."
+    },
+    {
+      "ticker": "NOW",
+      "company": "ServiceNow",
+      "sector": "enterprise automation software",
+      "thesis": "Workflow automation platform with AI-assisted enterprise productivity",
+      "watch_priority": "medium",
+      "status": "research_only",
+      "valuation_note": "High software multiple requires durable growth and margin discipline."
+    }
+  ]
+}

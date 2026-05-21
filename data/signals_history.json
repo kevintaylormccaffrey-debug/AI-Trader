@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-21T03:28:13.323519+00:00",
+  "last_updated": "2026-05-21T03:37:59.471074+00:00",
   "signals": [
     {
       "date": "2026-05-21",
@@ -523,13 +523,148 @@
         "status": "pending",
         "days_elapsed": 0
       }
+    },
+    {
+      "date": "2026-05-21",
+      "run_session": "push",
+      "ticker": "PATH",
+      "signal_type": "sell watch",
+      "source": "gpt",
+      "confidence": 65,
+      "reason": "Analyst targets imply upside but potential over-optimism and max-loss concerns.",
+      "price_at_signal": 10.77,
+      "event_title": "1 of Wall Street\u2019s Favorite Stock with Impressive Fundamentals and 2 We Avoid",
+      "later_outcome": {
+        "status": "pending",
+        "days_elapsed": 0
+      }
+    },
+    {
+      "date": "2026-05-21",
+      "run_session": "push",
+      "ticker": "PATH",
+      "signal_type": "sell watch",
+      "source": "gpt",
+      "confidence": 60,
+      "reason": "ARR growth supports adoption but valuation/price risk remains.",
+      "price_at_signal": 10.77,
+      "event_title": "Is UiPath's Expanding ARR Strengthening Long-Term Stability?",
+      "later_outcome": {
+        "status": "pending",
+        "days_elapsed": 0
+      }
+    },
+    {
+      "date": "2026-05-21",
+      "run_session": "push",
+      "ticker": "AMD",
+      "signal_type": "research opportunity",
+      "source": "gpt",
+      "confidence": 58,
+      "reason": "AI data center demand and AMD capacity expansion may benefit AI workloads.",
+      "price_at_signal": 447.58,
+      "event_title": "Riot Platforms Links Bitcoin Mining With AI Data Center Growth",
+      "later_outcome": {
+        "status": "pending",
+        "days_elapsed": 0
+      }
+    },
+    {
+      "date": "2026-05-21",
+      "run_session": "push",
+      "ticker": "LSCC",
+      "signal_type": "hold thesis intact",
+      "source": "gpt",
+      "confidence": 72,
+      "reason": "PT hike and Q1 results support upside for low-power FPGA/AI edge growth.",
+      "price_at_signal": 138.74,
+      "event_title": "Baird Lifts PT on Lattice Semiconductor Corporation (LSCC) Following Q1 Results",
+      "later_outcome": {
+        "status": "pending",
+        "days_elapsed": 0
+      }
+    },
+    {
+      "date": "2026-05-21",
+      "run_session": "push",
+      "ticker": "NVDA",
+      "signal_type": "research opportunity",
+      "source": "gpt",
+      "confidence": 62,
+      "reason": "Expands optical connectivity for AI data centers",
+      "price_at_signal": 223.47,
+      "event_title": "Nvidia Warrant Deal Puts Corning At Center Of AI Data Centers",
+      "later_outcome": {
+        "status": "pending",
+        "days_elapsed": 0
+      }
+    },
+    {
+      "date": "2026-05-21",
+      "run_session": "push",
+      "ticker": "PATH",
+      "signal_type": "sell watch",
+      "source": "gpt",
+      "confidence": 58,
+      "reason": "Sector move; price below max-loss threshold",
+      "price_at_signal": 10.77,
+      "event_title": "These 2 AI Giants Have Been Dormant. That\u2019s Exactly Why They Might Surprise Investors",
+      "later_outcome": {
+        "status": "pending",
+        "days_elapsed": 0
+      }
+    },
+    {
+      "date": "2026-05-21",
+      "run_session": "push",
+      "ticker": "NOW",
+      "signal_type": "research opportunity",
+      "source": "gpt",
+      "confidence": 60,
+      "reason": "Valuation reset; growth still robust",
+      "price_at_signal": 103.3,
+      "event_title": "After a 50% Drop, Is ServiceNow Stock Worth Buying?",
+      "later_outcome": {
+        "status": "pending",
+        "days_elapsed": 0
+      }
+    },
+    {
+      "date": "2026-05-21",
+      "run_session": "push",
+      "ticker": "ANET",
+      "signal_type": "research opportunity",
+      "source": "gpt",
+      "confidence": 57,
+      "reason": "Fair value reset amid AI data center demand",
+      "price_at_signal": 140.49,
+      "event_title": "How The AI Data Center Story Is Reframing Arista Networks (ANET) Valuation And Expectations",
+      "later_outcome": {
+        "status": "pending",
+        "days_elapsed": 0
+      }
+    },
+    {
+      "date": "2026-05-21",
+      "run_session": "push",
+      "ticker": "AMD",
+      "signal_type": "research opportunity",
+      "source": "gpt",
+      "confidence": 62,
+      "reason": "Highlights AI acceleration and data-center demand tailwinds.",
+      "price_at_signal": 447.58,
+      "event_title": "Nvidia Tells Skeptical Investors AI Is Ready to Go Mainstream",
+      "later_outcome": {
+        "status": "pending",
+        "days_elapsed": 0
+      }
     }
   ],
   "accuracy_stats": {
     "sell watch": {
-      "total": 11,
+      "total": 14,
       "evaluated": 0,
-      "pending": 11,
+      "pending": 14,
       "accurate": 0,
       "accuracy_pct": null,
       "average_return_pct": null
@@ -551,17 +686,17 @@
       "average_return_pct": null
     },
     "research opportunity": {
-      "total": 12,
+      "total": 17,
       "evaluated": 0,
-      "pending": 12,
+      "pending": 17,
       "accurate": 0,
       "accuracy_pct": null,
       "average_return_pct": null
     },
     "hold thesis intact": {
-      "total": 4,
+      "total": 5,
       "evaluated": 0,
-      "pending": 4,
+      "pending": 5,
       "accurate": 0,
       "accuracy_pct": null,
       "average_return_pct": null
@@ -570,10 +705,10 @@
   "best_performing_signals": [],
   "worst_performing_signals": [],
   "summary": {
-    "total_signals": 37,
-    "new_signals_this_run": 15,
+    "total_signals": 46,
+    "new_signals_this_run": 14,
     "evaluated_signals": 0,
-    "pending_signals": 37
+    "pending_signals": 46
   },
   "accuracy_by_run_session": {
     "unknown": {
@@ -584,9 +719,9 @@
       "accuracy_pct": null
     },
     "push": {
-      "total": 15,
+      "total": 24,
       "evaluated": 0,
-      "pending": 15,
+      "pending": 24,
       "accurate": 0,
       "accuracy_pct": null
     }

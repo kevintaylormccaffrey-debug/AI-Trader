@@ -1,7 +1,168 @@
 {
-  "last_updated": null,
-  "signals": [],
-  "accuracy_stats": {},
+  "last_updated": "2026-05-21T01:47:25.666941+00:00",
+  "signals": [
+    {
+      "date": "2026-05-21",
+      "ticker": "PATH",
+      "signal_type": "sell watch",
+      "source": "rules",
+      "confidence": 41.8,
+      "reason": "Human review required: price is below the configured max-loss threshold.",
+      "price_at_signal": 10.75,
+      "later_outcome": {
+        "status": "pending",
+        "days_elapsed": 0
+      }
+    },
+    {
+      "date": "2026-05-21",
+      "ticker": "NVDA",
+      "signal_type": "research only",
+      "source": "rules",
+      "confidence": 52.3,
+      "reason": "Watchlist item only; review manually before any portfolio decision.",
+      "price_at_signal": 223.33,
+      "later_outcome": {
+        "status": "pending",
+        "days_elapsed": 0
+      }
+    },
+    {
+      "date": "2026-05-21",
+      "ticker": "AMD",
+      "signal_type": "research only",
+      "source": "rules",
+      "confidence": 54.4,
+      "reason": "Watchlist item only; review manually before any portfolio decision.",
+      "price_at_signal": 447.58,
+      "later_outcome": {
+        "status": "pending",
+        "days_elapsed": 0
+      }
+    },
+    {
+      "date": "2026-05-21",
+      "ticker": "ANET",
+      "signal_type": "research only",
+      "source": "rules",
+      "confidence": 51.9,
+      "reason": "Watchlist item only; review manually before any portfolio decision.",
+      "price_at_signal": 140.47,
+      "later_outcome": {
+        "status": "pending",
+        "days_elapsed": 0
+      }
+    },
+    {
+      "date": "2026-05-21",
+      "ticker": "NOW",
+      "signal_type": "research only",
+      "source": "rules",
+      "confidence": 51.7,
+      "reason": "Watchlist item only; review manually before any portfolio decision.",
+      "price_at_signal": 103.26,
+      "later_outcome": {
+        "status": "pending",
+        "days_elapsed": 0
+      }
+    },
+    {
+      "date": "2026-05-21",
+      "ticker": "PATH",
+      "signal_type": "risk elevated",
+      "source": "rules",
+      "confidence": 62,
+      "reason": "Rules found catalyst or risk language that deserves review.",
+      "price_at_signal": 10.75,
+      "event_title": "1 of Wall Street\u2019s Favorite Stock with Impressive Fundamentals and 2 We Avoid",
+      "later_outcome": {
+        "status": "pending",
+        "days_elapsed": 0
+      }
+    },
+    {
+      "date": "2026-05-21",
+      "ticker": "PATH",
+      "signal_type": "research opportunity",
+      "source": "rules",
+      "confidence": 58,
+      "reason": "Rules found a potentially material catalyst.",
+      "price_at_signal": 10.75,
+      "event_title": "Is UiPath's Expanding ARR Strengthening Long-Term Stability?",
+      "later_outcome": {
+        "status": "pending",
+        "days_elapsed": 0
+      }
+    },
+    {
+      "date": "2026-05-21",
+      "ticker": "AMD",
+      "signal_type": "risk elevated",
+      "source": "rules",
+      "confidence": 62,
+      "reason": "Rules found catalyst or risk language that deserves review.",
+      "price_at_signal": 447.58,
+      "event_title": "Riot Platforms Links Bitcoin Mining With AI Data Center Growth",
+      "later_outcome": {
+        "status": "pending",
+        "days_elapsed": 0
+      }
+    },
+    {
+      "date": "2026-05-21",
+      "ticker": "LSCC",
+      "signal_type": "research opportunity",
+      "source": "rules",
+      "confidence": 58,
+      "reason": "Rules found a potentially material catalyst.",
+      "price_at_signal": 138.65,
+      "event_title": "Baird Lifts PT on Lattice Semiconductor Corporation (LSCC) Following Q1 Results",
+      "later_outcome": {
+        "status": "pending",
+        "days_elapsed": 0
+      }
+    }
+  ],
+  "accuracy_stats": {
+    "sell watch": {
+      "total": 1,
+      "evaluated": 0,
+      "pending": 1,
+      "accurate": 0,
+      "accuracy_pct": null,
+      "average_return_pct": null
+    },
+    "research only": {
+      "total": 4,
+      "evaluated": 0,
+      "pending": 4,
+      "accurate": 0,
+      "accuracy_pct": null,
+      "average_return_pct": null
+    },
+    "risk elevated": {
+      "total": 2,
+      "evaluated": 0,
+      "pending": 2,
+      "accurate": 0,
+      "accuracy_pct": null,
+      "average_return_pct": null
+    },
+    "research opportunity": {
+      "total": 2,
+      "evaluated": 0,
+      "pending": 2,
+      "accurate": 0,
+      "accuracy_pct": null,
+      "average_return_pct": null
+    }
+  },
   "best_performing_signals": [],
-  "worst_performing_signals": []
+  "worst_performing_signals": [],
+  "summary": {
+    "total_signals": 9,
+    "new_signals_this_run": 10,
+    "evaluated_signals": 0,
+    "pending_signals": 9
+  }
 }

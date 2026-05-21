@@ -1,6 +1,9 @@
 name: Daily Market Agent
 
 on:
+  push:
+    branches:
+      - main
   schedule:
     # 12:30 UTC is 8:30 AM Eastern during daylight saving time.
     # Adjust if you want a different local market-morning time year round.

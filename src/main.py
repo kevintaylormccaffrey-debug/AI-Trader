@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import datetime as dt
+import os
 from pathlib import Path
 from typing import Any
 
@@ -40,6 +41,21 @@ def build_sector_signals(settings: dict[str, Any]) -> dict[str, dict[str, Any]]:
             "details": details,
         }
     return signals
+
+
+def current_run_session() -> str:
+    override = os.getenv("RUN_SESSION")
+    if override:
+        return override.strip().lower()
+    event_name = os.getenv("GITHUB_EVENT_NAME", "")
+    if event_name and event_name != "schedule":
+        return event_name.replace("_", "-").lower()
+    now = data_sources.utc_now()
+    if now.hour < 16:
+        return "morning"
+    if now.hour < 22:
+        return "afternoon"
+    return "off-hours"
 
 
 def enrich_holding(
@@ -180,9 +196,11 @@ def build_report(settings: dict[str, Any]) -> dict[str, Any]:
     ]
 
     generated_at = data_sources.utc_now().isoformat()
+    run_session = current_run_session()
     dashboard_url = data_sources.dashboard_url(settings)
     report: dict[str, Any] = {
         "generated_at": generated_at,
+        "run_session": run_session,
         "dashboard_title": settings.get("dashboard", {}).get("title", "Stock Research Agent"),
         "dashboard_url": dashboard_url,
         "disclaimer": "Not financial advice. Human review required. This agent does not execute trades.",

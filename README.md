@@ -143,6 +143,13 @@ The workflow deploys the generated `public/` folder using GitHub Pages Actions. 
 2. Set **Source** to **GitHub Actions**.
 3. Run the workflow manually once from the **Actions** tab.
 
+The scheduled workflow runs twice each weekday:
+
+- morning run: `12:30 UTC` (`8:30 AM ET` during daylight saving time)
+- afternoon run: `19:30 UTC` (`3:30 PM ET` during daylight saving time)
+
+During standard time these run one hour earlier in Eastern time unless you adjust the cron schedule.
+
 The default dashboard URL in the workflow is:
 
 ```text
@@ -197,6 +204,7 @@ Each run records signals such as `sell watch`, `add watch`, `risk elevated`, and
 - accuracy by signal type
 - pending versus evaluated signals
 - simulated paper learning records
+- accuracy by run timing, such as morning versus afternoon
 
 These metrics are experimental. They are meant to improve review discipline, not to automate trading.
 

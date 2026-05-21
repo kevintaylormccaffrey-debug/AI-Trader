@@ -6,8 +6,11 @@ on:
       - main
   schedule:
     # 12:30 UTC is 8:30 AM Eastern during daylight saving time.
-    # Adjust if you want a different local market-morning time year round.
+    # 19:30 UTC is 3:30 PM Eastern during daylight saving time.
+    # These become 7:30 AM / 2:30 PM Eastern during standard time.
+    # Adjust if you want exact wall-clock local times year round.
     - cron: "30 12 * * 1-5"
+    - cron: "30 19 * * 1-5"
   workflow_dispatch:
 
 permissions:

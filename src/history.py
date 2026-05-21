@@ -47,6 +47,7 @@ def signal_key(signal: dict[str, Any]) -> str:
             str(signal.get("ticker")),
             str(signal.get("signal_type")),
             str(signal.get("source")),
+            str(signal.get("run_session")),
             str(signal.get("reason", ""))[:120],
         ]
     )
@@ -65,6 +66,7 @@ def signal_accuracy(signal_type: str, return_pct: float) -> bool:
 
 def create_rule_signals(report: dict[str, Any]) -> list[dict[str, Any]]:
     generated_date = str(report.get("generated_at", ""))[:10]
+    run_session = report.get("run_session", "unknown")
     signals: list[dict[str, Any]] = []
     for item in report.get("holdings", []) + report.get("watchlist", []):
         action = item.get("action")
@@ -73,6 +75,7 @@ def create_rule_signals(report: dict[str, Any]) -> list[dict[str, Any]]:
         signals.append(
             {
                 "date": generated_date,
+                "run_session": run_session,
                 "ticker": item.get("ticker"),
                 "signal_type": action,
                 "source": "rules",
@@ -87,6 +90,7 @@ def create_rule_signals(report: dict[str, Any]) -> list[dict[str, Any]]:
 
 def create_gpt_signals(report: dict[str, Any]) -> list[dict[str, Any]]:
     generated_date = str(report.get("generated_at", ""))[:10]
+    run_session = report.get("run_session", "unknown")
     by_ticker = current_item_map(report)
     signals: list[dict[str, Any]] = []
     for event in report.get("gpt_analysis", {}).get("events", []):
@@ -98,6 +102,7 @@ def create_gpt_signals(report: dict[str, Any]) -> list[dict[str, Any]]:
         signals.append(
             {
                 "date": generated_date,
+                "run_session": run_session,
                 "ticker": ticker,
                 "signal_type": classification,
                 "source": event.get("analysis_source", "gpt"),
@@ -185,6 +190,28 @@ def compute_accuracy_stats(signals: list[dict[str, Any]]) -> dict[str, Any]:
     return stats
 
 
+def compute_accuracy_by_run_session(signals: list[dict[str, Any]]) -> dict[str, Any]:
+    stats: dict[str, Any] = {}
+    for signal in signals:
+        session = str(signal.get("run_session") or "unknown")
+        bucket = stats.setdefault(
+            session,
+            {"total": 0, "evaluated": 0, "pending": 0, "accurate": 0, "accuracy_pct": None},
+        )
+        bucket["total"] += 1
+        outcome = signal.get("later_outcome") or {}
+        if outcome.get("status") == "evaluated":
+            bucket["evaluated"] += 1
+            if outcome.get("accurate"):
+                bucket["accurate"] += 1
+        else:
+            bucket["pending"] += 1
+    for bucket in stats.values():
+        if bucket["evaluated"]:
+            bucket["accuracy_pct"] = round(bucket["accurate"] / bucket["evaluated"] * 100, 1)
+    return stats
+
+
 def best_and_worst(signals: list[dict[str, Any]]) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
     evaluated = [
         signal
@@ -261,12 +288,14 @@ def update_signal_history(report: dict[str, Any], settings: dict[str, Any]) -> d
 
     signals = update_pending_outcomes(signals, report, evaluation_days)
     stats = compute_accuracy_stats(signals)
+    run_session_stats = compute_accuracy_by_run_session(signals)
     best, worst = best_and_worst(signals)
     history.update(
         {
             "last_updated": report.get("generated_at"),
             "signals": signals,
             "accuracy_stats": stats,
+            "accuracy_by_run_session": run_session_stats,
             "best_performing_signals": best,
             "worst_performing_signals": worst,
             "summary": {

@@ -169,6 +169,7 @@ def render_discovery(items: list[dict[str, Any]]) -> str:
 def render_signal_accuracy(signal_history: dict[str, Any]) -> str:
     stats = signal_history.get("accuracy_stats", {})
     summary = signal_history.get("summary", {})
+    session_stats = signal_history.get("accuracy_by_run_session", {})
     if not stats:
         return (
             "<p>Signal accuracy tracking has started. Enough time must pass before outcomes can be evaluated.</p>"
@@ -186,10 +187,29 @@ def render_signal_accuracy(signal_history: dict[str, Any]) -> str:
             f"<td>{pct(bucket.get('average_return_pct'))}</td>"
             "</tr>"
         )
+    session_rows = []
+    for session, bucket in sorted(session_stats.items()):
+        session_rows.append(
+            "<tr>"
+            f"<td>{esc(session)}</td>"
+            f"<td>{esc(bucket.get('total'))}</td>"
+            f"<td>{esc(bucket.get('evaluated'))}</td>"
+            f"<td>{esc(bucket.get('pending'))}</td>"
+            f"<td>{esc(bucket.get('accuracy_pct'))}%</td>"
+            "</tr>"
+        )
+    session_table = (
+        "<h3>By Run Timing</h3><div class='table-wrap'><table><thead><tr><th>Run</th><th>Total</th><th>Evaluated</th><th>Pending</th><th>Accuracy</th></tr></thead><tbody>"
+        + "".join(session_rows)
+        + "</tbody></table></div>"
+        if session_rows
+        else ""
+    )
     return (
         "<div class='table-wrap'><table><thead><tr><th>Signal Type</th><th>Total</th><th>Evaluated</th><th>Pending</th><th>Accuracy</th><th>Avg Return</th></tr></thead><tbody>"
         + "".join(rows)
         + "</tbody></table></div>"
+        + session_table
     )
 
 
@@ -336,7 +356,7 @@ def generate_dashboard(report: dict[str, Any], output_path: str | Path) -> None:
 <body>
   <header>
     <h1>{title}</h1>
-    <p>Generated {esc(report.get("generated_at"))}. Human-in-the-loop research only; this agent never executes trades.</p>
+    <p>Generated {esc(report.get("generated_at"))} ({esc(report.get("run_session", "unknown"))}). Human-in-the-loop research only; this agent never executes trades.</p>
   </header>
   <main>
     <section>

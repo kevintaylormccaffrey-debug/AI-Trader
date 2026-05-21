@@ -254,8 +254,8 @@ The workflow deploys the generated `public/` folder using GitHub Pages Actions. 
 
 The scheduled workflow runs twice each weekday:
 
-- morning run: `12:30 UTC` (`8:30 AM ET` during daylight saving time)
-- afternoon run: `19:30 UTC` (`3:30 PM ET` during daylight saving time)
+- morning run: `12:17 UTC` (`8:17 AM ET` during daylight saving time)
+- afternoon run: `19:47 UTC` (`3:47 PM ET` during daylight saving time)
 
 During standard time these run one hour earlier in Eastern time unless you adjust the cron schedule.
 

@@ -28,6 +28,7 @@ It never executes trades, never stores broker credentials, and never hardcodes A
 - Uses optional GPT-powered event analysis for only the most important filtered events.
 - Tracks signal history, paper learning records, and accuracy by signal type.
 - Sends a concise Discord message when `DISCORD_WEBHOOK_URL` is configured.
+- Supports an optional interactive Discord bot with slash commands like `/ask`, `/portfolio`, `/signals`, and `/open-alerts`.
 
 ## Local Setup
 
@@ -59,6 +60,112 @@ Create a Discord webhook for the channel where alerts should post, then add it t
 
 The webhook URL is read only from the environment. Do not place it in source files.
 
+## Interactive Discord Bot Setup
+
+The webhook alert system posts scheduled daily summaries. The interactive bot is separate: it runs continuously somewhere you control and answers slash commands from Discord. Do not run the bot continuously from GitHub Actions.
+
+### Create the Discord Bot
+
+1. Open the Discord Developer Portal.
+2. Create an application.
+3. Open **Bot** and create a bot user.
+4. Copy the bot token and store it as `DISCORD_BOT_TOKEN` in the runtime environment where the bot will run.
+5. In **OAuth2 -> URL Generator**, select scopes:
+   - `bot`
+   - `applications.commands`
+6. Select bot permissions:
+   - Send Messages
+   - Embed Links
+   - Read Message History
+   - Use Slash Commands
+7. Open the generated invite URL and add the bot to your server.
+
+For faster slash-command registration during setup, set `DISCORD_GUILD_ID` to your server ID. Without it, Discord registers commands globally, which can take longer to appear.
+
+### Bot Secrets
+
+Use environment variables or hosting-provider secrets:
+
+```text
+DISCORD_BOT_TOKEN=...
+OPENAI_API_KEY=...
+PORTFOLIO_JSON=...
+WATCHLIST_JSON=optional
+```
+
+Keep `DISCORD_WEBHOOK_URL` for scheduled alerts. The bot itself uses `DISCORD_BOT_TOKEN`.
+
+### Bot Commands
+
+Rules-only commands read local JSON and do not call OpenAI:
+
+- `/portfolio`
+- `/signals`
+- `/watchlist`
+- `/top-performers`
+- `/worst-performers`
+- `/open-alerts`
+
+GPT-powered command:
+
+- `/ask <question>`
+
+Example questions:
+
+- `/ask What are the top stocks I should look at right now?`
+- `/ask Does AMD look like a good buy?`
+- `/ask Why did you flag PATH as risk elevated?`
+- `/ask Compare LSCC vs AMD right now.`
+
+The `/ask` command uses concise context from the latest report, holdings, watchlist, discovery ideas, GPT analyses, and signal history. It does not send massive raw article text.
+
+### Run the Bot Locally
+
+Windows PowerShell:
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+$env:DISCORD_BOT_TOKEN = "your-bot-token"
+$env:OPENAI_API_KEY = "your-openai-api-key"
+$env:PORTFOLIO_JSON = Get-Content data/portfolio.private.json -Raw
+# Optional, for faster command registration:
+$env:DISCORD_GUILD_ID = "your-server-id"
+python -m src.discord_bot
+```
+
+macOS/Linux:
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+export DISCORD_BOT_TOKEN="your-bot-token"
+export OPENAI_API_KEY="your-openai-api-key"
+export PORTFOLIO_JSON="$(cat data/portfolio.private.json)"
+export DISCORD_GUILD_ID="your-server-id" # optional
+python -m src.discord_bot
+```
+
+### Bot Hosting Options
+
+Good lightweight options:
+
+- a small always-on home machine
+- a low-cost VPS
+- Railway, Render, Fly.io, or similar lightweight app hosting
+- a Docker container on any always-on host
+
+The bot should have access to the repo files and the same secrets. It reads `output/latest_report.json` first when available, then falls back to `public/latest_report.json`.
+
+Architecture:
+
+- GitHub Actions: scheduled market analysis, dashboard, webhook alerts
+- Discord bot: interactive slash-command Q&A
+- JSON files: persistent memory/state
+- OpenAI: only for `/ask` reasoning and scheduled important-event analysis
+
 ## OpenAI API Setup
 
 GPT event analysis is optional and controlled by `config/settings.yaml`.
@@ -78,11 +185,13 @@ openai:
   gpt_enabled: true
   rules_only_mode: false
   model: gpt-5-nano
-  max_gpt_calls_per_day: 4
-  max_articles_per_run: 8
-  max_events_per_call: 3
-  max_tokens_per_call: 450
-  max_daily_gpt_budget_estimate: 0.05
+  chat_model: gpt-5-nano
+  max_gpt_calls_per_day: 8
+  max_articles_per_run: 16
+  max_events_per_call: 4
+  max_tokens_per_call: 900
+  chat_max_tokens_per_call: 700
+  max_daily_gpt_budget_estimate: 0.25
 ```
 
 To disable GPT entirely and use the rules-only fallback:
@@ -218,6 +327,9 @@ This is not financial advice. It is a research workflow for human review. The ag
 - **Too many GPT calls:** lower `max_articles_per_run` or `max_gpt_calls_per_day`.
 - **Budget hit:** raise `max_daily_gpt_budget_estimate` slightly or keep the rules-only fallback.
 - **Discord is too long:** lower `alerts.max_discord_chars`; GPT event notes are already capped to the most important events.
+- **Bot slash commands do not show up:** set `DISCORD_GUILD_ID` for immediate guild sync, restart the bot, and confirm the bot was invited with `applications.commands`.
+- **Bot answers rules-only but `/ask` fails:** confirm the bot runtime has `OPENAI_API_KEY` set.
+- **Bot cannot see private portfolio:** set `PORTFOLIO_JSON` in the bot runtime, or run it on the same machine where `output/latest_report.json` exists.
 - **Pages shows exact figures:** stop and check that the workflow deploys `public/`, not `output/`.
 - **Signal history is not changing:** make sure the workflow has `contents: write` permission and the `Persist learning history` step succeeds.
 

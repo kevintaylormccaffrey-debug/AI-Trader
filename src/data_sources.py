@@ -24,6 +24,23 @@ DEFAULT_SETTINGS: dict[str, Any] = {
         "user_agent": "KevinStockResearchAgent/0.1",
     },
     "news": {"lookback_days": 7, "max_items_per_ticker": 5, "timeout_seconds": 12},
+    "openai": {
+        "gpt_enabled": True,
+        "rules_only_mode": False,
+        "model": "gpt-5-nano",
+        "api_url": "https://api.openai.com/v1/responses",
+        "max_gpt_calls_per_day": 4,
+        "max_articles_per_run": 8,
+        "max_events_per_call": 3,
+        "max_tokens_per_call": 450,
+        "max_daily_gpt_budget_estimate": 0.05,
+        "estimated_input_cost_per_1m_tokens": 0.05,
+        "estimated_output_cost_per_1m_tokens": 0.40,
+        "relevance_threshold": 55,
+        "price_move_threshold_pct": 5,
+        "unusual_volume_ratio": 2.0,
+        "important_classifications": ["risk elevated", "research opportunity", "sell watch"],
+    },
     "discovery": {"max_ideas": 5, "minimum_price": 5},
     "scoring": {
         "weights": {
@@ -37,6 +54,11 @@ DEFAULT_SETTINGS: dict[str, Any] = {
         }
     },
     "alerts": {"discord_enabled": True, "max_discord_chars": 1900},
+    "history": {
+        "signals_history_path": "data/signals_history.json",
+        "paper_trades_path": "data/paper_trades.json",
+        "evaluation_days": 14,
+    },
 }
 
 

@@ -64,6 +64,19 @@ def build_discord_message(report: dict[str, Any], settings: dict[str, Any]) -> s
         for idea in ideas:
             lines.append(f"- {idea['ticker']} ({idea['company']}): {idea['sector']} | confidence {idea['confidence_level']}")
 
+    gpt_events = [
+        event
+        for event in report.get("gpt_analysis", {}).get("events", [])
+        if event.get("analysis_source") == "gpt"
+        and event.get("classification") in settings.get("openai", {}).get("important_classifications", [])
+    ]
+    if gpt_events:
+        lines.append("**GPT event notes**")
+        for event in gpt_events[:2]:
+            lines.append(
+                f"- {event.get('ticker')}: {event.get('classification')} ({event.get('confidence_score')}) - {event.get('why_it_matters')}"
+            )
+
     lines.extend(
         [
             f"Dashboard: {url}",

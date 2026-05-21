@@ -9,6 +9,8 @@ from src import data_sources
 from src.dashboard import generate_dashboard
 from src.discord_alerts import send_discord_alert
 from src.discovery import generate_discovery_ideas
+from src.gpt_analysis import analyze_events
+from src.history import update_signal_history
 from src.news import fetch_recent_news, summarize_news
 from src.sanitize import sanitize_report
 from src.scoring import classify_holding, score_holding, score_price_momentum, score_research_candidate
@@ -227,6 +229,7 @@ def build_report(settings: dict[str, Any]) -> dict[str, Any]:
                 "Stooq public CSV for prices and price history, with portfolio fallback prices if unavailable.",
                 "Yahoo Finance and Google News RSS feeds for recent headlines.",
                 "Yahoo quote summary calendar events for best-effort earnings dates.",
+                "OpenAI Responses API for important-event analysis when enabled and within configured cost limits.",
             ],
         },
     }
@@ -241,6 +244,10 @@ def main() -> int:
 
     settings = data_sources.load_settings(args.settings)
     report = build_report(settings)
+    report["gpt_analysis"] = analyze_events(report, settings)
+    history_payload = update_signal_history(report, settings)
+    report["signal_history"] = history_payload["signals_history"]
+    report["paper_trades"] = history_payload["paper_trades"]
 
     report_path = resolve_path(settings["report_path"])
     dashboard_path = resolve_path(settings["dashboard_path"])

@@ -98,6 +98,38 @@ def render_news(news_items: list[dict[str, Any]]) -> str:
     return "<div class='table-wrap'><table><thead><tr><th>Ticker</th><th>Headline</th><th>Tag</th><th>Sentiment</th><th>Risk</th></tr></thead><tbody>" + "".join(rows) + "</tbody></table></div>"
 
 
+def render_gpt_analysis(gpt_analysis: dict[str, Any]) -> str:
+    events = gpt_analysis.get("events", [])
+    usage = gpt_analysis.get("usage", {})
+    if not events:
+        return (
+            "<p>No events met the configured GPT relevance threshold.</p>"
+            f"<p class='small-note'>Mode: {esc(gpt_analysis.get('mode', 'none'))}</p>"
+        )
+    cards = []
+    for event in events[:8]:
+        cards.append(
+            "<article class='item-card'>"
+            f"<h3>{esc(event.get('ticker'))} <span>{esc(event.get('classification'))} | confidence {esc(event.get('confidence_score'))}</span></h3>"
+            f"<p><strong>Event:</strong> {esc(event.get('event_title'))}</p>"
+            f"<p><strong>Why it matters:</strong> {esc(event.get('why_it_matters'))}</p>"
+            f"<p><strong>Thesis:</strong> {esc(event.get('thesis_change'))}</p>"
+            f"<p><strong>Uncertainty:</strong> {esc(event.get('uncertainty_notes'))}</p>"
+            f"<p><strong>Source:</strong> {esc(event.get('analysis_source'))}</p>"
+            "</article>"
+        )
+    notes = "; ".join(str(note) for note in usage.get("limit_notes", []))
+    return (
+        "<div class='cards'>" + "".join(cards) + "</div>"
+        "<div class='usage-line'>"
+        f"Mode: {esc(gpt_analysis.get('mode'))} | Model: {esc(usage.get('model'))} | "
+        f"Calls: {esc(usage.get('gpt_call_count'))} | Est. cost: ${esc(usage.get('estimated_cost_usd'))} | "
+        f"Tokens: {esc(usage.get('input_tokens'))} in / {esc(usage.get('output_tokens'))} out"
+        f"{' | Notes: ' + esc(notes) if notes else ''}"
+        "</div>"
+    )
+
+
 def render_watchlist(items: list[dict[str, Any]]) -> str:
     if not items:
         return "<p>No watchlist items configured.</p>"
@@ -132,6 +164,66 @@ def render_discovery(items: list[dict[str, Any]]) -> str:
             "</article>"
         )
     return "<div class='cards'>" + "".join(cards) + "</div>"
+
+
+def render_signal_accuracy(signal_history: dict[str, Any]) -> str:
+    stats = signal_history.get("accuracy_stats", {})
+    summary = signal_history.get("summary", {})
+    if not stats:
+        return (
+            "<p>Signal accuracy tracking has started. Enough time must pass before outcomes can be evaluated.</p>"
+            f"<p class='small-note'>Signals tracked: {esc(summary.get('total_signals', 0))}; pending: {esc(summary.get('pending_signals', 0))}</p>"
+        )
+    rows = []
+    for signal_type, bucket in sorted(stats.items()):
+        rows.append(
+            "<tr>"
+            f"<td>{esc(signal_type)}</td>"
+            f"<td>{esc(bucket.get('total'))}</td>"
+            f"<td>{esc(bucket.get('evaluated'))}</td>"
+            f"<td>{esc(bucket.get('pending'))}</td>"
+            f"<td>{esc(bucket.get('accuracy_pct'))}%</td>"
+            f"<td>{pct(bucket.get('average_return_pct'))}</td>"
+            "</tr>"
+        )
+    return (
+        "<div class='table-wrap'><table><thead><tr><th>Signal Type</th><th>Total</th><th>Evaluated</th><th>Pending</th><th>Accuracy</th><th>Avg Return</th></tr></thead><tbody>"
+        + "".join(rows)
+        + "</tbody></table></div>"
+    )
+
+
+def render_historical_performance(signal_history: dict[str, Any], paper_trades: dict[str, Any]) -> str:
+    best = signal_history.get("best_performing_signals", [])
+    worst = signal_history.get("worst_performing_signals", [])
+    trades = paper_trades.get("paper_trades", [])
+
+    def signal_list(items: list[dict[str, Any]]) -> str:
+        if not items:
+            return "<p>Not enough evaluated signals yet.</p>"
+        rows = []
+        for item in items[:5]:
+            outcome = item.get("later_outcome", {})
+            rows.append(
+                "<tr>"
+                f"<td>{esc(item.get('ticker'))}</td>"
+                f"<td>{esc(item.get('signal_type'))}</td>"
+                f"<td>{esc(item.get('date'))}</td>"
+                f"<td>{pct(outcome.get('return_pct'))}</td>"
+                f"<td>{esc(outcome.get('accurate'))}</td>"
+                "</tr>"
+            )
+        return "<div class='table-wrap'><table><thead><tr><th>Ticker</th><th>Signal</th><th>Date</th><th>Return</th><th>Accurate</th></tr></thead><tbody>" + "".join(rows) + "</tbody></table></div>"
+
+    open_trades = [trade for trade in trades if trade.get("status") == "open"]
+    trade_note = f"Paper records tracked: {len(trades)}; open simulated records: {len(open_trades)}. No real trades are executed."
+    return (
+        "<div class='history-grid'>"
+        "<div><h3>Best Signals</h3>" + signal_list(best) + "</div>"
+        "<div><h3>Worst Signals</h3>" + signal_list(worst) + "</div>"
+        "</div>"
+        f"<p class='small-note'>{esc(trade_note)}</p>"
+    )
 
 
 def render_methodology(report: dict[str, Any]) -> str:
@@ -231,10 +323,12 @@ def generate_dashboard(report: dict[str, Any], output_path: str | Path) -> None:
     details {{ margin-top: 16px; }}
     pre {{ white-space: pre-wrap; overflow-wrap: anywhere; background: #111827; color: #e5e7eb; padding: 16px; border-radius: 8px; font-size: .78rem; }}
     .disclaimer {{ border-left: 4px solid var(--accent-2); background: #fff7ed; padding: 12px; margin-top: 14px; color: #7c2d12; }}
+    .usage-line, .small-note {{ color: var(--muted); font-size: .88rem; margin-top: 12px; }}
+    .history-grid {{ display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }}
     @media (max-width: 760px) {{
       main {{ width: min(100% - 20px, 1180px); margin-top: 10px; }}
       section {{ padding: 16px; }}
-      .summary-grid, .cards {{ grid-template-columns: 1fr; }}
+      .summary-grid, .cards, .history-grid {{ grid-template-columns: 1fr; }}
       header {{ padding: 22px 16px; }}
     }}
   </style>
@@ -254,9 +348,13 @@ def generate_dashboard(report: dict[str, Any], output_path: str | Path) -> None:
     </section>
     <section><h2>Holdings</h2>{render_holdings(report.get("holdings", []))}</section>
     <section><h2>News/Catalysts</h2>{render_news(report.get("news_catalysts", []))}</section>
+    <section><h2>GPT Analysis</h2>{render_gpt_analysis(report.get("gpt_analysis", {}))}</section>
     <section><h2>Sell Watch</h2>{render_holdings(report.get("sell_watch", [])) if report.get("sell_watch") else "<p>No holdings triggered sell-watch rules.</p>"}</section>
     <section><h2>Watchlist</h2>{render_watchlist(report.get("watchlist", []))}</section>
     <section><h2>Discovery Ideas</h2>{render_discovery(report.get("discovery_ideas", []))}</section>
+    <section><h2>Signal Accuracy</h2>{render_signal_accuracy(report.get("signal_history", {}))}</section>
+    <section><h2>Historical Performance</h2>{render_historical_performance(report.get("signal_history", {}), report.get("paper_trades", {}))}</section>
+    <section><h2>Learning/Feedback Metrics</h2><p class="small-note">Signals are evaluated after the configured horizon. Positive signals are judged by later positive returns; risk signals are judged by whether they avoided or warned about weakness. These metrics are experimental and for learning only.</p></section>
     <section><h2>Methodology</h2>{render_methodology(report)}<details><summary>Raw latest_report.json</summary><pre>{report_json}</pre></details></section>
   </main>
 </body>

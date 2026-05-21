@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-21T01:50:48.967895+00:00",
+  "last_updated": "2026-05-21T02:14:34.987976+00:00",
   "signals": [
     {
       "date": "2026-05-21",
@@ -191,13 +191,125 @@
         "status": "pending",
         "days_elapsed": 0
       }
+    },
+    {
+      "date": "2026-05-21",
+      "ticker": "PATH",
+      "signal_type": "sell watch",
+      "source": "gpt",
+      "confidence": 65,
+      "reason": "Analyst targets imply upside but caution about optimistic forecasts and max-loss triggers.",
+      "price_at_signal": 10.75,
+      "event_title": "1 of Wall Street\u2019s Favorite Stock with Impressive Fundamentals and 2 We Avoid",
+      "later_outcome": {
+        "status": "pending",
+        "days_elapsed": 0
+      }
+    },
+    {
+      "date": "2026-05-21",
+      "ticker": "PATH",
+      "signal_type": "sell watch",
+      "source": "gpt",
+      "confidence": 60,
+      "reason": "ARR growth suggests adoption but price-risk threshold triggers caution.",
+      "price_at_signal": 10.75,
+      "event_title": "Is UiPath's Expanding ARR Strengthening Long-Term Stability?",
+      "later_outcome": {
+        "status": "pending",
+        "days_elapsed": 0
+      }
+    },
+    {
+      "date": "2026-05-21",
+      "ticker": "AMD",
+      "signal_type": "research opportunity",
+      "source": "gpt",
+      "confidence": 58,
+      "reason": "AI-data center expansion signals potential upside for AMD GPUs and AI workloads.",
+      "price_at_signal": 447.58,
+      "event_title": "Riot Platforms Links Bitcoin Mining With AI Data Center Growth",
+      "later_outcome": {
+        "status": "pending",
+        "days_elapsed": 0
+      }
+    },
+    {
+      "date": "2026-05-21",
+      "ticker": "LSCC",
+      "signal_type": "hold thesis intact",
+      "source": "gpt",
+      "confidence": 72,
+      "reason": "PT raise supports growth thesis in AI edge semiconductors.",
+      "price_at_signal": 138.65,
+      "event_title": "Baird Lifts PT on Lattice Semiconductor Corporation (LSCC) Following Q1 Results",
+      "later_outcome": {
+        "status": "pending",
+        "days_elapsed": 0
+      }
+    },
+    {
+      "date": "2026-05-21",
+      "ticker": "PATH",
+      "signal_type": "sell watch",
+      "source": "gpt",
+      "confidence": 72,
+      "reason": "Industry AI moves could surprise; price below max-loss threshold",
+      "price_at_signal": 10.75,
+      "event_title": "These 2 AI Giants Have Been Dormant. That\u2019s Exactly Why They Might Surprise Investors - 24/7 Wall St.",
+      "later_outcome": {
+        "status": "pending",
+        "days_elapsed": 0
+      }
+    },
+    {
+      "date": "2026-05-21",
+      "ticker": "NOW",
+      "signal_type": "research opportunity",
+      "source": "gpt",
+      "confidence": 66,
+      "reason": "Valuation decline vs solid growth; potential upside",
+      "price_at_signal": 103.26,
+      "event_title": "After a 50% Drop, Is ServiceNow Stock Worth Buying?",
+      "later_outcome": {
+        "status": "pending",
+        "days_elapsed": 0
+      }
+    },
+    {
+      "date": "2026-05-21",
+      "ticker": "ANET",
+      "signal_type": "research opportunity",
+      "source": "gpt",
+      "confidence": 58,
+      "reason": "AI data center demand affects valuation and sentiment",
+      "price_at_signal": 140.47,
+      "event_title": "How The AI Data Center Story Is Reframing Arista Networks (ANET) Valuation And Expectations",
+      "later_outcome": {
+        "status": "pending",
+        "days_elapsed": 0
+      }
+    },
+    {
+      "date": "2026-05-21",
+      "ticker": "AMD",
+      "signal_type": "research opportunity",
+      "source": "gpt",
+      "confidence": 61,
+      "reason": "AI/accelerator momentum may uplift related players; potential read-through",
+      "price_at_signal": 447.58,
+      "event_title": "Nvidia Tells Skeptical Investors That AI Is Ready to Go Mainstream",
+      "later_outcome": {
+        "status": "pending",
+        "days_elapsed": 0
+      }
     }
   ],
   "accuracy_stats": {
     "sell watch": {
-      "total": 4,
+      "total": 7,
       "evaluated": 0,
-      "pending": 4,
+      "pending": 7,
       "accurate": 0,
       "accuracy_pct": null,
       "average_return_pct": null
@@ -219,17 +331,17 @@
       "average_return_pct": null
     },
     "research opportunity": {
-      "total": 3,
+      "total": 7,
       "evaluated": 0,
-      "pending": 3,
+      "pending": 7,
       "accurate": 0,
       "accuracy_pct": null,
       "average_return_pct": null
     },
     "hold thesis intact": {
-      "total": 1,
+      "total": 2,
       "evaluated": 0,
-      "pending": 1,
+      "pending": 2,
       "accurate": 0,
       "accuracy_pct": null,
       "average_return_pct": null
@@ -238,9 +350,9 @@
   "best_performing_signals": [],
   "worst_performing_signals": [],
   "summary": {
-    "total_signals": 14,
-    "new_signals_this_run": 10,
+    "total_signals": 22,
+    "new_signals_this_run": 13,
     "evaluated_signals": 0,
-    "pending_signals": 14
+    "pending_signals": 22
   }
 }

@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-21T13:28:33.522087+00:00",
+  "last_updated": "2026-05-21T15:56:39.750145+00:00",
   "notes": "Paper-trade records are simulated learning records only. The agent never executes real trades.",
   "paper_trades": [
     {
@@ -11,7 +11,7 @@
       "entry_price": 10.75,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 0.19,
+      "latest_return_pct": -4.37,
       "last_checked": "2026-05-21"
     },
     {
@@ -23,7 +23,7 @@
       "entry_price": 138.65,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 0.06,
+      "latest_return_pct": -1.51,
       "last_checked": "2026-05-21"
     },
     {
@@ -35,7 +35,7 @@
       "entry_price": 447.58,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 0.0,
+      "latest_return_pct": -1.59,
       "last_checked": "2026-05-21"
     },
     {
@@ -47,7 +47,7 @@
       "entry_price": 138.65,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 0.06,
+      "latest_return_pct": -1.51,
       "last_checked": "2026-05-21"
     },
     {
@@ -59,7 +59,7 @@
       "entry_price": 103.26,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 0.04,
+      "latest_return_pct": -3.43,
       "last_checked": "2026-05-21"
     },
     {
@@ -71,7 +71,7 @@
       "entry_price": 140.47,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 0.01,
+      "latest_return_pct": 3.6,
       "last_checked": "2026-05-21"
     },
     {
@@ -83,7 +83,7 @@
       "entry_price": 223.47,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 0.0,
+      "latest_return_pct": -1.7,
       "last_checked": "2026-05-21"
     },
     {
@@ -93,6 +93,18 @@
       "source": "gpt",
       "confidence": 62,
       "entry_price": 447.58,
+      "status": "open",
+      "notes": "Simulated paper record only. No real trade was executed.",
+      "latest_return_pct": -1.59,
+      "last_checked": "2026-05-21"
+    },
+    {
+      "opened_at": "2026-05-21",
+      "ticker": "NVDA",
+      "signal_type": "hold thesis intact",
+      "source": "gpt",
+      "confidence": 58,
+      "entry_price": 219.68,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
       "latest_return_pct": 0.0,

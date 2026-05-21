@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-21T13:28:33.522087+00:00",
+  "last_updated": "2026-05-21T15:56:39.750145+00:00",
   "signals": [
     {
       "date": "2026-05-21",
@@ -848,21 +848,226 @@
         "status": "pending",
         "days_elapsed": 0
       }
+    },
+    {
+      "date": "2026-05-21",
+      "run_session": "morning",
+      "ticker": "PATH",
+      "signal_type": "sell watch",
+      "source": "rules",
+      "confidence": 42.1,
+      "reason": "Human review required: price is below the configured max-loss threshold.",
+      "price_at_signal": 10.28,
+      "later_outcome": {
+        "status": "pending",
+        "days_elapsed": 0
+      }
+    },
+    {
+      "date": "2026-05-21",
+      "run_session": "morning",
+      "ticker": "NVDA",
+      "signal_type": "research only",
+      "source": "rules",
+      "confidence": 52.0,
+      "reason": "Watchlist item only; review manually before any portfolio decision.",
+      "price_at_signal": 219.68,
+      "later_outcome": {
+        "status": "pending",
+        "days_elapsed": 0
+      }
+    },
+    {
+      "date": "2026-05-21",
+      "run_session": "morning",
+      "ticker": "AMD",
+      "signal_type": "research only",
+      "source": "rules",
+      "confidence": 54.4,
+      "reason": "Watchlist item only; review manually before any portfolio decision.",
+      "price_at_signal": 440.45,
+      "later_outcome": {
+        "status": "pending",
+        "days_elapsed": 0
+      }
+    },
+    {
+      "date": "2026-05-21",
+      "run_session": "morning",
+      "ticker": "ANET",
+      "signal_type": "research only",
+      "source": "rules",
+      "confidence": 53.9,
+      "reason": "Watchlist item only; review manually before any portfolio decision.",
+      "price_at_signal": 145.53,
+      "later_outcome": {
+        "status": "pending",
+        "days_elapsed": 0
+      }
+    },
+    {
+      "date": "2026-05-21",
+      "run_session": "morning",
+      "ticker": "NOW",
+      "signal_type": "research only",
+      "source": "rules",
+      "confidence": 52.9,
+      "reason": "Watchlist item only; review manually before any portfolio decision.",
+      "price_at_signal": 99.72,
+      "later_outcome": {
+        "status": "pending",
+        "days_elapsed": 0
+      }
+    },
+    {
+      "date": "2026-05-21",
+      "run_session": "morning",
+      "ticker": "PATH",
+      "signal_type": "sell watch",
+      "source": "gpt",
+      "confidence": 70,
+      "reason": "Board changes can affect governance and execution risk",
+      "price_at_signal": 10.28,
+      "event_title": "UiPath Board Loss Raises Questions On AI Governance And Oversight",
+      "later_outcome": {
+        "status": "pending",
+        "days_elapsed": 0
+      }
+    },
+    {
+      "date": "2026-05-21",
+      "run_session": "morning",
+      "ticker": "PATH",
+      "signal_type": "sell watch",
+      "source": "gpt",
+      "confidence": 65,
+      "reason": "Mixed views; analyst forecasts vs price targets",
+      "price_at_signal": 10.28,
+      "event_title": "1 of Wall Street\u2019s Favorite Stock with Impressive Fundamentals and 2 We Avoid",
+      "later_outcome": {
+        "status": "pending",
+        "days_elapsed": 0
+      }
+    },
+    {
+      "date": "2026-05-21",
+      "run_session": "morning",
+      "ticker": "LSCC",
+      "signal_type": "hold thesis intact",
+      "source": "gpt",
+      "confidence": 72,
+      "reason": "PT raise supports growth thesis; monitoring needed",
+      "price_at_signal": 136.56,
+      "event_title": "Baird Lifts PT on Lattice Semiconductor Corporation (LSCC) Following Q1 Results",
+      "later_outcome": {
+        "status": "pending",
+        "days_elapsed": 0
+      }
+    },
+    {
+      "date": "2026-05-21",
+      "run_session": "morning",
+      "ticker": "AMD",
+      "signal_type": "research opportunity",
+      "source": "gpt",
+      "confidence": 72,
+      "reason": "Signals expansion to AI chip capacity; potential long-run benefit if demand sustains.",
+      "price_at_signal": 440.45,
+      "event_title": "AMD Plans $10 Billion Taiwan AI Chip Push",
+      "later_outcome": {
+        "status": "pending",
+        "days_elapsed": 0
+      }
+    },
+    {
+      "date": "2026-05-21",
+      "run_session": "morning",
+      "ticker": "AMD",
+      "signal_type": "research opportunity",
+      "source": "gpt",
+      "confidence": 65,
+      "reason": "Highlights Nvidia chip leadership and AI economics; broader AI demand backdrop",
+      "price_at_signal": 440.45,
+      "event_title": "Nvidia's Vera Rubin Ramp Could Reinforce Leadership in AI Factory Economics, Morgan Stanley Says",
+      "later_outcome": {
+        "status": "pending",
+        "days_elapsed": 0
+      }
+    },
+    {
+      "date": "2026-05-21",
+      "run_session": "morning",
+      "ticker": "NVDA",
+      "signal_type": "hold thesis intact",
+      "source": "gpt",
+      "confidence": 58,
+      "reason": "NVIDIA earnings beat; guidance up, but shares fell",
+      "price_at_signal": 219.68,
+      "event_title": "Top Midday Stories: Supreme Leader Says Enriched Uranium Must Stay in Iran; Nvidia Q1 Earnings, Q2 Guidance Top Estimates, But Shares Fall",
+      "later_outcome": {
+        "status": "pending",
+        "days_elapsed": 0
+      }
+    },
+    {
+      "date": "2026-05-21",
+      "run_session": "morning",
+      "ticker": "NVDA",
+      "signal_type": "research opportunity",
+      "source": "gpt",
+      "confidence": 72,
+      "reason": "Momentum supports AI hardware leadership; potential upside if guidance holds.",
+      "price_at_signal": 219.68,
+      "event_title": "Nvidia Sees Strong GPU Momentum, Growing CPU Opportunity, RBC Says",
+      "later_outcome": {
+        "status": "pending",
+        "days_elapsed": 0
+      }
+    },
+    {
+      "date": "2026-05-21",
+      "run_session": "morning",
+      "ticker": "NVDA",
+      "signal_type": "hold thesis intact",
+      "source": "gpt",
+      "confidence": 55,
+      "reason": "Terafab partnerships uncertain; no finalized agreement.",
+      "price_at_signal": 219.68,
+      "event_title": "SpaceX IPO Filing Shows There Is No Finalized Terafab Deal With Tesla, Intel",
+      "later_outcome": {
+        "status": "pending",
+        "days_elapsed": 0
+      }
+    },
+    {
+      "date": "2026-05-21",
+      "run_session": "morning",
+      "ticker": "ANET",
+      "signal_type": "research opportunity",
+      "source": "gpt",
+      "confidence": 68,
+      "reason": "Cash flow growth supports funding expansion; assess sustainability.",
+      "price_at_signal": 145.53,
+      "event_title": "ANET Benefits From Strong Cash Flow Growth: Will it Sustain?",
+      "later_outcome": {
+        "status": "pending",
+        "days_elapsed": 0
+      }
     }
   ],
   "accuracy_stats": {
     "sell watch": {
-      "total": 18,
+      "total": 21,
       "evaluated": 0,
-      "pending": 18,
+      "pending": 21,
       "accurate": 0,
       "accuracy_pct": null,
       "average_return_pct": null
     },
     "research only": {
-      "total": 12,
+      "total": 16,
       "evaluated": 0,
-      "pending": 12,
+      "pending": 16,
       "accurate": 0,
       "accuracy_pct": null,
       "average_return_pct": null
@@ -876,17 +1081,17 @@
       "average_return_pct": null
     },
     "research opportunity": {
-      "total": 21,
+      "total": 25,
       "evaluated": 0,
-      "pending": 21,
+      "pending": 25,
       "accurate": 0,
       "accuracy_pct": null,
       "average_return_pct": null
     },
     "hold thesis intact": {
-      "total": 6,
+      "total": 9,
       "evaluated": 0,
-      "pending": 6,
+      "pending": 9,
       "accurate": 0,
       "accuracy_pct": null,
       "average_return_pct": null
@@ -895,10 +1100,10 @@
   "best_performing_signals": [],
   "worst_performing_signals": [],
   "summary": {
-    "total_signals": 59,
-    "new_signals_this_run": 13,
+    "total_signals": 73,
+    "new_signals_this_run": 14,
     "evaluated_signals": 0,
-    "pending_signals": 59
+    "pending_signals": 73
   },
   "accuracy_by_run_session": {
     "unknown": {
@@ -919,6 +1124,13 @@
       "total": 13,
       "evaluated": 0,
       "pending": 13,
+      "accurate": 0,
+      "accuracy_pct": null
+    },
+    "morning": {
+      "total": 14,
+      "evaluated": 0,
+      "pending": 14,
       "accurate": 0,
       "accuracy_pct": null
     }

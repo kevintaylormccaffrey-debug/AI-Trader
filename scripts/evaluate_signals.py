@@ -14,16 +14,18 @@ def evaluated_signals(payload: dict[str, Any]) -> list[dict[str, Any]]:
     return [
         signal
         for signal in payload.get("signals", [])
-        if (signal.get("later_outcome") or {}).get("status") == "evaluated"
+        if signal.get("status") == "reviewed" or (signal.get("later_outcome") or {}).get("status") == "evaluated"
     ]
 
 
 def print_signal(signal: dict[str, Any]) -> None:
     outcome = signal.get("later_outcome") or {}
+    return_pct = signal.get("return_since_signal_pct", outcome.get("return_pct"))
+    accurate = signal.get("successful", outcome.get("accurate"))
     print(
-        f"{signal.get('ticker')} | {signal.get('signal_type')} | "
-        f"{signal.get('date')} | return {outcome.get('return_pct')}% | "
-        f"accurate={outcome.get('accurate')} | {signal.get('reason')}"
+        f"{signal.get('ticker')} | {signal.get('recommendation_label', signal.get('signal_type'))} | "
+        f"{signal.get('date')} | return {return_pct}% | "
+        f"accurate={accurate} | {signal.get('reason')}"
     )
 
 
@@ -47,7 +49,11 @@ def main() -> int:
             f"avg_return={bucket.get('average_return_pct')}%"
         )
 
-    ranked = sorted(signals, key=lambda signal: (signal.get("later_outcome") or {}).get("return_pct") or 0, reverse=True)
+    ranked = sorted(
+        signals,
+        key=lambda signal: signal.get("return_since_signal_pct", (signal.get("later_outcome") or {}).get("return_pct")) or 0,
+        reverse=True,
+    )
     print("\nBest-performing signals")
     for signal in ranked[: args.top]:
         print_signal(signal)

@@ -77,6 +77,21 @@ def build_discord_message(report: dict[str, Any], settings: dict[str, Any]) -> s
                 f"- {event.get('ticker')}: {event.get('classification')} ({event.get('confidence_score')}) - {event.get('why_it_matters')}"
             )
 
+    signal_accuracy = report.get("signal_accuracy", {})
+    if signal_accuracy:
+        reviewed_today = signal_accuracy.get("reviewed_today", [])
+        insight = signal_accuracy.get("scoring_insight") or "Collecting signal outcomes."
+        lines.append("**Learning Update**")
+        if reviewed_today:
+            for signal in reviewed_today[:3]:
+                result = "right" if signal.get("successful") else "wrong"
+                lines.append(
+                    f"- {signal.get('ticker')}: {signal.get('recommendation_label')} reviewed {result} ({pct(signal.get('return_since_signal_pct'))})"
+                )
+        else:
+            lines.append("- No signals reached review date today.")
+        lines.append(f"- Insight: {insight}")
+
     lines.extend(
         [
             f"Dashboard: {url}",

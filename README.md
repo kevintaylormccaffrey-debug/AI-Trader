@@ -303,10 +303,24 @@ python scripts/evaluate_signals.py
 - `public/` stores sanitized generated files for GitHub Pages.
 - `data/signals_history.json` stores signal outcomes and accuracy statistics.
 - `data/paper_trades.json` stores simulated learning records only; no real trades are executed.
+- `output/signal_accuracy.json` stores the latest private signal accuracy snapshot.
 
 ## Signal Learning
 
-Each run records signals such as `sell watch`, `add watch`, `risk elevated`, and `research opportunity`. After the configured evaluation window, the agent compares later price action with the original signal and updates:
+Each run records signals such as `sell watch`, `add watch`, `risk elevated`, and `research opportunity`. Signals are stored permanently in `data/signals_history.json` with:
+
+- `signal_id`
+- date/time
+- ticker
+- signal type and recommendation label
+- confidence
+- price at signal
+- reason and thesis impact
+- review date
+- source report ID
+- status: `open`, `reviewed`, or `closed`
+
+After the configured review window, the agent compares later price action with the original signal and updates:
 
 - best-performing signals
 - worst-performing signals
@@ -314,6 +328,10 @@ Each run records signals such as `sell watch`, `add watch`, `risk elevated`, and
 - pending versus evaluated signals
 - simulated paper learning records
 - accuracy by run timing, such as morning versus afternoon
+- false positives and detectable false negatives
+- benchmark return when VOO/SPY/VTI data is available
+
+The detailed accuracy snapshot is written to `output/signal_accuracy.json` on each run. The default `learning_mode` is `observe_only`, so the agent learns from outcomes but does not rewrite strategy, change scoring weights, or trade automatically.
 
 These metrics are experimental. They are meant to improve review discipline, not to automate trading.
 

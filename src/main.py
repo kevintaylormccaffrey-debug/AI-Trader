@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import datetime as dt
+import hashlib
 import os
 from pathlib import Path
 from typing import Any
@@ -56,6 +57,11 @@ def current_run_session() -> str:
     if now.hour < 22:
         return "afternoon"
     return "off-hours"
+
+
+def report_id_for(generated_at: str, run_session: str) -> str:
+    raw = f"{generated_at}|{run_session}"
+    return hashlib.sha256(raw.encode("utf-8")).hexdigest()[:16]
 
 
 def enrich_holding(
@@ -197,8 +203,10 @@ def build_report(settings: dict[str, Any]) -> dict[str, Any]:
 
     generated_at = data_sources.utc_now().isoformat()
     run_session = current_run_session()
+    report_id = report_id_for(generated_at, run_session)
     dashboard_url = data_sources.dashboard_url(settings)
     report: dict[str, Any] = {
+        "report_id": report_id,
         "generated_at": generated_at,
         "run_session": run_session,
         "dashboard_title": settings.get("dashboard", {}).get("title", "Stock Research Agent"),
@@ -266,6 +274,7 @@ def main() -> int:
     history_payload = update_signal_history(report, settings)
     report["signal_history"] = history_payload["signals_history"]
     report["paper_trades"] = history_payload["paper_trades"]
+    report["signal_accuracy"] = history_payload["signal_accuracy"]
 
     report_path = resolve_path(settings["report_path"])
     dashboard_path = resolve_path(settings["dashboard_path"])

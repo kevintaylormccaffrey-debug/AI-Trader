@@ -213,6 +213,81 @@ def render_signal_accuracy(signal_history: dict[str, Any]) -> str:
     )
 
 
+def render_learning_accuracy(signal_history: dict[str, Any], signal_accuracy: dict[str, Any]) -> str:
+    accuracy = signal_accuracy or {}
+    overall = accuracy.get("overall", {})
+    reviewed_today = accuracy.get("reviewed_today", [])
+    open_signals = accuracy.get("open_signals", [])
+    reviewed_signals = accuracy.get("reviewed_signals", [])
+    by_type = accuracy.get("accuracy_by_signal_type", {})
+
+    metrics = (
+        "<div class='summary-grid'>"
+        f"<div class='metric'><strong>{esc(overall.get('open', 0))}</strong><span>Open signals</span></div>"
+        f"<div class='metric'><strong>{esc(overall.get('reviewed', 0))}</strong><span>Reviewed signals</span></div>"
+        f"<div class='metric'><strong>{esc(overall.get('accuracy_pct'))}%</strong><span>Overall accuracy</span></div>"
+        f"<div class='metric'><strong>{pct(overall.get('average_return_after_signal_pct'))}</strong><span>Avg post-signal return</span></div>"
+        "</div>"
+    )
+
+    def compact_signal_rows(items: list[dict[str, Any]], include_outcome: bool = False) -> str:
+        if not items:
+            return "<p>No signals in this bucket yet.</p>"
+        rows = []
+        for item in items[:10]:
+            outcome = item.get("outcome_label") or item.get("status")
+            result = pct(item.get("return_since_signal_pct")) if include_outcome else esc(item.get("review_date"))
+            rows.append(
+                "<tr>"
+                f"<td>{esc(item.get('ticker'))}</td>"
+                f"<td>{esc(item.get('recommendation_label') or item.get('signal_type'))}</td>"
+                f"<td>{esc(item.get('confidence'))}</td>"
+                f"<td>{result}</td>"
+                f"<td>{esc(outcome)}</td>"
+                "</tr>"
+            )
+        return (
+            "<div class='table-wrap'><table><thead><tr><th>Ticker</th><th>Signal</th><th>Confidence</th><th>"
+            + ("Return" if include_outcome else "Review Date")
+            + "</th><th>Status</th></tr></thead><tbody>"
+            + "".join(rows)
+            + "</tbody></table></div>"
+        )
+
+    type_rows = []
+    for signal_type, bucket in sorted(by_type.items()):
+        type_rows.append(
+            "<tr>"
+            f"<td>{esc(signal_type)}</td>"
+            f"<td>{esc(bucket.get('total'))}</td>"
+            f"<td>{esc(bucket.get('reviewed'))}</td>"
+            f"<td>{esc(bucket.get('open'))}</td>"
+            f"<td>{esc(bucket.get('accuracy_pct'))}%</td>"
+            f"<td>{pct(bucket.get('average_return_after_signal_pct'))}</td>"
+            "</tr>"
+        )
+    by_type_table = (
+        "<div class='table-wrap'><table><thead><tr><th>Signal Type</th><th>Total</th><th>Reviewed</th><th>Open</th><th>Accuracy</th><th>Avg Return</th></tr></thead><tbody>"
+        + "".join(type_rows)
+        + "</tbody></table></div>"
+        if type_rows
+        else "<p>Accuracy by signal type will appear after signals are reviewed.</p>"
+    )
+
+    return (
+        metrics
+        + f"<p class='small-note'>Learning mode: {esc(accuracy.get('learning_mode', signal_history.get('learning_mode', 'observe_only')))}. {esc(accuracy.get('scoring_insight', 'Collecting signal outcomes.'))}</p>"
+        + "<h3>Reviewed Today</h3>"
+        + compact_signal_rows(reviewed_today, include_outcome=True)
+        + "<h3>Open Signals</h3>"
+        + compact_signal_rows(open_signals)
+        + "<h3>Recently Reviewed Signals</h3>"
+        + compact_signal_rows(list(reversed(reviewed_signals)), include_outcome=True)
+        + "<h3>Accuracy By Signal Type</h3>"
+        + by_type_table
+    )
+
+
 def render_historical_performance(signal_history: dict[str, Any], paper_trades: dict[str, Any]) -> str:
     best = signal_history.get("best_performing_signals", [])
     worst = signal_history.get("worst_performing_signals", [])
@@ -372,7 +447,8 @@ def generate_dashboard(report: dict[str, Any], output_path: str | Path) -> None:
     <section><h2>Sell Watch</h2>{render_holdings(report.get("sell_watch", [])) if report.get("sell_watch") else "<p>No holdings triggered sell-watch rules.</p>"}</section>
     <section><h2>Watchlist</h2>{render_watchlist(report.get("watchlist", []))}</section>
     <section><h2>Discovery Ideas</h2>{render_discovery(report.get("discovery_ideas", []))}</section>
-    <section><h2>Signal Accuracy</h2>{render_signal_accuracy(report.get("signal_history", {}))}</section>
+    <section><h2>Learning / Signal Accuracy</h2>{render_learning_accuracy(report.get("signal_history", {}), report.get("signal_accuracy", {}))}</section>
+    <section><h2>Signal Accuracy Summary</h2>{render_signal_accuracy(report.get("signal_history", {}))}</section>
     <section><h2>Historical Performance</h2>{render_historical_performance(report.get("signal_history", {}), report.get("paper_trades", {}))}</section>
     <section><h2>Learning/Feedback Metrics</h2><p class="small-note">Signals are evaluated after the configured horizon. Positive signals are judged by later positive returns; risk signals are judged by whether they avoided or warned about weakness. These metrics are experimental and for learning only.</p></section>
     <section><h2>Methodology</h2>{render_methodology(report)}<details><summary>Raw latest_report.json</summary><pre>{report_json}</pre></details></section>

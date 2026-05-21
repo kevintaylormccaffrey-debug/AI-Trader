@@ -85,4 +85,7 @@ alerts:
 history:
   signals_history_path: data/signals_history.json
   paper_trades_path: data/paper_trades.json
+  signal_accuracy_path: output/signal_accuracy.json
+  learning_mode: observe_only
+  review_after_days: 14
   evaluation_days: 14

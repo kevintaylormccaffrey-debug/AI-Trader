@@ -20,6 +20,8 @@ EXACT_FINANCIAL_FIELDS = {
     "price_at_signal",
     "current_price_at_evaluation",
     "entry_price",
+    "benchmark_price_at_signal",
+    "current_price",
 }
 
 
@@ -126,6 +128,7 @@ def sanitize_report(report: dict[str, Any]) -> dict[str, Any]:
     public_report["signal_history"] = redact_exact_fields(report.get("signal_history", {}))
     public_report["paper_trades"] = redact_exact_fields(report.get("paper_trades", {}))
     public_report["gpt_analysis"] = redact_exact_fields(report.get("gpt_analysis", {}))
+    public_report["signal_accuracy"] = redact_exact_fields(report.get("signal_accuracy", {}))
 
     for idea in public_report.get("discovery_ideas", []):
         idea.pop("news", None)

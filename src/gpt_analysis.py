@@ -258,13 +258,67 @@ def prompt_for_events(events: list[dict[str, Any]]) -> str:
     ]
     return (
         "You are a cautious stock research assistant. You do not give financial advice or buy-now calls. "
-        "Analyze only the events below. Be concise. Return only valid JSON with key 'events'. "
+        "Analyze only the events below. Be concise. Return strict JSON with key 'events'. "
         "For each event return ticker, event_title, classification, confidence_score, why_it_matters, "
         "thesis_change, uncertainty_notes, source_url. classification must be one of: "
         "hold thesis intact, risk elevated, research opportunity, sell watch, short-term noise. "
         "confidence_score is 0-100. Keep each text field under 24 words.\n\n"
         + json.dumps({"events": compact_events}, separators=(",", ":"))
     )
+
+
+def response_format_schema() -> dict[str, Any]:
+    event_schema = {
+        "type": "object",
+        "additionalProperties": False,
+        "properties": {
+            "ticker": {"type": "string"},
+            "event_title": {"type": "string"},
+            "classification": {
+                "type": "string",
+                "enum": [
+                    "hold thesis intact",
+                    "risk elevated",
+                    "research opportunity",
+                    "sell watch",
+                    "short-term noise",
+                ],
+            },
+            "confidence_score": {"type": "integer", "minimum": 0, "maximum": 100},
+            "why_it_matters": {"type": "string"},
+            "thesis_change": {"type": "string"},
+            "uncertainty_notes": {"type": "string"},
+            "source_url": {"type": "string"},
+        },
+        "required": [
+            "ticker",
+            "event_title",
+            "classification",
+            "confidence_score",
+            "why_it_matters",
+            "thesis_change",
+            "uncertainty_notes",
+            "source_url",
+        ],
+    }
+    return {
+        "format": {
+            "type": "json_schema",
+            "name": "stock_event_analysis",
+            "strict": True,
+            "schema": {
+                "type": "object",
+                "additionalProperties": False,
+                "properties": {
+                    "events": {
+                        "type": "array",
+                        "items": event_schema,
+                    }
+                },
+                "required": ["events"],
+            },
+        }
+    }
 
 
 def extract_output_text(payload: dict[str, Any]) -> str:
@@ -325,37 +379,42 @@ def call_openai(events: list[dict[str, Any]], settings: dict[str, Any]) -> tuple
     if not api_key:
         raise RuntimeError("OPENAI_API_KEY is not set.")
 
+    request_payload = {
+        "model": cfg.get("model", "gpt-5-nano"),
+        "input": prompt,
+        "max_output_tokens": max_output_tokens,
+        "text": response_format_schema(),
+    }
+    if str(cfg.get("model", "")).startswith("gpt-5"):
+        request_payload["reasoning"] = {"effort": "minimal"}
+
     response = requests.post(
         str(cfg.get("api_url", "https://api.openai.com/v1/responses")),
         headers={
             "Authorization": f"Bearer {api_key}",
             "Content-Type": "application/json",
         },
-        json={
-            "model": cfg.get("model", "gpt-5-nano"),
-            "input": prompt,
-            "max_output_tokens": max_output_tokens,
-        },
+        json=request_payload,
         timeout=30,
     )
     response.raise_for_status()
     payload = response.json()
     output_text = extract_output_text(payload)
-    parsed = parse_gpt_json(output_text)
-    normalized = [
-        normalize_gpt_event(raw, events[index if index < len(events) else -1])
-        for index, raw in enumerate(parsed[: len(events)])
-    ]
-
     usage = payload.get("usage", {}) or {}
     input_tokens = int(usage.get("input_tokens") or estimate_tokens(prompt))
     output_tokens = int(usage.get("output_tokens") or estimate_tokens(output_text))
-    return normalized, {
+    batch_usage = {
         "input_tokens": input_tokens,
         "output_tokens": output_tokens,
         "estimated": "usage" not in payload,
         "estimated_cost_usd": calc_cost(input_tokens, output_tokens, settings),
     }
+    parsed = parse_gpt_json(output_text)
+    normalized = [
+        normalize_gpt_event(raw, events[index if index < len(events) else -1])
+        for index, raw in enumerate(parsed[: len(events)])
+    ]
+    return normalized, batch_usage
 
 
 def analyze_events(report: dict[str, Any], settings: dict[str, Any]) -> dict[str, Any]:
@@ -423,7 +482,7 @@ def analyze_events(report: dict[str, Any], settings: dict[str, Any]) -> dict[str
             analyses.extend(batch_analyses)
             if len(batch_analyses) < len(batch):
                 fallback_events.extend(batch[len(batch_analyses) :])
-        except (requests.RequestException, RuntimeError, json.JSONDecodeError) as exc:
+        except (requests.RequestException, RuntimeError, json.JSONDecodeError, KeyError, ValueError) as exc:
             usage["limit_notes"].append(f"GPT call failed; used rules fallback: {exc}")
             fallback_events.extend(batch)
 

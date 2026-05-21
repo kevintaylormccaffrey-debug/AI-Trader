@@ -42,7 +42,7 @@ openai:
   max_gpt_calls_per_day: 4
   max_articles_per_run: 8
   max_events_per_call: 3
-  max_tokens_per_call: 450
+  max_tokens_per_call: 800
   max_daily_gpt_budget_estimate: 0.05
   estimated_input_cost_per_1m_tokens: 0.05
   estimated_output_cost_per_1m_tokens: 0.40

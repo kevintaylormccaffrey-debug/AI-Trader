@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-21T15:56:39.750145+00:00",
+  "last_updated": "2026-05-21T16:16:11.024334+00:00",
   "signals": [
     {
       "date": "2026-05-21",
@@ -1053,13 +1053,148 @@
         "status": "pending",
         "days_elapsed": 0
       }
+    },
+    {
+      "date": "2026-05-21",
+      "run_session": "push",
+      "ticker": "PATH",
+      "signal_type": "sell watch",
+      "source": "gpt",
+      "confidence": 60,
+      "reason": "Board change could affect governance and execution risk.",
+      "price_at_signal": 10.32,
+      "event_title": "UiPath Board Loss Raises Questions On AI Governance And Oversight",
+      "later_outcome": {
+        "status": "pending",
+        "days_elapsed": 0
+      }
+    },
+    {
+      "date": "2026-05-21",
+      "run_session": "push",
+      "ticker": "PATH",
+      "signal_type": "sell watch",
+      "source": "gpt",
+      "confidence": 60,
+      "reason": "Caution on analyst-driven upside; potential overhang.",
+      "price_at_signal": 10.32,
+      "event_title": "1 of Wall Street\u001es Favorite Stock with Impressive Fundamentals and 2 We Avoid",
+      "later_outcome": {
+        "status": "pending",
+        "days_elapsed": 0
+      }
+    },
+    {
+      "date": "2026-05-21",
+      "run_session": "push",
+      "ticker": "AMD",
+      "signal_type": "research opportunity",
+      "source": "gpt",
+      "confidence": 55,
+      "reason": "Bullish price target could influence sentiment and options activity.",
+      "price_at_signal": 442.6,
+      "event_title": "Will AMD Stock Reach $600 This Year? The Answer May Not Surprise You",
+      "later_outcome": {
+        "status": "pending",
+        "days_elapsed": 0
+      }
+    },
+    {
+      "date": "2026-05-21",
+      "run_session": "push",
+      "ticker": "LSCC",
+      "signal_type": "hold thesis intact",
+      "source": "gpt",
+      "confidence": 72,
+      "reason": "PT hike suggests upside from Q1 results; potential reaffirmation of growth thesis.",
+      "price_at_signal": 137.33,
+      "event_title": "Baird Lifts PT on Lattice Semiconductor Corporation (LSCC) Following Q1 Results",
+      "later_outcome": {
+        "status": "pending",
+        "days_elapsed": 0
+      }
+    },
+    {
+      "date": "2026-05-21",
+      "run_session": "push",
+      "ticker": "AMD",
+      "signal_type": "research opportunity",
+      "source": "gpt",
+      "confidence": 68,
+      "reason": "AI chip capacity expansion could support growth in AI workloads.",
+      "price_at_signal": 442.6,
+      "event_title": "AMD Plans $10 Billion Taiwan AI Chip Push",
+      "later_outcome": {
+        "status": "pending",
+        "days_elapsed": 0
+      }
+    },
+    {
+      "date": "2026-05-21",
+      "run_session": "push",
+      "ticker": "AMD",
+      "signal_type": "research opportunity",
+      "source": "gpt",
+      "confidence": 60,
+      "reason": "Nvidia leadership convo may affect AI infra demand; indirect relevance to AMD",
+      "price_at_signal": 442.6,
+      "event_title": "Nvidia's Vera Rubin Ramp Could Reinforce Leadership in AI Factory Economics, Morgan Stanley Says",
+      "later_outcome": {
+        "status": "pending",
+        "days_elapsed": 0
+      }
+    },
+    {
+      "date": "2026-05-21",
+      "run_session": "push",
+      "ticker": "NVDA",
+      "signal_type": "research opportunity",
+      "source": "gpt",
+      "confidence": 58,
+      "reason": "Nvidia chatter and volatility signal AI stock sensitivity; macro context",
+      "price_at_signal": 219.66,
+      "event_title": "Stock Market Today: Dow Down, Nvidia Erratic; These AI Stocks Boom As Ralph Lauren Rebounds (Live Coverage)",
+      "later_outcome": {
+        "status": "pending",
+        "days_elapsed": 0
+      }
+    },
+    {
+      "date": "2026-05-21",
+      "run_session": "push",
+      "ticker": "NVDA",
+      "signal_type": "research opportunity",
+      "source": "gpt",
+      "confidence": 65,
+      "reason": "Positively framed, supports long-term earnings growth thesis.",
+      "price_at_signal": 219.66,
+      "event_title": "Nvidia Remains Positioned for Earnings Growth Despite Margin Concerns, UBS Says",
+      "later_outcome": {
+        "status": "pending",
+        "days_elapsed": 0
+      }
+    },
+    {
+      "date": "2026-05-21",
+      "run_session": "push",
+      "ticker": "ANET",
+      "signal_type": "research opportunity",
+      "source": "gpt",
+      "confidence": 58,
+      "reason": "Cash flow strength supports growth thesis; sustainability unclear.",
+      "price_at_signal": 146.23,
+      "event_title": "ANET Benefits From Strong Cash Flow Growth: Will it Sustain?",
+      "later_outcome": {
+        "status": "pending",
+        "days_elapsed": 0
+      }
     }
   ],
   "accuracy_stats": {
     "sell watch": {
-      "total": 21,
+      "total": 23,
       "evaluated": 0,
-      "pending": 21,
+      "pending": 23,
       "accurate": 0,
       "accuracy_pct": null,
       "average_return_pct": null
@@ -1081,17 +1216,17 @@
       "average_return_pct": null
     },
     "research opportunity": {
-      "total": 25,
+      "total": 31,
       "evaluated": 0,
-      "pending": 25,
+      "pending": 31,
       "accurate": 0,
       "accuracy_pct": null,
       "average_return_pct": null
     },
     "hold thesis intact": {
-      "total": 9,
+      "total": 10,
       "evaluated": 0,
-      "pending": 9,
+      "pending": 10,
       "accurate": 0,
       "accuracy_pct": null,
       "average_return_pct": null
@@ -1100,10 +1235,10 @@
   "best_performing_signals": [],
   "worst_performing_signals": [],
   "summary": {
-    "total_signals": 73,
+    "total_signals": 82,
     "new_signals_this_run": 14,
     "evaluated_signals": 0,
-    "pending_signals": 73
+    "pending_signals": 82
   },
   "accuracy_by_run_session": {
     "unknown": {
@@ -1114,9 +1249,9 @@
       "accuracy_pct": null
     },
     "push": {
-      "total": 24,
+      "total": 33,
       "evaluated": 0,
-      "pending": 24,
+      "pending": 33,
       "accurate": 0,
       "accuracy_pct": null
     },

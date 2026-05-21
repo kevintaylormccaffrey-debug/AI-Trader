@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-21T16:16:11.024334+00:00",
+  "last_updated": "2026-05-21T16:29:33.115931+00:00",
   "signals": [
     {
       "date": "2026-05-21",
@@ -12,7 +12,17 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "sell watch",
+      "thesis_impact": "Human review required: price is below the configured max-loss threshold.",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "run_session": "unknown",
+      "signal_id": "5513bd0d161fbf52",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -25,7 +35,17 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "research only",
+      "thesis_impact": "Watchlist item only; review manually before any portfolio decision.",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "run_session": "unknown",
+      "signal_id": "284e41a890c3476d",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -38,7 +58,17 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "research only",
+      "thesis_impact": "Watchlist item only; review manually before any portfolio decision.",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "run_session": "unknown",
+      "signal_id": "c215d25bef78e2f9",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -51,7 +81,17 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "research only",
+      "thesis_impact": "Watchlist item only; review manually before any portfolio decision.",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "run_session": "unknown",
+      "signal_id": "1cf2a6dd60d24e95",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -64,7 +104,17 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "research only",
+      "thesis_impact": "Watchlist item only; review manually before any portfolio decision.",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "run_session": "unknown",
+      "signal_id": "ef22c3a6f2f3f471",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -78,7 +128,17 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "risk elevated",
+      "thesis_impact": "Rules found catalyst or risk language that deserves review.",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "run_session": "unknown",
+      "signal_id": "ea66a445725e346c",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -92,7 +152,17 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "research opportunity",
+      "thesis_impact": "Rules found a potentially material catalyst.",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "run_session": "unknown",
+      "signal_id": "6692ada471ee563e",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -106,7 +176,17 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "risk elevated",
+      "thesis_impact": "Rules found catalyst or risk language that deserves review.",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "run_session": "unknown",
+      "signal_id": "15b0ced8f20459b4",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -120,7 +200,17 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "research opportunity",
+      "thesis_impact": "Rules found a potentially material catalyst.",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "run_session": "unknown",
+      "signal_id": "8b5ce5b9073bb3b1",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -134,7 +224,17 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "sell watch",
+      "thesis_impact": "Analyst optimism may mask risk; price below max-loss threshold triggers caution.",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "run_session": "unknown",
+      "signal_id": "1dc71226ea352d23",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -148,7 +248,17 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "sell watch",
+      "thesis_impact": "ARR growth supports longer-term value but valuation risks persist.",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "run_session": "unknown",
+      "signal_id": "33abfd8b4fcf36ee",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -162,7 +272,17 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "research opportunity",
+      "thesis_impact": "AI data center expansion corroborates Riot/AMD demand tailwinds.",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "run_session": "unknown",
+      "signal_id": "4fc41ce8a17943c9",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -176,7 +296,17 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "hold thesis intact",
+      "thesis_impact": "PT raise supports positive Q1 execution for low-power FPGA/AI edge growth.",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "run_session": "unknown",
+      "signal_id": "1df30e3e30f31c09",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -190,7 +320,17 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "sell watch",
+      "thesis_impact": "Sector move and AI automation focus may affect valuation; price below max-loss threshold",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "run_session": "unknown",
+      "signal_id": "1a7b3fd6c78850ac",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -204,7 +344,17 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "sell watch",
+      "thesis_impact": "Analyst targets imply upside but caution about optimistic forecasts and max-loss triggers.",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "run_session": "unknown",
+      "signal_id": "8813b5e69eeaac2e",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -218,7 +368,17 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "sell watch",
+      "thesis_impact": "ARR growth suggests adoption but price-risk threshold triggers caution.",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "run_session": "unknown",
+      "signal_id": "245ca69d4813f147",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -232,7 +392,17 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "research opportunity",
+      "thesis_impact": "AI-data center expansion signals potential upside for AMD GPUs and AI workloads.",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "run_session": "unknown",
+      "signal_id": "f7d67cb9b189fdae",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -246,7 +416,17 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "hold thesis intact",
+      "thesis_impact": "PT raise supports growth thesis in AI edge semiconductors.",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "run_session": "unknown",
+      "signal_id": "761ea1c617ecd600",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -260,7 +440,17 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "sell watch",
+      "thesis_impact": "Industry AI moves could surprise; price below max-loss threshold",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "run_session": "unknown",
+      "signal_id": "8a4d516884849b30",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -274,7 +464,17 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "research opportunity",
+      "thesis_impact": "Valuation decline vs solid growth; potential upside",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "run_session": "unknown",
+      "signal_id": "4859bae8c8163bcd",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -288,7 +488,17 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "research opportunity",
+      "thesis_impact": "AI data center demand affects valuation and sentiment",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "run_session": "unknown",
+      "signal_id": "53361e8929e4729c",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -302,7 +512,17 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "research opportunity",
+      "thesis_impact": "AI/accelerator momentum may uplift related players; potential read-through",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "run_session": "unknown",
+      "signal_id": "7b1ff932516ace81",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -316,7 +536,16 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "sell watch",
+      "thesis_impact": "Human review required: price is below the configured max-loss threshold.",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "signal_id": "5513bd0d161fbf52",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -330,7 +559,16 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "research only",
+      "thesis_impact": "Watchlist item only; review manually before any portfolio decision.",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "signal_id": "284e41a890c3476d",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -344,7 +582,16 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "research only",
+      "thesis_impact": "Watchlist item only; review manually before any portfolio decision.",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "signal_id": "c215d25bef78e2f9",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -358,7 +605,16 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "research only",
+      "thesis_impact": "Watchlist item only; review manually before any portfolio decision.",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "signal_id": "1cf2a6dd60d24e95",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -372,7 +628,16 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "research only",
+      "thesis_impact": "Watchlist item only; review manually before any portfolio decision.",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "signal_id": "ef22c3a6f2f3f471",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -387,7 +652,16 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "sell watch",
+      "thesis_impact": "Analyst optimism may be overstated; guidance risk suggests price downside potential.",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "signal_id": "1205ec40c4490ef2",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -402,7 +676,16 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "sell watch",
+      "thesis_impact": "ARR growth supports adoption but risk signals imply valuation downside risk.",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "signal_id": "b8217f812c74c291",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -417,7 +700,16 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "research opportunity",
+      "thesis_impact": "AI data center expansion could create new demand for AMD GPUs.",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "signal_id": "dd4584e4d47d5ed8",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -432,7 +724,16 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "hold thesis intact",
+      "thesis_impact": "PT bump supports growth in low-power FPGA and AI edge semis.",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "signal_id": "a12af6faba452b7c",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -447,7 +748,16 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "research opportunity",
+      "thesis_impact": "Partnership expands optical data center reach; may affect AI infra ecosystem.",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "signal_id": "760d7714f8cd5192",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -462,7 +772,16 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "sell watch",
+      "thesis_impact": "Sector move; price below max-loss threshold; requires review.",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "signal_id": "f9a361994e117bb4",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -477,7 +796,16 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "research opportunity",
+      "thesis_impact": "Valuation reset; growth remains; potential re-rating risk.",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "signal_id": "f57a4accf5cd0d47",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -492,7 +820,16 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "research opportunity",
+      "thesis_impact": "Valuation reset amid AI data center demand; watch for execution risk.",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "signal_id": "7e23ba8c809da489",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -507,7 +844,16 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "hold thesis intact",
+      "thesis_impact": "Industry-wide AI adoption could sustain GPU demand; aligns with thesis.",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "signal_id": "4a0030b5c64b657a",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -522,7 +868,16 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "research opportunity",
+      "thesis_impact": "Sector-wide move may present volatility but indicates momentum for semiconductors.",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "signal_id": "9526640a1ad8f2ea",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -537,7 +892,16 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "sell watch",
+      "thesis_impact": "Analyst targets imply upside but potential over-optimism and max-loss concerns.",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "signal_id": "bb39cabdc8c2637a",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -552,7 +916,16 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "sell watch",
+      "thesis_impact": "ARR growth supports adoption but valuation/price risk remains.",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "signal_id": "6feeea1c5bd47b51",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -567,7 +940,16 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "research opportunity",
+      "thesis_impact": "AI data center demand and AMD capacity expansion may benefit AI workloads.",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "signal_id": "e8e1a49c612bbc4b",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -582,7 +964,16 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "hold thesis intact",
+      "thesis_impact": "PT hike and Q1 results support upside for low-power FPGA/AI edge growth.",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "signal_id": "1177b8dc93d33413",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -597,7 +988,16 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "research opportunity",
+      "thesis_impact": "Expands optical connectivity for AI data centers",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "signal_id": "0decfdb008514603",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -612,7 +1012,16 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "sell watch",
+      "thesis_impact": "Sector move; price below max-loss threshold",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "signal_id": "af2529af6c5e800b",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -627,7 +1036,16 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "research opportunity",
+      "thesis_impact": "Valuation reset; growth still robust",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "signal_id": "4ac099e690aa9a38",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -642,7 +1060,16 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "research opportunity",
+      "thesis_impact": "Fair value reset amid AI data center demand",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "signal_id": "49926c5d8de68648",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -657,7 +1084,16 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "research opportunity",
+      "thesis_impact": "Highlights AI acceleration and data-center demand tailwinds.",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "signal_id": "e05aa0510030d3c4",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -671,7 +1107,16 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "sell watch",
+      "thesis_impact": "Human review required: price is below the configured max-loss threshold.",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "signal_id": "5513bd0d161fbf52",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -685,7 +1130,16 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "research only",
+      "thesis_impact": "Watchlist item only; review manually before any portfolio decision.",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "signal_id": "284e41a890c3476d",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -699,7 +1153,16 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "research only",
+      "thesis_impact": "Watchlist item only; review manually before any portfolio decision.",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "signal_id": "c215d25bef78e2f9",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -713,7 +1176,16 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "research only",
+      "thesis_impact": "Watchlist item only; review manually before any portfolio decision.",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "signal_id": "1cf2a6dd60d24e95",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -727,7 +1199,16 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "research only",
+      "thesis_impact": "Watchlist item only; review manually before any portfolio decision.",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "signal_id": "ef22c3a6f2f3f471",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -742,7 +1223,16 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "sell watch",
+      "thesis_impact": "Board changes can affect governance and execution risk for AI deployments.",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "signal_id": "5b715d4f6cef3a3f",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -757,7 +1247,16 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "sell watch",
+      "thesis_impact": "Analyst huristics and optimistic targets may contrast with price action.",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "signal_id": "e4719a72cc671539",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -772,7 +1271,16 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "hold thesis intact",
+      "thesis_impact": "Firm raises price target, supports growth thesis in low-power AI edge semiconductors.",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "signal_id": "2872a3d467536d83",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -787,7 +1295,16 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "research opportunity",
+      "thesis_impact": "AMD capacity expansion could affect competitive dynamics in AI chips.",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "signal_id": "09da7ad717863c90",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -802,7 +1319,16 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "research opportunity",
+      "thesis_impact": "Signals expansion in AI chip supply and partnerships.",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "signal_id": "9b77902147bd6e31",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -817,7 +1343,16 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "research opportunity",
+      "thesis_impact": "Analyst enthusiasm could indicate upside potential while price action muted.",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "signal_id": "dd952bc9203e6973",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -832,7 +1367,16 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "research opportunity",
+      "thesis_impact": "Highlights AI adoption progress and diversification away from data-center dependency.",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "signal_id": "bbe5e23085ef585a",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -847,7 +1391,16 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "sell watch",
+      "thesis_impact": "Signal for enterprise automation/AI workflow exposure; price vs. risk threshold.",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "signal_id": "7e3f6e4400ab11c7",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -861,7 +1414,16 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "sell watch",
+      "thesis_impact": "Human review required: price is below the configured max-loss threshold.",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "signal_id": "5513bd0d161fbf52",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -875,7 +1437,16 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "research only",
+      "thesis_impact": "Watchlist item only; review manually before any portfolio decision.",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "signal_id": "284e41a890c3476d",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -889,7 +1460,16 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "research only",
+      "thesis_impact": "Watchlist item only; review manually before any portfolio decision.",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "signal_id": "c215d25bef78e2f9",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -903,7 +1483,16 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "research only",
+      "thesis_impact": "Watchlist item only; review manually before any portfolio decision.",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "signal_id": "1cf2a6dd60d24e95",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -917,7 +1506,16 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "research only",
+      "thesis_impact": "Watchlist item only; review manually before any portfolio decision.",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "signal_id": "ef22c3a6f2f3f471",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -932,7 +1530,16 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "sell watch",
+      "thesis_impact": "Board changes can affect governance and execution risk",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "signal_id": "7b1fa62d2a28eb38",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -947,7 +1554,16 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "sell watch",
+      "thesis_impact": "Mixed views; analyst forecasts vs price targets",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "signal_id": "51bf17894f90a665",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -962,7 +1578,16 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "hold thesis intact",
+      "thesis_impact": "PT raise supports growth thesis; monitoring needed",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "signal_id": "aead47844eeb7727",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -977,7 +1602,16 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "research opportunity",
+      "thesis_impact": "Signals expansion to AI chip capacity; potential long-run benefit if demand sustains.",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "signal_id": "865fdcef4b6f56c9",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -992,7 +1626,16 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "research opportunity",
+      "thesis_impact": "Highlights Nvidia chip leadership and AI economics; broader AI demand backdrop",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "signal_id": "d01afacfe170c0df",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -1007,7 +1650,16 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "hold thesis intact",
+      "thesis_impact": "NVIDIA earnings beat; guidance up, but shares fell",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "signal_id": "f0830525dd42a468",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -1022,7 +1674,16 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "research opportunity",
+      "thesis_impact": "Momentum supports AI hardware leadership; potential upside if guidance holds.",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "signal_id": "bd181dfc39d2100a",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -1037,7 +1698,16 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "hold thesis intact",
+      "thesis_impact": "Terafab partnerships uncertain; no finalized agreement.",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "signal_id": "2c211a865eeb285d",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -1052,7 +1722,16 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "research opportunity",
+      "thesis_impact": "Cash flow growth supports funding expansion; assess sustainability.",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "signal_id": "0778003f9b78df23",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -1067,7 +1746,16 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "sell watch",
+      "thesis_impact": "Board change could affect governance and execution risk.",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "signal_id": "29285898a6835003",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -1082,7 +1770,16 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "sell watch",
+      "thesis_impact": "Caution on analyst-driven upside; potential overhang.",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "signal_id": "966be1285b13094a",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -1097,7 +1794,16 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "research opportunity",
+      "thesis_impact": "Bullish price target could influence sentiment and options activity.",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "signal_id": "16e9b70e9e4c75d4",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -1112,7 +1818,16 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "hold thesis intact",
+      "thesis_impact": "PT hike suggests upside from Q1 results; potential reaffirmation of growth thesis.",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "signal_id": "5515b8ac8d2af9f0",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -1127,7 +1842,16 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "research opportunity",
+      "thesis_impact": "AI chip capacity expansion could support growth in AI workloads.",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "signal_id": "172a17416f971225",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -1142,7 +1866,16 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "research opportunity",
+      "thesis_impact": "Nvidia leadership convo may affect AI infra demand; indirect relevance to AMD",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "signal_id": "48d7eee7893b6a05",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -1157,7 +1890,16 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "research opportunity",
+      "thesis_impact": "Nvidia chatter and volatility signal AI stock sensitivity; macro context",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "signal_id": "cef468833b9bfdab",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -1172,7 +1914,16 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "research opportunity",
+      "thesis_impact": "Positively framed, supports long-term earnings growth thesis.",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "signal_id": "47ea848000bdbe47",
+      "status": "open"
     },
     {
       "date": "2026-05-21",
@@ -1187,22 +1938,414 @@
       "later_outcome": {
         "status": "pending",
         "days_elapsed": 0
-      }
+      },
+      "date_time": "2026-05-21T00:00:00+00:00",
+      "recommendation_label": "research opportunity",
+      "thesis_impact": "Cash flow strength supports growth thesis; sustainability unclear.",
+      "time_horizon": "unknown",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "legacy-2026-05-21",
+      "signal_id": "8a9d1ad195de57d1",
+      "status": "open"
+    },
+    {
+      "signal_id": "4f02a4b95fe3a285",
+      "date_time": "2026-05-21T16:29:33.115931+00:00",
+      "date": "2026-05-21",
+      "run_session": "push",
+      "ticker": "PATH",
+      "signal_type": "sell watch",
+      "recommendation_label": "sell watch",
+      "confidence": 42.1,
+      "price_at_signal": 10.34,
+      "benchmark_ticker": "VOO",
+      "benchmark_price_at_signal": 679.77,
+      "reason": "Human review required: price is below the configured max-loss threshold.",
+      "thesis_impact": "Human review required: price is below the configured max-loss threshold.",
+      "time_horizon": "medium",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "e37f8a19a821d2b8",
+      "source": "rules",
+      "status": "open",
+      "company": "UiPath",
+      "sector": "AI automation software"
+    },
+    {
+      "signal_id": "c07ff20d1279ab76",
+      "date_time": "2026-05-21T16:29:33.115931+00:00",
+      "date": "2026-05-21",
+      "run_session": "push",
+      "ticker": "NVDA",
+      "signal_type": "research only",
+      "recommendation_label": "research only",
+      "confidence": 51.0,
+      "price_at_signal": 219.43,
+      "benchmark_ticker": "VOO",
+      "benchmark_price_at_signal": 679.77,
+      "reason": "Watchlist item only; review manually before any portfolio decision.",
+      "thesis_impact": "Watchlist item only; review manually before any portfolio decision.",
+      "time_horizon": "research",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "e37f8a19a821d2b8",
+      "source": "rules",
+      "status": "open",
+      "company": "NVIDIA",
+      "sector": "AI datacenter semiconductors"
+    },
+    {
+      "signal_id": "9a81abd90ab70dee",
+      "date_time": "2026-05-21T16:29:33.115931+00:00",
+      "date": "2026-05-21",
+      "run_session": "push",
+      "ticker": "AMD",
+      "signal_type": "research only",
+      "recommendation_label": "research only",
+      "confidence": 53.0,
+      "price_at_signal": 442.33,
+      "benchmark_ticker": "VOO",
+      "benchmark_price_at_signal": 679.77,
+      "reason": "Watchlist item only; review manually before any portfolio decision.",
+      "thesis_impact": "Watchlist item only; review manually before any portfolio decision.",
+      "time_horizon": "research",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "e37f8a19a821d2b8",
+      "source": "rules",
+      "status": "open",
+      "company": "Advanced Micro Devices",
+      "sector": "AI and datacenter semiconductors"
+    },
+    {
+      "signal_id": "f67e42c2da5606a0",
+      "date_time": "2026-05-21T16:29:33.115931+00:00",
+      "date": "2026-05-21",
+      "run_session": "push",
+      "ticker": "ANET",
+      "signal_type": "research only",
+      "recommendation_label": "research only",
+      "confidence": 53.9,
+      "price_at_signal": 145.93,
+      "benchmark_ticker": "VOO",
+      "benchmark_price_at_signal": 679.77,
+      "reason": "Watchlist item only; review manually before any portfolio decision.",
+      "thesis_impact": "Watchlist item only; review manually before any portfolio decision.",
+      "time_horizon": "research",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "e37f8a19a821d2b8",
+      "source": "rules",
+      "status": "open",
+      "company": "Arista Networks",
+      "sector": "datacenter networking"
+    },
+    {
+      "signal_id": "65494465a8c1dd64",
+      "date_time": "2026-05-21T16:29:33.115931+00:00",
+      "date": "2026-05-21",
+      "run_session": "push",
+      "ticker": "NOW",
+      "signal_type": "research only",
+      "recommendation_label": "research only",
+      "confidence": 52.9,
+      "price_at_signal": 99.19,
+      "benchmark_ticker": "VOO",
+      "benchmark_price_at_signal": 679.77,
+      "reason": "Watchlist item only; review manually before any portfolio decision.",
+      "thesis_impact": "Watchlist item only; review manually before any portfolio decision.",
+      "time_horizon": "research",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "e37f8a19a821d2b8",
+      "source": "rules",
+      "status": "open",
+      "company": "ServiceNow",
+      "sector": "enterprise automation software"
+    },
+    {
+      "signal_id": "794d1ec03be50663",
+      "date_time": "2026-05-21T16:29:33.115931+00:00",
+      "date": "2026-05-21",
+      "run_session": "push",
+      "ticker": "PATH",
+      "signal_type": "sell watch",
+      "recommendation_label": "sell watch",
+      "confidence": 60,
+      "price_at_signal": 10.34,
+      "benchmark_ticker": "VOO",
+      "benchmark_price_at_signal": 679.77,
+      "reason": "Board shakeup may affect governance and strategic AI oversight.",
+      "thesis_impact": "Governance risk/oversight concern may temper AI adoption bets.",
+      "time_horizon": "medium",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "e37f8a19a821d2b8",
+      "source": "gpt",
+      "status": "open",
+      "company": "UiPath",
+      "sector": "AI automation software",
+      "event_title": "UiPath Board Loss Raises Questions On AI Governance And Oversight",
+      "source_url": "https://finance.yahoo.com/markets/stocks/articles/uipath-board-loss-raises-questions-111105519.html?.tsrc=rss",
+      "uncertainty_notes": "Leadership change uncertainty; price below max-loss threshold."
+    },
+    {
+      "signal_id": "af4d70b88b2a8ffd",
+      "date_time": "2026-05-21T16:29:33.115931+00:00",
+      "date": "2026-05-21",
+      "run_session": "push",
+      "ticker": "PATH",
+      "signal_type": "sell watch",
+      "recommendation_label": "sell watch",
+      "confidence": 58,
+      "price_at_signal": 10.34,
+      "benchmark_ticker": "VOO",
+      "benchmark_price_at_signal": 679.77,
+      "reason": "Analyst targets vs skepticism could imply volatility.",
+      "thesis_impact": "Sentiment guidance risk; potential headwinds on upside realization.",
+      "time_horizon": "medium",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "e37f8a19a821d2b8",
+      "source": "gpt",
+      "status": "open",
+      "company": "UiPath",
+      "sector": "AI automation software",
+      "event_title": "1 of Wall Street\u2019s Favorite Stock with Impressive Fundamentals and 2 We Avoid",
+      "source_url": "https://finance.yahoo.com/markets/stocks/articles/1-wall-street-favorite-stock-222855724.html?.tsrc=rss",
+      "uncertainty_notes": "Analyst biases may affect price targets."
+    },
+    {
+      "signal_id": "3bd7517e5b0cc3c0",
+      "date_time": "2026-05-21T16:29:33.115931+00:00",
+      "date": "2026-05-21",
+      "run_session": "push",
+      "ticker": "AMD",
+      "signal_type": "research opportunity",
+      "recommendation_label": "research opportunity",
+      "confidence": 64,
+      "price_at_signal": 442.33,
+      "benchmark_ticker": "VOO",
+      "benchmark_price_at_signal": 679.77,
+      "reason": "High upside price target hints at strong AI/CPU/GPU roadmap.",
+      "thesis_impact": "Positive thesis; monitor execution and valuation.",
+      "time_horizon": "research",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "e37f8a19a821d2b8",
+      "source": "gpt",
+      "status": "open",
+      "company": "Advanced Micro Devices",
+      "sector": "AI and datacenter semiconductors",
+      "event_title": "Will AMD Stock Reach $600 This Year? The Answer May Not Surprise You",
+      "source_url": "https://247wallst.com/investing/2026/05/21/will-amd-stock-reach-600-this-year-the-answer-may-not-surprise-you/?.tsrc=rss",
+      "uncertainty_notes": "Reliance on price target; narrative may be optimistic."
+    },
+    {
+      "signal_id": "102eac9436d68781",
+      "date_time": "2026-05-21T16:29:33.115931+00:00",
+      "date": "2026-05-21",
+      "run_session": "push",
+      "ticker": "NVDA",
+      "signal_type": "research opportunity",
+      "recommendation_label": "research opportunity",
+      "confidence": 62,
+      "price_at_signal": 219.43,
+      "benchmark_ticker": "VOO",
+      "benchmark_price_at_signal": 679.77,
+      "reason": "AI datacenter demand supports hardware cycle tailwinds.",
+      "thesis_impact": "Affirmation of AI datacenter leadership impact; keep watch.",
+      "time_horizon": "research",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "e37f8a19a821d2b8",
+      "source": "gpt",
+      "status": "open",
+      "company": "NVIDIA",
+      "sector": "AI datacenter semiconductors",
+      "event_title": "Price Prediction: Can DTE Energy Hit $200 Before 2027?",
+      "source_url": "https://247wallst.com/investing/2026/05/21/price-prediction-can-dte-energy-hit-200-before-2027/?.tsrc=rss",
+      "uncertainty_notes": "DTE Energy focus; indirect Nvidia relevance."
+    },
+    {
+      "signal_id": "1468a939558cb592",
+      "date_time": "2026-05-21T16:29:33.115931+00:00",
+      "date": "2026-05-21",
+      "run_session": "push",
+      "ticker": "LSCC",
+      "signal_type": "hold thesis intact",
+      "recommendation_label": "hold thesis intact",
+      "confidence": 70,
+      "price_at_signal": 137.88,
+      "benchmark_ticker": "VOO",
+      "benchmark_price_at_signal": 679.77,
+      "reason": "PT raised; confirms upside potential and earnings visibility.",
+      "thesis_impact": "No change; reaffirmed growth thesis.",
+      "time_horizon": "long",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "e37f8a19a821d2b8",
+      "source": "gpt",
+      "status": "open",
+      "company": "Lattice Semiconductor",
+      "sector": "semiconductors",
+      "event_title": "Baird Lifts PT on Lattice Semiconductor Corporation (LSCC) Following Q1 Results",
+      "source_url": "https://finance.yahoo.com/markets/stocks/articles/baird-lifts-pt-lattice-semiconductor-204105162.html?.tsrc=rss",
+      "uncertainty_notes": "PT move may be for valuation; execution risk unchanged."
+    },
+    {
+      "signal_id": "22bf84a98ccbc54d",
+      "date_time": "2026-05-21T16:29:33.115931+00:00",
+      "date": "2026-05-21",
+      "run_session": "push",
+      "ticker": "AMD",
+      "signal_type": "research opportunity",
+      "recommendation_label": "research opportunity",
+      "confidence": 60,
+      "price_at_signal": 442.33,
+      "benchmark_ticker": "VOO",
+      "benchmark_price_at_signal": 679.77,
+      "reason": "AI capacity push could improve long-term AI compute share.",
+      "thesis_impact": "Potential upside to AI accelerators; monitor capacity expansion.",
+      "time_horizon": "research",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "e37f8a19a821d2b8",
+      "source": "gpt",
+      "status": "open",
+      "company": "Advanced Micro Devices",
+      "sector": "AI and datacenter semiconductors",
+      "event_title": "AMD Plans $10 Billion Taiwan AI Chip Push",
+      "source_url": "https://finance.yahoo.com/sectors/technology/articles/amd-plans-10-billion-taiwan-132411007.html?.tsrc=rss",
+      "uncertainty_notes": "Details on timing and return profile limited."
+    },
+    {
+      "signal_id": "f876a28bc148aeb3",
+      "date_time": "2026-05-21T16:29:33.115931+00:00",
+      "date": "2026-05-21",
+      "run_session": "push",
+      "ticker": "NVDA",
+      "signal_type": "research opportunity",
+      "recommendation_label": "research opportunity",
+      "confidence": 55,
+      "price_at_signal": 219.43,
+      "benchmark_ticker": "VOO",
+      "benchmark_price_at_signal": 679.77,
+      "reason": "AI datacenter leadership narrative; sector exposure",
+      "thesis_impact": "No stance; await more clarity.",
+      "time_horizon": "research",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "e37f8a19a821d2b8",
+      "source": "gpt",
+      "status": "open",
+      "company": "NVIDIA",
+      "sector": "AI datacenter semiconductors",
+      "event_title": "Should You Buy Taiwan Semiconductor (TSM) in 2026?",
+      "source_url": "https://finance.yahoo.com/markets/stocks/articles/buy-taiwan-semiconductor-tsm-2026-161713224.html?.tsrc=rss",
+      "uncertainty_notes": "Opinion piece; not a direct buy signal."
+    },
+    {
+      "signal_id": "2242adc1604343d0",
+      "date_time": "2026-05-21T16:29:33.115931+00:00",
+      "date": "2026-05-21",
+      "run_session": "push",
+      "ticker": "AMD",
+      "signal_type": "research opportunity",
+      "recommendation_label": "research opportunity",
+      "confidence": 58,
+      "price_at_signal": 442.33,
+      "benchmark_ticker": "VOO",
+      "benchmark_price_at_signal": 679.77,
+      "reason": "AI PC CPUs/NPUs adoption potential",
+      "thesis_impact": "Watch for AI PC ecosystem impact",
+      "time_horizon": "research",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "e37f8a19a821d2b8",
+      "source": "gpt",
+      "status": "open",
+      "company": "Advanced Micro Devices",
+      "sector": "AI and datacenter semiconductors",
+      "event_title": "Can Qualcomm's Advanced AI PC Processors Drive Long-Term Growth?",
+      "source_url": "https://finance.yahoo.com/sectors/technology/articles/qualcomms-advanced-ai-pc-processors-151600123.html?.tsrc=rss",
+      "uncertainty_notes": "Fragmented ecosystem; no portfolio decision."
+    },
+    {
+      "signal_id": "f219125d3b3ee32f",
+      "date_time": "2026-05-21T16:29:33.115931+00:00",
+      "date": "2026-05-21",
+      "run_session": "push",
+      "ticker": "PATH",
+      "signal_type": "sell watch",
+      "recommendation_label": "sell watch",
+      "confidence": 41,
+      "price_at_signal": 10.34,
+      "benchmark_ticker": "VOO",
+      "benchmark_price_at_signal": 679.77,
+      "reason": "High risk signal flagged; price below max-loss threshold.",
+      "thesis_impact": "Thesis may shift to monitor for deterioration rather than new long thesis.",
+      "time_horizon": "medium",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "e37f8a19a821d2b8",
+      "source": "gpt",
+      "status": "open",
+      "company": "UiPath",
+      "sector": "AI automation software",
+      "event_title": "NIO\u2019s SWOT analysis: electric vehicle stock navigates profitability path - Investing.com",
+      "source_url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOUWxzRDdabm5HZnZ1eGM2RmNXUE94blBfSU5vT3g1SFBqcVAtaVQtS0ZMLUlKTGx2cHZwMERBWl9fSExaREs4aHE0T0RISWt6NE05MUVjX1lzdGo2ZktsWkJqUUs5RmI3VnljZEo4OUNmUkNPdk5ESFN4WmpwdHYtOXQxRno3LVZ3a0V3UGJ4V2tSODVBcW84bWVxTk9tOVlTWjBPSDhkNlZicDlzTV9uS2pIZVhXNU9MMXVlSHBFR1BNaUh4eERDUFRTNUhybkRQdGc?oc=5",
+      "uncertainty_notes": "Human review required; sentiment mixed and earnings context unclear."
+    },
+    {
+      "signal_id": "81232c73981465b7",
+      "date_time": "2026-05-21T16:29:33.115931+00:00",
+      "date": "2026-05-21",
+      "run_session": "push",
+      "ticker": "ANET",
+      "signal_type": "research opportunity",
+      "recommendation_label": "research opportunity",
+      "confidence": 53,
+      "price_at_signal": 145.93,
+      "benchmark_ticker": "VOO",
+      "benchmark_price_at_signal": 679.77,
+      "reason": "Cash flow growth supports capacity expansion and AI comms demand.",
+      "thesis_impact": "Possible positive signal; monitor durability of cash flow.",
+      "time_horizon": "research",
+      "review_after_days": 14,
+      "review_date": "2026-06-04",
+      "source_report_id": "e37f8a19a821d2b8",
+      "source": "gpt",
+      "status": "open",
+      "company": "Arista Networks",
+      "sector": "datacenter networking",
+      "event_title": "ANET Benefits From Strong Cash Flow Growth: Will it Sustain?",
+      "source_url": "https://finance.yahoo.com/markets/stocks/articles/anet-benefits-strong-cash-flow-140700802.html?.tsrc=rss",
+      "uncertainty_notes": "No forward guidance; sustainment uncertain amid competition."
     }
   ],
   "accuracy_stats": {
-    "sell watch": {
-      "total": 23,
+    "hold thesis intact": {
+      "total": 11,
       "evaluated": 0,
-      "pending": 23,
+      "pending": 11,
       "accurate": 0,
       "accuracy_pct": null,
       "average_return_pct": null
     },
     "research only": {
-      "total": 16,
+      "total": 20,
       "evaluated": 0,
-      "pending": 16,
+      "pending": 20,
+      "accurate": 0,
+      "accuracy_pct": null,
+      "average_return_pct": null
+    },
+    "research opportunity": {
+      "total": 37,
+      "evaluated": 0,
+      "pending": 37,
       "accurate": 0,
       "accuracy_pct": null,
       "average_return_pct": null
@@ -1215,18 +2358,10 @@
       "accuracy_pct": null,
       "average_return_pct": null
     },
-    "research opportunity": {
-      "total": 31,
+    "sell watch": {
+      "total": 27,
       "evaluated": 0,
-      "pending": 31,
-      "accurate": 0,
-      "accuracy_pct": null,
-      "average_return_pct": null
-    },
-    "hold thesis intact": {
-      "total": 10,
-      "evaluated": 0,
-      "pending": 10,
+      "pending": 27,
       "accurate": 0,
       "accuracy_pct": null,
       "average_return_pct": null
@@ -1235,39 +2370,46 @@
   "best_performing_signals": [],
   "worst_performing_signals": [],
   "summary": {
-    "total_signals": 82,
-    "new_signals_this_run": 14,
-    "evaluated_signals": 0,
-    "pending_signals": 82
+    "total_signals": 97,
+    "new_signals_this_run": 15,
+    "reviewed_today": 0,
+    "reviewed_signals": 0,
+    "open_signals": 97
   },
   "accuracy_by_run_session": {
+    "morning": {
+      "total": 14,
+      "evaluated": 0,
+      "pending": 14,
+      "accurate": 0,
+      "accuracy_pct": null,
+      "average_return_pct": null
+    },
+    "push": {
+      "total": 48,
+      "evaluated": 0,
+      "pending": 48,
+      "accurate": 0,
+      "accuracy_pct": null,
+      "average_return_pct": null
+    },
     "unknown": {
       "total": 22,
       "evaluated": 0,
       "pending": 22,
       "accurate": 0,
-      "accuracy_pct": null
-    },
-    "push": {
-      "total": 33,
-      "evaluated": 0,
-      "pending": 33,
-      "accurate": 0,
-      "accuracy_pct": null
+      "accuracy_pct": null,
+      "average_return_pct": null
     },
     "workflow-dispatch": {
       "total": 13,
       "evaluated": 0,
       "pending": 13,
       "accurate": 0,
-      "accuracy_pct": null
-    },
-    "morning": {
-      "total": 14,
-      "evaluated": 0,
-      "pending": 14,
-      "accurate": 0,
-      "accuracy_pct": null
+      "accuracy_pct": null,
+      "average_return_pct": null
     }
-  }
+  },
+  "learning_mode": "observe_only",
+  "reviewed_today": []
 }

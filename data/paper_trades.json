@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-21T21:18:36.588221+00:00",
+  "last_updated": "2026-05-22T15:37:03.525611+00:00",
   "notes": "Paper-trade records are simulated learning records only. The agent never executes real trades.",
   "paper_trades": [
     {
@@ -11,8 +11,8 @@
       "entry_price": 10.75,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -1.77,
-      "last_checked": "2026-05-21"
+      "latest_return_pct": -2.23,
+      "last_checked": "2026-05-22"
     },
     {
       "opened_at": "2026-05-21",
@@ -23,8 +23,8 @@
       "entry_price": 138.65,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 0.5,
-      "last_checked": "2026-05-21"
+      "latest_return_pct": -3.35,
+      "last_checked": "2026-05-22"
     },
     {
       "opened_at": "2026-05-21",
@@ -47,8 +47,8 @@
       "entry_price": 138.65,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 0.5,
-      "last_checked": "2026-05-21"
+      "latest_return_pct": -3.35,
+      "last_checked": "2026-05-22"
     },
     {
       "opened_at": "2026-05-21",
@@ -109,6 +109,34 @@
       "notes": "Simulated paper record only. No real trade was executed.",
       "latest_return_pct": -0.08,
       "last_checked": "2026-05-21"
+    },
+    {
+      "opened_at": "2026-05-22",
+      "signal_id": "d1bfecee7439900e",
+      "ticker": "LSCC",
+      "signal_type": "hold thesis intact",
+      "recommendation_label": "hold thesis intact",
+      "source": "gpt",
+      "confidence": 65,
+      "entry_price": 134.01,
+      "status": "open",
+      "notes": "Simulated paper record only. No real trade was executed.",
+      "latest_return_pct": 0.0,
+      "last_checked": "2026-05-22"
+    },
+    {
+      "opened_at": "2026-05-22",
+      "signal_id": "c503f0d759d0457e",
+      "ticker": "PATH",
+      "signal_type": "research opportunity",
+      "recommendation_label": "research opportunity",
+      "source": "gpt",
+      "confidence": 58,
+      "entry_price": 10.51,
+      "status": "open",
+      "notes": "Simulated paper record only. No real trade was executed.",
+      "latest_return_pct": 0.0,
+      "last_checked": "2026-05-22"
     }
   ]
 }

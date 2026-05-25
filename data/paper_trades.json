@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-22T21:00:55.697729+00:00",
+  "last_updated": "2026-05-25T15:28:33.705893+00:00",
   "notes": "Paper-trade records are simulated learning records only. The agent never executes real trades.",
   "paper_trades": [
     {
@@ -12,7 +12,7 @@
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
       "latest_return_pct": 1.67,
-      "last_checked": "2026-05-22"
+      "last_checked": "2026-05-25"
     },
     {
       "opened_at": "2026-05-21",
@@ -23,8 +23,8 @@
       "entry_price": 138.65,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 3.35,
-      "last_checked": "2026-05-22"
+      "latest_return_pct": 3.3,
+      "last_checked": "2026-05-25"
     },
     {
       "opened_at": "2026-05-21",
@@ -36,7 +36,7 @@
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
       "latest_return_pct": 4.45,
-      "last_checked": "2026-05-22"
+      "last_checked": "2026-05-25"
     },
     {
       "opened_at": "2026-05-21",
@@ -47,8 +47,8 @@
       "entry_price": 138.65,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 3.35,
-      "last_checked": "2026-05-22"
+      "latest_return_pct": 3.3,
+      "last_checked": "2026-05-25"
     },
     {
       "opened_at": "2026-05-21",
@@ -59,8 +59,8 @@
       "entry_price": 103.26,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -1.11,
-      "last_checked": "2026-05-22"
+      "latest_return_pct": -1.09,
+      "last_checked": "2026-05-25"
     },
     {
       "opened_at": "2026-05-21",
@@ -72,7 +72,7 @@
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
       "latest_return_pct": 9.65,
-      "last_checked": "2026-05-22"
+      "last_checked": "2026-05-25"
     },
     {
       "opened_at": "2026-05-21",
@@ -83,8 +83,8 @@
       "entry_price": 223.47,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -3.66,
-      "last_checked": "2026-05-22"
+      "latest_return_pct": -3.64,
+      "last_checked": "2026-05-25"
     },
     {
       "opened_at": "2026-05-21",
@@ -96,7 +96,7 @@
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
       "latest_return_pct": 4.45,
-      "last_checked": "2026-05-22"
+      "last_checked": "2026-05-25"
     },
     {
       "opened_at": "2026-05-21",
@@ -107,8 +107,8 @@
       "entry_price": 219.68,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -2.0,
-      "last_checked": "2026-05-22"
+      "latest_return_pct": -1.98,
+      "last_checked": "2026-05-25"
     },
     {
       "opened_at": "2026-05-22",
@@ -121,8 +121,8 @@
       "entry_price": 134.01,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 6.93,
-      "last_checked": "2026-05-22"
+      "latest_return_pct": 6.87,
+      "last_checked": "2026-05-25"
     },
     {
       "opened_at": "2026-05-22",
@@ -136,7 +136,7 @@
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
       "latest_return_pct": 4.0,
-      "last_checked": "2026-05-22"
+      "last_checked": "2026-05-25"
     },
     {
       "opened_at": "2026-05-22",
@@ -150,7 +150,7 @@
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
       "latest_return_pct": 0.0,
-      "last_checked": "2026-05-22"
+      "last_checked": "2026-05-25"
     },
     {
       "opened_at": "2026-05-22",
@@ -164,7 +164,7 @@
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
       "latest_return_pct": 0.0,
-      "last_checked": "2026-05-22"
+      "last_checked": "2026-05-25"
     },
     {
       "opened_at": "2026-05-22",
@@ -177,8 +177,8 @@
       "entry_price": 215.28,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 0.0,
-      "last_checked": "2026-05-22"
+      "latest_return_pct": 0.02,
+      "last_checked": "2026-05-25"
     },
     {
       "opened_at": "2026-05-22",
@@ -191,8 +191,78 @@
       "entry_price": 215.28,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
+      "latest_return_pct": 0.02,
+      "last_checked": "2026-05-25"
+    },
+    {
+      "opened_at": "2026-05-25",
+      "signal_id": "ec7cd0c6d795e649",
+      "ticker": "LSCC",
+      "signal_type": "research opportunity",
+      "recommendation_label": "research opportunity",
+      "source": "gpt",
+      "confidence": 60,
+      "entry_price": 143.22,
+      "status": "open",
+      "notes": "Simulated paper record only. No real trade was executed.",
       "latest_return_pct": 0.0,
-      "last_checked": "2026-05-22"
+      "last_checked": "2026-05-25"
+    },
+    {
+      "opened_at": "2026-05-25",
+      "signal_id": "ef92158638c9cbe0",
+      "ticker": "LSCC",
+      "signal_type": "hold thesis intact",
+      "recommendation_label": "hold thesis intact",
+      "source": "gpt",
+      "confidence": 58,
+      "entry_price": 143.22,
+      "status": "open",
+      "notes": "Simulated paper record only. No real trade was executed.",
+      "latest_return_pct": 0.0,
+      "last_checked": "2026-05-25"
+    },
+    {
+      "opened_at": "2026-05-25",
+      "signal_id": "712e465e98f0a3d3",
+      "ticker": "AMD",
+      "signal_type": "research opportunity",
+      "recommendation_label": "research opportunity",
+      "source": "gpt",
+      "confidence": 62,
+      "entry_price": 467.51,
+      "status": "open",
+      "notes": "Simulated paper record only. No real trade was executed.",
+      "latest_return_pct": 0.0,
+      "last_checked": "2026-05-25"
+    },
+    {
+      "opened_at": "2026-05-25",
+      "signal_id": "21c59686205db304",
+      "ticker": "ANET",
+      "signal_type": "research opportunity",
+      "recommendation_label": "research opportunity",
+      "source": "gpt",
+      "confidence": 60,
+      "entry_price": 154.03,
+      "status": "open",
+      "notes": "Simulated paper record only. No real trade was executed.",
+      "latest_return_pct": 0.0,
+      "last_checked": "2026-05-25"
+    },
+    {
+      "opened_at": "2026-05-25",
+      "signal_id": "41f9bce06836785d",
+      "ticker": "NVDA",
+      "signal_type": "research opportunity",
+      "recommendation_label": "research opportunity",
+      "source": "gpt",
+      "confidence": 52,
+      "entry_price": 215.33,
+      "status": "open",
+      "notes": "Simulated paper record only. No real trade was executed.",
+      "latest_return_pct": 0.0,
+      "last_checked": "2026-05-25"
     }
   ]
 }

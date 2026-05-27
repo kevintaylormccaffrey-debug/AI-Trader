@@ -2,7 +2,7 @@
   "portfolio_name": "Kevin Main Portfolio",
   "cash_position": {
     "ticker": "SPAXX",
-    "value": 25.0,
+    "value": 1.0,
     "yield_7d": 3.24
   },
   "holdings": [
@@ -57,6 +57,45 @@
       "max_loss_pct": 20,
       "status": "core_holding",
       "watch_priority": "low"
+    },
+    {
+      "ticker": "AMD",
+      "company": "Advanced Micro Devices",
+      "shares": 1,
+      "cost_basis": 100,
+      "current_price": 100,
+      "time_horizon": "long",
+      "sector": "semiconductors",
+      "thesis": "AI accelerator, datacenter CPU/GPU, and high-performance compute growth",
+      "max_loss_pct": 15,
+      "status": "active",
+      "watch_priority": "high"
+    },
+    {
+      "ticker": "DDOG",
+      "company": "Datadog",
+      "shares": 1,
+      "cost_basis": 100,
+      "current_price": 100,
+      "time_horizon": "medium",
+      "sector": "AI automation software",
+      "thesis": "Cloud observability, security, and AI-enabled infrastructure monitoring growth",
+      "max_loss_pct": 12,
+      "status": "active",
+      "watch_priority": "high"
+    },
+    {
+      "ticker": "MU",
+      "company": "Micron Technology",
+      "shares": 1,
+      "cost_basis": 100,
+      "current_price": 100,
+      "time_horizon": "long",
+      "sector": "semiconductors",
+      "thesis": "AI datacenter memory demand, HBM growth, and semiconductor cycle recovery",
+      "max_loss_pct": 15,
+      "status": "active",
+      "watch_priority": "high"
     }
   ],
   "discovery_preferences": {

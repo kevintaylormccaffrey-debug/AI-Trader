@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-11T16:20:09.908507+00:00",
+  "last_updated": "2026-06-11T21:51:05.080210+00:00",
   "notes": "Paper-trade records are simulated learning records only. The agent never executes real trades.",
   "paper_trades": [
     {
@@ -1463,6 +1463,20 @@
       "source": "gpt",
       "confidence": 72,
       "entry_price": 221.67,
+      "status": "open",
+      "notes": "Simulated paper record only. No real trade was executed.",
+      "latest_return_pct": 0.0,
+      "last_checked": "2026-06-11"
+    },
+    {
+      "opened_at": "2026-06-11",
+      "signal_id": "9391b13f990f2c82",
+      "ticker": "LSCC",
+      "signal_type": "research opportunity",
+      "recommendation_label": "research opportunity",
+      "source": "gpt",
+      "confidence": 62,
+      "entry_price": 79.81,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
       "latest_return_pct": 0.0,

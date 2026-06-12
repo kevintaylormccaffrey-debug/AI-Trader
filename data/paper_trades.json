@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-12T15:37:43.998581+00:00",
+  "last_updated": "2026-06-12T21:20:59.446068+00:00",
   "notes": "Paper-trade records are simulated learning records only. The agent never executes real trades.",
   "paper_trades": [
     {
@@ -1533,6 +1533,48 @@
       "source": "gpt",
       "confidence": 66,
       "entry_price": 879.62,
+      "status": "open",
+      "notes": "Simulated paper record only. No real trade was executed.",
+      "latest_return_pct": 0.0,
+      "last_checked": "2026-06-12"
+    },
+    {
+      "opened_at": "2026-06-12",
+      "signal_id": "8bc0afe32715cf4c",
+      "ticker": "DDOG",
+      "signal_type": "research opportunity",
+      "recommendation_label": "research opportunity",
+      "source": "gpt",
+      "confidence": 66,
+      "entry_price": 221.67,
+      "status": "open",
+      "notes": "Simulated paper record only. No real trade was executed.",
+      "latest_return_pct": 0.0,
+      "last_checked": "2026-06-12"
+    },
+    {
+      "opened_at": "2026-06-12",
+      "signal_id": "6afb409b4cd8f6ba",
+      "ticker": "PATH",
+      "signal_type": "research opportunity",
+      "recommendation_label": "research opportunity",
+      "source": "gpt",
+      "confidence": 35,
+      "entry_price": 10.51,
+      "status": "open",
+      "notes": "Simulated paper record only. No real trade was executed.",
+      "latest_return_pct": 0.0,
+      "last_checked": "2026-06-12"
+    },
+    {
+      "opened_at": "2026-06-12",
+      "signal_id": "ae5d5d74ca4ca4da",
+      "ticker": "VOO",
+      "signal_type": "research opportunity",
+      "recommendation_label": "research opportunity",
+      "source": "gpt",
+      "confidence": 26,
+      "entry_price": 679.4,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
       "latest_return_pct": 0.0,

@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-18T15:51:36.171801+00:00",
+  "last_updated": "2026-06-18T21:51:42.030775+00:00",
   "notes": "Paper-trade records are simulated learning records only. The agent never executes real trades.",
   "paper_trades": [
     {
@@ -1813,6 +1813,34 @@
       "source": "rules",
       "confidence": 58,
       "entry_price": 10.51,
+      "status": "open",
+      "notes": "Simulated paper record only. No real trade was executed.",
+      "latest_return_pct": 0.0,
+      "last_checked": "2026-06-18"
+    },
+    {
+      "opened_at": "2026-06-18",
+      "signal_id": "57075d8b28582259",
+      "ticker": "MU",
+      "signal_type": "research opportunity",
+      "recommendation_label": "research opportunity",
+      "source": "gpt",
+      "confidence": 55,
+      "entry_price": 879.62,
+      "status": "open",
+      "notes": "Simulated paper record only. No real trade was executed.",
+      "latest_return_pct": 0.0,
+      "last_checked": "2026-06-18"
+    },
+    {
+      "opened_at": "2026-06-18",
+      "signal_id": "a7fa024c74b276bd",
+      "ticker": "MU",
+      "signal_type": "hold thesis intact",
+      "recommendation_label": "hold thesis intact",
+      "source": "gpt",
+      "confidence": 65,
+      "entry_price": 879.62,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
       "latest_return_pct": 0.0,

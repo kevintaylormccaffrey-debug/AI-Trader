@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-22T17:12:55.415783+00:00",
+  "last_updated": "2026-06-22T21:49:41.283380+00:00",
   "notes": "Paper-trade records are simulated learning records only. The agent never executes real trades.",
   "paper_trades": [
     {
@@ -1953,6 +1953,20 @@
       "source": "rules",
       "confidence": 58,
       "entry_price": 79.81,
+      "status": "open",
+      "notes": "Simulated paper record only. No real trade was executed.",
+      "latest_return_pct": 0.0,
+      "last_checked": "2026-06-22"
+    },
+    {
+      "opened_at": "2026-06-22",
+      "signal_id": "357447f9bcf56a5f",
+      "ticker": "DDOG",
+      "signal_type": "hold thesis intact",
+      "recommendation_label": "hold thesis intact",
+      "source": "gpt",
+      "confidence": 65,
+      "entry_price": 221.67,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
       "latest_return_pct": 0.0,

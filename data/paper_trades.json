@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-03T14:30:25.431278+00:00",
+  "last_updated": "2026-07-03T20:44:23.286961+00:00",
   "notes": "Paper-trade records are simulated learning records only. The agent never executes real trades.",
   "paper_trades": [
     {
@@ -2457,6 +2457,34 @@
       "source": "gpt",
       "confidence": 65,
       "entry_price": 679.4,
+      "status": "open",
+      "notes": "Simulated paper record only. No real trade was executed.",
+      "latest_return_pct": 0.0,
+      "last_checked": "2026-07-03"
+    },
+    {
+      "opened_at": "2026-07-03",
+      "signal_id": "dd70dd21d71e8f5a",
+      "ticker": "MU",
+      "signal_type": "hold thesis intact",
+      "recommendation_label": "hold thesis intact",
+      "source": "gpt",
+      "confidence": 58,
+      "entry_price": 879.62,
+      "status": "open",
+      "notes": "Simulated paper record only. No real trade was executed.",
+      "latest_return_pct": 0.0,
+      "last_checked": "2026-07-03"
+    },
+    {
+      "opened_at": "2026-07-03",
+      "signal_id": "f0391839dd64201c",
+      "ticker": "DDOG",
+      "signal_type": "hold thesis intact",
+      "recommendation_label": "hold thesis intact",
+      "source": "gpt",
+      "confidence": 67,
+      "entry_price": 221.67,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
       "latest_return_pct": 0.0,

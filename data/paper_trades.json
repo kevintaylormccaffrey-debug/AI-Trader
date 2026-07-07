@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-07T01:34:02.642473+00:00",
+  "last_updated": "2026-07-07T01:44:07.951375+00:00",
   "notes": "Paper-trade records are simulated learning records only. The agent never executes real trades.",
   "paper_trades": [
     {
@@ -2639,6 +2639,20 @@
       "source": "gpt",
       "confidence": 68,
       "entry_price": 255.37,
+      "status": "open",
+      "notes": "Simulated paper record only. No real trade was executed.",
+      "latest_return_pct": 0.0,
+      "last_checked": "2026-07-07"
+    },
+    {
+      "opened_at": "2026-07-07",
+      "signal_id": "b5d0fcaded5255f2",
+      "ticker": "NVDA",
+      "signal_type": "research opportunity",
+      "recommendation_label": "research opportunity",
+      "source": "gpt",
+      "confidence": 52,
+      "entry_price": 195.55,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
       "latest_return_pct": 0.0,

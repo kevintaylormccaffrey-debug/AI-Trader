@@ -12,7 +12,7 @@ It never executes trades, never stores broker credentials, and never hardcodes A
 
 ## What It Does
 
-- Pulls best-effort current prices and price history from public Stooq CSV endpoints.
+- Pulls best-effort current prices and price history from Yahoo Finance chart data, with Stooq and portfolio fallback support.
 - Pulls recent headlines from Yahoo Finance and Google News RSS.
 - Calculates current value, unrealized gain/loss, percentage gain/loss, and position weight.
 - Flags holdings as `sell watch`, `hold`, `add watch`, or `research only`.
@@ -353,4 +353,4 @@ This is not financial advice. It is a research workflow for human review. The ag
 
 ## Extending Data Sources
 
-The default implementation uses public no-key sources so the repo runs immediately. For production-grade market data, add a provider in `src/data_sources.py` that reads credentials from GitHub Secrets or environment variables. Keep secrets out of committed files.
+The default implementation uses public no-key sources so the repo runs immediately. Price data uses Yahoo Finance chart data first, then Stooq, then the portfolio fallback value if public providers are unavailable. For production-grade market data, add a provider in `src/data_sources.py` that reads credentials from GitHub Secrets or environment variables. Keep secrets out of committed files.

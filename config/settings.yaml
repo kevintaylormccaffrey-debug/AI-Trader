@@ -14,7 +14,10 @@ dashboard:
 
 market_data:
   timeout_seconds: 12
-  price_provider: stooq
+  price_provider: yahoo_chart
+  price_providers:
+    - yahoo_chart
+    - stooq
   history_days: 90
   user_agent: KevinStockResearchAgent/0.1
   sector_proxy_map:

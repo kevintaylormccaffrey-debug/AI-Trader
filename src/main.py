@@ -252,7 +252,7 @@ def build_report(settings: dict[str, Any]) -> dict[str, Any]:
                 "Include uncertainty because data can lag and signals can be wrong.",
             ],
             "data_sources": [
-                "Stooq public CSV for prices and price history, with portfolio fallback prices if unavailable.",
+                "Yahoo Finance chart data for prices and price history, with Stooq and portfolio fallback prices if unavailable.",
                 "Yahoo Finance and Google News RSS feeds for recent headlines.",
                 "Yahoo quote summary calendar events for best-effort earnings dates.",
                 "OpenAI Responses API for important-event analysis when enabled and within configured cost limits.",

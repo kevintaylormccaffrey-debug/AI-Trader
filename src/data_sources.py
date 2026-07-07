@@ -20,6 +20,8 @@ DEFAULT_SETTINGS: dict[str, Any] = {
     "report_path": "output/latest_report.json",
     "market_data": {
         "timeout_seconds": 12,
+        "price_provider": "yahoo_chart",
+        "price_providers": ["yahoo_chart", "stooq"],
         "history_days": 90,
         "user_agent": "KevinStockResearchAgent/0.1",
     },
@@ -229,30 +231,171 @@ def fetch_price_history(ticker: str, settings: dict[str, Any], days: int | None 
     return history[-lookback_days:]
 
 
+def fetch_yahoo_chart_snapshot(
+    ticker: str,
+    settings: dict[str, Any],
+    fallback_price: float | None = None,
+    days: int | None = None,
+) -> dict[str, Any]:
+    lookback_days = days or int(settings.get("market_data", {}).get("history_days", 90))
+    url = f"https://query1.finance.yahoo.com/v8/finance/chart/{ticker.upper()}?range={lookback_days}d&interval=1d"
+    text, error = http_get(url, settings, "market_data")
+    snapshot: dict[str, Any] = {
+        "ticker": ticker.upper(),
+        "price": fallback_price,
+        "open": None,
+        "high": None,
+        "low": None,
+        "volume": None,
+        "as_of": utc_now().isoformat(),
+        "source": "portfolio_fallback" if fallback_price is not None else "unavailable",
+        "source_url": url,
+        "error": error,
+        "history": [],
+    }
+    if not text:
+        return snapshot
+
+    try:
+        payload = json.loads(text)
+        chart = payload.get("chart", {})
+        chart_error = chart.get("error")
+        if chart_error:
+            snapshot["error"] = chart_error.get("description") or str(chart_error)
+            return snapshot
+        results = chart.get("result") or []
+        if not results:
+            snapshot["error"] = "Yahoo chart returned no result rows."
+            return snapshot
+
+        result = results[0]
+        meta = result.get("meta", {})
+        timestamps = result.get("timestamp") or []
+        quote_blocks = result.get("indicators", {}).get("quote") or []
+        quote = quote_blocks[0] if quote_blocks else {}
+        opens = quote.get("open") or []
+        highs = quote.get("high") or []
+        lows = quote.get("low") or []
+        closes = quote.get("close") or []
+        volumes = quote.get("volume") or []
+
+        history: list[dict[str, Any]] = []
+        for index, raw_ts in enumerate(timestamps):
+            close = safe_float(closes[index] if index < len(closes) else None)
+            if close is None:
+                continue
+            stamp = dt.datetime.fromtimestamp(int(raw_ts), dt.timezone.utc)
+            history.append(
+                {
+                    "date": stamp.date().isoformat(),
+                    "open": safe_float(opens[index] if index < len(opens) else None),
+                    "high": safe_float(highs[index] if index < len(highs) else None),
+                    "low": safe_float(lows[index] if index < len(lows) else None),
+                    "close": close,
+                    "volume": safe_float(volumes[index] if index < len(volumes) else None),
+                    "source": "yahoo_chart",
+                    "source_url": url,
+                }
+            )
+
+        last_history = history[-1] if history else {}
+        price = safe_float(meta.get("regularMarketPrice")) or last_history.get("close") or fallback_price
+        previous_close = (
+            history[-2]["close"]
+            if len(history) >= 2
+            else safe_float(meta.get("previousClose")) or safe_float(meta.get("chartPreviousClose"))
+        )
+        daily_change_pct = None
+        if price and previous_close:
+            daily_change_pct = round((float(price) - float(previous_close)) / float(previous_close) * 100, 2)
+
+        snapshot.update(
+            {
+                "price": price,
+                "open": last_history.get("open"),
+                "high": last_history.get("high"),
+                "low": last_history.get("low"),
+                "volume": last_history.get("volume"),
+                "as_of": dt.datetime.fromtimestamp(
+                    int(meta.get("regularMarketTime") or timestamps[-1]),
+                    dt.timezone.utc,
+                ).isoformat()
+                if (meta.get("regularMarketTime") or timestamps)
+                else utc_now().isoformat(),
+                "source": "yahoo_chart" if price is not None else snapshot["source"],
+                "error": None if price is not None else "Yahoo chart returned no usable price.",
+                "previous_close": previous_close,
+                "daily_change_pct": daily_change_pct,
+                "history": history[-lookback_days:],
+            }
+        )
+        return snapshot
+    except (KeyError, TypeError, ValueError, json.JSONDecodeError) as exc:
+        snapshot["error"] = str(exc)
+        return snapshot
+
+
+def configured_price_providers(settings: dict[str, Any]) -> list[str]:
+    market_settings = settings.get("market_data", {})
+    providers = market_settings.get("price_providers")
+    if isinstance(providers, list) and providers:
+        return [str(provider).strip().lower() for provider in providers if str(provider).strip()]
+    provider = str(market_settings.get("price_provider") or "yahoo_chart").strip().lower()
+    return [provider]
+
+
 def fetch_market_snapshot(
     ticker: str,
     settings: dict[str, Any],
     fallback_price: float | None = None,
 ) -> dict[str, Any]:
-    quote = fetch_stooq_quote(ticker, settings, fallback_price)
-    history = fetch_price_history(ticker, settings)
+    quote: dict[str, Any] | None = None
+    provider_errors: list[dict[str, str | None]] = []
+    for provider in configured_price_providers(settings):
+        if provider == "yahoo_chart":
+            candidate = fetch_yahoo_chart_snapshot(ticker, settings, fallback_price)
+        elif provider == "stooq":
+            candidate = fetch_stooq_quote(ticker, settings, fallback_price)
+            candidate["history"] = fetch_price_history(ticker, settings)
+        else:
+            provider_errors.append({"provider": provider, "error": "Unknown price provider."})
+            continue
+        provider_errors.append({"provider": provider, "error": candidate.get("error")})
+        if candidate.get("price") is not None and candidate.get("source") != "portfolio_fallback":
+            quote = candidate
+            break
+        if quote is None:
+            quote = candidate
+
+    if quote is None:
+        quote = {
+            "ticker": ticker.upper(),
+            "price": fallback_price,
+            "source": "portfolio_fallback" if fallback_price is not None else "unavailable",
+            "as_of": utc_now().isoformat(),
+            "history": [],
+            "error": "No configured price providers were available.",
+        }
+
+    history = quote.get("history") or []
     clean_history = [row for row in history if row.get("close") is not None]
 
     if quote.get("price") is None and clean_history:
         quote["price"] = clean_history[-1]["close"]
-        quote["source"] = "stooq_history"
+        quote["source"] = f"{quote.get('source')}_history"
         quote["as_of"] = clean_history[-1]["date"]
 
     if len(clean_history) >= 2:
         previous_close = clean_history[-2]["close"]
-        quote["previous_close"] = previous_close
+        quote["previous_close"] = quote.get("previous_close") or previous_close
         if quote.get("price") and previous_close:
             quote["daily_change_pct"] = round((quote["price"] - previous_close) / previous_close * 100, 2)
     else:
-        quote["previous_close"] = None
-        quote["daily_change_pct"] = None
+        quote["previous_close"] = quote.get("previous_close")
+        quote["daily_change_pct"] = quote.get("daily_change_pct")
 
     quote["history"] = clean_history
+    quote["provider_errors"] = provider_errors
     return quote
 
 

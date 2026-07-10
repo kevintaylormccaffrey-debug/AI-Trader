@@ -146,7 +146,42 @@ def render_driver_list(item: dict[str, Any]) -> str:
     return "<div class='driver-list'><strong>Why this appeared</strong><ul>" + "".join(f"<li>{esc(driver)}</li>" for driver in drivers) + "</ul></div>"
 
 
-def action_card(item: dict[str, Any], label: str, note: str) -> str:
+def render_entry_zone(item: dict[str, Any], sanitized: bool = False) -> str:
+    zone = item.get("entry_zone") or {}
+    starter = zone.get("starter_zone") or {}
+    stronger = zone.get("stronger_add_watch_zone") or {}
+    if not starter:
+        return ""
+
+    def pct_range(values: Any) -> str:
+        if isinstance(values, list) and len(values) >= 2:
+            return f"{esc(values[0])}%-{esc(values[1])}% below current"
+        return "pullback from current"
+
+    if sanitized:
+        starter_text = pct_range(starter.get("below_current_pct"))
+        stronger_text = pct_range(stronger.get("below_current_pct"))
+        chase_text = f"+{esc(zone.get('do_not_chase_above_pct'))}% above current" if zone.get("do_not_chase_above_pct") is not None else "above current"
+    else:
+        starter_text = f"{money(starter.get('low'))} - {money(starter.get('high'))}"
+        stronger_text = f"{money(stronger.get('low'))} - {money(stronger.get('high'))}" if stronger else "n/a"
+        chase_text = money(zone.get("do_not_chase_above"))
+
+    notes = zone.get("notes") or []
+    note_items = "".join(f"<li>{esc(note)}</li>" for note in notes[:4])
+    return (
+        "<div class='entry-zone'>"
+        "<strong>Entry Research Zones</strong>"
+        f"<p><span>Starter research zone:</span> {starter_text}</p>"
+        f"<p><span>Stronger add-watch zone:</span> {stronger_text}</p>"
+        f"<p><span>Do-not-chase above:</span> {chase_text}</p>"
+        f"{'<ul>' + note_items + '</ul>' if note_items else ''}"
+        "<p class='small-note'>Research prompt only. Not a buy order or fair-value claim.</p>"
+        "</div>"
+    )
+
+
+def action_card(item: dict[str, Any], label: str, note: str, sanitized: bool = False) -> str:
     score = item.get("scores", {}).get("overall_score")
     return (
         "<article class='radar-card'>"
@@ -154,12 +189,13 @@ def action_card(item: dict[str, Any], label: str, note: str) -> str:
         f"<p>{compact_reason(item.get('action_reasoning') or item.get('why_it_matches') or item.get('risk'))}</p>"
         f"<p><strong>Score:</strong> {esc(score)} | <strong>Momentum:</strong> {esc(component_value(item, 'price_momentum'))} | <strong>Thesis:</strong> {esc(component_value(item, 'thesis_risk'))}</p>"
         f"{render_driver_list(item)}"
+        f"{render_entry_zone(item, sanitized)}"
         f"<p class='small-note'>{esc(note)}</p>"
         "</article>"
     )
 
 
-def render_action_radar(report: dict[str, Any]) -> str:
+def render_action_radar(report: dict[str, Any], sanitized: bool = False) -> str:
     holdings = report.get("holdings", [])
     sell_watch = report.get("sell_watch", [])
     add_watch = [item for item in holdings if item.get("action") == "add watch"]
@@ -193,19 +229,20 @@ def render_action_radar(report: dict[str, Any]) -> str:
             item,
             "add watch" if item.get("action") == "add watch" else "review for add",
             "Prompt to research adding exposure. Not a buy instruction.",
+            sanitized,
         )
         for item in add_watch
     )
     sell_html = "".join(
-        action_card(item, "review sell thesis", "Risk prompt. Check thesis, sizing, and stop/loss rules before acting.")
+        action_card(item, "review sell thesis", "Risk prompt. Check thesis, sizing, and stop/loss rules before acting.", sanitized)
         for item in sell_watch[:4]
     )
     checks_html = "".join(
-        action_card(item, item.get("action", "thesis check"), "Review why the model did not classify this as a clean hold.")
+        action_card(item, item.get("action", "thesis check"), "Review why the model did not classify this as a clean hold.", sanitized)
         for item in other_checks
     )
     ideas_html = "".join(
-        action_card(item, "new research candidate", "Not owned unless you add it manually. Research before any trade.")
+        action_card(item, "new research candidate", "Not owned unless you add it manually. Research before any trade.", sanitized)
         for item in ideas
     )
     return (
@@ -294,7 +331,7 @@ def render_gpt_analysis(gpt_analysis: dict[str, Any]) -> str:
     )
 
 
-def render_watchlist(items: list[dict[str, Any]]) -> str:
+def render_watchlist(items: list[dict[str, Any]], sanitized: bool = False) -> str:
     if not items:
         return "<p>No watchlist items configured.</p>"
     cards = []
@@ -304,13 +341,14 @@ def render_watchlist(items: list[dict[str, Any]]) -> str:
             f"<h3>{esc(item.get('ticker'))} <span>{esc(item.get('company'))}</span></h3>"
             f"<p>{esc(item.get('thesis'))}</p>"
             f"<p><strong>Price:</strong> {esc(item.get('price_band')) if item.get('price_band') else money(item.get('current_price'))} | <strong>Signal:</strong> {esc(item.get('action'))}</p>"
+            f"{render_entry_zone(item, sanitized)}"
             f"{render_score_grid(item.get('scores', {}))}"
             "</article>"
         )
     return "<div class='cards'>" + "".join(cards) + "</div>"
 
 
-def render_discovery(items: list[dict[str, Any]]) -> str:
+def render_discovery(items: list[dict[str, Any]], sanitized: bool = False) -> str:
     if not items:
         return "<p>No discovery ideas passed the current filters.</p>"
     cards = []
@@ -325,6 +363,7 @@ def render_discovery(items: list[dict[str, Any]]) -> str:
             f"<p><strong>Valuation:</strong> {esc(item.get('valuation_warning'))}</p>"
             f"<p><strong>Confidence:</strong> {esc(item.get('confidence_level'))} | <strong>Score:</strong> {esc(item.get('scores', {}).get('overall_score'))}</p>"
             f"{render_driver_list(item)}"
+            f"{render_entry_zone(item, sanitized)}"
             f"{render_score_grid(item.get('scores', {}))}"
             "</article>"
         )
@@ -589,6 +628,12 @@ def generate_dashboard(report: dict[str, Any], output_path: str | Path) -> None:
     .driver-list strong {{ display: block; margin-bottom: 4px; font-size: .86rem; }}
     .driver-list ul {{ margin: 0; padding-left: 18px; }}
     .driver-list li {{ margin: 2px 0; color: var(--muted); font-size: .86rem; }}
+    .entry-zone {{ margin: 8px 0; padding: 8px 10px; background: #fff7ed; border: 1px solid #fed7aa; border-radius: 6px; }}
+    .entry-zone strong {{ display: block; margin-bottom: 4px; font-size: .86rem; color: #7c2d12; }}
+    .entry-zone p {{ margin: 3px 0; }}
+    .entry-zone span {{ color: #7c2d12; font-weight: 700; }}
+    .entry-zone ul {{ margin: 6px 0 0; padding-left: 18px; }}
+    .entry-zone li {{ margin: 2px 0; color: #7c2d12; font-size: .86rem; }}
     .methodology ul {{ margin: 8px 0 0; padding-left: 20px; }}
     details {{ margin-top: 16px; }}
     details.news-details {{ margin-top: 0; }}
@@ -618,12 +663,12 @@ def generate_dashboard(report: dict[str, Any], output_path: str | Path) -> None:
       </div>
       <p class="disclaimer">{esc(privacy_note)} Not financial advice. Human review required. Signals can be wrong because public data can lag, headlines can be incomplete, and valuation context requires deeper research.</p>
     </section>
-    <section><h2>Action Radar</h2>{render_action_radar(report)}</section>
+    <section><h2>Action Radar</h2>{render_action_radar(report, sanitized)}</section>
     <section><h2>Holdings</h2>{render_holdings(report.get("holdings", []))}</section>
     <section><h2>GPT Analysis</h2>{render_gpt_analysis(report.get("gpt_analysis", {}))}</section>
     <section><h2>Sell Watch</h2>{render_holdings(report.get("sell_watch", [])) if report.get("sell_watch") else "<p>No holdings triggered sell-watch rules.</p>"}</section>
-    <section><h2>Watchlist</h2>{render_watchlist(report.get("watchlist", []))}</section>
-    <section><h2>Discovery Ideas</h2>{render_discovery(report.get("discovery_ideas", []))}</section>
+    <section><h2>Watchlist</h2>{render_watchlist(report.get("watchlist", []), sanitized)}</section>
+    <section><h2>Discovery Ideas</h2>{render_discovery(report.get("discovery_ideas", []), sanitized)}</section>
     <section><h2>Learning / Signal Accuracy</h2>{render_learning_accuracy(report.get("signal_history", {}), report.get("signal_accuracy", {}))}</section>
     <section><h2>Signal Accuracy Summary</h2>{render_signal_accuracy(report.get("signal_history", {}))}</section>
     <section><h2>Historical Performance</h2>{render_historical_performance(report.get("signal_history", {}), report.get("paper_trades", {}))}</section>

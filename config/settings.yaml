@@ -99,6 +99,10 @@ scoring:
   sell_watch_threshold: 35
   elevated_risk_threshold: 45
 
+entry_zones:
+  enabled: true
+  description: Research-only pullback zones based on momentum, thesis risk, news tone, valuation caution, and support references.
+
 alerts:
   discord_enabled: true
   max_discord_chars: 1900

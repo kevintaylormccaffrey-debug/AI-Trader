@@ -3,6 +3,7 @@ from __future__ import annotations
 from typing import Any
 
 from src import data_sources
+from src.entry_zones import build_entry_zone
 from src.news import fetch_recent_news, summarize_news
 from src.scoring import score_research_candidate
 
@@ -284,6 +285,11 @@ def generate_discovery_ideas(
             sector_signals,
             settings,
         )
+        entry_zone = (
+            build_entry_zone(candidate, market, score, owned=False)
+            if settings.get("entry_zones", {}).get("enabled", True)
+            else None
+        )
         idea = {
             **candidate,
             "current_price": price,
@@ -293,6 +299,7 @@ def generate_discovery_ideas(
             "news_summary": summarize_news(news_items),
             "news": news_items,
             "scores": score,
+            "entry_zone": entry_zone,
         }
         ideas.append(idea)
 

@@ -22,6 +22,10 @@ EXACT_FINANCIAL_FIELDS = {
     "entry_price",
     "benchmark_price_at_signal",
     "current_price",
+    "do_not_chase_above",
+    "support_reference",
+    "low",
+    "high",
 }
 
 

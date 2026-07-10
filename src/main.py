@@ -11,11 +11,16 @@ from src import data_sources
 from src.dashboard import generate_dashboard
 from src.discord_alerts import send_discord_alert
 from src.discovery import generate_discovery_ideas
+from src.entry_zones import build_entry_zone
 from src.gpt_analysis import analyze_events
 from src.history import update_signal_history
 from src.news import fetch_recent_news, summarize_news
 from src.sanitize import sanitize_report
 from src.scoring import classify_holding, score_holding, score_price_momentum, score_research_candidate
+
+
+def entry_zones_enabled(settings: dict[str, Any]) -> bool:
+    return bool(settings.get("entry_zones", {}).get("enabled", True))
 
 
 def round_money(value: float | None) -> float | None:
@@ -100,6 +105,7 @@ def enrich_holding(
         "position_weight_pct": position_weight_pct,
     }
     classification = classify_holding(holding, metrics, scores, settings)
+    entry_zone = build_entry_zone(holding, market, scores, owned=True) if entry_zones_enabled(settings) else None
 
     return {
         **holding,
@@ -121,6 +127,7 @@ def enrich_holding(
         "action": classification["action"],
         "action_reasoning": classification["reasoning"],
         "action_triggers": classification["triggers"],
+        "entry_zone": entry_zone,
     }
 
 
@@ -141,6 +148,7 @@ def enrich_watchlist_item(
         sector_signals,
         settings,
     )
+    entry_zone = build_entry_zone(item, market, scores, owned=False) if entry_zones_enabled(settings) else None
     return {
         **item,
         "ticker": ticker,
@@ -154,6 +162,7 @@ def enrich_watchlist_item(
         "scores": scores,
         "action": "research only",
         "action_reasoning": "Watchlist item only; review manually before any portfolio decision.",
+        "entry_zone": entry_zone,
     }
 
 

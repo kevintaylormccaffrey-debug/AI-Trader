@@ -92,6 +92,29 @@ def add_review_context(item: dict[str, Any]) -> str:
     return "; ".join(parts[:4])
 
 
+def entry_zone_context(item: dict[str, Any]) -> str | None:
+    zone = item.get("entry_zone") or {}
+    starter = zone.get("starter_zone") or {}
+    stronger = zone.get("stronger_add_watch_zone") or {}
+    starter_pct = starter.get("below_current_pct")
+    stronger_pct = stronger.get("below_current_pct")
+    chase_pct = zone.get("do_not_chase_above_pct")
+    if not starter_pct:
+        return None
+
+    def pct_range(values: Any) -> str:
+        if isinstance(values, list) and len(values) >= 2:
+            return f"{values[0]}%-{values[1]}% below current"
+        return "pullback from current"
+
+    text = f"Entry research zone: {pct_range(starter_pct)}"
+    if stronger_pct:
+        text += f"; stronger add-watch: {pct_range(stronger_pct)}"
+    if chase_pct:
+        text += f"; do-not-chase above +{chase_pct}%"
+    return text
+
+
 def build_discord_message(report: dict[str, Any], settings: dict[str, Any]) -> str:
     summary = report.get("portfolio_summary", {})
     sell_watch = report.get("sell_watch", [])
@@ -128,6 +151,9 @@ def build_discord_message(report: dict[str, Any], settings: dict[str, Any]) -> s
             lines.append(
                 f"- {item['ticker']}: {label} | score {score(item):.1f} | Why: {add_review_context(item)}"
             )
+            zone_text = entry_zone_context(item)
+            if zone_text:
+                lines.append(f"  {zone_text}")
     else:
         lines.append("Look into adding / buying more: no owned positions cleared the add-watch filter today.")
 
@@ -150,6 +176,9 @@ def build_discord_message(report: dict[str, Any], settings: dict[str, Any]) -> s
             lines.append(
                 f"- {idea['ticker']} ({idea['company']}): {idea['sector']} | score {score(idea):.1f} | Why now: {add_review_context(idea)}"
             )
+            zone_text = entry_zone_context(idea)
+            if zone_text:
+                lines.append(f"  {zone_text}")
 
     gpt_events = [
         event

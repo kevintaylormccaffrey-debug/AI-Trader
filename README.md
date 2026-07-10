@@ -25,6 +25,7 @@ It never executes trades, never stores broker credentials, and never hardcodes A
   - thesis risk
   - valuation caution
 - Produces 3-5 discovery ideas as research candidates, not automatic buys.
+- Discovery is biased toward the portfolio themes but can also surface broader quality-growth candidates across non-tech sectors when their signals rank well.
 - Uses optional GPT-powered event analysis for only the most important filtered events.
 - Tracks signal history, paper learning records, and accuracy by signal type.
 - Sends a concise Discord message when `DISCORD_WEBHOOK_URL` is configured.

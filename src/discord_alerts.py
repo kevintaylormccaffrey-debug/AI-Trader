@@ -148,7 +148,7 @@ def build_discord_message(report: dict[str, Any], settings: dict[str, Any]) -> s
         lines.append("**New stocks to research, not automatic buys**")
         for idea in ideas:
             lines.append(
-                f"- {idea['ticker']} ({idea['company']}): {idea['sector']} | confidence {idea['confidence_level']} | {short_reason(idea, 95)}"
+                f"- {idea['ticker']} ({idea['company']}): {idea['sector']} | score {score(idea):.1f} | Why now: {add_review_context(idea)}"
             )
 
     gpt_events = [

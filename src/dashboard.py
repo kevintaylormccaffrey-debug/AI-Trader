@@ -324,6 +324,7 @@ def render_discovery(items: list[dict[str, Any]]) -> str:
             f"<p><strong>Risk:</strong> {esc(item.get('risk'))}</p>"
             f"<p><strong>Valuation:</strong> {esc(item.get('valuation_warning'))}</p>"
             f"<p><strong>Confidence:</strong> {esc(item.get('confidence_level'))} | <strong>Score:</strong> {esc(item.get('scores', {}).get('overall_score'))}</p>"
+            f"{render_driver_list(item)}"
             f"{render_score_grid(item.get('scores', {}))}"
             "</article>"
         )

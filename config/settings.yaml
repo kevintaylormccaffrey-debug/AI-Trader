@@ -28,6 +28,19 @@ market_data:
     high-growth tech: QQQ
     index fund: VTI
     software: IGV
+    cybersecurity: HACK
+    fintech: FINX
+    healthcare: XLV
+    medtech: IHI
+    pharmaceuticals: XLV
+    industrial automation: XLI
+    aerospace: ITA
+    public safety: XLI
+    energy infrastructure: XLE
+    clean energy infrastructure: XLU
+    consumer growth: XLY
+    e-commerce: IBUY
+    mobility: XLY
 
 news:
   lookback_days: 7
@@ -62,6 +75,12 @@ openai:
 discovery:
   max_ideas: 5
   minimum_price: 5
+  include_broad_growth: true
+  broad_growth_labels:
+    - quality growth
+    - profitable growth
+    - category leader
+    - secular growth
   excluded_labels:
     - penny stock
     - meme stock

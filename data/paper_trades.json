@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-10T04:15:39.722889+00:00",
+  "last_updated": "2026-07-10T04:24:30.510711+00:00",
   "notes": "Paper-trade records are simulated learning records only. The agent never executes real trades.",
   "paper_trades": [
     {
@@ -3143,6 +3143,20 @@
       "source": "gpt",
       "confidence": 62,
       "entry_price": 152.16,
+      "status": "open",
+      "notes": "Simulated paper record only. No real trade was executed.",
+      "latest_return_pct": 0.0,
+      "last_checked": "2026-07-10"
+    },
+    {
+      "opened_at": "2026-07-10",
+      "signal_id": "35607c9d03e8eeca",
+      "ticker": "ANET",
+      "signal_type": "hold thesis intact",
+      "recommendation_label": "hold thesis intact",
+      "source": "gpt",
+      "confidence": 65,
+      "entry_price": 184.69,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
       "latest_return_pct": 0.0,

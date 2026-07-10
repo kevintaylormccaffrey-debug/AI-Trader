@@ -115,70 +115,77 @@ def entry_zone_context(item: dict[str, Any]) -> str | None:
     return text
 
 
+def queue_reason(entry: dict[str, Any], key: str, limit: int = 150) -> str:
+    values = entry.get(key) or []
+    if isinstance(values, list):
+        text = "; ".join(str(value) for value in values[:2] if value)
+    else:
+        text = str(values)
+    if not text:
+        text = "Open dashboard for full context."
+    if len(text) <= limit:
+        return text
+    return text[: limit - 3].rstrip() + "..."
+
+
+def queue_entry_line(entry: dict[str, Any]) -> list[str]:
+    ticker = entry.get("ticker")
+    label = entry.get("recommendation_label")
+    score_value = entry.get("score")
+    try:
+        score_text = f"{float(score_value):.1f}"
+    except (TypeError, ValueError):
+        score_text = "n/a"
+    lines = [
+        f"- {ticker}: {label} | score {score_text} | Why: {queue_reason(entry, 'why_now')}",
+    ]
+    zone_text = entry_zone_context(entry)
+    if zone_text:
+        lines.append(f"  {zone_text}")
+    caution = queue_reason(entry, "cautions", 120)
+    if caution:
+        lines.append(f"  Watch: {caution}")
+    return lines
+
+
 def build_discord_message(report: dict[str, Any], settings: dict[str, Any]) -> str:
     summary = report.get("portfolio_summary", {})
-    sell_watch = report.get("sell_watch", [])
-    holdings = report.get("holdings", [])
-    high_priority = [
-        holding
-        for holding in holdings
-        if holding.get("watch_priority") == "high" and holding.get("action") != "hold"
-    ]
-    add_watch = [holding for holding in holdings if holding.get("action") == "add watch"]
-    if not add_watch:
-        add_watch = [
-            holding
-            for holding in holdings
-            if holding.get("status") != "core_holding"
-            and score(holding) >= 58
-            and component_score(holding, "price_momentum") >= 58
-            and component_score(holding, "thesis_risk") >= 55
-        ]
-    add_watch = sorted(add_watch, key=score, reverse=True)[:3]
-    ideas = report.get("discovery_ideas", [])[:3]
+    queue = report.get("action_queue", {}) or {}
     url = dashboard_url(settings) or report.get("dashboard_url") or "Dashboard URL not configured"
 
     lines = [
-        "**Daily Stock Research Agent - Review Queue**",
+        "**Today's Top Stock Research Queue**",
         f"Portfolio: {summary.get('portfolio_name', 'Portfolio')} | Total: {money(summary.get('total_value'))} | Day data as of {report.get('generated_at', 'n/a')}",
         f"Unrealized P/L: {money(summary.get('unrealized_gain_loss'))} ({pct(summary.get('unrealized_gain_loss_pct'))})",
     ]
 
-    if add_watch:
-        lines.append("**Look into adding / buying more**")
-        for item in add_watch:
-            label = "add watch" if item.get("action") == "add watch" else "review for add"
-            lines.append(
-                f"- {item['ticker']}: {label} | score {score(item):.1f} | Why: {add_review_context(item)}"
-            )
-            zone_text = entry_zone_context(item)
-            if zone_text:
-                lines.append(f"  {zone_text}")
-    else:
-        lines.append("Look into adding / buying more: no owned positions cleared the add-watch filter today.")
+    buy_entries = queue.get("research_to_buy", [])[:2]
+    add_entries = queue.get("research_to_add", [])[:2]
+    risk_entries = queue.get("risk_elevated", [])[:2]
+    sell_entries = queue.get("sell_watch", [])[:2]
 
-    if sell_watch:
-        lines.append("**Risk / sell-thesis review**")
-        for item in sell_watch[:4]:
-            lines.append(f"- {item['ticker']}: sell watch | score {score(item):.1f} | {short_reason(item)}")
+    if buy_entries:
+        lines.append("**Research to Buy, not automatic buys**")
+        for entry in buy_entries:
+            lines.extend(queue_entry_line(entry))
+
+    if add_entries:
+        lines.append("**Research to Add / Buy More**")
+        for entry in add_entries:
+            lines.extend(queue_entry_line(entry))
+    else:
+        lines.append("Research to Add: no owned positions cleared the add-watch filter today.")
+
+    if sell_entries:
+        lines.append("**Sell Watch**")
+        for entry in sell_entries:
+            lines.extend(queue_entry_line(entry))
+    elif risk_entries:
+        lines.append("**Risk Elevated**")
+        for entry in risk_entries:
+            lines.extend(queue_entry_line(entry))
     else:
         lines.append("Risk / sell-thesis review: none triggered.")
-
-    other_alerts = [item for item in high_priority if item.get("action") not in {"add watch", "sell watch"}]
-    if other_alerts:
-        lines.append("**Other thesis checks**")
-        for item in other_alerts[:3]:
-            lines.append(f"- {item['ticker']}: {item['action']} | score {score(item):.1f} | {short_reason(item)}")
-
-    if ideas:
-        lines.append("**New stocks to research, not automatic buys**")
-        for idea in ideas:
-            lines.append(
-                f"- {idea['ticker']} ({idea['company']}): {idea['sector']} | score {score(idea):.1f} | Why now: {add_review_context(idea)}"
-            )
-            zone_text = entry_zone_context(idea)
-            if zone_text:
-                lines.append(f"  {zone_text}")
 
     gpt_events = [
         event

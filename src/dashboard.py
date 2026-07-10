@@ -181,6 +181,63 @@ def render_entry_zone(item: dict[str, Any], sanitized: bool = False) -> str:
     )
 
 
+def render_signal_brief(entry: dict[str, Any], sanitized: bool = False) -> str:
+    def list_items(values: list[Any], empty: str) -> str:
+        items = [str(value) for value in values if value]
+        if not items:
+            items = [empty]
+        return "<ul>" + "".join(f"<li>{esc(value)}</li>" for value in items[:4]) + "</ul>"
+
+    score = entry.get("score")
+    return (
+        "<article class='queue-card'>"
+        f"<h3>{esc(entry.get('ticker'))} <span>{esc(entry.get('recommendation_label'))} | score {esc(score)} | confidence {esc(entry.get('confidence'))}</span></h3>"
+        f"<p>{compact_reason(entry.get('action_reasoning'), 190)}</p>"
+        "<div class='queue-detail-grid'>"
+        f"<div><strong>Why now</strong>{list_items(entry.get('why_now', []), 'No single driver dominates today.')}</div>"
+        f"<div><strong>Cautions</strong>{list_items(entry.get('cautions', []), 'Review sizing, valuation, and data quality before acting.')}</div>"
+        f"<div><strong>Would confirm</strong>{list_items(entry.get('what_would_confirm', []), 'Signal improves on the next run.')}</div>"
+        f"<div><strong>Would invalidate</strong>{list_items(entry.get('what_would_invalidate', []), 'Thesis or score deteriorates.')}</div>"
+        "</div>"
+        f"{render_entry_zone(entry, sanitized)}"
+        "</article>"
+    )
+
+
+def render_today_action_queue(report: dict[str, Any], sanitized: bool = False) -> str:
+    queue = report.get("action_queue", {}) or {}
+    buckets = [
+        ("research_to_buy", "Research To Buy", "New/watchlist names worth deeper research. Not automatic buys."),
+        ("research_to_add", "Research To Add", "Owned positions where adding exposure may deserve attention."),
+        ("hold_thesis_intact", "Hold / Thesis Intact", "Owned names that look fine and do not need immediate action."),
+        ("risk_elevated", "Risk Elevated", "Signals where price, news, thesis, or sector context needs review."),
+        ("sell_watch", "Sell Watch", "Highest-priority risk prompts. Human review required before any decision."),
+    ]
+    tabs = "".join(
+        f"<a href='#{esc(key)}'><span>{esc(title)}</span><strong>{esc(len(queue.get(key, [])))}</strong></a>"
+        for key, title, _ in buckets
+    )
+    sections = []
+    for key, title, description in buckets:
+        entries = queue.get(key, [])
+        body = "".join(render_signal_brief(entry, sanitized) for entry in entries[:5])
+        if not body:
+            body = f"<p class='small-note'>No items in this bucket today.</p>"
+        sections.append(
+            f"<div class='queue-bucket' id='{esc(key)}'>"
+            f"<h3>{esc(title)} <span>{esc(description)}</span></h3>"
+            f"{body}"
+            "</div>"
+        )
+    return (
+        "<div class='queue-tabs'>"
+        + tabs
+        + "</div>"
+        + "<p class='small-note'>This is a prioritized research checklist. It does not place trades, guarantee returns, or replace your review.</p>"
+        + "".join(sections)
+    )
+
+
 def action_card(item: dict[str, Any], label: str, note: str, sanitized: bool = False) -> str:
     score = item.get("scores", {}).get("overall_score")
     return (
@@ -618,6 +675,18 @@ def generate_dashboard(report: dict[str, Any], output_path: str | Path) -> None:
     .cards {{ display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }}
     .item-card {{ border: 1px solid var(--line); border-radius: 8px; padding: 16px; background: #fff; }}
     .item-card p {{ margin: 8px 0; }}
+    .queue-tabs {{ display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 8px; margin-bottom: 12px; }}
+    .queue-tabs a {{ display: flex; justify-content: space-between; gap: 8px; align-items: center; text-decoration: none; color: var(--ink); border: 1px solid var(--line); background: #f8fafc; border-radius: 8px; padding: 10px; }}
+    .queue-tabs span {{ font-size: .82rem; font-weight: 700; }}
+    .queue-tabs strong {{ color: var(--accent); }}
+    .queue-bucket {{ margin-top: 18px; }}
+    .queue-card {{ border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: 8px; padding: 14px; margin: 10px 0; background: #fff; }}
+    .queue-card p {{ margin: 8px 0; }}
+    .queue-detail-grid {{ display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: 10px; }}
+    .queue-detail-grid div {{ background: #f8fafc; border: 1px solid var(--line); border-radius: 6px; padding: 9px 10px; }}
+    .queue-detail-grid strong {{ display: block; margin-bottom: 4px; font-size: .84rem; }}
+    .queue-detail-grid ul {{ margin: 0; padding-left: 18px; }}
+    .queue-detail-grid li {{ margin: 2px 0; color: var(--muted); font-size: .86rem; }}
     .radar-grid {{ display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }}
     .radar-bucket {{ border: 1px solid var(--line); border-radius: 8px; padding: 14px; background: #fbfcfd; }}
     .radar-bucket h3 {{ margin-bottom: 12px; }}
@@ -645,7 +714,7 @@ def generate_dashboard(report: dict[str, Any], output_path: str | Path) -> None:
     @media (max-width: 760px) {{
       main {{ width: min(100% - 20px, 1180px); margin-top: 10px; }}
       section {{ padding: 16px; }}
-      .summary-grid, .cards, .history-grid, .radar-grid {{ grid-template-columns: 1fr; }}
+      .summary-grid, .cards, .history-grid, .radar-grid, .queue-tabs, .queue-detail-grid {{ grid-template-columns: 1fr; }}
       header {{ padding: 22px 16px; }}
     }}
   </style>
@@ -663,6 +732,7 @@ def generate_dashboard(report: dict[str, Any], output_path: str | Path) -> None:
       </div>
       <p class="disclaimer">{esc(privacy_note)} Not financial advice. Human review required. Signals can be wrong because public data can lag, headlines can be incomplete, and valuation context requires deeper research.</p>
     </section>
+    <section><h2>Today's Action Queue</h2>{render_today_action_queue(report, sanitized)}</section>
     <section><h2>Action Radar</h2>{render_action_radar(report, sanitized)}</section>
     <section><h2>Holdings</h2>{render_holdings(report.get("holdings", []))}</section>
     <section><h2>GPT Analysis</h2>{render_gpt_analysis(report.get("gpt_analysis", {}))}</section>

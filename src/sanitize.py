@@ -128,6 +128,7 @@ def sanitize_report(report: dict[str, Any]) -> dict[str, Any]:
         sanitize_security_item(item) for item in report.get("high_priority_alerts", [])
     ]
     public_report["discovery_ideas"] = [sanitize_security_item(item) for item in report.get("discovery_ideas", [])]
+    public_report["action_queue"] = redact_exact_fields(report.get("action_queue", {}))
     public_report["news_catalysts"] = [sanitize_news_item(item) for item in report.get("news_catalysts", [])]
     public_report["signal_history"] = redact_exact_fields(report.get("signal_history", {}))
     public_report["paper_trades"] = redact_exact_fields(report.get("paper_trades", {}))

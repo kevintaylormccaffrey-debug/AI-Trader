@@ -8,6 +8,7 @@ from pathlib import Path
 from typing import Any
 
 from src import data_sources
+from src.action_queue import build_action_queue
 from src.dashboard import generate_dashboard
 from src.discord_alerts import send_discord_alert
 from src.discovery import generate_discovery_ideas
@@ -241,6 +242,7 @@ def build_report(settings: dict[str, Any]) -> dict[str, Any]:
         "high_priority_alerts": high_priority_alerts,
         "discovery_ideas": discovery_ideas,
         "sector_signals": sector_signals,
+        "action_queue": {},
         "methodology": {
             "summary": "Scores are transparent rule-based research signals. Higher component scores generally mean lower concern or stronger confirmation. They are not buy/sell instructions.",
             "weights": settings.get("scoring", {}).get("weights", {}),
@@ -268,6 +270,7 @@ def build_report(settings: dict[str, Any]) -> dict[str, Any]:
             ],
         },
     }
+    report["action_queue"] = build_action_queue(report)
     return report
 
 

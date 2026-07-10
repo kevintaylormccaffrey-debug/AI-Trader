@@ -12,9 +12,10 @@ It never executes trades, never stores broker credentials, and never hardcodes A
 
 ## What It Does
 
-- Pulls current prices and price history from Financial Modeling Prep when `FMP_API_KEY` is configured, with Yahoo Finance, Stooq, and portfolio fallback support.
-- Pulls recent headlines from FMP stock news, Yahoo Finance RSS, and Google News RSS.
-- Adds FMP key metrics to valuation scoring when available.
+- Pulls routine prices and price history from Yahoo Finance with Stooq and portfolio fallback support.
+- Uses Financial Modeling Prep selectively when `FMP_API_KEY` is configured, mainly for non-core holdings and high-priority watchlist names where better data matters most.
+- Pulls recent headlines from Yahoo Finance RSS and Google News RSS, with FMP stock news used selectively for the same high-priority names.
+- Can add FMP key metrics to valuation scoring when enabled, but this is off by default to protect free-plan quota.
 - Calculates current value, unrealized gain/loss, percentage gain/loss, and position weight.
 - Flags holdings as `sell watch`, `hold`, `add watch`, or `research only`.
 - Scores each holding and research candidate using:
@@ -66,7 +67,7 @@ The webhook URL is read only from the environment. Do not place it in source fil
 
 ## Financial Modeling Prep Setup
 
-FMP is optional but recommended for better market data, stock news, and valuation metrics.
+FMP is optional but recommended for better market data and stock news on the names that matter most. To protect free-plan quota, the agent uses FMP selectively instead of calling it for every sector proxy, discovery candidate, and historical chart. The default FMP budget is capped at 6 tickers per run through `fmp.max_tickers_per_run`.
 
 1. Create an FMP API key from Financial Modeling Prep.
 2. In GitHub, open **Settings** -> **Secrets and variables** -> **Actions**.
@@ -78,7 +79,7 @@ $env:FMP_API_KEY = "your-fmp-api-key"
 python -m src.main --skip-discord
 ```
 
-If `FMP_API_KEY` is missing or FMP fails, the agent falls back to Yahoo Finance, Stooq, RSS feeds, and existing portfolio fallback values.
+If `FMP_API_KEY` is missing, plan-limited, or FMP fails, the agent falls back to Yahoo Finance, Stooq, RSS feeds, and existing portfolio fallback values. FMP key metrics and FMP historical charts are disabled by default in `config/settings.yaml` because they can consume quota quickly or be plan-limited on free accounts.
 
 ## Interactive Discord Bot Setup
 
@@ -373,4 +374,4 @@ This is not financial advice. It is a research workflow for human review. The ag
 
 ## Extending Data Sources
 
-The default implementation prefers Financial Modeling Prep when `FMP_API_KEY` is configured. Price data then falls back to Yahoo Finance chart data, Stooq, and finally the portfolio fallback value if providers are unavailable. News prefers FMP stock news, then Yahoo Finance and Google News RSS. Keep all provider keys in GitHub Secrets or environment variables; never commit them.
+The default implementation uses Yahoo Finance chart data for routine price/history work, then Stooq, then the portfolio fallback value if providers are unavailable. Financial Modeling Prep is used selectively for non-core holdings and high-priority watchlist names when `FMP_API_KEY` is configured. Keep all provider keys in GitHub Secrets or environment variables; never commit them.

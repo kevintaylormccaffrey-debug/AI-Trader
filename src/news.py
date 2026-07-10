@@ -221,7 +221,7 @@ def fetch_fmp_news(ticker: str, settings: dict[str, Any], lookback_days: int, ma
     return items
 
 
-def fetch_recent_news(ticker: str, settings: dict[str, Any]) -> list[dict[str, Any]]:
+def fetch_recent_news(ticker: str, settings: dict[str, Any], use_fmp: bool = False) -> list[dict[str, Any]]:
     news_settings = settings.get("news", {})
     max_items = int(news_settings.get("max_items_per_ticker", 5))
     lookback_days = int(news_settings.get("lookback_days", 7))
@@ -229,7 +229,7 @@ def fetch_recent_news(ticker: str, settings: dict[str, Any]) -> list[dict[str, A
 
     collected: list[dict[str, Any]] = []
     errors: list[str] = []
-    if "fmp" in configured_sources:
+    if use_fmp and settings.get("fmp", {}).get("news_enabled", True) and "fmp" in configured_sources:
         collected.extend(fetch_fmp_news(ticker, settings, lookback_days, max_items))
 
     for source_name, url in news_urls(ticker, configured_sources):

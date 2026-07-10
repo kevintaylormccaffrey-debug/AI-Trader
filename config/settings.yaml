@@ -14,9 +14,8 @@ dashboard:
 
 market_data:
   timeout_seconds: 12
-  price_provider: fmp
+  price_provider: yahoo_chart
   price_providers:
-    - fmp
     - yahoo_chart
     - stooq
   history_days: 90
@@ -56,7 +55,14 @@ fmp:
   enabled: true
   api_key_env: FMP_API_KEY
   base_url: https://financialmodelingprep.com/stable
-  fundamentals_enabled: true
+  # Use FMP selectively for non-core holdings and high-priority watchlist names.
+  # Yahoo/Stooq remain the default for sector proxies, discovery scans, and history.
+  quotes_enabled: true
+  history_enabled: false
+  news_enabled: true
+  # Key metrics are useful, but often plan-limited on free FMP accounts.
+  fundamentals_enabled: false
+  max_tickers_per_run: 6
 
 openai:
   gpt_enabled: true

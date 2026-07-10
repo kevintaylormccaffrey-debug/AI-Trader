@@ -24,6 +24,47 @@ def entry_zones_enabled(settings: dict[str, Any]) -> bool:
     return bool(settings.get("entry_zones", {}).get("enabled", True))
 
 
+def use_fmp_for_holding(item: dict[str, Any], settings: dict[str, Any]) -> bool:
+    if not settings.get("fmp", {}).get("enabled", True):
+        return False
+    if str(item.get("status", "")).lower() == "core_holding":
+        return False
+    return True
+
+
+def use_fmp_for_watchlist(item: dict[str, Any], settings: dict[str, Any]) -> bool:
+    if not settings.get("fmp", {}).get("enabled", True):
+        return False
+    return str(item.get("watch_priority", "")).lower() == "high"
+
+
+def build_fmp_ticker_budget(portfolio: dict[str, Any], watchlist: dict[str, Any], settings: dict[str, Any]) -> set[str]:
+    max_tickers = int(settings.get("fmp", {}).get("max_tickers_per_run", 6))
+    if max_tickers <= 0:
+        return set()
+
+    selected: list[str] = []
+    for item in portfolio.get("holdings", []):
+        ticker = str(item.get("ticker", "")).upper()
+        if ticker and use_fmp_for_holding(item, settings):
+            selected.append(ticker)
+    for item in watchlist.get("tickers", []):
+        ticker = str(item.get("ticker", "")).upper()
+        if ticker and use_fmp_for_watchlist(item, settings):
+            selected.append(ticker)
+
+    budgeted: list[str] = []
+    seen: set[str] = set()
+    for ticker in selected:
+        if ticker in seen:
+            continue
+        seen.add(ticker)
+        budgeted.append(ticker)
+        if len(budgeted) >= max_tickers:
+            break
+    return set(budgeted)
+
+
 def round_money(value: float | None) -> float | None:
     if value is None:
         return None
@@ -38,7 +79,7 @@ def build_sector_signals(settings: dict[str, Any]) -> dict[str, dict[str, Any]]:
     proxy_map = settings.get("market_data", {}).get("sector_proxy_map", {})
     signals: dict[str, dict[str, Any]] = {}
     for sector_key, proxy in proxy_map.items():
-        market = data_sources.fetch_market_snapshot(str(proxy), settings)
+        market = data_sources.fetch_market_snapshot(str(proxy), settings, use_fmp=False)
         score = score_price_momentum(market.get("history", []))
         details = dict(score.get("details", {}))
         details["proxy_ticker"] = proxy
@@ -75,12 +116,14 @@ def enrich_holding(
     settings: dict[str, Any],
     sector_signals: dict[str, dict[str, Any]],
     total_value: float,
+    fmp_tickers: set[str],
 ) -> dict[str, Any]:
     ticker = str(holding["ticker"]).upper()
-    market = data_sources.fetch_market_snapshot(ticker, settings, holding.get("current_price"))
-    fundamentals = data_sources.fetch_fmp_key_metrics(ticker, settings)
+    use_fmp = ticker in fmp_tickers
+    market = data_sources.fetch_market_snapshot(ticker, settings, holding.get("current_price"), use_fmp=use_fmp)
+    fundamentals = data_sources.fetch_fmp_key_metrics(ticker, settings, use_fmp=use_fmp)
     scoring_item = {**holding, "financial_metrics": fundamentals.get("metrics", {})}
-    news_items = fetch_recent_news(ticker, settings)
+    news_items = fetch_recent_news(ticker, settings, use_fmp=use_fmp)
     earnings = data_sources.fetch_earnings_date(ticker, settings)
     scores = score_holding(
         scoring_item,
@@ -139,12 +182,14 @@ def enrich_watchlist_item(
     item: dict[str, Any],
     settings: dict[str, Any],
     sector_signals: dict[str, dict[str, Any]],
+    fmp_tickers: set[str],
 ) -> dict[str, Any]:
     ticker = str(item["ticker"]).upper()
-    market = data_sources.fetch_market_snapshot(ticker, settings)
-    fundamentals = data_sources.fetch_fmp_key_metrics(ticker, settings)
+    use_fmp = ticker in fmp_tickers
+    market = data_sources.fetch_market_snapshot(ticker, settings, use_fmp=use_fmp)
+    fundamentals = data_sources.fetch_fmp_key_metrics(ticker, settings, use_fmp=use_fmp)
     scoring_item = {**item, "financial_metrics": fundamentals.get("metrics", {})}
-    news_items = fetch_recent_news(ticker, settings)
+    news_items = fetch_recent_news(ticker, settings, use_fmp=use_fmp)
     earnings = data_sources.fetch_earnings_date(ticker, settings)
     scores = score_research_candidate(
         scoring_item,
@@ -177,6 +222,7 @@ def build_report(settings: dict[str, Any]) -> dict[str, Any]:
     portfolio = data_sources.load_json_from_env_or_path("PORTFOLIO_JSON", resolve_path(settings["portfolio_path"]))
     watchlist = data_sources.load_json_from_env_or_path("WATCHLIST_JSON", resolve_path(settings["watchlist_path"]))
     sector_signals = build_sector_signals(settings)
+    fmp_tickers = build_fmp_ticker_budget(portfolio, watchlist, settings)
 
     cash = portfolio.get("cash_position", {})
     cash_value = float(cash.get("value", 0) or 0)
@@ -186,7 +232,7 @@ def build_report(settings: dict[str, Any]) -> dict[str, Any]:
         preliminary_total += shares * float(holding.get("current_price", 0) or 0)
 
     holdings = [
-        enrich_holding(holding, settings, sector_signals, preliminary_total)
+        enrich_holding(holding, settings, sector_signals, preliminary_total, fmp_tickers)
         for holding in portfolio.get("holdings", [])
     ]
     invested_value = sum(float(item.get("current_value") or 0) for item in holdings)
@@ -197,7 +243,7 @@ def build_report(settings: dict[str, Any]) -> dict[str, Any]:
             item["position_weight_pct"] = round(float(item.get("current_value") or 0) / total_value * 100, 2)
 
     watchlist_items = [
-        enrich_watchlist_item(item, settings, sector_signals)
+        enrich_watchlist_item(item, settings, sector_signals, fmp_tickers)
         for item in watchlist.get("tickers", [])
     ]
     discovery_ideas = generate_discovery_ideas(portfolio, watchlist, settings, sector_signals)
@@ -248,6 +294,14 @@ def build_report(settings: dict[str, Any]) -> dict[str, Any]:
         "high_priority_alerts": high_priority_alerts,
         "discovery_ideas": discovery_ideas,
         "sector_signals": sector_signals,
+        "fmp_usage": {
+            "enabled": bool(settings.get("fmp", {}).get("enabled", True)),
+            "mode": "selective",
+            "max_tickers_per_run": int(settings.get("fmp", {}).get("max_tickers_per_run", 6)),
+            "tickers_selected": sorted(fmp_tickers),
+            "history_enabled": bool(settings.get("fmp", {}).get("history_enabled", False)),
+            "fundamentals_enabled": bool(settings.get("fmp", {}).get("fundamentals_enabled", False)),
+        },
         "action_queue": {},
         "methodology": {
             "summary": "Scores are transparent rule-based research signals. Higher component scores generally mean lower concern or stronger confirmation. They are not buy/sell instructions.",

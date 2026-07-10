@@ -22,8 +22,8 @@ DEFAULT_SETTINGS: dict[str, Any] = {
     "report_path": "output/latest_report.json",
     "market_data": {
         "timeout_seconds": 12,
-        "price_provider": "fmp",
-        "price_providers": ["fmp", "yahoo_chart", "stooq"],
+        "price_provider": "yahoo_chart",
+        "price_providers": ["yahoo_chart", "stooq"],
         "history_days": 90,
         "user_agent": "KevinStockResearchAgent/0.1",
     },
@@ -31,7 +31,11 @@ DEFAULT_SETTINGS: dict[str, Any] = {
         "enabled": True,
         "api_key_env": "FMP_API_KEY",
         "base_url": "https://financialmodelingprep.com/stable",
-        "fundamentals_enabled": True,
+        "quotes_enabled": True,
+        "history_enabled": False,
+        "news_enabled": True,
+        "fundamentals_enabled": False,
+        "max_tickers_per_run": 6,
     },
     "news": {"lookback_days": 7, "max_items_per_ticker": 5, "timeout_seconds": 12, "sources": ["fmp", "yahoo", "google"]},
     "openai": {
@@ -312,8 +316,10 @@ def fetch_fmp_quote(
     return quote
 
 
-def fetch_fmp_key_metrics(ticker: str, settings: dict[str, Any]) -> dict[str, Any]:
-    if not fmp_settings(settings).get("fundamentals_enabled", True):
+def fetch_fmp_key_metrics(ticker: str, settings: dict[str, Any], use_fmp: bool = False) -> dict[str, Any]:
+    if not use_fmp:
+        return {"ticker": ticker.upper(), "source": "fmp", "metrics": {}, "error": "FMP fundamentals skipped for this ticker."}
+    if not fmp_settings(settings).get("fundamentals_enabled", False):
         return {"ticker": ticker.upper(), "source": "fmp", "metrics": {}, "error": "FMP fundamentals disabled."}
     payload, error, url = fmp_get_json("key-metrics", {"symbol": ticker.upper(), "limit": 1}, settings, "market_data")
     result: dict[str, Any] = {
@@ -528,26 +534,38 @@ def fetch_yahoo_chart_snapshot(
         return snapshot
 
 
-def configured_price_providers(settings: dict[str, Any]) -> list[str]:
+def configured_price_providers(settings: dict[str, Any], use_fmp: bool = False) -> list[str]:
     market_settings = settings.get("market_data", {})
     providers = market_settings.get("price_providers")
     if isinstance(providers, list) and providers:
-        return [str(provider).strip().lower() for provider in providers if str(provider).strip()]
-    provider = str(market_settings.get("price_provider") or "yahoo_chart").strip().lower()
-    return [provider]
+        clean = [str(provider).strip().lower() for provider in providers if str(provider).strip()]
+    else:
+        provider = str(market_settings.get("price_provider") or "yahoo_chart").strip().lower()
+        clean = [provider]
+
+    clean = [provider for provider in clean if provider != "fmp"]
+    if use_fmp and fmp_settings(settings).get("quotes_enabled", True):
+        return ["fmp", *clean]
+    return clean
 
 
 def fetch_market_snapshot(
     ticker: str,
     settings: dict[str, Any],
     fallback_price: float | None = None,
+    use_fmp: bool = False,
 ) -> dict[str, Any]:
     quote: dict[str, Any] | None = None
     provider_errors: list[dict[str, str | None]] = []
-    for provider in configured_price_providers(settings):
+    for provider in configured_price_providers(settings, use_fmp=use_fmp):
         if provider == "fmp":
             candidate = fetch_fmp_quote(ticker, settings, fallback_price)
-            candidate["history"] = fetch_fmp_price_history(ticker, settings)
+            if fmp_settings(settings).get("history_enabled", False):
+                candidate["history"] = fetch_fmp_price_history(ticker, settings)
+            else:
+                yahoo_history = fetch_yahoo_chart_snapshot(ticker, settings, fallback_price)
+                candidate["history"] = yahoo_history.get("history", [])
+                candidate["history_source"] = yahoo_history.get("source")
         elif provider == "yahoo_chart":
             candidate = fetch_yahoo_chart_snapshot(ticker, settings, fallback_price)
         elif provider == "stooq":

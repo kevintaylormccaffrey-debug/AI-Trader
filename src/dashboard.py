@@ -74,11 +74,76 @@ def component_value(item: dict[str, Any], key: str) -> float:
         return 50.0
 
 
+def component_details(item: dict[str, Any], key: str) -> dict[str, Any]:
+    details = item.get("scores", {}).get("components", {}).get(key, {}).get("details", {})
+    return details if isinstance(details, dict) else {}
+
+
+def signed_pct(value: Any) -> str:
+    try:
+        return f"{float(value):+.1f}%"
+    except (TypeError, ValueError):
+        return "n/a"
+
+
 def compact_reason(value: Any, limit: int = 170) -> str:
     text = "" if value is None else str(value)
     if len(text) <= limit:
         return esc(text)
     return esc(text[: limit - 3].rstrip() + "...")
+
+
+def driver_items(item: dict[str, Any]) -> list[str]:
+    drivers: list[str] = []
+    momentum = component_value(item, "price_momentum")
+    momentum_details = component_details(item, "price_momentum")
+    if momentum >= 58:
+        drivers.append(
+            "Momentum is supportive"
+            f" ({signed_pct(momentum_details.get('change_5d_pct'))} 5d,"
+            f" {signed_pct(momentum_details.get('change_20d_pct'))} 20d)."
+        )
+    elif momentum <= 45:
+        drivers.append("Momentum is weak or mixed; avoid treating this as a clean add signal.")
+
+    thesis = component_value(item, "thesis_risk")
+    if thesis >= 60:
+        drivers.append("Thesis-risk score is healthy enough for additional research.")
+    elif thesis <= 45:
+        drivers.append("Thesis-risk score is elevated; review what could break the original thesis.")
+
+    news = component_value(item, "news_sentiment")
+    if news >= 54:
+        drivers.append("Recent news/catalyst tone is neutral-to-constructive.")
+    elif news <= 40:
+        drivers.append("Recent news sentiment is a concern.")
+
+    downside = component_value(item, "downside_from_cost_basis")
+    downside_details = component_details(item, "downside_from_cost_basis")
+    pnl = downside_details.get("pnl_pct_from_cost")
+    if pnl is not None and downside >= 60:
+        drivers.append(f"Position is above cost basis ({signed_pct(pnl)}), so downside-from-cost is not currently flashing red.")
+    elif pnl is not None and downside <= 45:
+        drivers.append(f"Position is below cost basis ({signed_pct(pnl)}); check max-loss rules before adding.")
+
+    sector = component_value(item, "sector_trend")
+    if sector >= 55:
+        drivers.append("Sector/proxy trend is supportive.")
+    elif sector <= 45:
+        drivers.append("Sector/proxy trend is not helping the signal.")
+
+    valuation = component_value(item, "valuation_caution")
+    if valuation <= 50:
+        drivers.append("Valuation or position sizing still needs review before any action.")
+
+    return drivers[:5]
+
+
+def render_driver_list(item: dict[str, Any]) -> str:
+    drivers = driver_items(item)
+    if not drivers:
+        return ""
+    return "<div class='driver-list'><strong>Why this appeared</strong><ul>" + "".join(f"<li>{esc(driver)}</li>" for driver in drivers) + "</ul></div>"
 
 
 def action_card(item: dict[str, Any], label: str, note: str) -> str:
@@ -88,6 +153,7 @@ def action_card(item: dict[str, Any], label: str, note: str) -> str:
         f"<h3>{esc(item.get('ticker'))} <span>{esc(label)}</span></h3>"
         f"<p>{compact_reason(item.get('action_reasoning') or item.get('why_it_matches') or item.get('risk'))}</p>"
         f"<p><strong>Score:</strong> {esc(score)} | <strong>Momentum:</strong> {esc(component_value(item, 'price_momentum'))} | <strong>Thesis:</strong> {esc(component_value(item, 'thesis_risk'))}</p>"
+        f"{render_driver_list(item)}"
         f"<p class='small-note'>{esc(note)}</p>"
         "</article>"
     )
@@ -123,7 +189,11 @@ def render_action_radar(report: dict[str, Any]) -> str:
         )
 
     add_html = "".join(
-        action_card(item, item.get("action", "review for add"), "Prompt to research adding exposure. Not a buy instruction.")
+        action_card(
+            item,
+            "add watch" if item.get("action") == "add watch" else "review for add",
+            "Prompt to research adding exposure. Not a buy instruction.",
+        )
         for item in add_watch
     )
     sell_html = "".join(
@@ -514,6 +584,10 @@ def generate_dashboard(report: dict[str, Any], output_path: str | Path) -> None:
     .radar-card {{ border-left: 4px solid var(--accent); padding: 10px 12px; margin: 0 0 10px; background: #fff; }}
     .radar-card:last-child {{ margin-bottom: 0; }}
     .radar-card p {{ margin: 6px 0; }}
+    .driver-list {{ margin: 8px 0; padding: 8px 10px; background: #f8fafc; border: 1px solid var(--line); border-radius: 6px; }}
+    .driver-list strong {{ display: block; margin-bottom: 4px; font-size: .86rem; }}
+    .driver-list ul {{ margin: 0; padding-left: 18px; }}
+    .driver-list li {{ margin: 2px 0; color: var(--muted); font-size: .86rem; }}
     .methodology ul {{ margin: 8px 0 0; padding-left: 20px; }}
     details {{ margin-top: 16px; }}
     details.news-details {{ margin-top: 0; }}

@@ -42,11 +42,54 @@ def component_score(item: dict[str, Any], key: str) -> float:
         return 50.0
 
 
+def component_details(item: dict[str, Any], key: str) -> dict[str, Any]:
+    details = item.get("scores", {}).get("components", {}).get(key, {}).get("details", {})
+    return details if isinstance(details, dict) else {}
+
+
+def format_pct_value(value: Any) -> str:
+    try:
+        return f"{float(value):+.1f}%"
+    except (TypeError, ValueError):
+        return "n/a"
+
+
 def short_reason(item: dict[str, Any], limit: int = 130) -> str:
     reason = str(item.get("action_reasoning") or item.get("why_it_matches") or item.get("risk") or "Review the dashboard notes.")
     if len(reason) <= limit:
         return reason
     return reason[: limit - 3].rstrip() + "..."
+
+
+def add_review_context(item: dict[str, Any]) -> str:
+    parts: list[str] = []
+    momentum = component_score(item, "price_momentum")
+    momentum_details = component_details(item, "price_momentum")
+    if momentum >= 58:
+        parts.append(
+            "momentum improving"
+            f" ({format_pct_value(momentum_details.get('change_5d_pct'))} 5d,"
+            f" {format_pct_value(momentum_details.get('change_20d_pct'))} 20d)"
+        )
+    thesis = component_score(item, "thesis_risk")
+    if thesis >= 60:
+        parts.append("thesis risk score is healthy")
+    news = component_score(item, "news_sentiment")
+    if news >= 54:
+        parts.append("recent news is neutral-to-constructive")
+    downside = component_score(item, "downside_from_cost_basis")
+    downside_details = component_details(item, "downside_from_cost_basis")
+    if downside >= 60 and downside_details.get("pnl_pct_from_cost") is not None:
+        parts.append(f"position is above cost basis ({format_pct_value(downside_details.get('pnl_pct_from_cost'))})")
+    sector = component_score(item, "sector_trend")
+    if sector >= 55:
+        parts.append("sector proxy is supportive")
+    valuation = component_score(item, "valuation_caution")
+    if valuation <= 50:
+        parts.append("valuation/position sizing still needs review")
+    if not parts:
+        parts.append(short_reason(item, 110))
+    return "; ".join(parts[:4])
 
 
 def build_discord_message(report: dict[str, Any], settings: dict[str, Any]) -> str:
@@ -81,8 +124,9 @@ def build_discord_message(report: dict[str, Any], settings: dict[str, Any]) -> s
     if add_watch:
         lines.append("**Look into adding / buying more**")
         for item in add_watch:
+            label = "add watch" if item.get("action") == "add watch" else "review for add"
             lines.append(
-                f"- {item['ticker']}: {item.get('action', 'review')} | score {score(item):.1f} | momentum {component_score(item, 'price_momentum'):.1f} | {short_reason(item)}"
+                f"- {item['ticker']}: {label} | score {score(item):.1f} | Why: {add_review_context(item)}"
             )
     else:
         lines.append("Look into adding / buying more: no owned positions cleared the add-watch filter today.")

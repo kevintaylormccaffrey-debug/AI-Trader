@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-10T03:28:14.679397+00:00",
+  "last_updated": "2026-07-10T03:35:41.404019+00:00",
   "notes": "Paper-trade records are simulated learning records only. The agent never executes real trades.",
   "paper_trades": [
     {
@@ -3073,6 +3073,34 @@
       "source": "rules",
       "confidence": 58,
       "entry_price": 11.8,
+      "status": "open",
+      "notes": "Simulated paper record only. No real trade was executed.",
+      "latest_return_pct": 0.0,
+      "last_checked": "2026-07-10"
+    },
+    {
+      "opened_at": "2026-07-10",
+      "signal_id": "ca952c61dd95f024",
+      "ticker": "MU",
+      "signal_type": "research opportunity",
+      "recommendation_label": "research opportunity",
+      "source": "gpt",
+      "confidence": 62,
+      "entry_price": 991.64,
+      "status": "open",
+      "notes": "Simulated paper record only. No real trade was executed.",
+      "latest_return_pct": 0.0,
+      "last_checked": "2026-07-10"
+    },
+    {
+      "opened_at": "2026-07-10",
+      "signal_id": "aa855f9878fc4eb3",
+      "ticker": "ANET",
+      "signal_type": "research opportunity",
+      "recommendation_label": "research opportunity",
+      "source": "gpt",
+      "confidence": 62,
+      "entry_price": 184.69,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
       "latest_return_pct": 0.0,

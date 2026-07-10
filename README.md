@@ -12,8 +12,9 @@ It never executes trades, never stores broker credentials, and never hardcodes A
 
 ## What It Does
 
-- Pulls best-effort current prices and price history from Yahoo Finance chart data, with Stooq and portfolio fallback support.
-- Pulls recent headlines from Yahoo Finance and Google News RSS.
+- Pulls current prices and price history from Financial Modeling Prep when `FMP_API_KEY` is configured, with Yahoo Finance, Stooq, and portfolio fallback support.
+- Pulls recent headlines from FMP stock news, Yahoo Finance RSS, and Google News RSS.
+- Adds FMP key metrics to valuation scoring when available.
 - Calculates current value, unrealized gain/loss, percentage gain/loss, and position weight.
 - Flags holdings as `sell watch`, `hold`, `add watch`, or `research only`.
 - Scores each holding and research candidate using:
@@ -62,6 +63,22 @@ Create a Discord webhook for the channel where alerts should post, then add it t
 3. Add a repository secret named `DISCORD_WEBHOOK_URL`.
 
 The webhook URL is read only from the environment. Do not place it in source files.
+
+## Financial Modeling Prep Setup
+
+FMP is optional but recommended for better market data, stock news, and valuation metrics.
+
+1. Create an FMP API key from Financial Modeling Prep.
+2. In GitHub, open **Settings** -> **Secrets and variables** -> **Actions**.
+3. Add a repository secret named `FMP_API_KEY`.
+4. For local runs, set the same environment variable before running the agent:
+
+```powershell
+$env:FMP_API_KEY = "your-fmp-api-key"
+python -m src.main --skip-discord
+```
+
+If `FMP_API_KEY` is missing or FMP fails, the agent falls back to Yahoo Finance, Stooq, RSS feeds, and existing portfolio fallback values.
 
 ## Interactive Discord Bot Setup
 
@@ -356,4 +373,4 @@ This is not financial advice. It is a research workflow for human review. The ag
 
 ## Extending Data Sources
 
-The default implementation uses public no-key sources so the repo runs immediately. Price data uses Yahoo Finance chart data first, then Stooq, then the portfolio fallback value if public providers are unavailable. For production-grade market data, add a provider in `src/data_sources.py` that reads credentials from GitHub Secrets or environment variables. Keep secrets out of committed files.
+The default implementation prefers Financial Modeling Prep when `FMP_API_KEY` is configured. Price data then falls back to Yahoo Finance chart data, Stooq, and finally the portfolio fallback value if providers are unavailable. News prefers FMP stock news, then Yahoo Finance and Google News RSS. Keep all provider keys in GitHub Secrets or environment variables; never commit them.

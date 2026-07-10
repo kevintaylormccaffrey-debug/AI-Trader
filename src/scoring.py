@@ -185,6 +185,7 @@ def score_valuation_caution(item: dict[str, Any], current_price: float | None = 
     sector = str(item.get("sector", "")).lower()
     warning_text = str(item.get("valuation_warning") or item.get("valuation_note") or "").lower()
     cost_basis = item.get("cost_basis")
+    metrics = item.get("financial_metrics") or {}
     score = 60.0
     details: dict[str, Any] = {}
 
@@ -196,6 +197,56 @@ def score_valuation_caution(item: dict[str, Any], current_price: float | None = 
         reason = "Valuation warning is explicitly elevated."
     else:
         reason = "No explicit valuation warning; still review multiples before action."
+
+    pe_ratio = metrics.get("peRatio")
+    ps_ratio = metrics.get("priceToSalesRatio")
+    pfcf_ratio = metrics.get("priceToFreeCashFlowsRatio")
+    debt_to_equity = metrics.get("debtToEquity")
+    metric_flags: list[str] = []
+    for label, raw_value in (
+        ("pe_ratio", pe_ratio),
+        ("price_to_sales", ps_ratio),
+        ("price_to_free_cash_flow", pfcf_ratio),
+        ("debt_to_equity", debt_to_equity),
+    ):
+        try:
+            value = float(raw_value)
+        except (TypeError, ValueError):
+            continue
+        details[label] = round(value, 2)
+
+    try:
+        pe = float(pe_ratio)
+    except (TypeError, ValueError):
+        pe = None
+    try:
+        ps = float(ps_ratio)
+    except (TypeError, ValueError):
+        ps = None
+    try:
+        pfcf = float(pfcf_ratio)
+    except (TypeError, ValueError):
+        pfcf = None
+
+    if pe and pe > 80:
+        score = min(score, 42)
+        metric_flags.append("very high P/E")
+    elif pe and pe > 45:
+        score = min(score, 50)
+        metric_flags.append("elevated P/E")
+    if ps and ps > 18:
+        score = min(score, 42)
+        metric_flags.append("very high price/sales")
+    elif ps and ps > 10:
+        score = min(score, 50)
+        metric_flags.append("elevated price/sales")
+    if pfcf and pfcf > 80:
+        score = min(score, 44)
+        metric_flags.append("very high price/free-cash-flow")
+    if metric_flags:
+        reason = "FMP valuation metrics flag caution: " + ", ".join(metric_flags) + "."
+    elif metrics:
+        reason = "FMP valuation metrics did not flag an extreme multiple; still compare against peers."
 
     if current_price and cost_basis:
         price_to_cost = current_price / float(cost_basis)

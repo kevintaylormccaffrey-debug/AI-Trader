@@ -7,6 +7,7 @@ import json
 import os
 from pathlib import Path
 from typing import Any
+import urllib.parse
 
 import requests
 import yaml
@@ -20,12 +21,18 @@ DEFAULT_SETTINGS: dict[str, Any] = {
     "report_path": "output/latest_report.json",
     "market_data": {
         "timeout_seconds": 12,
-        "price_provider": "yahoo_chart",
-        "price_providers": ["yahoo_chart", "stooq"],
+        "price_provider": "fmp",
+        "price_providers": ["fmp", "yahoo_chart", "stooq"],
         "history_days": 90,
         "user_agent": "KevinStockResearchAgent/0.1",
     },
-    "news": {"lookback_days": 7, "max_items_per_ticker": 5, "timeout_seconds": 12},
+    "fmp": {
+        "enabled": True,
+        "api_key_env": "FMP_API_KEY",
+        "base_url": "https://financialmodelingprep.com/stable",
+        "fundamentals_enabled": True,
+    },
+    "news": {"lookback_days": 7, "max_items_per_ticker": 5, "timeout_seconds": 12, "sources": ["fmp", "yahoo", "google"]},
     "openai": {
         "gpt_enabled": True,
         "rules_only_mode": False,
@@ -133,6 +140,63 @@ def http_get(url: str, settings: dict[str, Any], timeout_key: str = "market_data
         return None, str(exc)
 
 
+def fmp_settings(settings: dict[str, Any]) -> dict[str, Any]:
+    return settings.get("fmp", {})
+
+
+def fmp_api_key(settings: dict[str, Any]) -> str | None:
+    cfg = fmp_settings(settings)
+    if not cfg.get("enabled", True):
+        return None
+    env_name = str(cfg.get("api_key_env") or "FMP_API_KEY")
+    return os.getenv(env_name)
+
+
+def fmp_source_url(endpoint: str, params: dict[str, Any], settings: dict[str, Any]) -> str:
+    base_url = str(fmp_settings(settings).get("base_url") or "https://financialmodelingprep.com/stable").rstrip("/")
+    clean_params = {key: value for key, value in params.items() if value is not None and key != "apikey"}
+    query = urllib.parse.urlencode(clean_params)
+    return f"{base_url}/{endpoint.lstrip('/')}?{query}" if query else f"{base_url}/{endpoint.lstrip('/')}"
+
+
+def fmp_get_json(
+    endpoint: str,
+    params: dict[str, Any],
+    settings: dict[str, Any],
+    timeout_key: str = "market_data",
+) -> tuple[Any | None, str | None, str]:
+    api_key = fmp_api_key(settings)
+    public_url = fmp_source_url(endpoint, params, settings)
+    if not api_key:
+        return None, "FMP_API_KEY is not set; skipped FMP provider.", public_url
+
+    base_url = str(fmp_settings(settings).get("base_url") or "https://financialmodelingprep.com/stable").rstrip("/")
+    request_params = {**params, "apikey": api_key}
+    timeout = settings.get(timeout_key, {}).get("timeout_seconds")
+    if timeout is None:
+        timeout = settings.get("market_data", {}).get("timeout_seconds", 12)
+    headers = {"User-Agent": user_agent(settings), "Accept": "application/json"}
+    try:
+        response = requests.get(
+            f"{base_url}/{endpoint.lstrip('/')}",
+            params=request_params,
+            headers=headers,
+            timeout=float(timeout),
+        )
+        response.raise_for_status()
+        payload = response.json()
+    except requests.RequestException as exc:
+        return None, str(exc), public_url
+    except (json.JSONDecodeError, ValueError) as exc:
+        return None, f"FMP returned non-JSON response: {exc}", public_url
+
+    if isinstance(payload, dict):
+        message = payload.get("Error Message") or payload.get("error") or payload.get("message")
+        if message and not payload.get("symbol"):
+            return None, str(message), public_url
+    return payload, None, public_url
+
+
 def safe_float(value: Any) -> float | None:
     if value in (None, "", "N/D", "null"):
         return None
@@ -147,6 +211,127 @@ def stooq_symbol(ticker: str) -> str:
     if clean.endswith(".us"):
         return clean
     return f"{clean}.us"
+
+
+def parse_timestamp(value: Any) -> str:
+    if value in (None, ""):
+        return utc_now().isoformat()
+    try:
+        return dt.datetime.fromtimestamp(int(value), dt.timezone.utc).isoformat()
+    except (TypeError, ValueError, OSError, OverflowError):
+        return str(value)
+
+
+def fetch_fmp_price_history(ticker: str, settings: dict[str, Any], days: int | None = None) -> list[dict[str, Any]]:
+    lookback_days = days or int(settings.get("market_data", {}).get("history_days", 90))
+    end = today_utc()
+    start = end - dt.timedelta(days=lookback_days * 2)
+    payload, error, url = fmp_get_json(
+        "historical-price-eod/full",
+        {"symbol": ticker.upper(), "from": f"{start:%Y-%m-%d}", "to": f"{end:%Y-%m-%d}"},
+        settings,
+        "market_data",
+    )
+    if error or not payload:
+        return [{"error": error, "source_url": url}]
+
+    rows = payload if isinstance(payload, list) else payload.get("historical", [])
+    history: list[dict[str, Any]] = []
+    for row in rows if isinstance(rows, list) else []:
+        close = safe_float(row.get("close") or row.get("adjClose"))
+        if close is None:
+            continue
+        history.append(
+            {
+                "date": row.get("date"),
+                "open": safe_float(row.get("open")),
+                "high": safe_float(row.get("high")),
+                "low": safe_float(row.get("low")),
+                "close": close,
+                "volume": safe_float(row.get("volume")),
+                "source": "fmp",
+                "source_url": url,
+            }
+        )
+    history.sort(key=lambda item: item.get("date") or "")
+    return history[-lookback_days:]
+
+
+def fetch_fmp_quote(
+    ticker: str,
+    settings: dict[str, Any],
+    fallback_price: float | None = None,
+) -> dict[str, Any]:
+    payload, error, url = fmp_get_json("quote", {"symbol": ticker.upper()}, settings, "market_data")
+    quote: dict[str, Any] = {
+        "ticker": ticker.upper(),
+        "price": fallback_price,
+        "open": None,
+        "high": None,
+        "low": None,
+        "volume": None,
+        "as_of": utc_now().isoformat(),
+        "source": "portfolio_fallback" if fallback_price is not None else "unavailable",
+        "source_url": url,
+        "error": error,
+        "history": [],
+    }
+    if error or not payload:
+        return quote
+
+    row = payload[0] if isinstance(payload, list) and payload else payload if isinstance(payload, dict) else {}
+    price = safe_float(row.get("price"))
+    if price is None:
+        quote["error"] = quote["error"] or f"FMP returned no usable price for {ticker}."
+        return quote
+
+    previous_close = safe_float(row.get("previousClose"))
+    daily_change_pct = safe_float(row.get("changesPercentage") or row.get("changePercentage"))
+    quote.update(
+        {
+            "price": price,
+            "open": safe_float(row.get("open")),
+            "high": safe_float(row.get("dayHigh") or row.get("high")),
+            "low": safe_float(row.get("dayLow") or row.get("low")),
+            "volume": safe_float(row.get("volume")),
+            "as_of": parse_timestamp(row.get("timestamp")),
+            "source": "fmp",
+            "error": None,
+            "previous_close": previous_close,
+            "daily_change_pct": round(daily_change_pct, 2) if daily_change_pct is not None else None,
+        }
+    )
+    return quote
+
+
+def fetch_fmp_key_metrics(ticker: str, settings: dict[str, Any]) -> dict[str, Any]:
+    if not fmp_settings(settings).get("fundamentals_enabled", True):
+        return {"ticker": ticker.upper(), "source": "fmp", "metrics": {}, "error": "FMP fundamentals disabled."}
+    payload, error, url = fmp_get_json("key-metrics", {"symbol": ticker.upper(), "limit": 1}, settings, "market_data")
+    result: dict[str, Any] = {
+        "ticker": ticker.upper(),
+        "source": "fmp",
+        "source_url": url,
+        "metrics": {},
+        "error": error,
+    }
+    if error or not payload:
+        return result
+    row = payload[0] if isinstance(payload, list) and payload else payload if isinstance(payload, dict) else {}
+    wanted = (
+        "calendarYear",
+        "period",
+        "peRatio",
+        "priceToSalesRatio",
+        "priceToFreeCashFlowsRatio",
+        "priceEarningsToGrowthRatio",
+        "debtToEquity",
+        "revenuePerShare",
+        "freeCashFlowPerShare",
+    )
+    result["metrics"] = {key: row.get(key) for key in wanted if row.get(key) is not None}
+    result["error"] = None if result["metrics"] else "FMP returned no key metrics."
+    return result
 
 
 def fetch_stooq_quote(
@@ -352,7 +537,10 @@ def fetch_market_snapshot(
     quote: dict[str, Any] | None = None
     provider_errors: list[dict[str, str | None]] = []
     for provider in configured_price_providers(settings):
-        if provider == "yahoo_chart":
+        if provider == "fmp":
+            candidate = fetch_fmp_quote(ticker, settings, fallback_price)
+            candidate["history"] = fetch_fmp_price_history(ticker, settings)
+        elif provider == "yahoo_chart":
             candidate = fetch_yahoo_chart_snapshot(ticker, settings, fallback_price)
         elif provider == "stooq":
             candidate = fetch_stooq_quote(ticker, settings, fallback_price)

@@ -78,10 +78,12 @@ def enrich_holding(
 ) -> dict[str, Any]:
     ticker = str(holding["ticker"]).upper()
     market = data_sources.fetch_market_snapshot(ticker, settings, holding.get("current_price"))
+    fundamentals = data_sources.fetch_fmp_key_metrics(ticker, settings)
+    scoring_item = {**holding, "financial_metrics": fundamentals.get("metrics", {})}
     news_items = fetch_recent_news(ticker, settings)
     earnings = data_sources.fetch_earnings_date(ticker, settings)
     scores = score_holding(
-        holding,
+        scoring_item,
         market,
         news_items,
         earnings.get("earnings_date"),
@@ -121,6 +123,7 @@ def enrich_holding(
         "position_weight_pct": round(position_weight_pct, 2) if position_weight_pct is not None else None,
         "market_data_source": market.get("source"),
         "market_data_as_of": market.get("as_of"),
+        "financial_metrics": fundamentals,
         "earnings_date": earnings.get("earnings_date"),
         "news_summary": summarize_news(news_items),
         "news": news_items,
@@ -139,10 +142,12 @@ def enrich_watchlist_item(
 ) -> dict[str, Any]:
     ticker = str(item["ticker"]).upper()
     market = data_sources.fetch_market_snapshot(ticker, settings)
+    fundamentals = data_sources.fetch_fmp_key_metrics(ticker, settings)
+    scoring_item = {**item, "financial_metrics": fundamentals.get("metrics", {})}
     news_items = fetch_recent_news(ticker, settings)
     earnings = data_sources.fetch_earnings_date(ticker, settings)
     scores = score_research_candidate(
-        item,
+        scoring_item,
         market,
         news_items,
         earnings.get("earnings_date"),
@@ -157,6 +162,7 @@ def enrich_watchlist_item(
         "previous_close": round_money(market.get("previous_close")),
         "daily_change_pct": market.get("daily_change_pct"),
         "market_data_source": market.get("source"),
+        "financial_metrics": fundamentals,
         "earnings_date": earnings.get("earnings_date"),
         "news_summary": summarize_news(news_items),
         "news": news_items,
@@ -263,8 +269,9 @@ def build_report(settings: dict[str, Any]) -> dict[str, Any]:
                 "Include uncertainty because data can lag and signals can be wrong.",
             ],
             "data_sources": [
-                "Yahoo Finance chart data for prices and price history, with Stooq and portfolio fallback prices if unavailable.",
-                "Yahoo Finance and Google News RSS feeds for recent headlines.",
+                "Financial Modeling Prep for prices, price history, stock news, and key valuation metrics when FMP_API_KEY is configured.",
+                "Yahoo Finance chart data for prices and price history, with Stooq and portfolio fallback prices if FMP is unavailable.",
+                "FMP stock news plus Yahoo Finance and Google News RSS feeds for recent headlines.",
                 "Yahoo quote summary calendar events for best-effort earnings dates.",
                 "OpenAI Responses API for important-event analysis when enabled and within configured cost limits.",
             ],

@@ -44,6 +44,7 @@ jobs:
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          FMP_API_KEY: ${{ secrets.FMP_API_KEY }}
           PORTFOLIO_JSON: ${{ secrets.PORTFOLIO_JSON }}
           WATCHLIST_JSON: ${{ secrets.WATCHLIST_JSON }}
           DASHBOARD_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/dashboard.html

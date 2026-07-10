@@ -14,8 +14,9 @@ dashboard:
 
 market_data:
   timeout_seconds: 12
-  price_provider: yahoo_chart
+  price_provider: fmp
   price_providers:
+    - fmp
     - yahoo_chart
     - stooq
   history_days: 90
@@ -47,8 +48,15 @@ news:
   max_items_per_ticker: 5
   timeout_seconds: 12
   sources:
+    - fmp
     - yahoo
     - google
+
+fmp:
+  enabled: true
+  api_key_env: FMP_API_KEY
+  base_url: https://financialmodelingprep.com/stable
+  fundamentals_enabled: true
 
 openai:
   gpt_enabled: true

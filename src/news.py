@@ -8,7 +8,7 @@ import xml.etree.ElementTree as ET
 from collections import Counter
 from typing import Any
 
-from src.data_sources import http_get, utc_now
+from src.data_sources import fmp_get_json, http_get, utc_now
 
 
 TAG_KEYWORDS: dict[str, tuple[str, ...]] = {
@@ -172,6 +172,55 @@ def news_urls(ticker: str, configured_sources: list[str]) -> list[tuple[str, str
     return urls
 
 
+def parse_fmp_date(value: str | None) -> dt.datetime | None:
+    if not value:
+        return None
+    normalized = value.replace("Z", "+00:00")
+    try:
+        parsed = dt.datetime.fromisoformat(normalized)
+        if parsed.tzinfo is None:
+            parsed = parsed.replace(tzinfo=dt.timezone.utc)
+        return parsed.astimezone(dt.timezone.utc)
+    except ValueError:
+        return parse_date(value)
+
+
+def fetch_fmp_news(ticker: str, settings: dict[str, Any], lookback_days: int, max_items: int) -> list[dict[str, Any]]:
+    payload, error, _url = fmp_get_json(
+        "news/stock",
+        {"symbols": ticker.upper(), "limit": max_items},
+        settings,
+        "news",
+    )
+    if error or not payload:
+        return []
+
+    cutoff = utc_now() - dt.timedelta(days=lookback_days)
+    items: list[dict[str, Any]] = []
+    for row in payload if isinstance(payload, list) else []:
+        title = str(row.get("title") or "").strip()
+        link = str(row.get("url") or "").strip()
+        summary = str(row.get("text") or row.get("summary") or "").strip()
+        published = parse_fmp_date(row.get("publishedDate") or row.get("published_at") or row.get("date"))
+        if not title or not link:
+            continue
+        if published and published < cutoff:
+            continue
+        analysis = analyze_news_item(title, summary)
+        items.append(
+            {
+                "ticker": ticker.upper(),
+                "title": title,
+                "url": link,
+                "source": row.get("site") or row.get("publisher") or "Financial Modeling Prep",
+                "published_at": published.isoformat() if published else None,
+                "summary": summary,
+                **analysis,
+            }
+        )
+    return items
+
+
 def fetch_recent_news(ticker: str, settings: dict[str, Any]) -> list[dict[str, Any]]:
     news_settings = settings.get("news", {})
     max_items = int(news_settings.get("max_items_per_ticker", 5))
@@ -180,6 +229,9 @@ def fetch_recent_news(ticker: str, settings: dict[str, Any]) -> list[dict[str, A
 
     collected: list[dict[str, Any]] = []
     errors: list[str] = []
+    if "fmp" in configured_sources:
+        collected.extend(fetch_fmp_news(ticker, settings, lookback_days, max_items))
+
     for source_name, url in news_urls(ticker, configured_sources):
         text, error = http_get(url, settings, "news")
         if error:

@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import copy
+import re
 from typing import Any
 
 
@@ -60,6 +61,8 @@ def price_band(price: Any) -> str | None:
 def redact_exact_fields(value: Any) -> Any:
     if isinstance(value, list):
         return [redact_exact_fields(item) for item in value]
+    if isinstance(value, str):
+        return re.sub(r"([?&]apikey=)[^&\s]+", r"\1[redacted]", value, flags=re.IGNORECASE)
     if not isinstance(value, dict):
         return value
 

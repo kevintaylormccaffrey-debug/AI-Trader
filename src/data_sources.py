@@ -5,6 +5,7 @@ import datetime as dt
 import io
 import json
 import os
+import re
 from pathlib import Path
 from typing import Any
 import urllib.parse
@@ -159,6 +160,13 @@ def fmp_source_url(endpoint: str, params: dict[str, Any], settings: dict[str, An
     return f"{base_url}/{endpoint.lstrip('/')}?{query}" if query else f"{base_url}/{endpoint.lstrip('/')}"
 
 
+def redact_url_secret(value: str, api_key: str | None = None) -> str:
+    redacted = value
+    if api_key:
+        redacted = redacted.replace(api_key, "[redacted]")
+    return re.sub(r"([?&]apikey=)[^&\s]+", r"\1[redacted]", redacted, flags=re.IGNORECASE)
+
+
 def fmp_get_json(
     endpoint: str,
     params: dict[str, Any],
@@ -186,7 +194,7 @@ def fmp_get_json(
         response.raise_for_status()
         payload = response.json()
     except requests.RequestException as exc:
-        return None, str(exc), public_url
+        return None, redact_url_secret(str(exc), api_key), public_url
     except (json.JSONDecodeError, ValueError) as exc:
         return None, f"FMP returned non-JSON response: {exc}", public_url
 

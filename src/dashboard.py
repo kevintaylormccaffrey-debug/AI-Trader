@@ -60,6 +60,94 @@ def render_score_grid(scores: dict[str, Any]) -> str:
     return "<div class='score-grid'>" + "".join(pills) + "</div>"
 
 
+def overall_score(item: dict[str, Any]) -> float:
+    try:
+        return float(item.get("scores", {}).get("overall_score", 0) or 0)
+    except (TypeError, ValueError):
+        return 0.0
+
+
+def component_value(item: dict[str, Any], key: str) -> float:
+    try:
+        return float(item.get("scores", {}).get("components", {}).get(key, {}).get("score", 50) or 50)
+    except (TypeError, ValueError):
+        return 50.0
+
+
+def compact_reason(value: Any, limit: int = 170) -> str:
+    text = "" if value is None else str(value)
+    if len(text) <= limit:
+        return esc(text)
+    return esc(text[: limit - 3].rstrip() + "...")
+
+
+def action_card(item: dict[str, Any], label: str, note: str) -> str:
+    score = item.get("scores", {}).get("overall_score")
+    return (
+        "<article class='radar-card'>"
+        f"<h3>{esc(item.get('ticker'))} <span>{esc(label)}</span></h3>"
+        f"<p>{compact_reason(item.get('action_reasoning') or item.get('why_it_matches') or item.get('risk'))}</p>"
+        f"<p><strong>Score:</strong> {esc(score)} | <strong>Momentum:</strong> {esc(component_value(item, 'price_momentum'))} | <strong>Thesis:</strong> {esc(component_value(item, 'thesis_risk'))}</p>"
+        f"<p class='small-note'>{esc(note)}</p>"
+        "</article>"
+    )
+
+
+def render_action_radar(report: dict[str, Any]) -> str:
+    holdings = report.get("holdings", [])
+    sell_watch = report.get("sell_watch", [])
+    add_watch = [item for item in holdings if item.get("action") == "add watch"]
+    if not add_watch:
+        add_watch = [
+            item
+            for item in holdings
+            if item.get("status") != "core_holding"
+            and overall_score(item) >= 58
+            and component_value(item, "price_momentum") >= 58
+            and component_value(item, "thesis_risk") >= 55
+        ]
+    add_watch = sorted(add_watch, key=overall_score, reverse=True)[:4]
+    other_checks = [
+        item
+        for item in holdings
+        if item.get("watch_priority") == "high" and item.get("action") not in {"hold", "add watch", "sell watch"}
+    ][:4]
+    ideas = report.get("discovery_ideas", [])[:4]
+
+    def bucket(title: str, items_html: str, empty: str) -> str:
+        return (
+            "<div class='radar-bucket'>"
+            f"<h3>{esc(title)}</h3>"
+            + (items_html if items_html else f"<p class='small-note'>{esc(empty)}</p>")
+            + "</div>"
+        )
+
+    add_html = "".join(
+        action_card(item, item.get("action", "review for add"), "Prompt to research adding exposure. Not a buy instruction.")
+        for item in add_watch
+    )
+    sell_html = "".join(
+        action_card(item, "review sell thesis", "Risk prompt. Check thesis, sizing, and stop/loss rules before acting.")
+        for item in sell_watch[:4]
+    )
+    checks_html = "".join(
+        action_card(item, item.get("action", "thesis check"), "Review why the model did not classify this as a clean hold.")
+        for item in other_checks
+    )
+    ideas_html = "".join(
+        action_card(item, "new research candidate", "Not owned unless you add it manually. Research before any trade.")
+        for item in ideas
+    )
+    return (
+        "<div class='radar-grid'>"
+        + bucket("Look Into Adding / Buying More", add_html, "No owned positions cleared the add-watch filter today.")
+        + bucket("Risk / Sell-Watch Review", sell_html, "No sell-watch rules triggered today.")
+        + bucket("Other Thesis Checks", checks_html, "No elevated thesis checks outside sell-watch.")
+        + bucket("New Stocks To Research", ideas_html, "No discovery ideas passed the current filters.")
+        + "</div>"
+    )
+
+
 def render_holdings(holdings: list[dict[str, Any]]) -> str:
     rows = []
     for item in holdings:
@@ -95,7 +183,13 @@ def render_news(news_items: list[dict[str, Any]]) -> str:
             f"<td>{esc(item.get('risk_score'))}</td>"
             "</tr>"
         )
-    return "<div class='table-wrap'><table><thead><tr><th>Ticker</th><th>Headline</th><th>Tag</th><th>Sentiment</th><th>Risk</th></tr></thead><tbody>" + "".join(rows) + "</tbody></table></div>"
+    return (
+        "<details class='news-details'><summary>Show recent headline/catalyst table</summary>"
+        "<p class='small-note'>Raw headline feed used by the scoring model. GPT summaries and action radar above are the condensed view.</p>"
+        "<div class='table-wrap'><table><thead><tr><th>Ticker</th><th>Headline</th><th>Tag</th><th>Sentiment</th><th>Risk</th></tr></thead><tbody>"
+        + "".join(rows)
+        + "</tbody></table></div></details>"
+    )
 
 
 def render_gpt_analysis(gpt_analysis: dict[str, Any]) -> str:
@@ -414,8 +508,16 @@ def generate_dashboard(report: dict[str, Any], output_path: str | Path) -> None:
     .cards {{ display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }}
     .item-card {{ border: 1px solid var(--line); border-radius: 8px; padding: 16px; background: #fff; }}
     .item-card p {{ margin: 8px 0; }}
+    .radar-grid {{ display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }}
+    .radar-bucket {{ border: 1px solid var(--line); border-radius: 8px; padding: 14px; background: #fbfcfd; }}
+    .radar-bucket h3 {{ margin-bottom: 12px; }}
+    .radar-card {{ border-left: 4px solid var(--accent); padding: 10px 12px; margin: 0 0 10px; background: #fff; }}
+    .radar-card:last-child {{ margin-bottom: 0; }}
+    .radar-card p {{ margin: 6px 0; }}
     .methodology ul {{ margin: 8px 0 0; padding-left: 20px; }}
     details {{ margin-top: 16px; }}
+    details.news-details {{ margin-top: 0; }}
+    summary {{ cursor: pointer; font-weight: 700; color: var(--accent); }}
     pre {{ white-space: pre-wrap; overflow-wrap: anywhere; background: #111827; color: #e5e7eb; padding: 16px; border-radius: 8px; font-size: .78rem; }}
     .disclaimer {{ border-left: 4px solid var(--accent-2); background: #fff7ed; padding: 12px; margin-top: 14px; color: #7c2d12; }}
     .usage-line, .small-note {{ color: var(--muted); font-size: .88rem; margin-top: 12px; }}
@@ -423,7 +525,7 @@ def generate_dashboard(report: dict[str, Any], output_path: str | Path) -> None:
     @media (max-width: 760px) {{
       main {{ width: min(100% - 20px, 1180px); margin-top: 10px; }}
       section {{ padding: 16px; }}
-      .summary-grid, .cards, .history-grid {{ grid-template-columns: 1fr; }}
+      .summary-grid, .cards, .history-grid, .radar-grid {{ grid-template-columns: 1fr; }}
       header {{ padding: 22px 16px; }}
     }}
   </style>
@@ -441,8 +543,8 @@ def generate_dashboard(report: dict[str, Any], output_path: str | Path) -> None:
       </div>
       <p class="disclaimer">{esc(privacy_note)} Not financial advice. Human review required. Signals can be wrong because public data can lag, headlines can be incomplete, and valuation context requires deeper research.</p>
     </section>
+    <section><h2>Action Radar</h2>{render_action_radar(report)}</section>
     <section><h2>Holdings</h2>{render_holdings(report.get("holdings", []))}</section>
-    <section><h2>News/Catalysts</h2>{render_news(report.get("news_catalysts", []))}</section>
     <section><h2>GPT Analysis</h2>{render_gpt_analysis(report.get("gpt_analysis", {}))}</section>
     <section><h2>Sell Watch</h2>{render_holdings(report.get("sell_watch", [])) if report.get("sell_watch") else "<p>No holdings triggered sell-watch rules.</p>"}</section>
     <section><h2>Watchlist</h2>{render_watchlist(report.get("watchlist", []))}</section>
@@ -450,6 +552,7 @@ def generate_dashboard(report: dict[str, Any], output_path: str | Path) -> None:
     <section><h2>Learning / Signal Accuracy</h2>{render_learning_accuracy(report.get("signal_history", {}), report.get("signal_accuracy", {}))}</section>
     <section><h2>Signal Accuracy Summary</h2>{render_signal_accuracy(report.get("signal_history", {}))}</section>
     <section><h2>Historical Performance</h2>{render_historical_performance(report.get("signal_history", {}), report.get("paper_trades", {}))}</section>
+    <section><h2>News/Catalysts</h2>{render_news(report.get("news_catalysts", []))}</section>
     <section><h2>Learning/Feedback Metrics</h2><p class="small-note">Signals are evaluated after the configured horizon. Positive signals are judged by later positive returns; risk signals are judged by whether they avoided or warned about weakness. These metrics are experimental and for learning only.</p></section>
     <section><h2>Methodology</h2>{render_methodology(report)}<details><summary>Raw latest_report.json</summary><pre>{report_json}</pre></details></section>
   </main>

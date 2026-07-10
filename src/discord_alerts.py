@@ -28,41 +28,84 @@ def trim_lines(lines: list[str], max_chars: int) -> str:
     return message[:keep].rstrip() + "\n...trimmed. Open dashboard for full report."
 
 
+def score(item: dict[str, Any]) -> float:
+    try:
+        return float(item.get("scores", {}).get("overall_score", 0) or 0)
+    except (TypeError, ValueError):
+        return 0.0
+
+
+def component_score(item: dict[str, Any], key: str) -> float:
+    try:
+        return float(item.get("scores", {}).get("components", {}).get(key, {}).get("score", 50) or 50)
+    except (TypeError, ValueError):
+        return 50.0
+
+
+def short_reason(item: dict[str, Any], limit: int = 130) -> str:
+    reason = str(item.get("action_reasoning") or item.get("why_it_matches") or item.get("risk") or "Review the dashboard notes.")
+    if len(reason) <= limit:
+        return reason
+    return reason[: limit - 3].rstrip() + "..."
+
+
 def build_discord_message(report: dict[str, Any], settings: dict[str, Any]) -> str:
     summary = report.get("portfolio_summary", {})
     sell_watch = report.get("sell_watch", [])
+    holdings = report.get("holdings", [])
     high_priority = [
         holding
-        for holding in report.get("holdings", [])
+        for holding in holdings
         if holding.get("watch_priority") == "high" and holding.get("action") != "hold"
     ]
+    add_watch = [holding for holding in holdings if holding.get("action") == "add watch"]
+    if not add_watch:
+        add_watch = [
+            holding
+            for holding in holdings
+            if holding.get("status") != "core_holding"
+            and score(holding) >= 58
+            and component_score(holding, "price_momentum") >= 58
+            and component_score(holding, "thesis_risk") >= 55
+        ]
+    add_watch = sorted(add_watch, key=score, reverse=True)[:3]
     ideas = report.get("discovery_ideas", [])[:3]
     url = dashboard_url(settings) or report.get("dashboard_url") or "Dashboard URL not configured"
 
     lines = [
-        "**Daily Stock Research Agent**",
+        "**Daily Stock Research Agent - Review Queue**",
         f"Portfolio: {summary.get('portfolio_name', 'Portfolio')} | Total: {money(summary.get('total_value'))} | Day data as of {report.get('generated_at', 'n/a')}",
         f"Unrealized P/L: {money(summary.get('unrealized_gain_loss'))} ({pct(summary.get('unrealized_gain_loss_pct'))})",
     ]
 
-    if high_priority:
-        lines.append("**High-priority alerts**")
-        for item in high_priority[:4]:
-            lines.append(f"- {item['ticker']}: {item['action']} | score {item['scores']['overall_score']} | {item['action_reasoning']}")
+    if add_watch:
+        lines.append("**Look into adding / buying more**")
+        for item in add_watch:
+            lines.append(
+                f"- {item['ticker']}: {item.get('action', 'review')} | score {score(item):.1f} | momentum {component_score(item, 'price_momentum'):.1f} | {short_reason(item)}"
+            )
     else:
-        lines.append("High-priority alerts: none from current rules.")
+        lines.append("Look into adding / buying more: no owned positions cleared the add-watch filter today.")
 
     if sell_watch:
-        lines.append("**Sell watch**")
+        lines.append("**Risk / sell-thesis review**")
         for item in sell_watch[:4]:
-            lines.append(f"- {item['ticker']}: {item.get('action_reasoning')}")
+            lines.append(f"- {item['ticker']}: sell watch | score {score(item):.1f} | {short_reason(item)}")
     else:
-        lines.append("Sell watch: none triggered.")
+        lines.append("Risk / sell-thesis review: none triggered.")
+
+    other_alerts = [item for item in high_priority if item.get("action") not in {"add watch", "sell watch"}]
+    if other_alerts:
+        lines.append("**Other thesis checks**")
+        for item in other_alerts[:3]:
+            lines.append(f"- {item['ticker']}: {item['action']} | score {score(item):.1f} | {short_reason(item)}")
 
     if ideas:
-        lines.append("**New research ideas**")
+        lines.append("**New stocks to research, not automatic buys**")
         for idea in ideas:
-            lines.append(f"- {idea['ticker']} ({idea['company']}): {idea['sector']} | confidence {idea['confidence_level']}")
+            lines.append(
+                f"- {idea['ticker']} ({idea['company']}): {idea['sector']} | confidence {idea['confidence_level']} | {short_reason(idea, 95)}"
+            )
 
     gpt_events = [
         event
@@ -95,7 +138,7 @@ def build_discord_message(report: dict[str, Any], settings: dict[str, Any]) -> s
     lines.extend(
         [
             f"Dashboard: {url}",
-            "**Not financial advice. Human review required. No trades are executed by this agent.**",
+            "**Not financial advice. Human review required. Treat these as prompts to research, not instructions to trade.**",
         ]
     )
     return trim_lines(lines, int(settings.get("alerts", {}).get("max_discord_chars", 1900)))

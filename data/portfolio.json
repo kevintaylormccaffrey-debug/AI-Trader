@@ -2,7 +2,7 @@
   "portfolio_name": "Kevin Main Portfolio",
   "cash_position": {
     "ticker": "SPAXX",
-    "value": 0,
+    "value": 1.0,
     "yield_7d": 3.24
   },
   "holdings": [
@@ -16,19 +16,6 @@
       "sector": "semiconductors",
       "thesis": "Low-power FPGA and AI edge semiconductor growth",
       "max_loss_pct": 15,
-      "status": "active",
-      "watch_priority": "high"
-    },
-    {
-      "ticker": "PATH",
-      "company": "UiPath",
-      "shares": 1,
-      "cost_basis": 100,
-      "current_price": 88,
-      "time_horizon": "medium",
-      "sector": "AI automation software",
-      "thesis": "Enterprise automation and AI workflow adoption",
-      "max_loss_pct": 12,
       "status": "active",
       "watch_priority": "high"
     },
@@ -93,6 +80,19 @@
       "time_horizon": "medium",
       "sector": "high-growth tech",
       "thesis": "EV, energy storage, autonomous driving, and AI robotics optionality",
+      "max_loss_pct": 15,
+      "status": "active",
+      "watch_priority": "high"
+    },
+    {
+      "ticker": "AVGO",
+      "company": "Broadcom",
+      "shares": 1,
+      "cost_basis": 100,
+      "current_price": 100,
+      "time_horizon": "long",
+      "sector": "semiconductors",
+      "thesis": "AI networking, custom silicon, and infrastructure software exposure tied to datacenter growth",
       "max_loss_pct": 15,
       "status": "active",
       "watch_priority": "high"

@@ -20,12 +20,33 @@ def pct(value: float | None) -> str:
     return f"{value:+.2f}%"
 
 
-def trim_lines(lines: list[str], max_chars: int) -> str:
+def trim_lines(lines: list[str], max_chars: int, preserved_footer_lines: int = 2) -> str:
     message = "\n".join(lines)
     if len(message) <= max_chars:
         return message
-    keep = max(0, max_chars - 80)
-    return message[:keep].rstrip() + "\n...trimmed. Open dashboard for full report."
+
+    footer = lines[-preserved_footer_lines:] if preserved_footer_lines > 0 else []
+    body = lines[:-preserved_footer_lines] if preserved_footer_lines > 0 else lines
+    trim_notice = "...trimmed. Open dashboard for full report."
+    footer_text = "\n".join(footer)
+    reserved = len(trim_notice) + len(footer_text) + 2
+    body_budget = max(0, max_chars - reserved)
+
+    kept: list[str] = []
+    used = 0
+    for line in body:
+        line_cost = len(line) + (1 if kept else 0)
+        if used + line_cost <= body_budget:
+            kept.append(line)
+            used += line_cost
+            continue
+        remaining = body_budget - used - (1 if kept else 0)
+        if remaining > 20:
+            kept.append(line[: remaining - 3].rstrip() + "...")
+        break
+
+    parts = [part for part in ["\n".join(kept), trim_notice, footer_text] if part]
+    return "\n".join(parts)
 
 
 def score(item: dict[str, Any]) -> float:

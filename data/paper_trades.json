@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-15T14:07:11.666202+00:00",
+  "last_updated": "2026-07-15T20:42:26.183660+00:00",
   "notes": "Paper-trade records are simulated learning records only. The agent never executes real trades.",
   "paper_trades": [
     {
@@ -23,7 +23,7 @@
       "entry_price": 138.65,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -3.13,
+      "latest_return_pct": -4.46,
       "last_checked": "2026-07-15"
     },
     {
@@ -35,7 +35,7 @@
       "entry_price": 447.58,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 21.8,
+      "latest_return_pct": 18.22,
       "last_checked": "2026-07-15"
     },
     {
@@ -47,7 +47,7 @@
       "entry_price": 138.65,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -3.13,
+      "latest_return_pct": -4.46,
       "last_checked": "2026-07-15"
     },
     {
@@ -59,7 +59,7 @@
       "entry_price": 103.26,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 4.18,
+      "latest_return_pct": 1.42,
       "last_checked": "2026-07-15"
     },
     {
@@ -71,7 +71,7 @@
       "entry_price": 140.47,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 26.85,
+      "latest_return_pct": 22.39,
       "last_checked": "2026-07-15"
     },
     {
@@ -83,7 +83,7 @@
       "entry_price": 223.47,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -5.58,
+      "latest_return_pct": -4.91,
       "last_checked": "2026-07-15"
     },
     {
@@ -95,7 +95,7 @@
       "entry_price": 447.58,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 21.8,
+      "latest_return_pct": 18.22,
       "last_checked": "2026-07-15"
     },
     {
@@ -107,7 +107,7 @@
       "entry_price": 219.68,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -3.95,
+      "latest_return_pct": -3.27,
       "last_checked": "2026-07-15"
     },
     {
@@ -121,7 +121,7 @@
       "entry_price": 134.01,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 0.22,
+      "latest_return_pct": -1.16,
       "last_checked": "2026-07-15"
     },
     {
@@ -149,7 +149,7 @@
       "entry_price": 467.51,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 16.6,
+      "latest_return_pct": 13.18,
       "last_checked": "2026-07-15"
     },
     {
@@ -163,7 +163,7 @@
       "entry_price": 154.03,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 15.69,
+      "latest_return_pct": 11.61,
       "last_checked": "2026-07-15"
     },
     {
@@ -177,7 +177,7 @@
       "entry_price": 215.28,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -1.99,
+      "latest_return_pct": -1.29,
       "last_checked": "2026-07-15"
     },
     {
@@ -191,7 +191,7 @@
       "entry_price": 215.28,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -1.99,
+      "latest_return_pct": -1.29,
       "last_checked": "2026-07-15"
     },
     {
@@ -205,7 +205,7 @@
       "entry_price": 143.22,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -6.22,
+      "latest_return_pct": -7.51,
       "last_checked": "2026-07-15"
     },
     {
@@ -219,7 +219,7 @@
       "entry_price": 143.22,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -6.22,
+      "latest_return_pct": -7.51,
       "last_checked": "2026-07-15"
     },
     {
@@ -233,7 +233,7 @@
       "entry_price": 467.51,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 16.6,
+      "latest_return_pct": 13.18,
       "last_checked": "2026-07-15"
     },
     {
@@ -247,7 +247,7 @@
       "entry_price": 154.03,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 15.69,
+      "latest_return_pct": 11.61,
       "last_checked": "2026-07-15"
     },
     {
@@ -261,7 +261,7 @@
       "entry_price": 215.33,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -2.01,
+      "latest_return_pct": -1.31,
       "last_checked": "2026-07-15"
     },
     {
@@ -275,7 +275,7 @@
       "entry_price": 148.07,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -9.29,
+      "latest_return_pct": -10.54,
       "last_checked": "2026-07-15"
     },
     {
@@ -289,7 +289,7 @@
       "entry_price": 487.66,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 11.79,
+      "latest_return_pct": 8.51,
       "last_checked": "2026-07-15"
     },
     {
@@ -317,7 +317,7 @@
       "entry_price": 213.22,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -1.04,
+      "latest_return_pct": -0.34,
       "last_checked": "2026-07-15"
     },
     {
@@ -331,7 +331,7 @@
       "entry_price": 150.29,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -10.63,
+      "latest_return_pct": -11.86,
       "last_checked": "2026-07-15"
     },
     {
@@ -345,7 +345,7 @@
       "entry_price": 214.86,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -1.8,
+      "latest_return_pct": -1.1,
       "last_checked": "2026-07-15"
     },
     {
@@ -359,7 +359,7 @@
       "entry_price": 150.29,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -10.63,
+      "latest_return_pct": -11.86,
       "last_checked": "2026-07-15"
     },
     {
@@ -373,7 +373,7 @@
       "entry_price": 150.29,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -10.63,
+      "latest_return_pct": -11.86,
       "last_checked": "2026-07-15"
     },
     {
@@ -387,7 +387,7 @@
       "entry_price": 503.79,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 8.21,
+      "latest_return_pct": 5.03,
       "last_checked": "2026-07-15"
     },
     {
@@ -415,7 +415,7 @@
       "entry_price": 99.92,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 7.67,
+      "latest_return_pct": 4.81,
       "last_checked": "2026-07-15"
     },
     {
@@ -429,8 +429,8 @@
       "entry_price": 224.54,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 19.04,
-      "last_checked": "2026-07-14"
+      "latest_return_pct": 17.78,
+      "last_checked": "2026-07-15"
     },
     {
       "opened_at": "2026-05-27",
@@ -443,7 +443,7 @@
       "entry_price": 905.95,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 4.99,
+      "latest_return_pct": -0.18,
       "last_checked": "2026-07-15"
     },
     {
@@ -457,8 +457,8 @@
       "entry_price": 224.54,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 19.04,
-      "last_checked": "2026-07-14"
+      "latest_return_pct": 17.78,
+      "last_checked": "2026-07-15"
     },
     {
       "opened_at": "2026-05-28",
@@ -471,7 +471,7 @@
       "entry_price": 148.71,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -9.68,
+      "latest_return_pct": -10.93,
       "last_checked": "2026-07-15"
     },
     {
@@ -485,7 +485,7 @@
       "entry_price": 518.65,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 5.11,
+      "latest_return_pct": 2.02,
       "last_checked": "2026-07-15"
     },
     {
@@ -499,8 +499,8 @@
       "entry_price": 228.8,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 16.82,
-      "last_checked": "2026-07-14"
+      "latest_return_pct": 15.59,
+      "last_checked": "2026-07-15"
     },
     {
       "opened_at": "2026-05-28",
@@ -513,7 +513,7 @@
       "entry_price": 212.75,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -0.82,
+      "latest_return_pct": -0.12,
       "last_checked": "2026-07-15"
     },
     {
@@ -527,7 +527,7 @@
       "entry_price": 939.64,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 1.22,
+      "latest_return_pct": -3.76,
       "last_checked": "2026-07-15"
     },
     {
@@ -541,8 +541,8 @@
       "entry_price": 225.24,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 18.67,
-      "last_checked": "2026-07-14"
+      "latest_return_pct": 17.41,
+      "last_checked": "2026-07-15"
     },
     {
       "opened_at": "2026-05-28",
@@ -555,7 +555,7 @@
       "entry_price": 147.31,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -8.82,
+      "latest_return_pct": -10.08,
       "last_checked": "2026-07-15"
     },
     {
@@ -569,7 +569,7 @@
       "entry_price": 146.02,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -8.02,
+      "latest_return_pct": -9.29,
       "last_checked": "2026-07-15"
     },
     {
@@ -583,8 +583,8 @@
       "entry_price": 240.91,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 10.95,
-      "last_checked": "2026-07-14"
+      "latest_return_pct": 9.78,
+      "last_checked": "2026-07-15"
     },
     {
       "opened_at": "2026-05-29",
@@ -597,8 +597,8 @@
       "entry_price": 240.91,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 10.95,
-      "last_checked": "2026-07-14"
+      "latest_return_pct": 9.78,
+      "last_checked": "2026-07-15"
     },
     {
       "opened_at": "2026-05-29",
@@ -611,7 +611,7 @@
       "entry_price": 215.24,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -1.97,
+      "latest_return_pct": -1.27,
       "last_checked": "2026-07-15"
     },
     {
@@ -625,7 +625,7 @@
       "entry_price": 511.36,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 6.61,
+      "latest_return_pct": 3.48,
       "last_checked": "2026-07-15"
     },
     {
@@ -639,7 +639,7 @@
       "entry_price": 960.38,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -0.96,
+      "latest_return_pct": -5.84,
       "last_checked": "2026-07-15"
     },
     {
@@ -653,7 +653,7 @@
       "entry_price": 147.08,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -8.68,
+      "latest_return_pct": -9.94,
       "last_checked": "2026-07-15"
     },
     {
@@ -667,7 +667,7 @@
       "entry_price": 159.5,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 11.72,
+      "latest_return_pct": 7.79,
       "last_checked": "2026-07-15"
     },
     {
@@ -681,7 +681,7 @@
       "entry_price": 124.39,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -13.51,
+      "latest_return_pct": -15.81,
       "last_checked": "2026-07-15"
     },
     {
@@ -695,7 +695,7 @@
       "entry_price": 1046.57,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -9.12,
+      "latest_return_pct": -13.6,
       "last_checked": "2026-07-15"
     },
     {
@@ -709,8 +709,8 @@
       "entry_price": 277.5,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -3.68,
-      "last_checked": "2026-07-14"
+      "latest_return_pct": -4.7,
+      "last_checked": "2026-07-15"
     },
     {
       "opened_at": "2026-06-01",
@@ -723,7 +723,7 @@
       "entry_price": 513.65,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 6.13,
+      "latest_return_pct": 3.02,
       "last_checked": "2026-07-15"
     },
     {
@@ -737,7 +737,7 @@
       "entry_price": 171.15,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 4.11,
+      "latest_return_pct": 0.45,
       "last_checked": "2026-07-15"
     },
     {
@@ -751,7 +751,7 @@
       "entry_price": 223.53,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -5.61,
+      "latest_return_pct": -4.93,
       "last_checked": "2026-07-15"
     },
     {
@@ -765,7 +765,7 @@
       "entry_price": 146.56,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -8.36,
+      "latest_return_pct": -9.62,
       "last_checked": "2026-07-15"
     },
     {
@@ -779,7 +779,7 @@
       "entry_price": 146.56,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -8.36,
+      "latest_return_pct": -9.62,
       "last_checked": "2026-07-15"
     },
     {
@@ -807,8 +807,8 @@
       "entry_price": 277.55,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -3.7,
-      "last_checked": "2026-07-14"
+      "latest_return_pct": -4.72,
+      "last_checked": "2026-07-15"
     },
     {
       "opened_at": "2026-06-02",
@@ -821,7 +821,7 @@
       "entry_price": 1032.79,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -7.91,
+      "latest_return_pct": -12.44,
       "last_checked": "2026-07-15"
     },
     {
@@ -835,8 +835,8 @@
       "entry_price": 269.68,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -0.89,
-      "last_checked": "2026-07-14"
+      "latest_return_pct": -1.94,
+      "last_checked": "2026-07-15"
     },
     {
       "opened_at": "2026-06-02",
@@ -849,7 +849,7 @@
       "entry_price": 149.9,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -10.4,
+      "latest_return_pct": -11.63,
       "last_checked": "2026-07-15"
     },
     {
@@ -863,7 +863,7 @@
       "entry_price": 512.51,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 6.37,
+      "latest_return_pct": 3.24,
       "last_checked": "2026-07-15"
     },
     {
@@ -877,8 +877,8 @@
       "entry_price": 269.68,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -0.89,
-      "last_checked": "2026-07-14"
+      "latest_return_pct": -1.94,
+      "last_checked": "2026-07-15"
     },
     {
       "opened_at": "2026-06-02",
@@ -891,7 +891,7 @@
       "entry_price": 149.9,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -10.4,
+      "latest_return_pct": -11.63,
       "last_checked": "2026-07-15"
     },
     {
@@ -905,7 +905,7 @@
       "entry_price": 222.8,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -5.3,
+      "latest_return_pct": -4.62,
       "last_checked": "2026-07-15"
     },
     {
@@ -919,7 +919,7 @@
       "entry_price": 1064.1,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -10.62,
+      "latest_return_pct": -15.02,
       "last_checked": "2026-07-15"
     },
     {
@@ -933,8 +933,8 @@
       "entry_price": 249.22,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 7.25,
-      "last_checked": "2026-07-14"
+      "latest_return_pct": 6.12,
+      "last_checked": "2026-07-15"
     },
     {
       "opened_at": "2026-06-03",
@@ -947,7 +947,7 @@
       "entry_price": 1065.0,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -10.69,
+      "latest_return_pct": -15.09,
       "last_checked": "2026-07-15"
     },
     {
@@ -961,7 +961,7 @@
       "entry_price": 534.75,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 1.94,
+      "latest_return_pct": -1.05,
       "last_checked": "2026-07-15"
     },
     {
@@ -975,7 +975,7 @@
       "entry_price": 153.49,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -12.5,
+      "latest_return_pct": -13.7,
       "last_checked": "2026-07-15"
     },
     {
@@ -989,7 +989,7 @@
       "entry_price": 119.76,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -10.17,
+      "latest_return_pct": -12.55,
       "last_checked": "2026-07-15"
     },
     {
@@ -1003,7 +1003,7 @@
       "entry_price": 216.03,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -2.33,
+      "latest_return_pct": -1.63,
       "last_checked": "2026-07-15"
     },
     {
@@ -1017,7 +1017,7 @@
       "entry_price": 694.23,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -0.02,
+      "latest_return_pct": -0.06,
       "last_checked": "2026-07-15"
     },
     {
@@ -1031,7 +1031,7 @@
       "entry_price": 154.6,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -13.12,
+      "latest_return_pct": -14.32,
       "last_checked": "2026-07-15"
     },
     {
@@ -1045,7 +1045,7 @@
       "entry_price": 1079.57,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -11.9,
+      "latest_return_pct": -16.24,
       "last_checked": "2026-07-15"
     },
     {
@@ -1059,7 +1059,7 @@
       "entry_price": 525.5,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 3.74,
+      "latest_return_pct": 0.69,
       "last_checked": "2026-07-15"
     },
     {
@@ -1073,8 +1073,8 @@
       "entry_price": 248.71,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 7.47,
-      "last_checked": "2026-07-14"
+      "latest_return_pct": 6.33,
+      "last_checked": "2026-07-15"
     },
     {
       "opened_at": "2026-06-04",
@@ -1087,7 +1087,7 @@
       "entry_price": 152.04,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -11.66,
+      "latest_return_pct": -12.88,
       "last_checked": "2026-07-15"
     },
     {
@@ -1101,7 +1101,7 @@
       "entry_price": 1008.49,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -5.69,
+      "latest_return_pct": -10.33,
       "last_checked": "2026-07-15"
     },
     {
@@ -1115,7 +1115,7 @@
       "entry_price": 152.04,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -11.66,
+      "latest_return_pct": -12.88,
       "last_checked": "2026-07-15"
     },
     {
@@ -1129,7 +1129,7 @@
       "entry_price": 218.69,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -3.52,
+      "latest_return_pct": -2.83,
       "last_checked": "2026-07-15"
     },
     {
@@ -1143,7 +1143,7 @@
       "entry_price": 157.71,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 12.99,
+      "latest_return_pct": 9.01,
       "last_checked": "2026-07-15"
     },
     {
@@ -1157,7 +1157,7 @@
       "entry_price": 79.81,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 68.29,
+      "latest_return_pct": 65.97,
       "last_checked": "2026-07-15"
     },
     {
@@ -1171,8 +1171,8 @@
       "entry_price": 221.67,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 20.58,
-      "last_checked": "2026-07-14"
+      "latest_return_pct": 19.3,
+      "last_checked": "2026-07-15"
     },
     {
       "opened_at": "2026-06-05",
@@ -1185,7 +1185,7 @@
       "entry_price": 933.8,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 1.85,
+      "latest_return_pct": -3.16,
       "last_checked": "2026-07-15"
     },
     {
@@ -1199,7 +1199,7 @@
       "entry_price": 79.81,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 68.29,
+      "latest_return_pct": 65.97,
       "last_checked": "2026-07-15"
     },
     {
@@ -1227,7 +1227,7 @@
       "entry_price": 679.4,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 2.17,
+      "latest_return_pct": 2.12,
       "last_checked": "2026-07-15"
     },
     {
@@ -1241,7 +1241,7 @@
       "entry_price": 79.81,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 68.29,
+      "latest_return_pct": 65.97,
       "last_checked": "2026-07-15"
     },
     {
@@ -1255,7 +1255,7 @@
       "entry_price": 879.62,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 8.13,
+      "latest_return_pct": 2.8,
       "last_checked": "2026-07-15"
     },
     {
@@ -1269,7 +1269,7 @@
       "entry_price": 79.81,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 68.29,
+      "latest_return_pct": 65.97,
       "last_checked": "2026-07-15"
     },
     {
@@ -1283,7 +1283,7 @@
       "entry_price": 79.81,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 68.29,
+      "latest_return_pct": 65.97,
       "last_checked": "2026-07-15"
     },
     {
@@ -1297,8 +1297,8 @@
       "entry_price": 221.67,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 20.58,
-      "last_checked": "2026-07-14"
+      "latest_return_pct": 19.3,
+      "last_checked": "2026-07-15"
     },
     {
       "opened_at": "2026-06-09",
@@ -1311,7 +1311,7 @@
       "entry_price": 879.62,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 8.13,
+      "latest_return_pct": 2.8,
       "last_checked": "2026-07-15"
     },
     {
@@ -1325,7 +1325,7 @@
       "entry_price": 879.62,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 8.13,
+      "latest_return_pct": 2.8,
       "last_checked": "2026-07-15"
     },
     {
@@ -1353,8 +1353,8 @@
       "entry_price": 221.67,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 20.58,
-      "last_checked": "2026-07-14"
+      "latest_return_pct": 19.3,
+      "last_checked": "2026-07-15"
     },
     {
       "opened_at": "2026-06-10",
@@ -1367,7 +1367,7 @@
       "entry_price": 79.81,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 68.29,
+      "latest_return_pct": 65.97,
       "last_checked": "2026-07-15"
     },
     {
@@ -1381,7 +1381,7 @@
       "entry_price": 879.62,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 8.13,
+      "latest_return_pct": 2.8,
       "last_checked": "2026-07-15"
     },
     {
@@ -1395,8 +1395,8 @@
       "entry_price": 221.67,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 20.58,
-      "last_checked": "2026-07-14"
+      "latest_return_pct": 19.3,
+      "last_checked": "2026-07-15"
     },
     {
       "opened_at": "2026-06-10",
@@ -1409,7 +1409,7 @@
       "entry_price": 879.62,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 8.13,
+      "latest_return_pct": 2.8,
       "last_checked": "2026-07-15"
     },
     {
@@ -1423,7 +1423,7 @@
       "entry_price": 79.81,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 68.29,
+      "latest_return_pct": 65.97,
       "last_checked": "2026-07-15"
     },
     {
@@ -1437,7 +1437,7 @@
       "entry_price": 879.62,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 8.13,
+      "latest_return_pct": 2.8,
       "last_checked": "2026-07-15"
     },
     {
@@ -1451,8 +1451,8 @@
       "entry_price": 221.67,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 20.58,
-      "last_checked": "2026-07-14"
+      "latest_return_pct": 19.3,
+      "last_checked": "2026-07-15"
     },
     {
       "opened_at": "2026-06-11",
@@ -1465,8 +1465,8 @@
       "entry_price": 221.67,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 20.58,
-      "last_checked": "2026-07-14"
+      "latest_return_pct": 19.3,
+      "last_checked": "2026-07-15"
     },
     {
       "opened_at": "2026-06-11",
@@ -1479,7 +1479,7 @@
       "entry_price": 79.81,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 68.29,
+      "latest_return_pct": 65.97,
       "last_checked": "2026-07-15"
     },
     {
@@ -1493,7 +1493,7 @@
       "entry_price": 79.81,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 68.29,
+      "latest_return_pct": 65.97,
       "last_checked": "2026-07-15"
     },
     {
@@ -1507,7 +1507,7 @@
       "entry_price": 879.62,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 8.13,
+      "latest_return_pct": 2.8,
       "last_checked": "2026-07-15"
     },
     {
@@ -1521,8 +1521,8 @@
       "entry_price": 221.67,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 20.58,
-      "last_checked": "2026-07-14"
+      "latest_return_pct": 19.3,
+      "last_checked": "2026-07-15"
     },
     {
       "opened_at": "2026-06-12",
@@ -1535,7 +1535,7 @@
       "entry_price": 879.62,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 8.13,
+      "latest_return_pct": 2.8,
       "last_checked": "2026-07-15"
     },
     {
@@ -1549,8 +1549,8 @@
       "entry_price": 221.67,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 20.58,
-      "last_checked": "2026-07-14"
+      "latest_return_pct": 19.3,
+      "last_checked": "2026-07-15"
     },
     {
       "opened_at": "2026-06-12",
@@ -1577,7 +1577,7 @@
       "entry_price": 679.4,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 2.17,
+      "latest_return_pct": 2.12,
       "last_checked": "2026-07-15"
     },
     {
@@ -1591,8 +1591,8 @@
       "entry_price": 221.67,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 20.58,
-      "last_checked": "2026-07-14"
+      "latest_return_pct": 19.3,
+      "last_checked": "2026-07-15"
     },
     {
       "opened_at": "2026-06-15",
@@ -1605,7 +1605,7 @@
       "entry_price": 79.81,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 68.29,
+      "latest_return_pct": 65.97,
       "last_checked": "2026-07-15"
     },
     {
@@ -1619,7 +1619,7 @@
       "entry_price": 79.81,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 68.29,
+      "latest_return_pct": 65.97,
       "last_checked": "2026-07-15"
     },
     {
@@ -1633,7 +1633,7 @@
       "entry_price": 879.62,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 8.13,
+      "latest_return_pct": 2.8,
       "last_checked": "2026-07-15"
     },
     {
@@ -1647,8 +1647,8 @@
       "entry_price": 221.67,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 20.58,
-      "last_checked": "2026-07-14"
+      "latest_return_pct": 19.3,
+      "last_checked": "2026-07-15"
     },
     {
       "opened_at": "2026-06-16",
@@ -1661,7 +1661,7 @@
       "entry_price": 79.81,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 68.29,
+      "latest_return_pct": 65.97,
       "last_checked": "2026-07-15"
     },
     {
@@ -1675,7 +1675,7 @@
       "entry_price": 79.81,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 68.29,
+      "latest_return_pct": 65.97,
       "last_checked": "2026-07-15"
     },
     {
@@ -1689,7 +1689,7 @@
       "entry_price": 879.62,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 8.13,
+      "latest_return_pct": 2.8,
       "last_checked": "2026-07-15"
     },
     {
@@ -1703,7 +1703,7 @@
       "entry_price": 879.62,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 8.13,
+      "latest_return_pct": 2.8,
       "last_checked": "2026-07-15"
     },
     {
@@ -1717,7 +1717,7 @@
       "entry_price": 79.81,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 68.29,
+      "latest_return_pct": 65.97,
       "last_checked": "2026-07-15"
     },
     {
@@ -1731,7 +1731,7 @@
       "entry_price": 79.81,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 68.29,
+      "latest_return_pct": 65.97,
       "last_checked": "2026-07-15"
     },
     {
@@ -1745,7 +1745,7 @@
       "entry_price": 879.62,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 8.13,
+      "latest_return_pct": 2.8,
       "last_checked": "2026-07-15"
     },
     {
@@ -1773,8 +1773,8 @@
       "entry_price": 221.67,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 20.58,
-      "last_checked": "2026-07-14"
+      "latest_return_pct": 19.3,
+      "last_checked": "2026-07-15"
     },
     {
       "opened_at": "2026-06-18",
@@ -1787,7 +1787,7 @@
       "entry_price": 79.81,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 68.29,
+      "latest_return_pct": 65.97,
       "last_checked": "2026-07-15"
     },
     {
@@ -1801,7 +1801,7 @@
       "entry_price": 79.81,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 68.29,
+      "latest_return_pct": 65.97,
       "last_checked": "2026-07-15"
     },
     {
@@ -1829,7 +1829,7 @@
       "entry_price": 879.62,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 8.13,
+      "latest_return_pct": 2.8,
       "last_checked": "2026-07-15"
     },
     {
@@ -1843,7 +1843,7 @@
       "entry_price": 879.62,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 8.13,
+      "latest_return_pct": 2.8,
       "last_checked": "2026-07-15"
     },
     {
@@ -1857,8 +1857,8 @@
       "entry_price": 221.67,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 20.58,
-      "last_checked": "2026-07-14"
+      "latest_return_pct": 19.3,
+      "last_checked": "2026-07-15"
     },
     {
       "opened_at": "2026-06-19",
@@ -1871,7 +1871,7 @@
       "entry_price": 79.81,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 68.29,
+      "latest_return_pct": 65.97,
       "last_checked": "2026-07-15"
     },
     {
@@ -1885,7 +1885,7 @@
       "entry_price": 879.62,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 8.13,
+      "latest_return_pct": 2.8,
       "last_checked": "2026-07-15"
     },
     {
@@ -1899,7 +1899,7 @@
       "entry_price": 79.81,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 68.29,
+      "latest_return_pct": 65.97,
       "last_checked": "2026-07-15"
     },
     {
@@ -1913,7 +1913,7 @@
       "entry_price": 79.81,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 68.29,
+      "latest_return_pct": 65.97,
       "last_checked": "2026-07-15"
     },
     {
@@ -1927,7 +1927,7 @@
       "entry_price": 879.62,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 8.13,
+      "latest_return_pct": 2.8,
       "last_checked": "2026-07-15"
     },
     {
@@ -1941,7 +1941,7 @@
       "entry_price": 879.62,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 8.13,
+      "latest_return_pct": 2.8,
       "last_checked": "2026-07-15"
     },
     {
@@ -1955,7 +1955,7 @@
       "entry_price": 79.81,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 68.29,
+      "latest_return_pct": 65.97,
       "last_checked": "2026-07-15"
     },
     {
@@ -1969,8 +1969,8 @@
       "entry_price": 221.67,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 20.58,
-      "last_checked": "2026-07-14"
+      "latest_return_pct": 19.3,
+      "last_checked": "2026-07-15"
     },
     {
       "opened_at": "2026-06-23",
@@ -1983,8 +1983,8 @@
       "entry_price": 221.67,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 20.58,
-      "last_checked": "2026-07-14"
+      "latest_return_pct": 19.3,
+      "last_checked": "2026-07-15"
     },
     {
       "opened_at": "2026-06-23",
@@ -1997,7 +1997,7 @@
       "entry_price": 79.81,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 68.29,
+      "latest_return_pct": 65.97,
       "last_checked": "2026-07-15"
     },
     {
@@ -2011,7 +2011,7 @@
       "entry_price": 79.81,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 68.29,
+      "latest_return_pct": 65.97,
       "last_checked": "2026-07-15"
     },
     {
@@ -2025,7 +2025,7 @@
       "entry_price": 879.62,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 8.13,
+      "latest_return_pct": 2.8,
       "last_checked": "2026-07-15"
     },
     {
@@ -2053,7 +2053,7 @@
       "entry_price": 879.62,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 8.13,
+      "latest_return_pct": 2.8,
       "last_checked": "2026-07-15"
     },
     {
@@ -2067,7 +2067,7 @@
       "entry_price": 79.81,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 68.29,
+      "latest_return_pct": 65.97,
       "last_checked": "2026-07-15"
     },
     {
@@ -2095,8 +2095,8 @@
       "entry_price": 221.67,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 20.58,
-      "last_checked": "2026-07-14"
+      "latest_return_pct": 19.3,
+      "last_checked": "2026-07-15"
     },
     {
       "opened_at": "2026-06-24",
@@ -2109,7 +2109,7 @@
       "entry_price": 879.62,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 8.13,
+      "latest_return_pct": 2.8,
       "last_checked": "2026-07-15"
     },
     {
@@ -2123,7 +2123,7 @@
       "entry_price": 79.81,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 68.29,
+      "latest_return_pct": 65.97,
       "last_checked": "2026-07-15"
     },
     {
@@ -2137,8 +2137,8 @@
       "entry_price": 221.67,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 20.58,
-      "last_checked": "2026-07-14"
+      "latest_return_pct": 19.3,
+      "last_checked": "2026-07-15"
     },
     {
       "opened_at": "2026-06-25",
@@ -2151,7 +2151,7 @@
       "entry_price": 879.62,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 8.13,
+      "latest_return_pct": 2.8,
       "last_checked": "2026-07-15"
     },
     {
@@ -2165,7 +2165,7 @@
       "entry_price": 879.62,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 8.13,
+      "latest_return_pct": 2.8,
       "last_checked": "2026-07-15"
     },
     {
@@ -2179,7 +2179,7 @@
       "entry_price": 79.81,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 68.29,
+      "latest_return_pct": 65.97,
       "last_checked": "2026-07-15"
     },
     {
@@ -2193,8 +2193,8 @@
       "entry_price": 221.67,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 20.58,
-      "last_checked": "2026-07-14"
+      "latest_return_pct": 19.3,
+      "last_checked": "2026-07-15"
     },
     {
       "opened_at": "2026-06-29",
@@ -2207,7 +2207,7 @@
       "entry_price": 79.81,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 68.29,
+      "latest_return_pct": 65.97,
       "last_checked": "2026-07-15"
     },
     {
@@ -2221,8 +2221,8 @@
       "entry_price": 221.67,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 20.58,
-      "last_checked": "2026-07-14"
+      "latest_return_pct": 19.3,
+      "last_checked": "2026-07-15"
     },
     {
       "opened_at": "2026-06-29",
@@ -2235,7 +2235,7 @@
       "entry_price": 879.62,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 8.13,
+      "latest_return_pct": 2.8,
       "last_checked": "2026-07-15"
     },
     {
@@ -2249,8 +2249,8 @@
       "entry_price": 221.67,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 20.58,
-      "last_checked": "2026-07-14"
+      "latest_return_pct": 19.3,
+      "last_checked": "2026-07-15"
     },
     {
       "opened_at": "2026-06-30",
@@ -2263,8 +2263,8 @@
       "entry_price": 221.67,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 20.58,
-      "last_checked": "2026-07-14"
+      "latest_return_pct": 19.3,
+      "last_checked": "2026-07-15"
     },
     {
       "opened_at": "2026-06-30",
@@ -2277,7 +2277,7 @@
       "entry_price": 79.81,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 68.29,
+      "latest_return_pct": 65.97,
       "last_checked": "2026-07-15"
     },
     {
@@ -2305,7 +2305,7 @@
       "entry_price": 879.62,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 8.13,
+      "latest_return_pct": 2.8,
       "last_checked": "2026-07-15"
     },
     {
@@ -2319,8 +2319,8 @@
       "entry_price": 221.67,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 20.58,
-      "last_checked": "2026-07-14"
+      "latest_return_pct": 19.3,
+      "last_checked": "2026-07-15"
     },
     {
       "opened_at": "2026-07-01",
@@ -2333,7 +2333,7 @@
       "entry_price": 879.62,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 8.13,
+      "latest_return_pct": 2.8,
       "last_checked": "2026-07-15"
     },
     {
@@ -2347,8 +2347,8 @@
       "entry_price": 221.67,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 20.58,
-      "last_checked": "2026-07-14"
+      "latest_return_pct": 19.3,
+      "last_checked": "2026-07-15"
     },
     {
       "opened_at": "2026-07-01",
@@ -2361,7 +2361,7 @@
       "entry_price": 79.81,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 68.29,
+      "latest_return_pct": 65.97,
       "last_checked": "2026-07-15"
     },
     {
@@ -2375,8 +2375,8 @@
       "entry_price": 221.67,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 20.58,
-      "last_checked": "2026-07-14"
+      "latest_return_pct": 19.3,
+      "last_checked": "2026-07-15"
     },
     {
       "opened_at": "2026-07-02",
@@ -2389,8 +2389,8 @@
       "entry_price": 221.67,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 20.58,
-      "last_checked": "2026-07-14"
+      "latest_return_pct": 19.3,
+      "last_checked": "2026-07-15"
     },
     {
       "opened_at": "2026-07-02",
@@ -2403,7 +2403,7 @@
       "entry_price": 79.81,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 68.29,
+      "latest_return_pct": 65.97,
       "last_checked": "2026-07-15"
     },
     {
@@ -2431,7 +2431,7 @@
       "entry_price": 879.62,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 8.13,
+      "latest_return_pct": 2.8,
       "last_checked": "2026-07-15"
     },
     {
@@ -2445,7 +2445,7 @@
       "entry_price": 79.81,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 68.29,
+      "latest_return_pct": 65.97,
       "last_checked": "2026-07-15"
     },
     {
@@ -2459,7 +2459,7 @@
       "entry_price": 679.4,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 2.17,
+      "latest_return_pct": 2.12,
       "last_checked": "2026-07-15"
     },
     {
@@ -2473,7 +2473,7 @@
       "entry_price": 879.62,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 8.13,
+      "latest_return_pct": 2.8,
       "last_checked": "2026-07-15"
     },
     {
@@ -2487,8 +2487,8 @@
       "entry_price": 221.67,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 20.58,
-      "last_checked": "2026-07-14"
+      "latest_return_pct": 19.3,
+      "last_checked": "2026-07-15"
     },
     {
       "opened_at": "2026-07-06",
@@ -2501,8 +2501,8 @@
       "entry_price": 221.67,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 20.58,
-      "last_checked": "2026-07-14"
+      "latest_return_pct": 19.3,
+      "last_checked": "2026-07-15"
     },
     {
       "opened_at": "2026-07-06",
@@ -2515,7 +2515,7 @@
       "entry_price": 879.62,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 8.13,
+      "latest_return_pct": 2.8,
       "last_checked": "2026-07-15"
     },
     {
@@ -2529,7 +2529,7 @@
       "entry_price": 79.81,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 68.29,
+      "latest_return_pct": 65.97,
       "last_checked": "2026-07-15"
     },
     {
@@ -2543,7 +2543,7 @@
       "entry_price": 879.62,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 8.13,
+      "latest_return_pct": 2.8,
       "last_checked": "2026-07-15"
     },
     {
@@ -2557,8 +2557,8 @@
       "entry_price": 221.67,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 20.58,
-      "last_checked": "2026-07-14"
+      "latest_return_pct": 19.3,
+      "last_checked": "2026-07-15"
     },
     {
       "opened_at": "2026-07-06",
@@ -2571,7 +2571,7 @@
       "entry_price": 79.81,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 68.29,
+      "latest_return_pct": 65.97,
       "last_checked": "2026-07-15"
     },
     {
@@ -2585,7 +2585,7 @@
       "entry_price": 552.05,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -1.25,
+      "latest_return_pct": -4.15,
       "last_checked": "2026-07-15"
     },
     {
@@ -2599,7 +2599,7 @@
       "entry_price": 173.28,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 2.83,
+      "latest_return_pct": -0.78,
       "last_checked": "2026-07-15"
     },
     {
@@ -2613,7 +2613,7 @@
       "entry_price": 137.31,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -2.18,
+      "latest_return_pct": -3.53,
       "last_checked": "2026-07-15"
     },
     {
@@ -2627,7 +2627,7 @@
       "entry_price": 984.75,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -3.42,
+      "latest_return_pct": -8.17,
       "last_checked": "2026-07-15"
     },
     {
@@ -2641,8 +2641,8 @@
       "entry_price": 255.37,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 4.67,
-      "last_checked": "2026-07-14"
+      "latest_return_pct": 3.56,
+      "last_checked": "2026-07-15"
     },
     {
       "opened_at": "2026-07-07",
@@ -2655,7 +2655,7 @@
       "entry_price": 195.55,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 7.9,
+      "latest_return_pct": 8.67,
       "last_checked": "2026-07-15"
     },
     {
@@ -2669,7 +2669,7 @@
       "entry_price": 924.54,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 2.87,
+      "latest_return_pct": -2.19,
       "last_checked": "2026-07-15"
     },
     {
@@ -2683,7 +2683,7 @@
       "entry_price": 151.46,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -8.91,
+      "latest_return_pct": -10.69,
       "last_checked": "2026-07-15"
     },
     {
@@ -2697,7 +2697,7 @@
       "entry_price": 151.46,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -8.91,
+      "latest_return_pct": -10.69,
       "last_checked": "2026-07-15"
     },
     {
@@ -2711,7 +2711,7 @@
       "entry_price": 408.93,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -2.15,
+      "latest_return_pct": -3.54,
       "last_checked": "2026-07-15"
     },
     {
@@ -2725,7 +2725,7 @@
       "entry_price": 402.9,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -0.69,
+      "latest_return_pct": -2.09,
       "last_checked": "2026-07-15"
     },
     {
@@ -2739,7 +2739,7 @@
       "entry_price": 130.6,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 2.84,
+      "latest_return_pct": 1.42,
       "last_checked": "2026-07-15"
     },
     {
@@ -2767,7 +2767,7 @@
       "entry_price": 131.13,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 2.43,
+      "latest_return_pct": 1.01,
       "last_checked": "2026-07-15"
     },
     {
@@ -2781,7 +2781,7 @@
       "entry_price": 175.18,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 1.72,
+      "latest_return_pct": -1.86,
       "last_checked": "2026-07-15"
     },
     {
@@ -2795,7 +2795,7 @@
       "entry_price": 196.92,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 7.15,
+      "latest_return_pct": 7.91,
       "last_checked": "2026-07-15"
     },
     {
@@ -2809,7 +2809,7 @@
       "entry_price": 106.5,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 1.01,
+      "latest_return_pct": -1.66,
       "last_checked": "2026-07-15"
     },
     {
@@ -2823,7 +2823,7 @@
       "entry_price": 175.18,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 1.72,
+      "latest_return_pct": -1.86,
       "last_checked": "2026-07-15"
     },
     {
@@ -2837,7 +2837,7 @@
       "entry_price": 394.79,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 1.36,
+      "latest_return_pct": -0.08,
       "last_checked": "2026-07-15"
     },
     {
@@ -2851,7 +2851,7 @@
       "entry_price": 944.78,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 0.67,
+      "latest_return_pct": -4.29,
       "last_checked": "2026-07-15"
     },
     {
@@ -2865,7 +2865,7 @@
       "entry_price": 512.91,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 6.28,
+      "latest_return_pct": 3.16,
       "last_checked": "2026-07-15"
     },
     {
@@ -2879,7 +2879,7 @@
       "entry_price": 148.3,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -6.97,
+      "latest_return_pct": -8.79,
       "last_checked": "2026-07-15"
     },
     {
@@ -2893,7 +2893,7 @@
       "entry_price": 553.91,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -1.58,
+      "latest_return_pct": -4.47,
       "last_checked": "2026-07-15"
     },
     {
@@ -2907,7 +2907,7 @@
       "entry_price": 107.76,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -0.17,
+      "latest_return_pct": -2.81,
       "last_checked": "2026-07-15"
     },
     {
@@ -2921,7 +2921,7 @@
       "entry_price": 141.81,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -5.29,
+      "latest_return_pct": -6.59,
       "last_checked": "2026-07-15"
     },
     {
@@ -2935,7 +2935,7 @@
       "entry_price": 1018.59,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -6.62,
+      "latest_return_pct": -11.22,
       "last_checked": "2026-07-15"
     },
     {
@@ -2963,7 +2963,7 @@
       "entry_price": 202.78,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 4.05,
+      "latest_return_pct": 4.79,
       "last_checked": "2026-07-15"
     },
     {
@@ -2977,7 +2977,7 @@
       "entry_price": 184.69,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -3.52,
+      "latest_return_pct": -6.91,
       "last_checked": "2026-07-15"
     },
     {
@@ -2991,7 +2991,7 @@
       "entry_price": 152.16,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -9.33,
+      "latest_return_pct": -11.1,
       "last_checked": "2026-07-15"
     },
     {
@@ -3005,7 +3005,7 @@
       "entry_price": 546.72,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -0.29,
+      "latest_return_pct": -3.22,
       "last_checked": "2026-07-15"
     },
     {
@@ -3019,7 +3019,7 @@
       "entry_price": 139.53,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -3.74,
+      "latest_return_pct": -5.07,
       "last_checked": "2026-07-15"
     },
     {
@@ -3033,7 +3033,7 @@
       "entry_price": 406.55,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -1.58,
+      "latest_return_pct": -2.97,
       "last_checked": "2026-07-15"
     },
     {
@@ -3047,7 +3047,7 @@
       "entry_price": 991.64,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -4.09,
+      "latest_return_pct": -8.81,
       "last_checked": "2026-07-15"
     },
     {
@@ -3061,7 +3061,7 @@
       "entry_price": 202.78,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 4.05,
+      "latest_return_pct": 4.79,
       "last_checked": "2026-07-15"
     },
     {
@@ -3089,7 +3089,7 @@
       "entry_price": 991.64,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -4.09,
+      "latest_return_pct": -8.81,
       "last_checked": "2026-07-15"
     },
     {
@@ -3103,7 +3103,7 @@
       "entry_price": 184.69,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -3.52,
+      "latest_return_pct": -6.91,
       "last_checked": "2026-07-15"
     },
     {
@@ -3117,7 +3117,7 @@
       "entry_price": 139.53,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -3.74,
+      "latest_return_pct": -5.07,
       "last_checked": "2026-07-15"
     },
     {
@@ -3131,7 +3131,7 @@
       "entry_price": 406.55,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -1.58,
+      "latest_return_pct": -2.97,
       "last_checked": "2026-07-15"
     },
     {
@@ -3145,7 +3145,7 @@
       "entry_price": 152.16,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -9.33,
+      "latest_return_pct": -11.1,
       "last_checked": "2026-07-15"
     },
     {
@@ -3159,7 +3159,7 @@
       "entry_price": 184.69,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -3.52,
+      "latest_return_pct": -6.91,
       "last_checked": "2026-07-15"
     },
     {
@@ -3173,7 +3173,7 @@
       "entry_price": 548.71,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -0.65,
+      "latest_return_pct": -3.57,
       "last_checked": "2026-07-15"
     },
     {
@@ -3187,7 +3187,7 @@
       "entry_price": 399.17,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -0.49,
+      "latest_return_pct": -1.23,
       "last_checked": "2026-07-15"
     },
     {
@@ -3201,7 +3201,7 @@
       "entry_price": 399.69,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -0.62,
+      "latest_return_pct": -1.35,
       "last_checked": "2026-07-15"
     },
     {
@@ -3215,7 +3215,7 @@
       "entry_price": 399.69,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -0.62,
+      "latest_return_pct": -1.35,
       "last_checked": "2026-07-15"
     },
     {
@@ -3229,7 +3229,7 @@
       "entry_price": 139.22,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -0.9,
+      "latest_return_pct": -2.84,
       "last_checked": "2026-07-15"
     },
     {
@@ -3243,7 +3243,7 @@
       "entry_price": 390.86,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 1.62,
+      "latest_return_pct": 0.87,
       "last_checked": "2026-07-15"
     },
     {
@@ -3257,7 +3257,7 @@
       "entry_price": 397.78,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 0.59,
+      "latest_return_pct": -0.83,
       "last_checked": "2026-07-15"
     },
     {
@@ -3271,7 +3271,7 @@
       "entry_price": 546.86,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -0.31,
+      "latest_return_pct": -3.24,
       "last_checked": "2026-07-15"
     },
     {
@@ -3285,7 +3285,7 @@
       "entry_price": 937.27,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 1.48,
+      "latest_return_pct": -3.52,
       "last_checked": "2026-07-15"
     },
     {
@@ -3299,7 +3299,7 @@
       "entry_price": 937.27,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 1.48,
+      "latest_return_pct": -3.52,
       "last_checked": "2026-07-15"
     },
     {
@@ -3313,7 +3313,7 @@
       "entry_price": 130.74,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 2.73,
+      "latest_return_pct": 1.32,
       "last_checked": "2026-07-15"
     },
     {
@@ -3327,7 +3327,7 @@
       "entry_price": 347.16,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 3.41,
+      "latest_return_pct": 1.98,
       "last_checked": "2026-07-15"
     },
     {
@@ -3341,7 +3341,7 @@
       "entry_price": 105.18,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 2.28,
+      "latest_return_pct": -0.43,
       "last_checked": "2026-07-15"
     },
     {
@@ -3355,7 +3355,7 @@
       "entry_price": 961.88,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -1.12,
+      "latest_return_pct": -5.99,
       "last_checked": "2026-07-15"
     },
     {
@@ -3369,7 +3369,7 @@
       "entry_price": 398.81,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 0.33,
+      "latest_return_pct": -1.09,
       "last_checked": "2026-07-15"
     },
     {
@@ -3383,7 +3383,7 @@
       "entry_price": 204.5,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 3.18,
+      "latest_return_pct": 3.91,
       "last_checked": "2026-07-15"
     },
     {
@@ -3397,7 +3397,7 @@
       "entry_price": 133.66,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 0.49,
+      "latest_return_pct": -0.9,
       "last_checked": "2026-07-15"
     },
     {
@@ -3411,7 +3411,7 @@
       "entry_price": 390.43,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 1.73,
+      "latest_return_pct": 0.99,
       "last_checked": "2026-07-15"
     },
     {
@@ -3425,7 +3425,7 @@
       "entry_price": 548.13,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -0.55,
+      "latest_return_pct": -3.46,
       "last_checked": "2026-07-15"
     },
     {
@@ -3439,7 +3439,7 @@
       "entry_price": 396.01,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 1.04,
+      "latest_return_pct": -0.39,
       "last_checked": "2026-07-15"
     },
     {
@@ -3453,7 +3453,7 @@
       "entry_price": 389.11,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 2.08,
+      "latest_return_pct": 1.33,
       "last_checked": "2026-07-15"
     },
     {
@@ -3467,7 +3467,7 @@
       "entry_price": 983.12,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": -3.25,
+      "latest_return_pct": -8.02,
       "last_checked": "2026-07-15"
     },
     {
@@ -3481,7 +3481,7 @@
       "entry_price": 951.12,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 0.0,
+      "latest_return_pct": -4.92,
       "last_checked": "2026-07-15"
     },
     {
@@ -3495,7 +3495,7 @@
       "entry_price": 397.2,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 0.0,
+      "latest_return_pct": -0.74,
       "last_checked": "2026-07-15"
     },
     {
@@ -3509,7 +3509,7 @@
       "entry_price": 178.19,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 0.0,
+      "latest_return_pct": -3.52,
       "last_checked": "2026-07-15"
     },
     {
@@ -3523,7 +3523,7 @@
       "entry_price": 211.0,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 0.0,
+      "latest_return_pct": 0.71,
       "last_checked": "2026-07-15"
     },
     {
@@ -3537,7 +3537,7 @@
       "entry_price": 400.14,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
-      "latest_return_pct": 0.0,
+      "latest_return_pct": -1.42,
       "last_checked": "2026-07-15"
     },
     {
@@ -3549,6 +3549,34 @@
       "source": "gpt",
       "confidence": 58,
       "entry_price": 134.31,
+      "status": "open",
+      "notes": "Simulated paper record only. No real trade was executed.",
+      "latest_return_pct": -1.38,
+      "last_checked": "2026-07-15"
+    },
+    {
+      "opened_at": "2026-07-15",
+      "signal_id": "e498dff7397c9754",
+      "ticker": "AMD",
+      "signal_type": "research opportunity",
+      "recommendation_label": "research opportunity",
+      "source": "gpt",
+      "confidence": 60,
+      "entry_price": 529.14,
+      "status": "open",
+      "notes": "Simulated paper record only. No real trade was executed.",
+      "latest_return_pct": 0.0,
+      "last_checked": "2026-07-15"
+    },
+    {
+      "opened_at": "2026-07-15",
+      "signal_id": "33fd3f971e127477",
+      "ticker": "LSCC",
+      "signal_type": "hold thesis intact",
+      "recommendation_label": "hold thesis intact",
+      "source": "gpt",
+      "confidence": 70,
+      "entry_price": 132.46,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
       "latest_return_pct": 0.0,

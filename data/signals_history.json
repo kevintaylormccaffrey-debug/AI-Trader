@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-14T20:43:56.368445+00:00",
+  "last_updated": "2026-07-15T14:07:11.666202+00:00",
   "signals": [
     {
       "date": "2026-05-21",
@@ -4753,7 +4753,7 @@
       "company": "NVIDIA",
       "sector": "AI datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 53
+      "days_held": 54
     },
     {
       "signal_id": "2e177aea78fd8c5a",
@@ -4778,7 +4778,7 @@
       "company": "Advanced Micro Devices",
       "sector": "AI and datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 53
+      "days_held": 54
     },
     {
       "signal_id": "e216da0b4df84115",
@@ -4803,7 +4803,7 @@
       "company": "Arista Networks",
       "sector": "datacenter networking",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 53
+      "days_held": 54
     },
     {
       "signal_id": "d1a2bba318325baf",
@@ -4828,7 +4828,7 @@
       "company": "ServiceNow",
       "sector": "enterprise automation software",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 53
+      "days_held": 54
     },
     {
       "signal_id": "d1bfecee7439900e",
@@ -5071,7 +5071,7 @@
       "source_url": "https://finance.yahoo.com/video/nvidia-vs-amd-vs-intel-which-is-the-best-chip-stock-to-own-143408694.html?.tsrc=rss",
       "uncertainty_notes": "Very competitive space; opinions vary.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 53
+      "days_held": 54
     },
     {
       "signal_id": "4a1c17a0dae8f560",
@@ -5099,7 +5099,7 @@
       "source_url": "https://www.fool.com/investing/2026/05/22/after-a-q1-blowout-and-rising-price-targets-is-amd/?.tsrc=rss",
       "uncertainty_notes": "Valuation and sustainability of data center demand unclear.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 53
+      "days_held": 54
     },
     {
       "signal_id": "b4175e8a709d3225",
@@ -5127,7 +5127,7 @@
       "source_url": "https://finance.yahoo.com/markets/stocks/articles/arista-gartner-leadership-highlights-push-002745025.html?.tsrc=rss",
       "uncertainty_notes": "Execution and competitive landscape uncertain.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 53
+      "days_held": 54
     },
     {
       "signal_id": "b460d7a94c4bf2a2",
@@ -5155,7 +5155,7 @@
       "source_url": "https://finance.yahoo.com/sectors/technology/articles/cloud-ai-cai-boosts-multicloud-123853220.html?.tsrc=rss",
       "uncertainty_notes": "Partnership success and customer migration risk.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 53
+      "days_held": 54
     },
     {
       "signal_id": "6219fe7ce921ba0f",
@@ -9307,7 +9307,7 @@
       "source_url": "https://finance.yahoo.com/markets/stocks/articles/why-qualcomm-qcom-stock-today-220728104.html?.tsrc=rss",
       "uncertainty_notes": "Market rally influence; not company-specific",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 48
+      "days_held": 49
     },
     {
       "signal_id": "c281d2e0c34ed26b",
@@ -20382,7 +20382,7 @@
       "company": "Advanced Micro Devices",
       "sector": "AI and datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 39
+      "days_held": 40
     },
     {
       "signal_id": "62f1411504bab2d6",
@@ -20447,7 +20447,7 @@
       "company": "ServiceNow",
       "sector": "enterprise automation software",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 39
+      "days_held": 40
     },
     {
       "signal_id": "4d69143a2c745cc3",
@@ -20647,7 +20647,7 @@
       "source_url": "https://finance.yahoo.com/markets/stocks/articles/cognizant-tie-puts-servicenow-center-100948532.html?.tsrc=rss",
       "uncertainty_notes": "Partnership impact uncertain; manual review advised.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 39
+      "days_held": 40
     },
     {
       "signal_id": "e19408bf1f5f4d16",
@@ -20890,7 +20890,7 @@
       "source_url": "https://finance.yahoo.com/markets/stocks/articles/servicenow-stock-plunges-30-6-124500486.html?.tsrc=rss",
       "uncertainty_notes": "No GPT call was used, or a limit/API issue caused fallback analysis.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 39
+      "days_held": 40
     },
     {
       "signal_id": "bfbb1bad1f28ea00",
@@ -20955,7 +20955,7 @@
       "company": "NVIDIA",
       "sector": "AI datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 39
+      "days_held": 40
     },
     {
       "signal_id": "bf86916c54f19334",
@@ -21020,7 +21020,7 @@
       "company": "Arista Networks",
       "sector": "datacenter networking",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 39
+      "days_held": 40
     },
     {
       "signal_id": "8f8a653383516196",
@@ -21045,7 +21045,7 @@
       "company": "ServiceNow",
       "sector": "enterprise automation software",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 39
+      "days_held": 40
     },
     {
       "signal_id": "3cf124b85fcff58b",
@@ -21073,7 +21073,7 @@
       "source_url": "https://finance.yahoo.com/markets/stocks/articles/growth-companies-high-insider-ownership-113600964.html?.tsrc=rss",
       "uncertainty_notes": "Limited concrete guidance; watchlist item.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 39
+      "days_held": 40
     },
     {
       "signal_id": "10d73d8b73745578",
@@ -21316,7 +21316,7 @@
       "source_url": "https://finance.yahoo.com/sectors/technology/articles/us-high-growth-tech-stocks-113828391.html?.tsrc=rss",
       "uncertainty_notes": "Market breadth and execution risk",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 39
+      "days_held": 40
     },
     {
       "signal_id": "8f578c54d3e7d2e7",
@@ -21510,7 +21510,7 @@
       "company": "NVIDIA",
       "sector": "AI datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 36
+      "days_held": 37
     },
     {
       "signal_id": "e69a528ccb9d8390",
@@ -21535,7 +21535,7 @@
       "company": "Advanced Micro Devices",
       "sector": "AI and datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 36
+      "days_held": 37
     },
     {
       "signal_id": "709eda55d1dbbcf1",
@@ -21560,7 +21560,7 @@
       "company": "Arista Networks",
       "sector": "datacenter networking",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 36
+      "days_held": 37
     },
     {
       "signal_id": "88f497b09ac1ab24",
@@ -21585,7 +21585,7 @@
       "company": "ServiceNow",
       "sector": "enterprise automation software",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 36
+      "days_held": 37
     },
     {
       "signal_id": "70f3af423fab58ec",
@@ -21613,7 +21613,7 @@
       "source_url": "https://247wallst.com/investing/2026/06/08/wall-street-slept-on-this-amazon-proof-business-model-its-now-at-a-5-year-discount/?.tsrc=rss",
       "uncertainty_notes": "Unclear impact from retailer analysis; watchlist item for manual review.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 36
+      "days_held": 37
     },
     {
       "signal_id": "18375b05714ddb59",
@@ -21684,7 +21684,7 @@
       "source_url": "https://finance.yahoo.com/video/synopsys-ceo-on-ai-outlook-nvidia-partnership-160121768.html?.tsrc=rss",
       "uncertainty_notes": "Limited details on impact; monitor for downstream catalysts.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 36
+      "days_held": 37
     },
     {
       "signal_id": "9121b78a1c7b9b65",
@@ -21712,7 +21712,7 @@
       "source_url": "https://247wallst.com/investing/2026/06/08/prediction-amd-stock-will-trade-at-this-price-in-2027/?.tsrc=rss",
       "uncertainty_notes": "Price target prediction may be speculative; monitor for catalysts.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 36
+      "days_held": 37
     },
     {
       "signal_id": "9f4413f850216f68",
@@ -21912,7 +21912,7 @@
       "source_url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPSzZ1VWlPYjhZMWpkdmlrNWJ1ZHNtQkFxbWNXT0JSV0VoTlN6YlNHUDhJMGNEeXBhQTFRbld2QkVlWU05QWJuZ0RtbThMM003dVNMZDlaanJsdDczejB1dnVHU2stRFZkb0Q2bXFXbVdVSE9uWnJacHhMMmtFbS1POVlWX2FrYlpNWHBMTlFSU1RTUVZwTUxQdVkxZzVJcnNTLUxSY2trb2NtMllXUUc5SjYzckdEdUk3NU9zVg?oc=5",
       "uncertainty_notes": "Manual review before portfolio move",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 36
+      "days_held": 37
     },
     {
       "signal_id": "840aacebdf6b8378",
@@ -21983,7 +21983,7 @@
       "source_url": "https://finance.yahoo.com/markets/stocks/articles/nvidias-75-margins-could-hold-160234251.html?.tsrc=rss",
       "uncertainty_notes": "Nvidia vs peers still in early stage",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 36
+      "days_held": 37
     },
     {
       "signal_id": "103a711a6e2ce8b9",
@@ -22140,7 +22140,7 @@
       "source_url": "https://finance.yahoo.com/sectors/technology/articles/us-high-growth-tech-stocks-113828391.html?.tsrc=rss",
       "uncertainty_notes": "Longer horizon; earnings growth expectations.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 36
+      "days_held": 37
     },
     {
       "signal_id": "5434260209eb66b6",
@@ -22205,7 +22205,7 @@
       "company": "NVIDIA",
       "sector": "AI datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 36
+      "days_held": 37
     },
     {
       "signal_id": "6a17264fbc290d49",
@@ -22230,7 +22230,7 @@
       "company": "Advanced Micro Devices",
       "sector": "AI and datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 36
+      "days_held": 37
     },
     {
       "signal_id": "8a015ccc1f0cf66e",
@@ -22255,7 +22255,7 @@
       "company": "Arista Networks",
       "sector": "datacenter networking",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 36
+      "days_held": 37
     },
     {
       "signal_id": "3dc53e294755def6",
@@ -22280,7 +22280,7 @@
       "company": "ServiceNow",
       "sector": "enterprise automation software",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 36
+      "days_held": 37
     },
     {
       "signal_id": "bc557ba4aeb39430",
@@ -22480,7 +22480,7 @@
       "source_url": "https://finance.yahoo.com/markets/stocks/articles/dells-strong-partner-network-drives-160000558.html?.tsrc=rss",
       "uncertainty_notes": "Limited to Dell-ISG angle; no portfolio action yet.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 36
+      "days_held": 37
     },
     {
       "signal_id": "49db270a079f6cf9",
@@ -22551,7 +22551,7 @@
       "source_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQbUNMOFJmeFF2X2ppS2NzaGZiTURocmg4OGNnNFVjazNjRTZmdkpXTXVRZFE5MlkzcUlBUmE2T2hvbllBTi1iVXd6ck9Ic2xoRVF0elVSbks4Ry1XczJMVi1lb0tOa2VjOEEtTlRhdmtIbjh1WWY2UUdCWlhVTG5XSU5ZM1FTczBpN1pxVlE1YmE4el9WUzlyLWdtZWdtd2hmZWlKLWtPTFVZdl9iczQwZGctZURydw?oc=5",
       "uncertainty_notes": "Forecasts are speculative; near-term volatility possible.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 36
+      "days_held": 37
     },
     {
       "signal_id": "e4ce883093dd0d1b",
@@ -22622,7 +22622,7 @@
       "source_url": "https://finance.yahoo.com/sectors/technology/articles/intel-leads-chip-rally-ai-191942030.html?.tsrc=rss",
       "uncertainty_notes": "Industry rally may be rotational; watch catalysts.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 36
+      "days_held": 37
     },
     {
       "signal_id": "49434259814911d9",
@@ -22650,7 +22650,7 @@
       "source_url": "https://finance.yahoo.com/m/ceb00b9c-94e6-3862-9a78-c9216d9ece0c/micron%2C-intel%2C-tesla%2C-apple%2C.html?.tsrc=rss",
       "uncertainty_notes": "Sentiment-driven moves may fade.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 36
+      "days_held": 37
     },
     {
       "signal_id": "6a3cc7b58fb8785f",
@@ -22678,7 +22678,7 @@
       "source_url": "https://finance.yahoo.com/sectors/technology/articles/nvidias-vera-cpu-signals-bigger-172430171.html?.tsrc=rss",
       "uncertainty_notes": "Nvidia/Hynix timing uncertain; cyclical risks.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 36
+      "days_held": 37
     },
     {
       "signal_id": "bc456b4a4cc8e806",
@@ -22749,7 +22749,7 @@
       "source_url": "https://finance.yahoo.com/sectors/technology/articles/us-high-growth-tech-stocks-113828391.html?.tsrc=rss",
       "uncertainty_notes": "Story is broad; no company-specific catalysts.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 36
+      "days_held": 37
     },
     {
       "signal_id": "6ff5b4bfc8dcc7a5",
@@ -22814,7 +22814,7 @@
       "company": "NVIDIA",
       "sector": "AI datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 35
+      "days_held": 36
     },
     {
       "signal_id": "ab25a09011a8ffc3",
@@ -22839,7 +22839,7 @@
       "company": "Advanced Micro Devices",
       "sector": "AI and datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 35
+      "days_held": 36
     },
     {
       "signal_id": "fc9204b6a85fdafa",
@@ -22864,7 +22864,7 @@
       "company": "Arista Networks",
       "sector": "datacenter networking",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 35
+      "days_held": 36
     },
     {
       "signal_id": "ed2a4b67366437ab",
@@ -22889,7 +22889,7 @@
       "company": "ServiceNow",
       "sector": "enterprise automation software",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 35
+      "days_held": 36
     },
     {
       "signal_id": "56aed96d2a88c258",
@@ -23003,7 +23003,7 @@
       "source_url": "https://247wallst.com/investing/2026/06/09/palo-alto-networks-hits-10b-revenue-run-rate-beats-sp-500-across-all-timeframes/?.tsrc=rss",
       "uncertainty_notes": "Earnings context; impact on Nvidia indirectly.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 35
+      "days_held": 36
     },
     {
       "signal_id": "7f4444bb8b8a56ff",
@@ -23117,7 +23117,7 @@
       "source_url": "https://www.trefis.com/articles/602054/after-its-monumental-run-is-marvell-stocks-ai-future-already-in-the-price/2026-06-09?.tsrc=rss",
       "uncertainty_notes": "Speculative; review manually before decisions.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 35
+      "days_held": 36
     },
     {
       "signal_id": "73a1acde6e2e6c7d",
@@ -23145,7 +23145,7 @@
       "source_url": "https://247wallst.com/investing/2026/06/09/amd-just-hit-2030s-earnings-target-two-years-early-heres-what-happens-next/?.tsrc=rss",
       "uncertainty_notes": "Forecasts uncertain; monitor guidance.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 35
+      "days_held": 36
     },
     {
       "signal_id": "fa48981c2845e692",
@@ -23468,7 +23468,7 @@
       "company": "NVIDIA",
       "sector": "AI datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 35
+      "days_held": 36
     },
     {
       "signal_id": "4a504ee34a6a0dde",
@@ -23493,7 +23493,7 @@
       "company": "Advanced Micro Devices",
       "sector": "AI and datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 35
+      "days_held": 36
     },
     {
       "signal_id": "366da0389de550fe",
@@ -23518,7 +23518,7 @@
       "company": "Arista Networks",
       "sector": "datacenter networking",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 35
+      "days_held": 36
     },
     {
       "signal_id": "ce13c6b7003fa6fb",
@@ -23543,7 +23543,7 @@
       "company": "ServiceNow",
       "sector": "enterprise automation software",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 35
+      "days_held": 36
     },
     {
       "signal_id": "d3cde39159e5290a",
@@ -23657,7 +23657,7 @@
       "source_url": "https://finance.yahoo.com/markets/stocks/articles/ciena-stock-down-post-q2-144400332.html?.tsrc=rss",
       "uncertainty_notes": "Indirect impact; watch for AI networking demand signals.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 35
+      "days_held": 36
     },
     {
       "signal_id": "333d27b7a977a1b1",
@@ -23685,7 +23685,7 @@
       "source_url": "https://finance.yahoo.com/sectors/technology/articles/china-weighs-295-billion-ai-195727474.html?.tsrc=rss",
       "uncertainty_notes": "Geopolitical and policy execution risk.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 35
+      "days_held": 36
     },
     {
       "signal_id": "a1969c6c30e7a1d1",
@@ -23756,7 +23756,7 @@
       "source_url": "https://finance.yahoo.com/sectors/technology/articles/amd-uk-ai-supercomputers-put-201228509.html?.tsrc=rss",
       "uncertainty_notes": "Policy/contract exposure; budget timing unclear.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 35
+      "days_held": 36
     },
     {
       "signal_id": "7e847bbd5fc3cb7d",
@@ -23870,7 +23870,7 @@
       "source_url": "https://finance.yahoo.com/m/d29a483e-d9a2-3e5c-beaf-dca4cf94c36a/ai-stocks-lead-tech-sector.html?.tsrc=rss",
       "uncertainty_notes": "Volatile sector; confirm fundamentals.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 35
+      "days_held": 36
     },
     {
       "signal_id": "282295a51a2c9e5d",
@@ -23941,7 +23941,7 @@
       "source_url": "https://finance.yahoo.com/markets/stocks/articles/nok-benefits-strong-growth-ai-151400954.html?.tsrc=rss",
       "uncertainty_notes": "Limited detail on ANET-specific impact; watchlist item",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 35
+      "days_held": 36
     },
     {
       "signal_id": "48ed904614a5acb3",
@@ -23969,7 +23969,7 @@
       "source_url": "https://finance.yahoo.com/markets/stocks/articles/anet-gains-robust-liquidity-trend-151200847.html?.tsrc=rss",
       "uncertainty_notes": "Liquidity trend not standalone; confirm capabilities",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 35
+      "days_held": 36
     },
     {
       "signal_id": "4efd741ba8828fc4",
@@ -24034,7 +24034,7 @@
       "company": "NVIDIA",
       "sector": "AI datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 34
+      "days_held": 35
     },
     {
       "signal_id": "821ce9a568bdc5c3",
@@ -24059,7 +24059,7 @@
       "company": "Advanced Micro Devices",
       "sector": "AI and datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 34
+      "days_held": 35
     },
     {
       "signal_id": "7fc517fad78e11a0",
@@ -24084,7 +24084,7 @@
       "company": "Arista Networks",
       "sector": "datacenter networking",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 34
+      "days_held": 35
     },
     {
       "signal_id": "0af6564d69853865",
@@ -24109,7 +24109,7 @@
       "company": "ServiceNow",
       "sector": "enterprise automation software",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 34
+      "days_held": 35
     },
     {
       "signal_id": "a163d09d2c91c0a3",
@@ -24395,7 +24395,7 @@
       "source_url": "https://247wallst.com/investing/2026/06/10/broadcom-and-amd-sink-4-nvidia-slides-3-as-the-chip-selloff-deepens/?.tsrc=rss",
       "uncertainty_notes": "Broad market selloff; unclear durable catalyst.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 34
+      "days_held": 35
     },
     {
       "signal_id": "c7992ae9bd7c6aae",
@@ -24423,7 +24423,7 @@
       "source_url": "https://www.fool.com/investing/2026/06/10/the-worlds-most-important-chipmaker-has-fantastic/?.tsrc=rss",
       "uncertainty_notes": "Single source; confirm broader supply-demand trend.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 34
+      "days_held": 35
     },
     {
       "signal_id": "d600f5f6a6f0a7ff",
@@ -24494,7 +24494,7 @@
       "source_url": "https://247wallst.com/investing/2026/06/10/expert-warning-americas-grid-is-so-far-behind-blackouts-are-coming-even-without-ai/?.tsrc=rss",
       "uncertainty_notes": "Opinion piece; not a data-driven update",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 34
+      "days_held": 35
     },
     {
       "signal_id": "5b899a7996b78017",
@@ -24608,7 +24608,7 @@
       "source_url": "https://www.wsj.com/tech/ai/anti-nvidia-data-center-startup-is-valued-at-1-55-billion-in-new-funding-round-e58b2aec?.tsrc=rss",
       "uncertainty_notes": "Valuation of startup impact uncertain; future adoption unclear.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 34
+      "days_held": 35
     },
     {
       "signal_id": "c0309053f59761a7",
@@ -24679,7 +24679,7 @@
       "source_url": "https://finance.yahoo.com/markets/stocks/articles/nok-benefits-strong-growth-ai-151400954.html?.tsrc=rss",
       "uncertainty_notes": "Nokia reference may mislead; unclear impact on ANET.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 34
+      "days_held": 35
     },
     {
       "signal_id": "5295e77ce0040db7",
@@ -24707,7 +24707,7 @@
       "source_url": "https://finance.yahoo.com/markets/stocks/articles/anet-gains-robust-liquidity-trend-151200847.html?.tsrc=rss",
       "uncertainty_notes": "Liquidity trend may reflect one-off factors.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 34
+      "days_held": 35
     },
     {
       "signal_id": "e94c1639403796f3",
@@ -24772,7 +24772,7 @@
       "company": "NVIDIA",
       "sector": "AI datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 34
+      "days_held": 35
     },
     {
       "signal_id": "2c87dc924c48bf6a",
@@ -24797,7 +24797,7 @@
       "company": "Advanced Micro Devices",
       "sector": "AI and datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 34
+      "days_held": 35
     },
     {
       "signal_id": "18df8e0b85e63187",
@@ -24822,7 +24822,7 @@
       "company": "Arista Networks",
       "sector": "datacenter networking",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 34
+      "days_held": 35
     },
     {
       "signal_id": "7ce721dc227e66da",
@@ -24847,7 +24847,7 @@
       "company": "ServiceNow",
       "sector": "enterprise automation software",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 34
+      "days_held": 35
     },
     {
       "signal_id": "92eb42da23082f02",
@@ -25090,7 +25090,7 @@
       "source_url": "https://finance.yahoo.com/m/f2b12cac-6dbd-3fc7-9e38-bed11bdf0d4a/dow-jones-futures%3A-market.html?.tsrc=rss",
       "uncertainty_notes": "Market fears could drive volatility.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 34
+      "days_held": 35
     },
     {
       "signal_id": "a474a9f6a3e69170",
@@ -25204,7 +25204,7 @@
       "source_url": "https://finance.yahoo.com/markets/stocks/articles/amd-tensorwave-bet-ties-ai-211953021.html?.tsrc=rss",
       "uncertainty_notes": "Limited clarity on profitability impact and timing",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 34
+      "days_held": 35
     },
     {
       "signal_id": "b85acfd6403be84d",
@@ -25232,7 +25232,7 @@
       "source_url": "https://finance.yahoo.com/markets/stocks/articles/cienas-strong-free-cash-flow-171100836.html?.tsrc=rss",
       "uncertainty_notes": "H2 supply constraints could throttle near-term earnings",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 34
+      "days_held": 35
     },
     {
       "signal_id": "e1c40842d5e46163",
@@ -25297,7 +25297,7 @@
       "company": "NVIDIA",
       "sector": "AI datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 33
+      "days_held": 34
     },
     {
       "signal_id": "d521f075899991b4",
@@ -25322,7 +25322,7 @@
       "company": "Advanced Micro Devices",
       "sector": "AI and datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 33
+      "days_held": 34
     },
     {
       "signal_id": "5359af362edf9e39",
@@ -25347,7 +25347,7 @@
       "company": "Arista Networks",
       "sector": "datacenter networking",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 33
+      "days_held": 34
     },
     {
       "signal_id": "04c2171fa602e209",
@@ -25372,7 +25372,7 @@
       "company": "ServiceNow",
       "sector": "enterprise automation software",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 33
+      "days_held": 34
     },
     {
       "signal_id": "f18762ae5b455923",
@@ -25744,7 +25744,7 @@
       "source_url": "https://247wallst.com/investing/2026/06/11/forget-palantir-as-sticky-macro-volatility-hits-tech-this-stock-is-a-better-buy/?.tsrc=rss",
       "uncertainty_notes": "Sentiment modest; long-horizon view needed",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 33
+      "days_held": 34
     },
     {
       "signal_id": "4b57d68075beb797",
@@ -25815,7 +25815,7 @@
       "source_url": "https://finance.yahoo.com/sectors/technology/articles/nvidia-deepens-microsoft-ai-alliance-161753312.html?.tsrc=rss",
       "uncertainty_notes": "Partnership impact timing uncertain",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 33
+      "days_held": 34
     },
     {
       "signal_id": "837acae51e64e5ea",
@@ -25843,7 +25843,7 @@
       "source_url": "https://finance.yahoo.com/sectors/technology/articles/servicenow-ibm-expand-collaboration-unlock-130000424.html?.tsrc=rss",
       "uncertainty_notes": "Strategic collaboration; impact uncertain on near-term metrics.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 33
+      "days_held": 34
     },
     {
       "signal_id": "dd059c22296b3e92",
@@ -25871,7 +25871,7 @@
       "source_url": "https://finance.yahoo.com/markets/stocks/articles/cienas-strong-free-cash-flow-171100836.html?.tsrc=rss",
       "uncertainty_notes": "Unclear impact on Arista demand; indirect link.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 33
+      "days_held": 34
     },
     {
       "signal_id": "b988b76e44b05ef0",
@@ -25936,7 +25936,7 @@
       "company": "NVIDIA",
       "sector": "AI datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 33
+      "days_held": 34
     },
     {
       "signal_id": "07bd48c0607a1e5f",
@@ -25961,7 +25961,7 @@
       "company": "Advanced Micro Devices",
       "sector": "AI and datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 33
+      "days_held": 34
     },
     {
       "signal_id": "8f5aef298bd0cd90",
@@ -25986,7 +25986,7 @@
       "company": "Arista Networks",
       "sector": "datacenter networking",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 33
+      "days_held": 34
     },
     {
       "signal_id": "fff302c4ac8412ab",
@@ -26011,7 +26011,7 @@
       "company": "ServiceNow",
       "sector": "enterprise automation software",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 33
+      "days_held": 34
     },
     {
       "signal_id": "847aaa93cbc96b0c",
@@ -26039,7 +26039,7 @@
       "source_url": "https://finance.yahoo.com/markets/stocks/articles/p-global-ratings-upgrades-nvidia-211417548.html?.tsrc=rss",
       "uncertainty_notes": "Ratings upgrade may not reflect AMD fundamentals.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 33
+      "days_held": 34
     },
     {
       "signal_id": "9391b13f990f2c82",
@@ -26368,7 +26368,7 @@
       "source_url": "https://www.thestreet.com/investing/stocks/amd-ceo-ai-investment-uk?.tsrc=rss",
       "uncertainty_notes": "Chair commentary; market may remain volatile.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 33
+      "days_held": 34
     },
     {
       "signal_id": "abe746ca1244a7f3",
@@ -26396,7 +26396,7 @@
       "source_url": "https://finance.yahoo.com/video/expect-robust-capability-from-this-kkr-backed-ai-venture-ceo-211742674.html?.tsrc=rss",
       "uncertainty_notes": "Independent venture; impact uncertain.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 33
+      "days_held": 34
     },
     {
       "signal_id": "b23af37f6c8295e5",
@@ -26424,7 +26424,7 @@
       "source_url": "https://app.moby.co/home/news/news-ai-hyperscalers-kkr-is-ready-for-you-with-10-billion?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
       "uncertainty_notes": "Early stage collaboration; details limited",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 33
+      "days_held": 34
     },
     {
       "signal_id": "714ef3377b808fb7",
@@ -26495,7 +26495,7 @@
       "source_url": "https://finance.yahoo.com/markets/stocks/articles/cienas-strong-free-cash-flow-171100836.html?.tsrc=rss",
       "uncertainty_notes": "CNFN reliance on AI demand; mix shift risk",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 33
+      "days_held": 34
     },
     {
       "signal_id": "b0f81136828b4c05",
@@ -26560,7 +26560,7 @@
       "company": "NVIDIA",
       "sector": "AI datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 32
+      "days_held": 33
     },
     {
       "signal_id": "e22a4c0e2ebc1e2b",
@@ -26585,7 +26585,7 @@
       "company": "Advanced Micro Devices",
       "sector": "AI and datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 32
+      "days_held": 33
     },
     {
       "signal_id": "76ffad788b3a4e46",
@@ -26610,7 +26610,7 @@
       "company": "Arista Networks",
       "sector": "datacenter networking",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 32
+      "days_held": 33
     },
     {
       "signal_id": "8779a19c63d57c36",
@@ -26635,7 +26635,7 @@
       "company": "ServiceNow",
       "sector": "enterprise automation software",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 32
+      "days_held": 33
     },
     {
       "signal_id": "3b8fd8286f58dcf8",
@@ -26964,7 +26964,7 @@
       "source_url": "https://finance.yahoo.com/m/a87d4360-51e7-3171-8bda-e2208866a15b/amd-stock-upgraded-to-buy-on.html?.tsrc=rss",
       "uncertainty_notes": "Decision not actionable yet; watchlist item.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 32
+      "days_held": 33
     },
     {
       "signal_id": "cdae5b230029c641",
@@ -26992,7 +26992,7 @@
       "source_url": "https://finance.yahoo.com/markets/stocks/articles/amd-upgraded-adobe-downgraded-wall-133850577.html?.tsrc=rss",
       "uncertainty_notes": "Ambiguity from conflicting upgrades/downgrades.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 32
+      "days_held": 33
     },
     {
       "signal_id": "97059c5187085cac",
@@ -27192,7 +27192,7 @@
       "source_url": "https://www.trefis.com/articles/602708/what-a-patient-investor-really-pays-for-broadcom-stock/2026-06-12?.tsrc=rss",
       "uncertainty_notes": "Limited detail on catalysts; manual review advised.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 32
+      "days_held": 33
     },
     {
       "signal_id": "74f5c05d39b43e7e",
@@ -27220,7 +27220,7 @@
       "source_url": "https://finance.yahoo.com/sectors/technology/articles/latest-news-cloud-ai-akamai-123754134.html?.tsrc=rss",
       "uncertainty_notes": "Analyst action noted; further validation required.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 32
+      "days_held": 33
     },
     {
       "signal_id": "f45a7a4e7df1661c",
@@ -27248,7 +27248,7 @@
       "source_url": "https://finance.yahoo.com/markets/stocks/articles/cienas-strong-free-cash-flow-171100836.html?.tsrc=rss",
       "uncertainty_notes": "Subject to AI demand cycles and capex needs.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 32
+      "days_held": 33
     },
     {
       "signal_id": "ab94c1f4c15a69b3",
@@ -27313,7 +27313,7 @@
       "company": "NVIDIA",
       "sector": "AI datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 32
+      "days_held": 33
     },
     {
       "signal_id": "96fab2f5aaaa1b52",
@@ -27338,7 +27338,7 @@
       "company": "Advanced Micro Devices",
       "sector": "AI and datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 32
+      "days_held": 33
     },
     {
       "signal_id": "cf14dce034dc18ca",
@@ -27363,7 +27363,7 @@
       "company": "Arista Networks",
       "sector": "datacenter networking",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 32
+      "days_held": 33
     },
     {
       "signal_id": "bf9769a132c5af92",
@@ -27388,7 +27388,7 @@
       "company": "ServiceNow",
       "sector": "enterprise automation software",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 32
+      "days_held": 33
     },
     {
       "signal_id": "2a61a73cbc0c11e3",
@@ -27502,7 +27502,7 @@
       "source_url": "https://finance.yahoo.com/markets/stocks/articles/amd-rises-citi-sees-bigger-182026144.html?.tsrc=rss",
       "uncertainty_notes": "Analyst upgrade not guaranteed to translate to fundamentals.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 32
+      "days_held": 33
     },
     {
       "signal_id": "07ea4c438bbf8ed2",
@@ -27573,7 +27573,7 @@
       "source_url": "https://stocktwits.com/news-articles/markets/equity/amd-stock-ended-fridays-session-nearly-5-percent-higher-what-triggered-the-rally/cZKdJXoR75W?.tsrc=rss",
       "uncertainty_notes": "Single firm upgrade; price target not provided.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 32
+      "days_held": 33
     },
     {
       "signal_id": "ed5d08c066ca3439",
@@ -27902,7 +27902,7 @@
       "source_url": "https://finance.yahoo.com/m/a87d4360-51e7-3171-8bda-e2208866a15b/amd-stock-upgraded-to-buy-on.html?.tsrc=rss",
       "uncertainty_notes": "Depends on actual execution and market reaction.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 32
+      "days_held": 33
     },
     {
       "signal_id": "0dec8c60b9e01ff3",
@@ -28096,7 +28096,7 @@
       "company": "NVIDIA",
       "sector": "AI datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 29
+      "days_held": 30
     },
     {
       "signal_id": "aca8037fb4136362",
@@ -28121,7 +28121,7 @@
       "company": "Advanced Micro Devices",
       "sector": "AI and datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 29
+      "days_held": 30
     },
     {
       "signal_id": "41d6036614841d8a",
@@ -28146,7 +28146,7 @@
       "company": "Arista Networks",
       "sector": "datacenter networking",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 29
+      "days_held": 30
     },
     {
       "signal_id": "8a456077bbe49f5e",
@@ -28171,7 +28171,7 @@
       "company": "ServiceNow",
       "sector": "enterprise automation software",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 29
+      "days_held": 30
     },
     {
       "signal_id": "7c075c35c7b62e50",
@@ -28414,7 +28414,7 @@
       "source_url": "https://finance.yahoo.com/markets/stocks/articles/amd-amd-stock-valuation-check-171248101.html?.tsrc=rss",
       "uncertainty_notes": "Article focuses on valuation narrative; no portfolio directive.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 29
+      "days_held": 30
     },
     {
       "signal_id": "40143026b89d8865",
@@ -28485,7 +28485,7 @@
       "source_url": "https://finance.yahoo.com/markets/stocks/articles/arista-networks-anet-1-6t-194454284.html?.tsrc=rss",
       "uncertainty_notes": "Earnings context limited; no guidance.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 29
+      "days_held": 30
     },
     {
       "signal_id": "6ab1eb599c2b41a9",
@@ -28556,7 +28556,7 @@
       "source_url": "https://247wallst.com/investing/2026/06/15/palantir-rises-5-cloudflare-pops-3-as-investors-pile-into-ai-security-plays/?.tsrc=rss",
       "uncertainty_notes": "Sector move; company-specific exposure limited.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 29
+      "days_held": 30
     },
     {
       "signal_id": "65e4d0d65eaace6e",
@@ -28584,7 +28584,7 @@
       "source_url": "https://finance.yahoo.com/markets/stocks/articles/why-advanced-micro-devices-stock-165506265.html?.tsrc=rss",
       "uncertainty_notes": "Analyst action is not a consensus signal; follow-up data needed.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 29
+      "days_held": 30
     },
     {
       "signal_id": "6d1ad8df7e047feb",
@@ -28778,7 +28778,7 @@
       "company": "NVIDIA",
       "sector": "AI datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 29
+      "days_held": 30
     },
     {
       "signal_id": "b4c41344517dd517",
@@ -28803,7 +28803,7 @@
       "company": "Advanced Micro Devices",
       "sector": "AI and datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 29
+      "days_held": 30
     },
     {
       "signal_id": "c6448b5ae2cce498",
@@ -28828,7 +28828,7 @@
       "company": "Arista Networks",
       "sector": "datacenter networking",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 29
+      "days_held": 30
     },
     {
       "signal_id": "dc8f8f408afcf1a5",
@@ -28853,7 +28853,7 @@
       "company": "ServiceNow",
       "sector": "enterprise automation software",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 29
+      "days_held": 30
     },
     {
       "signal_id": "8d7ef4ad7e2744a5",
@@ -29182,7 +29182,7 @@
       "source_url": "https://finance.yahoo.com/markets/stocks/articles/arista-networks-anet-1-6t-194454284.html?.tsrc=rss",
       "uncertainty_notes": "Analyst action is research-only; no portfolio decision.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 29
+      "days_held": 30
     },
     {
       "signal_id": "0941acd9e3854613",
@@ -29253,7 +29253,7 @@
       "source_url": "https://247wallst.com/investing/2026/06/15/amd-vs-intel-both-are-positioned-for-ai-data-center-growth-but-there-will-be-only-one-winner/?.tsrc=rss",
       "uncertainty_notes": "Competitive landscape remains uncertain; only research item.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 29
+      "days_held": 30
     },
     {
       "signal_id": "3c3f66f0c906de1a",
@@ -29281,7 +29281,7 @@
       "source_url": "https://finance.yahoo.com/m/a24b5d00-7cf7-37aa-9ed3-33810a290dd8/micron%2C-amd-lead-chip-stocks.html?.tsrc=rss",
       "uncertainty_notes": "Event-driven rally; long-term trend uncertain.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 29
+      "days_held": 30
     },
     {
       "signal_id": "7b360eb2a374a873",
@@ -29352,7 +29352,7 @@
       "source_url": "https://finance.yahoo.com/video/chip-stocks-surge-oil-slides-closer-to-80-on-us-iran-deal-fox-to-acquire-roku-195425964.html?.tsrc=rss",
       "uncertainty_notes": "M&A news; sector rotation risk.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 29
+      "days_held": 30
     },
     {
       "signal_id": "ff78bf8d6c70f14a",
@@ -29380,7 +29380,7 @@
       "source_url": "https://finance.yahoo.com/markets/stocks/articles/why-arista-networks-anet-5-060907882.html?.tsrc=rss",
       "uncertainty_notes": "Component shortages could pressure margins.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 29
+      "days_held": 30
     },
     {
       "signal_id": "34c1a4c20baab101",
@@ -29445,7 +29445,7 @@
       "company": "NVIDIA",
       "sector": "AI datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 28
+      "days_held": 29
     },
     {
       "signal_id": "ddc0e52cceb48ab4",
@@ -29470,7 +29470,7 @@
       "company": "Advanced Micro Devices",
       "sector": "AI and datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 28
+      "days_held": 29
     },
     {
       "signal_id": "ed0ee869d2813009",
@@ -29495,7 +29495,7 @@
       "company": "Arista Networks",
       "sector": "datacenter networking",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 28
+      "days_held": 29
     },
     {
       "signal_id": "940689f8b5f3c1b7",
@@ -29520,7 +29520,7 @@
       "company": "ServiceNow",
       "sector": "enterprise automation software",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 28
+      "days_held": 29
     },
     {
       "signal_id": "f37d6ae3ad0e959d",
@@ -29591,7 +29591,7 @@
       "source_url": "https://finance.yahoo.com/m/eb1baa90-d90d-3100-82ca-1514dd972630/micron-stock-slips-from.html?.tsrc=rss",
       "uncertainty_notes": "Target prices are volatile; quarter trends unclear.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 28
+      "days_held": 29
     },
     {
       "signal_id": "b88b730f6f80a40f",
@@ -29662,7 +29662,7 @@
       "source_url": "https://finance.yahoo.com/m/4546f66b-7c35-37a0-90b2-418ab5acabe0/why-this-ai-data-center-stock.html?.tsrc=rss",
       "uncertainty_notes": "Partnership impact uncertain; profitability timing unclear.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 28
+      "days_held": 29
     },
     {
       "signal_id": "cdd63300fb71af32",
@@ -29733,7 +29733,7 @@
       "source_url": "https://finance.yahoo.com/markets/stocks/articles/bofa-securities-raises-price-target-110253831.html?.tsrc=rss",
       "uncertainty_notes": "Targets from single issuer; mid-cycle risks.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 28
+      "days_held": 29
     },
     {
       "signal_id": "4ec15e694ff3d212",
@@ -29761,7 +29761,7 @@
       "source_url": "https://finance.yahoo.com/markets/stocks/articles/morgan-stanley-raises-price-target-020648491.html?.tsrc=rss",
       "uncertainty_notes": "Targets vary; execution risk remains.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 28
+      "days_held": 29
     },
     {
       "signal_id": "b4856fbcc8a6ceec",
@@ -30041,7 +30041,7 @@
       "company": "NVIDIA",
       "sector": "AI datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 28
+      "days_held": 29
     },
     {
       "signal_id": "6c8cd1e11275d594",
@@ -30066,7 +30066,7 @@
       "company": "Advanced Micro Devices",
       "sector": "AI and datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 28
+      "days_held": 29
     },
     {
       "signal_id": "7f5d51c969e88cbd",
@@ -30091,7 +30091,7 @@
       "company": "Arista Networks",
       "sector": "datacenter networking",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 28
+      "days_held": 29
     },
     {
       "signal_id": "1fd3c70dc5379f13",
@@ -30116,7 +30116,7 @@
       "company": "ServiceNow",
       "sector": "enterprise automation software",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 28
+      "days_held": 29
     },
     {
       "signal_id": "d37a9bb33c715e46",
@@ -30273,7 +30273,7 @@
       "source_url": "https://finance.yahoo.com/markets/stocks/articles/bofa-securities-raises-price-target-110253831.html?.tsrc=rss",
       "uncertainty_notes": "Analyst target shifts; not a buy signal by itself.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 28
+      "days_held": 29
     },
     {
       "signal_id": "2ddf60f4025db096",
@@ -30344,7 +30344,7 @@
       "source_url": "https://finance.yahoo.com/technology/ai/articles/servicenow-inc-now-teams-cognizant-185848584.html?.tsrc=rss",
       "uncertainty_notes": "Partnership impact uncertain; no financial figures.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 28
+      "days_held": 29
     },
     {
       "signal_id": "8cd86ff19d1af797",
@@ -30415,7 +30415,7 @@
       "source_url": "https://finance.yahoo.com/technology/ai/articles/amd-rackspace-sign-30-mw-192100084.html?.tsrc=rss",
       "uncertainty_notes": "Deal specifics and long-term contract impact unclear.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 28
+      "days_held": 29
     },
     {
       "signal_id": "c32d54871cc6430f",
@@ -30609,7 +30609,7 @@
       "company": "NVIDIA",
       "sector": "AI datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 27
+      "days_held": 28
     },
     {
       "signal_id": "052537a9c0e24481",
@@ -30634,7 +30634,7 @@
       "company": "Advanced Micro Devices",
       "sector": "AI and datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 27
+      "days_held": 28
     },
     {
       "signal_id": "1ec6698ed9fe7334",
@@ -30659,7 +30659,7 @@
       "company": "Arista Networks",
       "sector": "datacenter networking",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 27
+      "days_held": 28
     },
     {
       "signal_id": "a3848545873426b0",
@@ -30684,7 +30684,7 @@
       "company": "ServiceNow",
       "sector": "enterprise automation software",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 27
+      "days_held": 28
     },
     {
       "signal_id": "f6ee2c1b13ad1edb",
@@ -30798,7 +30798,7 @@
       "source_url": "https://finance.yahoo.com/m/036e13d9-bf92-308b-9a6e-1d5c7c62f95c/nvidia%E2%80%99s-biggest-threat-isn%E2%80%99t.html?.tsrc=rss",
       "uncertainty_notes": "Company-specific impact uncertain; market reaction varies.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 27
+      "days_held": 28
     },
     {
       "signal_id": "e411c13c1cc356ea",
@@ -30869,7 +30869,7 @@
       "source_url": "https://finance.yahoo.com/m/d8681c3a-fbe8-38bc-a7e2-fa62055cf7b8/intel%2C-broadcom%2C-spacex%2C-and.html?.tsrc=rss",
       "uncertainty_notes": "Broad market context; not stock-specific trigger.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 27
+      "days_held": 28
     },
     {
       "signal_id": "6f98648834afee55",
@@ -30897,7 +30897,7 @@
       "source_url": "https://www.trefis.com/articles/603359/is-micron-stocks-data-center-engine-stalling-or-just-drowned-out-by-ai/2026-06-17?.tsrc=rss",
       "uncertainty_notes": "Subjective assessment from third party; anecdotal.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 27
+      "days_held": 28
     },
     {
       "signal_id": "2a333f1ded06ea26",
@@ -31011,7 +31011,7 @@
       "source_url": "https://finance.yahoo.com/markets/stocks/articles/arista-networks-anet-stock-87-050946230.html?.tsrc=rss",
       "uncertainty_notes": "No GPT call was used, or a limit/API issue caused fallback analysis.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 27
+      "days_held": 28
     },
     {
       "signal_id": "4b57fa9ef889d5ae",
@@ -31076,7 +31076,7 @@
       "company": "NVIDIA",
       "sector": "AI datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 27
+      "days_held": 28
     },
     {
       "signal_id": "764df7ffb4a5aa54",
@@ -31101,7 +31101,7 @@
       "company": "Advanced Micro Devices",
       "sector": "AI and datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 27
+      "days_held": 28
     },
     {
       "signal_id": "be825bec4d351e3d",
@@ -31126,7 +31126,7 @@
       "company": "Arista Networks",
       "sector": "datacenter networking",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 27
+      "days_held": 28
     },
     {
       "signal_id": "9c96db3ed7e0a89b",
@@ -31151,7 +31151,7 @@
       "company": "ServiceNow",
       "sector": "enterprise automation software",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 27
+      "days_held": 28
     },
     {
       "signal_id": "c41e1706c5744248",
@@ -31179,7 +31179,7 @@
       "source_url": "https://stocktwits.com/news-articles/markets/equity/rxt-stock-gains-as-amd-deal-opens-up-growth-opportunities/cZKKdToR7eE?.tsrc=rss",
       "uncertainty_notes": "Watchlist item; no full thesis change yet.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 27
+      "days_held": 28
     },
     {
       "signal_id": "6ca9e96c7ce3d36c",
@@ -31336,7 +31336,7 @@
       "source_url": "https://finance.yahoo.com/m/22e2f8be-1a0d-358b-a6e9-a8a6ac54d07f/amd%2C-arm%2C-intel-get.html?.tsrc=rss",
       "uncertainty_notes": "Analyst targets may be speculative; not a buy signal",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 27
+      "days_held": 28
     },
     {
       "signal_id": "db4f126581c2e240",
@@ -31450,7 +31450,7 @@
       "source_url": "https://finance.yahoo.com/markets/stocks/articles/arista-networks-anet-stock-87-050946230.html?.tsrc=rss",
       "uncertainty_notes": "News mentions sector move; not a confirmation",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 27
+      "days_held": 28
     },
     {
       "signal_id": "49cc9d284e660c45",
@@ -31478,7 +31478,7 @@
       "source_url": "https://www.trefis.com/articles/603334/is-micron-stocks-record-breaking-run-a-cyclical-peak-or-a-new-ai-reality/2026-06-17?.tsrc=rss",
       "uncertainty_notes": "No GPT call was used, or a limit/API issue caused fallback analysis.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 27
+      "days_held": 28
     },
     {
       "signal_id": "4ddbea1cd960e2c0",
@@ -31672,7 +31672,7 @@
       "company": "NVIDIA",
       "sector": "AI datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 26
+      "days_held": 27
     },
     {
       "signal_id": "3eec1762cc620d3e",
@@ -31697,7 +31697,7 @@
       "company": "Advanced Micro Devices",
       "sector": "AI and datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 26
+      "days_held": 27
     },
     {
       "signal_id": "53844afd16292395",
@@ -31722,7 +31722,7 @@
       "company": "Arista Networks",
       "sector": "datacenter networking",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 26
+      "days_held": 27
     },
     {
       "signal_id": "8678d34b51c301db",
@@ -31747,7 +31747,7 @@
       "company": "ServiceNow",
       "sector": "enterprise automation software",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 26
+      "days_held": 27
     },
     {
       "signal_id": "7f4a660f71a3e3c4",
@@ -31904,7 +31904,7 @@
       "source_url": "https://finance.yahoo.com/technology/ai/articles/amazon-explores-selling-ai-chips-154335210.html?.tsrc=rss",
       "uncertainty_notes": "No immediate impact; depends on execution and volume.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 26
+      "days_held": 27
     },
     {
       "signal_id": "cf13c0fa10d90ada",
@@ -31932,7 +31932,7 @@
       "source_url": "https://finance.yahoo.com/technology/ai/articles/market-chatter-amazon-discussions-sell-153248734.html?.tsrc=rss",
       "uncertainty_notes": "Limited detail; unconfirmed discussions.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 26
+      "days_held": 27
     },
     {
       "signal_id": "ba3691a1c444c41b",
@@ -31960,7 +31960,7 @@
       "source_url": "https://finance.yahoo.com/technology/ai/articles/mrvl-vs-amd-semiconductor-stock-141600976.html?.tsrc=rss",
       "uncertainty_notes": "Comparative analysis; no execution signals.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 26
+      "days_held": 27
     },
     {
       "signal_id": "47e4e637d45915e6",
@@ -32160,7 +32160,7 @@
       "source_url": "https://www.axios.com/2026/06/18/gradial-ai-agents-marketing#utm_source=yahoo_finance&utm_medium=partner&utm_campaign=subs-partner-yahoo-finance-media?.tsrc=rss",
       "uncertainty_notes": "No GPT call was used, or a limit/API issue caused fallback analysis.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 26
+      "days_held": 27
     },
     {
       "signal_id": "f84ce8542137a235",
@@ -32225,7 +32225,7 @@
       "company": "NVIDIA",
       "sector": "AI datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 26
+      "days_held": 27
     },
     {
       "signal_id": "e419a3a9150c4b31",
@@ -32250,7 +32250,7 @@
       "company": "Advanced Micro Devices",
       "sector": "AI and datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 26
+      "days_held": 27
     },
     {
       "signal_id": "7e6583fdced4045c",
@@ -32275,7 +32275,7 @@
       "company": "Arista Networks",
       "sector": "datacenter networking",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 26
+      "days_held": 27
     },
     {
       "signal_id": "4e27d06b55d23710",
@@ -32300,7 +32300,7 @@
       "company": "ServiceNow",
       "sector": "enterprise automation software",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 26
+      "days_held": 27
     },
     {
       "signal_id": "878f79f8da157826",
@@ -32715,7 +32715,7 @@
       "source_url": "https://finance.yahoo.com/markets/stocks/articles/advanced-micro-devices-inc-amd-211950859.html?.tsrc=rss",
       "uncertainty_notes": "Opinion piece; not a portfolio signal.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 26
+      "days_held": 27
     },
     {
       "signal_id": "7b21b31733f64753",
@@ -32743,7 +32743,7 @@
       "source_url": "https://finance.yahoo.com/technology/ai/articles/amd-amd-buys-mext-tackle-190622796.html?.tsrc=rss",
       "uncertainty_notes": "Deal in early stage; integration risk.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 26
+      "days_held": 27
     },
     {
       "signal_id": "5c1d53240e61373a",
@@ -32851,7 +32851,7 @@
       "company": "NVIDIA",
       "sector": "AI datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 25
+      "days_held": 26
     },
     {
       "signal_id": "d92e13e7fda33507",
@@ -32876,7 +32876,7 @@
       "company": "Advanced Micro Devices",
       "sector": "AI and datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 25
+      "days_held": 26
     },
     {
       "signal_id": "b6fd4c2904802a85",
@@ -32901,7 +32901,7 @@
       "company": "Arista Networks",
       "sector": "datacenter networking",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 25
+      "days_held": 26
     },
     {
       "signal_id": "43e4083380a3656a",
@@ -32926,7 +32926,7 @@
       "company": "ServiceNow",
       "sector": "enterprise automation software",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 25
+      "days_held": 26
     },
     {
       "signal_id": "cb3a3da6103123d9",
@@ -33126,7 +33126,7 @@
       "source_url": "https://finance.yahoo.com/markets/stocks/articles/intel-leads-big-chip-stock-123941155.html?.tsrc=rss",
       "uncertainty_notes": "Cyclical sector move; evidence of AMD upside unclear.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 25
+      "days_held": 26
     },
     {
       "signal_id": "1aadf13195401c3e",
@@ -33240,7 +33240,7 @@
       "source_url": "https://finance.yahoo.com/markets/stocks/articles/wolfe-research-reaffirms-bullish-view-212158801.html?.tsrc=rss",
       "uncertainty_notes": "Analyst view; not a guarantee; price target may change.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 25
+      "days_held": 26
     },
     {
       "signal_id": "8b10bf7b453c983d",
@@ -33268,7 +33268,7 @@
       "source_url": "https://247wallst.com/investing/2026/06/19/forget-amd-amazon-declares-war-on-nvidia-by-selling-its-own-ai-chips/?.tsrc=rss",
       "uncertainty_notes": "Industry-wide shifts; impact uncertain.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 25
+      "days_held": 26
     },
     {
       "signal_id": "9054f9d2a0938b64",
@@ -33339,7 +33339,7 @@
       "source_url": "https://finance.yahoo.com/technology/ai/articles/astera-labs-alab-using-taiwan-143418833.html?.tsrc=rss",
       "uncertainty_notes": "Limited direct AMD impact; evaluation needed.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 25
+      "days_held": 26
     },
     {
       "signal_id": "413da80fc9f28746",
@@ -33404,7 +33404,7 @@
       "company": "NVIDIA",
       "sector": "AI datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 25
+      "days_held": 26
     },
     {
       "signal_id": "6fed3f44244c0684",
@@ -33429,7 +33429,7 @@
       "company": "Advanced Micro Devices",
       "sector": "AI and datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 25
+      "days_held": 26
     },
     {
       "signal_id": "19edda2a18c90020",
@@ -33454,7 +33454,7 @@
       "company": "Arista Networks",
       "sector": "datacenter networking",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 25
+      "days_held": 26
     },
     {
       "signal_id": "092e028e20fe1d18",
@@ -33479,7 +33479,7 @@
       "company": "ServiceNow",
       "sector": "enterprise automation software",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 25
+      "days_held": 26
     },
     {
       "signal_id": "1f8559b6733cf4bc",
@@ -33765,7 +33765,7 @@
       "source_url": "https://finance.yahoo.com/markets/stocks/articles/wolfe-research-reaffirms-bullish-view-212158801.html?.tsrc=rss",
       "uncertainty_notes": "Analyst target; needs corroboration.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 25
+      "days_held": 26
     },
     {
       "signal_id": "63581f64de8c4fc1",
@@ -33793,7 +33793,7 @@
       "source_url": "https://247wallst.com/investing/2026/06/19/up-700-ytd-how-high-can-sandisk-rally/?.tsrc=rss",
       "uncertainty_notes": "Analyst-driven piece; not NVDA-specific.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 25
+      "days_held": 26
     },
     {
       "signal_id": "94b14b51f838718f",
@@ -33821,7 +33821,7 @@
       "source_url": "https://247wallst.com/investing/2026/06/19/analyst-warns-intel-valuation-doesnt-make-sense-suggests-nvidia-amd-micron-and-broadcom-as-alternatives/?.tsrc=rss",
       "uncertainty_notes": "Third-party valuation view; not a buy signal.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 25
+      "days_held": 26
     },
     {
       "signal_id": "a521fab036eba970",
@@ -33849,7 +33849,7 @@
       "source_url": "https://finance.yahoo.com/technology/ai/articles/ai-post-quantum-push-could-161411782.html?.tsrc=rss",
       "uncertainty_notes": "Partner/distribution channel focus; indirect relevance.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 25
+      "days_held": 26
     },
     {
       "signal_id": "0b544d00b31861b5",
@@ -33877,7 +33877,7 @@
       "source_url": "https://247wallst.com/investing/2026/06/19/forget-amd-amazon-declares-war-on-nvidia-by-selling-its-own-ai-chips/?.tsrc=rss",
       "uncertainty_notes": "Sector-wide megatrend; not immediate exposure.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 25
+      "days_held": 26
     },
     {
       "signal_id": "fcba71c6b7bdfe8d",
@@ -33942,7 +33942,7 @@
       "company": "NVIDIA",
       "sector": "AI datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 22
+      "days_held": 23
     },
     {
       "signal_id": "fb15d4341210662b",
@@ -33967,7 +33967,7 @@
       "company": "Advanced Micro Devices",
       "sector": "AI and datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 22
+      "days_held": 23
     },
     {
       "signal_id": "2e046c26de2b0901",
@@ -33992,7 +33992,7 @@
       "company": "Arista Networks",
       "sector": "datacenter networking",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 22
+      "days_held": 23
     },
     {
       "signal_id": "fa33ffa9f4f079cd",
@@ -34017,7 +34017,7 @@
       "company": "ServiceNow",
       "sector": "enterprise automation software",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 22
+      "days_held": 23
     },
     {
       "signal_id": "32a0b39e0c584e26",
@@ -34045,7 +34045,7 @@
       "source_url": "https://finance.yahoo.com/technology/ai/articles/broadcoms-ai-push-boosts-semiconductor-151800760.html?.tsrc=rss",
       "uncertainty_notes": "Sector move context; review required before decisions.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 22
+      "days_held": 23
     },
     {
       "signal_id": "6f2ab28de9604857",
@@ -34159,7 +34159,7 @@
       "source_url": "https://www.investopedia.com/micron-leads-ai-trade-higher-expectations-are-rising-ahead-of-the-memory-chipmaker-earnings-mu-12003674?.tsrc=rss",
       "uncertainty_notes": "Earnings-driven; need manual review for pos/neg bias.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 22
+      "days_held": 23
     },
     {
       "signal_id": "ac1528bf85c288f1",
@@ -34187,7 +34187,7 @@
       "source_url": "https://finance.yahoo.com/technology/ai/articles/spacex-inks-compute-deal-reflection-165129019.html?.tsrc=rss",
       "uncertainty_notes": "Long-term deal specifics and utilization unclear.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 22
+      "days_held": 23
     },
     {
       "signal_id": "a25104b0555b3f2a",
@@ -34387,7 +34387,7 @@
       "source_url": "https://247wallst.com/investing/2026/06/22/got-2000-1-tech-infrastructure-monopoly-to-buy-and-hold-for-the-rest-of-your-life/?.tsrc=rss",
       "uncertainty_notes": "Single-stock focus; cyclicality risk",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 22
+      "days_held": 23
     },
     {
       "signal_id": "7f72dbb3d10fbea0",
@@ -34458,7 +34458,7 @@
       "source_url": "https://finance.yahoo.com/markets/stocks/articles/wolfe-research-reaffirms-bullish-view-212158801.html?.tsrc=rss",
       "uncertainty_notes": "No GPT call was used, or a limit/API issue caused fallback analysis.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 22
+      "days_held": 23
     },
     {
       "signal_id": "83f137e4a3485fbb",
@@ -34652,7 +34652,7 @@
       "company": "NVIDIA",
       "sector": "AI datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 22
+      "days_held": 23
     },
     {
       "signal_id": "6ce30b30bb9c890d",
@@ -34677,7 +34677,7 @@
       "company": "Advanced Micro Devices",
       "sector": "AI and datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 22
+      "days_held": 23
     },
     {
       "signal_id": "d233be23e5d05f7b",
@@ -34702,7 +34702,7 @@
       "company": "Arista Networks",
       "sector": "datacenter networking",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 22
+      "days_held": 23
     },
     {
       "signal_id": "03bf4a5b9daa3143",
@@ -34727,7 +34727,7 @@
       "company": "ServiceNow",
       "sector": "enterprise automation software",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 22
+      "days_held": 23
     },
     {
       "signal_id": "455ad8a74f05ab42",
@@ -34884,7 +34884,7 @@
       "source_url": "https://finance.yahoo.com/markets/stocks/articles/buy-hold-sell-micron-stock-190000346.html?.tsrc=rss",
       "uncertainty_notes": "LUCK: article references MU, not AMD specifics; cross-asset impact uncertain.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 22
+      "days_held": 23
     },
     {
       "signal_id": "f0b206f0c0f37921",
@@ -34912,7 +34912,7 @@
       "source_url": "https://www.fool.com/investing/2026/06/22/broadcoms-ai-revenue-is-on-pace-to-triple-to-16-bi/?.tsrc=rss",
       "uncertainty_notes": "Market reaction uncertain; not a buy recommendation.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 22
+      "days_held": 23
     },
     {
       "signal_id": "77ab440bf8e10513",
@@ -34940,7 +34940,7 @@
       "source_url": "https://247wallst.com/investing/2026/06/22/forget-nvidia-four-billionaires-who-rarely-agree-on-anything-hold-the-same-overlooked-chip-stock/?.tsrc=rss",
       "uncertainty_notes": "Tail risk if thesis on TSM doesn\u2019t materialize.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 22
+      "days_held": 23
     },
     {
       "signal_id": "8c9eb3bd5174c520",
@@ -35097,7 +35097,7 @@
       "source_url": "https://finance.yahoo.com/markets/stocks/articles/wolfe-research-reaffirms-bullish-view-212158801.html?.tsrc=rss",
       "uncertainty_notes": "Watchlist item; no portfolio decision yet.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 22
+      "days_held": 23
     },
     {
       "signal_id": "357447f9bcf56a5f",
@@ -35254,7 +35254,7 @@
       "source_url": "https://www.trefis.com/articles/603825/cisco-stock-looks-strong-but-one-number-says-be-careful/2026-06-22?.tsrc=rss",
       "uncertainty_notes": "Valuation is extended; monitor AI orders.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 22
+      "days_held": 23
     },
     {
       "signal_id": "76a36cb9ae4257cb",
@@ -35362,7 +35362,7 @@
       "company": "NVIDIA",
       "sector": "AI datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 21
+      "days_held": 22
     },
     {
       "signal_id": "9fe21484ef0ac101",
@@ -35387,7 +35387,7 @@
       "company": "Advanced Micro Devices",
       "sector": "AI and datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 21
+      "days_held": 22
     },
     {
       "signal_id": "9ced84a969fc40a6",
@@ -35412,7 +35412,7 @@
       "company": "Arista Networks",
       "sector": "datacenter networking",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 21
+      "days_held": 22
     },
     {
       "signal_id": "a29bc0535f6fe221",
@@ -35437,7 +35437,7 @@
       "company": "ServiceNow",
       "sector": "enterprise automation software",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 21
+      "days_held": 22
     },
     {
       "signal_id": "a4eb8a8524edaa7c",
@@ -35637,7 +35637,7 @@
       "source_url": "https://247wallst.com/investing/2026/06/23/netflix-will-trade-at-this-price-in-2028/?.tsrc=rss",
       "uncertainty_notes": "Nonsense for direct NVDA exposure; Netflix guidance unrelated to chip fundamentals.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 21
+      "days_held": 22
     },
     {
       "signal_id": "e501d59ece271461",
@@ -35831,7 +35831,7 @@
       "company": "NVIDIA",
       "sector": "AI datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 21
+      "days_held": 22
     },
     {
       "signal_id": "e96371b1783f723a",
@@ -35856,7 +35856,7 @@
       "company": "Advanced Micro Devices",
       "sector": "AI and datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 21
+      "days_held": 22
     },
     {
       "signal_id": "847b16ba6fc7dd07",
@@ -35881,7 +35881,7 @@
       "company": "Arista Networks",
       "sector": "datacenter networking",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 21
+      "days_held": 22
     },
     {
       "signal_id": "1d90ca3f599fa19b",
@@ -35906,7 +35906,7 @@
       "company": "ServiceNow",
       "sector": "enterprise automation software",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 21
+      "days_held": 22
     },
     {
       "signal_id": "3a674385769f8b88",
@@ -36020,7 +36020,7 @@
       "source_url": "https://www.trefis.com/articles/604070/marvell-stock-and-the-custom-chip-story-the-market-underestimated/2026-06-23?.tsrc=rss",
       "uncertainty_notes": "Long-tail risk; confirmation required.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 21
+      "days_held": 22
     },
     {
       "signal_id": "38ba97d6daca677b",
@@ -36134,7 +36134,7 @@
       "source_url": "https://finance.yahoo.com/m/13cd7582-b4fc-3e0b-97c9-c1f9823bdda6/nvidia-stock-falls-as-tech.html?.tsrc=rss",
       "uncertainty_notes": "High market volatility; not a buy signal.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 21
+      "days_held": 22
     },
     {
       "signal_id": "c28c72b415de8b95",
@@ -36248,7 +36248,7 @@
       "source_url": "https://247wallst.com/investing/2026/06/23/over-40-analysts-rate-amd-a-buy-heres-why-we-agree/?.tsrc=rss",
       "uncertainty_notes": "Analysts' targets vary; price may react but fundamentals key.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 21
+      "days_held": 22
     },
     {
       "signal_id": "a2ee6698022577c4",
@@ -36356,7 +36356,7 @@
       "company": "NVIDIA",
       "sector": "AI datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 20
+      "days_held": 21
     },
     {
       "signal_id": "095b7f5eac37f56a",
@@ -36381,7 +36381,7 @@
       "company": "Advanced Micro Devices",
       "sector": "AI and datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 20
+      "days_held": 21
     },
     {
       "signal_id": "ec248789f2262baf",
@@ -36406,7 +36406,7 @@
       "company": "Arista Networks",
       "sector": "datacenter networking",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 20
+      "days_held": 21
     },
     {
       "signal_id": "dc3fef105a22cfe6",
@@ -36431,7 +36431,7 @@
       "company": "ServiceNow",
       "sector": "enterprise automation software",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 20
+      "days_held": 21
     },
     {
       "signal_id": "bade901137227fbe",
@@ -36502,7 +36502,7 @@
       "source_url": "https://finance.yahoo.com/technology/ai/articles/marvell-technology-sustain-strong-ai-133800821.html?.tsrc=rss",
       "uncertainty_notes": "Tech cycle and competition risk; not actionable now.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 20
+      "days_held": 21
     },
     {
       "signal_id": "8b4cb414b5635bcb",
@@ -36530,7 +36530,7 @@
       "source_url": "https://247wallst.com/investing/2026/06/24/time-to-dump-micron-sk-hynix-to-begin-trading-on-nasdaq-july-10/?.tsrc=rss",
       "uncertainty_notes": "Speculative; execution risk on SK hynix listing.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 20
+      "days_held": 21
     },
     {
       "signal_id": "57eb5cdcf0482613",
@@ -36816,7 +36816,7 @@
       "source_url": "https://www.fool.com/investing/2026/06/24/ai-boom-could-be-bad-reason-to-buy-utility-stocks/?.tsrc=rss",
       "uncertainty_notes": "One-off commentary; not a portfolio directive.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 20
+      "days_held": 21
     },
     {
       "signal_id": "a598cca0e6ff2020",
@@ -36881,7 +36881,7 @@
       "company": "NVIDIA",
       "sector": "AI datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 20
+      "days_held": 21
     },
     {
       "signal_id": "a56d86d483a6fb68",
@@ -36906,7 +36906,7 @@
       "company": "Advanced Micro Devices",
       "sector": "AI and datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 20
+      "days_held": 21
     },
     {
       "signal_id": "249df78812bef9df",
@@ -36931,7 +36931,7 @@
       "company": "Arista Networks",
       "sector": "datacenter networking",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 20
+      "days_held": 21
     },
     {
       "signal_id": "81ca311b4f4932be",
@@ -36956,7 +36956,7 @@
       "company": "ServiceNow",
       "sector": "enterprise automation software",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 20
+      "days_held": 21
     },
     {
       "signal_id": "c459dcf084dacc04",
@@ -36984,7 +36984,7 @@
       "source_url": "https://finance.yahoo.com/technology/ai/articles/cerebras-ceo-says-investors-misunderstood-180104795.html?.tsrc=rss",
       "uncertainty_notes": "Market misinterpretation risk; earnings context needed.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 20
+      "days_held": 21
     },
     {
       "signal_id": "c03a1ee14bcc45df",
@@ -37313,7 +37313,7 @@
       "source_url": "https://www.thestreet.com/investing/stocks/ubs-raises-amd-stock-price-target?.tsrc=rss",
       "uncertainty_notes": "Price target not guaranteed; rely on fundamentals.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 20
+      "days_held": 21
     },
     {
       "signal_id": "f3b5bf24ea1b2e6d",
@@ -37427,7 +37427,7 @@
       "source_url": "https://finance.yahoo.com/markets/stocks/articles/advanced-micro-devices-amd-stock-191544924.html?.tsrc=rss",
       "uncertainty_notes": "No GPT call was used, or a limit/API issue caused fallback analysis.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 20
+      "days_held": 21
     },
     {
       "signal_id": "86b35305dfeab16a",
@@ -37535,7 +37535,7 @@
       "company": "NVIDIA",
       "sector": "AI datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 19
+      "days_held": 20
     },
     {
       "signal_id": "92ce09bae066276e",
@@ -37560,7 +37560,7 @@
       "company": "Advanced Micro Devices",
       "sector": "AI and datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 19
+      "days_held": 20
     },
     {
       "signal_id": "20dc9bf163929774",
@@ -37585,7 +37585,7 @@
       "company": "Arista Networks",
       "sector": "datacenter networking",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 19
+      "days_held": 20
     },
     {
       "signal_id": "2b9bf44922cc4f41",
@@ -37610,7 +37610,7 @@
       "company": "ServiceNow",
       "sector": "enterprise automation software",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 19
+      "days_held": 20
     },
     {
       "signal_id": "734877431d059a40",
@@ -37810,7 +37810,7 @@
       "source_url": "https://247wallst.com/investing/2026/06/25/stock-price-prediction-palantir-at-113-the-forecast-says-theres-room-to-run/?.tsrc=rss",
       "uncertainty_notes": "Not UiPath-specific; external AI supplier context.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 19
+      "days_held": 20
     },
     {
       "signal_id": "f3d72c35d251c883",
@@ -37924,7 +37924,7 @@
       "source_url": "https://247wallst.com/investing/2026/06/25/nvidia-price-prediction-the-forecast-climbs-again-heres-where-the-ai-leader-heads-next/?.tsrc=rss",
       "uncertainty_notes": "watch for NVIDIA-specific dynamics; not AMD-focused",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 19
+      "days_held": 20
     },
     {
       "signal_id": "14c63587da040b82",
@@ -37995,7 +37995,7 @@
       "source_url": "https://finance.yahoo.com/m/714cab66-2d2a-36d5-90cd-6400312f5b45/micron-stock-jumps-with-.html?.tsrc=rss",
       "uncertainty_notes": "earnings-driven sentiment; memory cycle timing",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 19
+      "days_held": 20
     },
     {
       "signal_id": "cd9bb50081e3fce8",
@@ -38023,7 +38023,7 @@
       "source_url": "https://finance.yahoo.com/markets/stocks/articles/keybanc-raises-pt-arista-networks-081911451.html?.tsrc=rss",
       "uncertainty_notes": "Single broker note; not a buy signal.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 19
+      "days_held": 20
     },
     {
       "signal_id": "4169266c5e9ff27b",
@@ -38051,7 +38051,7 @@
       "source_url": "https://finance.yahoo.com/markets/stocks/articles/keybanc-raises-pt-arista-networks-081911451.html?.tsrc=rss",
       "uncertainty_notes": "No GPT call was used, or a limit/API issue caused fallback analysis.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 19
+      "days_held": 20
     },
     {
       "signal_id": "c076cd67a6be1bc5",
@@ -38116,7 +38116,7 @@
       "company": "NVIDIA",
       "sector": "AI datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 19
+      "days_held": 20
     },
     {
       "signal_id": "c079a055adf66ef6",
@@ -38141,7 +38141,7 @@
       "company": "Advanced Micro Devices",
       "sector": "AI and datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 19
+      "days_held": 20
     },
     {
       "signal_id": "ace729af76245545",
@@ -38166,7 +38166,7 @@
       "company": "Arista Networks",
       "sector": "datacenter networking",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 19
+      "days_held": 20
     },
     {
       "signal_id": "d5ce94ebaf795419",
@@ -38191,7 +38191,7 @@
       "company": "ServiceNow",
       "sector": "enterprise automation software",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 19
+      "days_held": 20
     },
     {
       "signal_id": "f63d82359276f377",
@@ -38434,7 +38434,7 @@
       "source_url": "https://247wallst.com/investing/2026/06/25/melius-research-buy-the-chip-dip-skip-hyperscalers-until-ai-payoff-becomes-clear/?.tsrc=rss",
       "uncertainty_notes": "Analyst view; not a firm recommendation.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 19
+      "days_held": 20
     },
     {
       "signal_id": "613ee32bcf927c47",
@@ -38462,7 +38462,7 @@
       "source_url": "https://finance.yahoo.com/m/31e70815-f64e-3c08-9116-bebc16b8e83f/forget-the-cellphones%3A.html?.tsrc=rss",
       "uncertainty_notes": "News unrelated to AMD; cross-asset influence limited",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 19
+      "days_held": 20
     },
     {
       "signal_id": "8199013b830b720b",
@@ -38533,7 +38533,7 @@
       "source_url": "https://finance.yahoo.com/technology/ai/articles/top-ai-data-center-stock-193822511.html?.tsrc=rss",
       "uncertainty_notes": "Media pick; quality varies",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 19
+      "days_held": 20
     },
     {
       "signal_id": "8a077055196fd92e",
@@ -38641,7 +38641,7 @@
       "company": "NVIDIA",
       "sector": "AI datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 18
+      "days_held": 19
     },
     {
       "signal_id": "e2e01db9b9d6619f",
@@ -38666,7 +38666,7 @@
       "company": "Advanced Micro Devices",
       "sector": "AI and datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 18
+      "days_held": 19
     },
     {
       "signal_id": "ea8a4b60e28ebd79",
@@ -38691,7 +38691,7 @@
       "company": "Arista Networks",
       "sector": "datacenter networking",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 18
+      "days_held": 19
     },
     {
       "signal_id": "dbfe22b466e554b3",
@@ -38716,7 +38716,7 @@
       "company": "ServiceNow",
       "sector": "enterprise automation software",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 18
+      "days_held": 19
     },
     {
       "signal_id": "8e49d67d511cd191",
@@ -38744,7 +38744,7 @@
       "source_url": "https://finance.yahoo.com/markets/stocks/articles/oppenheimer-reaffirms-bullish-outlook-servicenow-111106946.html?.tsrc=rss",
       "uncertainty_notes": "Analyst rating is not a buy recommendation; verify execution.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 18
+      "days_held": 19
     },
     {
       "signal_id": "6546fbfd4fa74f56",
@@ -38901,7 +38901,7 @@
       "source_url": "https://247wallst.com/investing/2026/06/26/is-amd-a-buy-the-forecast-and-the-80-bullish-analyst-wall/?.tsrc=rss",
       "uncertainty_notes": "Mixed signals; price target vs. rally magnitude.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 18
+      "days_held": 19
     },
     {
       "signal_id": "73027a0805ad641d",
@@ -38972,7 +38972,7 @@
       "source_url": "https://247wallst.com/investing/2026/06/26/on-semiconductor-tumbles-20-is-it-dragging-down-semiconductor-names-like-amd-and-intel/?.tsrc=rss",
       "uncertainty_notes": "Event-driven; idiosyncratic to ON Semi.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 18
+      "days_held": 19
     },
     {
       "signal_id": "8a381e376484430b",
@@ -39129,7 +39129,7 @@
       "source_url": "https://247wallst.com/investing/2026/06/26/micron-smashed-even-the-bulls-evercore-says-this-ai-rally-has-the-earnings-power-to-last/?.tsrc=rss",
       "uncertainty_notes": "Watchlist item; manual review before decisions.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 18
+      "days_held": 19
     },
     {
       "signal_id": "92ed8fe10eb1702c",
@@ -39243,7 +39243,7 @@
       "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOTWJubmZzcHJyVFB1ZmJ4RWp0bDR4ajdpdU83ZGdQYjNmbEZsNGcxVmRydGg4dzlwa2RlTWpmdkhPeWJLa0EwZUpyZmZ3amYzTzlsSXhtS2djMzRrTThobWpxS0RKazFzYmowOS1GRzcwZms0YmlqSEptMkVfbGxMalJpWGtiT3RXdng0Q1piTEhpV2xnWkszc2Q0WGpodw?oc=5",
       "uncertainty_notes": "Analyst PT alone; execution risk",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 18
+      "days_held": 19
     },
     {
       "signal_id": "0edea254f5a82477",
@@ -39271,7 +39271,7 @@
       "source_url": "https://finance.yahoo.com/markets/stocks/articles/keybanc-raises-pt-arista-networks-081911451.html?.tsrc=rss",
       "uncertainty_notes": "Single firm PT move; market volatility",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 18
+      "days_held": 19
     },
     {
       "signal_id": "f208803bc337917f",
@@ -39336,7 +39336,7 @@
       "company": "NVIDIA",
       "sector": "AI datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 18
+      "days_held": 19
     },
     {
       "signal_id": "42781e8d9f9e00a1",
@@ -39361,7 +39361,7 @@
       "company": "Advanced Micro Devices",
       "sector": "AI and datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 18
+      "days_held": 19
     },
     {
       "signal_id": "635aa04ddd71999d",
@@ -39386,7 +39386,7 @@
       "company": "Arista Networks",
       "sector": "datacenter networking",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 18
+      "days_held": 19
     },
     {
       "signal_id": "d55b4ca733c7b7e5",
@@ -39411,7 +39411,7 @@
       "company": "ServiceNow",
       "sector": "enterprise automation software",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 18
+      "days_held": 19
     },
     {
       "signal_id": "f3c44e83654f8794",
@@ -39654,7 +39654,7 @@
       "source_url": "https://www.fool.com/investing/2026/06/26/why-tower-semiconductor-took-a-dive-today/?.tsrc=rss",
       "uncertainty_notes": "News-driven impact; fundamentals unchanged.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 18
+      "days_held": 19
     },
     {
       "signal_id": "f164d90a751433f7",
@@ -39682,7 +39682,7 @@
       "source_url": "https://www.thestreet.com/video/nvidia-isnt-enough-heres-how-to-build-a-diversified-ai-portfolio?.tsrc=rss",
       "uncertainty_notes": "Editorial/content-oriented; not company-specific.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 18
+      "days_held": 19
     },
     {
       "signal_id": "da58765efa5c1dad",
@@ -39839,7 +39839,7 @@
       "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOTWJubmZzcHJyVFB1ZmJ4RWp0bDR4ajdpdU83ZGdQYjNmbEZsNGcxVmRydGg4dzlwa2RlTWpmdkhPeWJLa0EwZUpyZmZ3amYzTzlsSXhtS2djMzRrTThobWpxS0RKazFzYmowOS1GRzcwZms0YmlqSEptMkVfbGxMalJpWGtiT3RXdng0Q1piTEhpV2xnWkszc2Q0WGpodw?oc=5",
       "uncertainty_notes": "PT change not equal to upside realization.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 18
+      "days_held": 19
     },
     {
       "signal_id": "a39389894526dbac",
@@ -39864,7 +39864,7 @@
       "company": "UiPath",
       "sector": "AI automation software",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 15
+      "days_held": 16
     },
     {
       "signal_id": "bb1bd4788acac422",
@@ -39889,7 +39889,7 @@
       "company": "NVIDIA",
       "sector": "AI datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 15
+      "days_held": 16
     },
     {
       "signal_id": "cba4a8480a739255",
@@ -39914,7 +39914,7 @@
       "company": "Advanced Micro Devices",
       "sector": "AI and datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 15
+      "days_held": 16
     },
     {
       "signal_id": "40c4efa965d57a6c",
@@ -39939,7 +39939,7 @@
       "company": "Arista Networks",
       "sector": "datacenter networking",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 15
+      "days_held": 16
     },
     {
       "signal_id": "468714b1bdedca77",
@@ -39964,7 +39964,7 @@
       "company": "ServiceNow",
       "sector": "enterprise automation software",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 15
+      "days_held": 16
     },
     {
       "signal_id": "d6de9de963e4066c",
@@ -39992,7 +39992,7 @@
       "source_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPcENSQ3RZOGlGSG1nMWo5TUZNakNrVHdZVkhyT2MtTlZhX092RklEclp4YktiTGxkNkd3TjJrYlRXWEY1RTJQSEhjOVY5NTNRVV9xcVR0OUZuNlp5aXJLZWd5ODZzeGxrNzNLX2tUMWR3bWhNdWo0OV84dGpfZmVNbFFpODhGb1N4TXloeENoT2tjS09TRkdUVVBfTEJ5MmpablQyaE95OWFhSWRKS1BrYmZnZHFheENlUXc?oc=5",
       "uncertainty_notes": "Reliance on external catalysts; price action unclear.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 15
+      "days_held": 16
     },
     {
       "signal_id": "b21d78790e7614e0",
@@ -40020,7 +40020,7 @@
       "source_url": "https://www.trefis.com/articles/604664/micron-stock-lets-talk-about-those-long-term-contracts/2026-06-29?.tsrc=rss",
       "uncertainty_notes": "Distributed by Trefis; not standalone guidance.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 15
+      "days_held": 16
     },
     {
       "signal_id": "22ecb2c8934dabd3",
@@ -40134,7 +40134,7 @@
       "source_url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBDcW83SXpfakE5dFd6S1RaVzRFMXBpZndFd1ppM2V6V0ltdUx3SlhBMEQ2ZzZnZVFPUmpVLXhJMzJHcHludnpRQ3B4czZ0YlQ2c0tGMkFicjZZS2NDVVRlLUZCejZaN21sV3JBZVVaZVY?oc=5",
       "uncertainty_notes": "Requires human review before decisions.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 15
+      "days_held": 16
     },
     {
       "signal_id": "0802d7a4aeead9a6",
@@ -40205,7 +40205,7 @@
       "source_url": "https://qz.com/palantir-nvidia-ai-platform-us-government-062926?.tsrc=rss",
       "uncertainty_notes": "Government contracts lock-in considerations; security approvals required.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 15
+      "days_held": 16
     },
     {
       "signal_id": "7c247662519a9134",
@@ -40276,7 +40276,7 @@
       "source_url": "https://finance.yahoo.com/technology/ai/articles/bytedance-targets-cpu-mass-production-143149445.html?.tsrc=rss",
       "uncertainty_notes": "Early-stage, watch for feasibility and timelines.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 15
+      "days_held": 16
     },
     {
       "signal_id": "2ddeeec582d55424",
@@ -40387,7 +40387,7 @@
       "company": "UiPath",
       "sector": "AI automation software",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 15
+      "days_held": 16
     },
     {
       "signal_id": "02d049d1daf6dd04",
@@ -40412,7 +40412,7 @@
       "company": "NVIDIA",
       "sector": "AI datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 15
+      "days_held": 16
     },
     {
       "signal_id": "7b1540eae63f6f87",
@@ -40437,7 +40437,7 @@
       "company": "Advanced Micro Devices",
       "sector": "AI and datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 15
+      "days_held": 16
     },
     {
       "signal_id": "9c651bddfb18c5ec",
@@ -40462,7 +40462,7 @@
       "company": "Arista Networks",
       "sector": "datacenter networking",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 15
+      "days_held": 16
     },
     {
       "signal_id": "b970f2621b98a0fa",
@@ -40487,7 +40487,7 @@
       "company": "ServiceNow",
       "sector": "enterprise automation software",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 15
+      "days_held": 16
     },
     {
       "signal_id": "53e6ab4c884bab25",
@@ -40558,7 +40558,7 @@
       "source_url": "https://finance.yahoo.com/m/76230e22-cdb7-3a0e-88fe-be00c6019784/micron-wobbles.-are.html?.tsrc=rss",
       "uncertainty_notes": "Elliott catalyst and market reaction uncertain.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 15
+      "days_held": 16
     },
     {
       "signal_id": "34753f44e8e606dc",
@@ -40586,7 +40586,7 @@
       "source_url": "https://finance.yahoo.com/technology/articles/uipath-broadens-enterprise-automation-ambitions-135400076.html?.tsrc=rss",
       "uncertainty_notes": "Market reception and revenue impact unclear.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 15
+      "days_held": 16
     },
     {
       "signal_id": "7e13605c4682152b",
@@ -40614,7 +40614,7 @@
       "source_url": "https://finance.yahoo.com/technology/ai/articles/servicenow-now-launches-ai-cybersecurity-190622645.html?.tsrc=rss",
       "uncertainty_notes": "Partnership efficacy and integration timeline uncertain.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 15
+      "days_held": 16
     },
     {
       "signal_id": "d52940d2a4282636",
@@ -40728,7 +40728,7 @@
       "source_url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBDcW83SXpfakE5dFd6S1RaVzRFMXBpZndFd1ppM2V6V0ltdUx3SlhBMEQ2ZzZnZVFPUmpVLXhJMzJHcHludnpRQ3B4czZ0YlQ2c0tGMkFicjZZS2NDVVRlLUZCejZaN21sV3JBZVVaZVY?oc=5",
       "uncertainty_notes": "Earnings narrative positive but not actionable yet.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 15
+      "days_held": 16
     },
     {
       "signal_id": "b29f6e515d10363d",
@@ -40842,7 +40842,7 @@
       "source_url": "https://finance.yahoo.com/technology/articles/micron-intel-lead-chip-selloff-192501898.html?.tsrc=rss",
       "uncertainty_notes": "Sentiment neutral; no clear catalyst.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 15
+      "days_held": 16
     },
     {
       "signal_id": "6d47cbb51322b547",
@@ -40870,7 +40870,7 @@
       "source_url": "https://247wallst.com/investing/2026/06/29/servicenows-new-ibm-partnership-a-real-catalyst-or-just-software-selloff-noise/?.tsrc=rss",
       "uncertainty_notes": "Market reaction muted; catalyst uncertain.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 15
+      "days_held": 16
     },
     {
       "signal_id": "fdab6e00330bed6b",
@@ -40981,7 +40981,7 @@
       "company": "UiPath",
       "sector": "AI automation software",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 14
+      "days_held": 15
     },
     {
       "signal_id": "b593146c9ef7a7a7",
@@ -41006,7 +41006,7 @@
       "company": "NVIDIA",
       "sector": "AI datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 14
+      "days_held": 15
     },
     {
       "signal_id": "c5067e596213237b",
@@ -41031,7 +41031,7 @@
       "company": "Advanced Micro Devices",
       "sector": "AI and datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 14
+      "days_held": 15
     },
     {
       "signal_id": "2aa9b78eb1027684",
@@ -41056,7 +41056,7 @@
       "company": "Arista Networks",
       "sector": "datacenter networking",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 14
+      "days_held": 15
     },
     {
       "signal_id": "995175bfe9120c3f",
@@ -41081,7 +41081,7 @@
       "company": "ServiceNow",
       "sector": "enterprise automation software",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 14
+      "days_held": 15
     },
     {
       "signal_id": "a97c2462fe03e897",
@@ -41152,7 +41152,7 @@
       "source_url": "https://finance.yahoo.com/markets/stocks/articles/chip-stocks-hit-record-19-124240551.html?.tsrc=rss",
       "uncertainty_notes": "Sector-wide move; requires manual review before decisions.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 14
+      "days_held": 15
     },
     {
       "signal_id": "699ff12c014f7102",
@@ -41180,7 +41180,7 @@
       "source_url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOUFotT0hjV0tIVmducTVtanVuOWZNSGZFdmgxS1RKN3J3OFJLcEJYcXFXOWlhOUJoM3ZXUmswdEstdGlsekxRaVhTcnl1MVNJcWpnWDMyelZUYnJQeXV6c1IzTUNuSUtNNGFzWXJkWUFCMkxFUmxWV1ZZbjZJOUd4WC10X1NIQVJGUUs5R2k1NUxqSWNNai1wci1oSmFfa1ZrV1hGYW4xZFFwbkROUXdZS3VBSWhtYU9LVWdzTlZnZDhzT3c?oc=5",
       "uncertainty_notes": "Price below max-loss threshold; human review needed.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 14
+      "days_held": 15
     },
     {
       "signal_id": "50ba34ea1b94e752",
@@ -41208,7 +41208,7 @@
       "source_url": "https://finance.yahoo.com/m/aa8dee5e-f51b-30b5-bfa7-32ad14f4e484/how-n Nvidia-became-a-chip.html?.tsrc=rss",
       "uncertainty_notes": "Speculative; monitor sector dispersion.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 14
+      "days_held": 15
     },
     {
       "signal_id": "21077ddc73f9744a",
@@ -41322,7 +41322,7 @@
       "source_url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPVkZNWi16VFdfaTV4SEd3M0g3SU1wRUhadDVDTlY1Y0cxSGFyVGtIdTdCM095S0pkaXg4RTNycW00ai1rVjAxTVI5UGZYOEFrZ0J1dF8zZmhqZUVRUjhFSUZHYkNWSzJIaVlLVmFpa3dvRmNkcXVlVGNHejlBR25PR05XQjFJOXpEc05BM3piU3BnSkxiTEFpUHdBUFRremZaQnBiX1drTmRzV1lrYzRsN3VNWGIzOWJob0YwSVNEM3Z5T1oyallhOXNySVNObmZXd2FN?oc=5",
       "uncertainty_notes": "Unclear fundamental impact; human review advised.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 14
+      "days_held": 15
     },
     {
       "signal_id": "a24c60c1e787b7af",
@@ -41350,7 +41350,7 @@
       "source_url": "https://finance.yahoo.com/technology/ai/articles/nvda-splits-business-structure-drive-133100421.html?.tsrc=rss",
       "uncertainty_notes": "No direct AMD impact from NVDA split yet.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 14
+      "days_held": 15
     },
     {
       "signal_id": "3fd111810423977f",
@@ -41378,7 +41378,7 @@
       "source_url": "https://finance.yahoo.com/technology/ai/articles/ai-push-cloud-managed-network-120000758.html?.tsrc=rss",
       "uncertainty_notes": "Long horizon; industry forecasts vary.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 14
+      "days_held": 15
     },
     {
       "signal_id": "b143ef29101b5279",
@@ -41578,7 +41578,7 @@
       "source_url": "https://finance.yahoo.com/technology/ai/articles/invoicecloud-appoints-saas-growth-leader-130000534.html?.tsrc=rss",
       "uncertainty_notes": "Short-term noise; human review required",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 14
+      "days_held": 15
     },
     {
       "signal_id": "89a590fdda942509",
@@ -41606,7 +41606,7 @@
       "source_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPcENSQ3RZOGlGSG1nMWo5TUZNakNrVHdZVkhyT2MtTlZhX092RklEclp4YktiTGxkNkd3TjJrYlRXWEY1RTJQSEhjOVY5NTNRVV9xcVR0OUZuNlp5aXJLZWd5ODZzeGxrNzNLX2tUMWR3bWhNdWo0OV84dGpfZmVNbFFpODhGb1N4TXloeENoT2tjS09TRkdUVVBfTEJ5MmpablQyaE95OWFhSWRKS1BrYmZnZHFheENlUXc?oc=5",
       "uncertainty_notes": "Watchlist item; review manually before decisions",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 14
+      "days_held": 15
     },
     {
       "signal_id": "a4f41228c3190608",
@@ -41631,7 +41631,7 @@
       "company": "UiPath",
       "sector": "AI automation software",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 14
+      "days_held": 15
     },
     {
       "signal_id": "be00a64a860351e4",
@@ -41656,7 +41656,7 @@
       "company": "NVIDIA",
       "sector": "AI datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 14
+      "days_held": 15
     },
     {
       "signal_id": "20b552d02ab701cc",
@@ -41681,7 +41681,7 @@
       "company": "Advanced Micro Devices",
       "sector": "AI and datacenter semiconductors",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 14
+      "days_held": 15
     },
     {
       "signal_id": "fb8b0c8affc71d15",
@@ -41706,7 +41706,7 @@
       "company": "Arista Networks",
       "sector": "datacenter networking",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 14
+      "days_held": 15
     },
     {
       "signal_id": "fc2c74115adee4f3",
@@ -41731,7 +41731,7 @@
       "company": "ServiceNow",
       "sector": "enterprise automation software",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 14
+      "days_held": 15
     },
     {
       "signal_id": "9833ff3863d15432",
@@ -41759,7 +41759,7 @@
       "source_url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOUFotT0hjV0tIVmducTVtanVuOWZNSGZFdmgxS1RKN3J3OFJLcEJYcXFXOWlhOUJoM3ZXUmswdEstdGlsekxRaVhTcnl1MVNJcWpnWDMyelZUYnJQeXV6c1IzTUNuSUtNNGFzWXJkWUFCMkxFUmxWV1ZZbjZJOUd4WC10X1NIQVJGUUs5R2k1NUxqSWNNai1wci1oSmFfa1ZrV1hGYW4xZFFwbkROUXdZS3VBSWhtYU9LVWdzTlZnZDhzT3c?oc=5",
       "uncertainty_notes": "Requires human review if price breaches max-loss threshold.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 14
+      "days_held": 15
     },
     {
       "signal_id": "0991f08b823a1182",
@@ -41873,7 +41873,7 @@
       "source_url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQRFR5YUN6ajZKN0V6enZlQzhub0dLSExpSzBBeHh0d1I3WUNMTFJma3JSTWNZb0pSRUlRRG9xVFhzMmV4OHV6SXA4cXpSelppYmFpMHJ5T1BtVWhVSnVvNG90ZThnMEhoZDhnUjM4QUtqS2NKMEFUaWpFVzN0OF9qTno0dkdJYlFncWNTeTU4aEZLajhJWW5icWRDY21GWElzR05GdXNVNWNwazNjaUFBYWYtU0FldGM0MmNEN0xwQlI?oc=5",
       "uncertainty_notes": "Analyst lift on J&J; indirect impact on PATH unclear",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 14
+      "days_held": 15
     },
     {
       "signal_id": "cbc260d068208d1b",
@@ -41944,7 +41944,7 @@
       "source_url": "https://finance.yahoo.com/technology/ai/articles/ai-push-cloud-managed-network-120000758.html?.tsrc=rss",
       "uncertainty_notes": "Dell'Oro estimate; timing uncertain",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 14
+      "days_held": 15
     },
     {
       "signal_id": "28a0448352d3af73",
@@ -41972,7 +41972,7 @@
       "source_url": "https://finance.yahoo.com/markets/stocks/articles/veteran-bank-revamps-amd-stock-194233677.html?.tsrc=rss",
       "uncertainty_notes": "Analyst target; limited detail on financials",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 14
+      "days_held": 15
     },
     {
       "signal_id": "3850c4f62134786b",
@@ -42086,7 +42086,7 @@
       "source_url": "https://finance.yahoo.com/technology/ai/articles/invoicecloud-appoints-saas-growth-leader-130000534.html?.tsrc=rss",
       "uncertainty_notes": "Limited detail on path-to-revenue; event is company-subscriber focus.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 14
+      "days_held": 15
     },
     {
       "signal_id": "eb8d2315082326b3",
@@ -42114,7 +42114,7 @@
       "source_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPcENSQ3RZOGlGSG1nMWo5TUZNakNrVHdZVkhyT2MtTlZhX092RklEclp4YktiTGxkNkd3TjJrYlRXWEY1RTJQSEhjOVY5NTNRVV9xcVR0OUZuNlp5aXJLZWd5ODZzeGxrNzNLX2tUMWR3bWhNdWo0OV84dGpfZmVNbFFpODhGb1N4TXloeENoT2tjS09TRkdUVVBfTEJ5MmpablQyaE95OWFhSWRKS1BrYmZnZHFheENlUXc?oc=5",
       "uncertainty_notes": "Info is sector-move oriented; no direct Arista-specific data.",
       "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
-      "days_held": 14
+      "days_held": 15
     },
     {
       "signal_id": "11c828cf720f88c4",
@@ -42137,7 +42137,9 @@
       "source": "rules",
       "status": "open",
       "company": "UiPath",
-      "sector": "AI automation software"
+      "sector": "AI automation software",
+      "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
+      "days_held": 14
     },
     {
       "signal_id": "62533dfe75d204fe",
@@ -42160,7 +42162,9 @@
       "source": "rules",
       "status": "open",
       "company": "NVIDIA",
-      "sector": "AI datacenter semiconductors"
+      "sector": "AI datacenter semiconductors",
+      "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
+      "days_held": 14
     },
     {
       "signal_id": "941b65fc2f5f0d36",
@@ -42183,7 +42187,9 @@
       "source": "rules",
       "status": "open",
       "company": "Advanced Micro Devices",
-      "sector": "AI and datacenter semiconductors"
+      "sector": "AI and datacenter semiconductors",
+      "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
+      "days_held": 14
     },
     {
       "signal_id": "c1dd51450aeeca58",
@@ -42206,7 +42212,9 @@
       "source": "rules",
       "status": "open",
       "company": "Arista Networks",
-      "sector": "datacenter networking"
+      "sector": "datacenter networking",
+      "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
+      "days_held": 14
     },
     {
       "signal_id": "b78b6ce714926e68",
@@ -42229,7 +42237,9 @@
       "source": "rules",
       "status": "open",
       "company": "ServiceNow",
-      "sector": "enterprise automation software"
+      "sector": "enterprise automation software",
+      "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
+      "days_held": 14
     },
     {
       "signal_id": "a45167fb082f98b0",
@@ -42250,12 +42260,29 @@
       "review_date": "2026-07-15",
       "source_report_id": "1d900a8ad7c9eece",
       "source": "gpt",
-      "status": "open",
+      "status": "reviewed",
       "company": "Micron Technology",
       "sector": "semiconductors",
       "event_title": "Samsung, Micron and SK Hynix accused of spiking memory chip prices by 700%",
       "source_url": "https://finance.yahoo.com/technology/articles/samsung-micron-sk-hynix-accused-143000032.html?.tsrc=rss",
-      "uncertainty_notes": "Regulatory risk and outcome uncertain."
+      "uncertainty_notes": "Regulatory risk and outcome uncertain.",
+      "reviewed_at": "2026-07-15T14:07:11.666202+00:00",
+      "current_price": 951.12,
+      "return_since_signal_pct": 8.13,
+      "benchmark_return_pct": 2.17,
+      "successful": true,
+      "outcome_label": "successful",
+      "outcome_notes": "Reviewed against benchmark; observe-only mode, no strategy auto-change.",
+      "days_held": 14,
+      "later_outcome": {
+        "status": "evaluated",
+        "as_of": "2026-07-15",
+        "days_elapsed": 14,
+        "current_price_at_evaluation": 951.12,
+        "return_pct": 8.13,
+        "benchmark_return_pct": 2.17,
+        "accurate": true
+      }
     },
     {
       "signal_id": "949bc70e09f18b27",
@@ -42281,7 +42308,9 @@
       "sector": "AI automation software",
       "event_title": "Nel ASA Stock Plunges 37% as Analyst Revenue Cuts and CEO Resignation Cloud Pre-Results Silence - AD HOC NEWS",
       "source_url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQdUI3bVh4MkRLdXZIWnpaaW5zZHZtbzVuUlV2bUg4UkFyelVXU2JoV3RrNEFLNTZiYm9PUGVfT2w3eDJhYkdKWU8xZXZGZjZRZHZ6VTNZbVhQS3A3QnlfSk9RRTd5b1JtWk84SFRVeTJsVlV1VEF3RzFIVUxFVnhoNS1KTEpFa25nQ3BKNlpESnZoRWtPYmFGTllfV3VkWF9ibXZOY05sS1QzcExCcTRla25GX3I1TFl0aXNFTWdqdHI?oc=5",
-      "uncertainty_notes": "Event-specific, needs confirmation."
+      "uncertainty_notes": "Event-specific, needs confirmation.",
+      "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
+      "days_held": 14
     },
     {
       "signal_id": "9b2e4fc43c5e72ea",
@@ -42307,7 +42336,9 @@
       "sector": "AI automation software",
       "event_title": "Elastic Delivers Best-in-Class Metrics With Native Prometheus Support and Agentic Investigation Experiences",
       "source_url": "https://finance.yahoo.com/technology/ai/articles/elastic-delivers-best-class-metrics-130000295.html?.tsrc=rss",
-      "uncertainty_notes": "Product differentiation risk."
+      "uncertainty_notes": "Product differentiation risk.",
+      "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
+      "days_held": 14
     },
     {
       "signal_id": "7f0e688579f2b4a8",
@@ -42328,12 +42359,29 @@
       "review_date": "2026-07-15",
       "source_report_id": "1d900a8ad7c9eece",
       "source": "gpt",
-      "status": "open",
+      "status": "reviewed",
       "company": "Micron Technology",
       "sector": "semiconductors",
       "event_title": "Dow falls 184 points as chip stocks pull back after record start to year",
       "source_url": "https://qz.com/dow-chip-stocks-decline-184-points-first-half-070126?.tsrc=rss",
-      "uncertainty_notes": "Market-driven move, not company-specific."
+      "uncertainty_notes": "Market-driven move, not company-specific.",
+      "reviewed_at": "2026-07-15T14:07:11.666202+00:00",
+      "current_price": 951.12,
+      "return_since_signal_pct": 8.13,
+      "benchmark_return_pct": 2.17,
+      "successful": true,
+      "outcome_label": "successful",
+      "outcome_notes": "Reviewed against benchmark; observe-only mode, no strategy auto-change.",
+      "days_held": 14,
+      "later_outcome": {
+        "status": "evaluated",
+        "as_of": "2026-07-15",
+        "days_elapsed": 14,
+        "current_price_at_evaluation": 951.12,
+        "return_pct": 8.13,
+        "benchmark_return_pct": 2.17,
+        "accurate": true
+      }
     },
     {
       "signal_id": "2a2e389a4a978f2e",
@@ -42354,12 +42402,29 @@
       "review_date": "2026-07-15",
       "source_report_id": "1d900a8ad7c9eece",
       "source": "gpt",
-      "status": "open",
+      "status": "reviewed",
       "company": "Micron Technology",
       "sector": "semiconductors",
       "event_title": "GM Secures Long-Term Supply Of Chips With Micron \u2013 Retail Paints A Broader Picture Of Cars Evolving Into Computing Platforms",
       "source_url": "https://stocktwits.com/news-articles/markets/equity/gm-secures-long-term-supply-of-chips-with-micron-retail-paints-a-broader-picture-of-cars-evolving-into-computing-platforms/cZm3LhAR7Kz?.tsrc=rss",
-      "uncertainty_notes": "Thesis tied to auto/AI demand; monitor for shifts in GM deal scope."
+      "uncertainty_notes": "Thesis tied to auto/AI demand; monitor for shifts in GM deal scope.",
+      "reviewed_at": "2026-07-15T14:07:11.666202+00:00",
+      "current_price": 951.12,
+      "return_since_signal_pct": 8.13,
+      "benchmark_return_pct": 2.17,
+      "successful": true,
+      "outcome_label": "successful",
+      "outcome_notes": "Reviewed against benchmark; observe-only mode, no strategy auto-change.",
+      "days_held": 14,
+      "later_outcome": {
+        "status": "evaluated",
+        "as_of": "2026-07-15",
+        "days_elapsed": 14,
+        "current_price_at_evaluation": 951.12,
+        "return_pct": 8.13,
+        "benchmark_return_pct": 2.17,
+        "accurate": true
+      }
     },
     {
       "signal_id": "17cdf5fe1c4cac00",
@@ -42385,7 +42450,9 @@
       "sector": "enterprise automation software",
       "event_title": "ServiceNow shares climb after Guggenheim upgrades stock to Buy (NOW)",
       "source_url": "https://investorshub.advfn.com/market-news/article/31273/servicenow-shares-climb-after-guggenheim-upgrades-stock-to-buy-now?.tsrc=rss",
-      "uncertainty_notes": "Upgrade alone; need deeper due diligence before position."
+      "uncertainty_notes": "Upgrade alone; need deeper due diligence before position.",
+      "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
+      "days_held": 14
     },
     {
       "signal_id": "22027d2fcb48742a",
@@ -42411,7 +42478,9 @@
       "sector": "AI datacenter semiconductors",
       "event_title": "Nvidia\u2019s China Chip Tailwind Might Be Discounted",
       "source_url": "https://247wallst.com/investing/2026/07/01/nvidias-china-chip-tailwind-might-be-discounted/?.tsrc=rss",
-      "uncertainty_notes": "Geopolitical/regulation risks could affect tailwinds."
+      "uncertainty_notes": "Geopolitical/regulation risks could affect tailwinds.",
+      "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
+      "days_held": 14
     },
     {
       "signal_id": "db3db48d7f09f675",
@@ -42437,7 +42506,9 @@
       "sector": "AI automation software",
       "event_title": "NVIDIA Stock Is Seeing a Summer Swoon. 5 Catalysts Could Rocket It to $300 By the End of 2026.",
       "source_url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNM19Jd1ZzTFJDc0tZdml6bElURTZqMExRYk8yWnk3TGlTcmNnUkdoemxYRnpuVnhwVkxQOGlLai1MUFlIZjV4Z05HTzNsTXk0U2RWVGxhOExGVXZIaFUyR21rWFNVSEFJUVFlcGNnUHd4SGhvbkU2MVFXNmdxbnUwel9RX1RvMVZ6c2JEUTgyMk5KX3RwLTdHUU9SVy1RckF2TU1hTlRXY09nZEpKMWstZmNyU2pIR3FwQ0ZfTk11LUU3NVNFaGpiQXhKclFQNWs2?oc=5",
-      "uncertainty_notes": "High reliance on catalysts; risk of over-optimism."
+      "uncertainty_notes": "High reliance on catalysts; risk of over-optimism.",
+      "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
+      "days_held": 14
     },
     {
       "signal_id": "5e7dcc9c0d7353a3",
@@ -42458,12 +42529,29 @@
       "review_date": "2026-07-15",
       "source_report_id": "1d900a8ad7c9eece",
       "source": "gpt",
-      "status": "open",
+      "status": "reviewed",
       "company": "Micron Technology",
       "sector": "semiconductors",
       "event_title": "What's next for AI and Big Tech in the second half of 2026?",
       "source_url": "https://finance.yahoo.com/video/whats-next-for-ai-and-big-tech-in-the-second-half-of-2026-141912104.html?.tsrc=rss",
-      "uncertainty_notes": "Long horizon; sentiment driven."
+      "uncertainty_notes": "Long horizon; sentiment driven.",
+      "reviewed_at": "2026-07-15T14:07:11.666202+00:00",
+      "current_price": 951.12,
+      "return_since_signal_pct": 8.13,
+      "benchmark_return_pct": 2.17,
+      "successful": true,
+      "outcome_label": "successful",
+      "outcome_notes": "Reviewed against benchmark; observe-only mode, no strategy auto-change.",
+      "days_held": 14,
+      "later_outcome": {
+        "status": "evaluated",
+        "as_of": "2026-07-15",
+        "days_elapsed": 14,
+        "current_price_at_evaluation": 951.12,
+        "return_pct": 8.13,
+        "benchmark_return_pct": 2.17,
+        "accurate": true
+      }
     },
     {
       "signal_id": "be309209e409fdd0",
@@ -42489,7 +42577,9 @@
       "sector": "AI automation software",
       "event_title": "Datadog Acquires Adaptive ML to Accelerate Its Investment in AI Research and Development",
       "source_url": "https://finance.yahoo.com/technology/ai/articles/datadog-acquires-adaptive-ml-accelerate-200500869.html?.tsrc=rss",
-      "uncertainty_notes": "Integration success uncertain."
+      "uncertainty_notes": "Integration success uncertain.",
+      "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
+      "days_held": 14
     },
     {
       "signal_id": "4d300f5e7f51ba53",
@@ -42515,7 +42605,9 @@
       "sector": "datacenter networking",
       "event_title": "AI will Push Cloud-Managed Network Revenue over $10 Billion, According to Dell'Oro Group",
       "source_url": "https://finance.yahoo.com/technology/ai/articles/ai-push-cloud-managed-network-120000758.html?.tsrc=rss",
-      "uncertainty_notes": "Forecast-based; market mix uncertain."
+      "uncertainty_notes": "Forecast-based; market mix uncertain.",
+      "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
+      "days_held": 14
     },
     {
       "signal_id": "02bc7670484db7a1",
@@ -42541,7 +42633,9 @@
       "sector": "AI and datacenter semiconductors",
       "event_title": "Wall Street and Crypto Agree on One Chip Stock, and It Is Not Nvidia",
       "source_url": "https://beincrypto.com/amd-stock-overtakes-nvidia-money-flow/?.tsrc=rss",
-      "uncertainty_notes": "High due to sector rotation and hype; confirm with fundamentals."
+      "uncertainty_notes": "High due to sector rotation and hype; confirm with fundamentals.",
+      "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
+      "days_held": 14
     },
     {
       "signal_id": "9eb7c155bfd3a2d7",
@@ -42567,7 +42661,9 @@
       "sector": "AI automation software",
       "event_title": "Digital Realty (DLR) Launches ServiceFabric MCP for AI-Native Infrastructure Control",
       "source_url": "https://finance.yahoo.com/technology/ai/articles/digital-realty-dlr-launches-servicefabric-133607974.html?.tsrc=rss",
-      "uncertainty_notes": "Monitoring execution and integration with AI stack."
+      "uncertainty_notes": "Monitoring execution and integration with AI stack.",
+      "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
+      "days_held": 14
     },
     {
       "signal_id": "1af15e159a387320",
@@ -42588,12 +42684,29 @@
       "review_date": "2026-07-15",
       "source_report_id": "1d900a8ad7c9eece",
       "source": "gpt",
-      "status": "open",
+      "status": "reviewed",
       "company": "Lattice Semiconductor",
       "sector": "semiconductors",
       "event_title": "Lattice Wins 2026 AI Breakthrough Award",
       "source_url": "https://finance.yahoo.com/technology/ai/articles/lattice-wins-2026-ai-breakthrough-200000326.html?.tsrc=rss",
-      "uncertainty_notes": "Awards risk is awards; fundamentals still key."
+      "uncertainty_notes": "Awards risk is awards; fundamentals still key.",
+      "reviewed_at": "2026-07-15T14:07:11.666202+00:00",
+      "current_price": 134.31,
+      "return_since_signal_pct": 68.29,
+      "benchmark_return_pct": 2.17,
+      "successful": true,
+      "outcome_label": "successful",
+      "outcome_notes": "Reviewed against benchmark; observe-only mode, no strategy auto-change.",
+      "days_held": 14,
+      "later_outcome": {
+        "status": "evaluated",
+        "as_of": "2026-07-15",
+        "days_elapsed": 14,
+        "current_price_at_evaluation": 134.31,
+        "return_pct": 68.29,
+        "benchmark_return_pct": 2.17,
+        "accurate": true
+      }
     },
     {
       "signal_id": "5b192f177ce4bea7",
@@ -42619,7 +42732,9 @@
       "sector": "AI automation software",
       "event_title": "InvoiceCloud Appoints SaaS Growth Leader Matthew Lane as Chief Revenue Officer",
       "source_url": "https://finance.yahoo.com/technology/ai/articles/invoicecloud-appoints-saas-growth-leader-130000534.html?.tsrc=rss",
-      "uncertainty_notes": "Price below max-loss threshold; requires manual review."
+      "uncertainty_notes": "Price below max-loss threshold; requires manual review.",
+      "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
+      "days_held": 14
     },
     {
       "signal_id": "7579254c75fba624",
@@ -42642,7 +42757,9 @@
       "source": "rules",
       "status": "open",
       "company": "UiPath",
-      "sector": "AI automation software"
+      "sector": "AI automation software",
+      "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
+      "days_held": 14
     },
     {
       "signal_id": "39e3358b53b5a2d7",
@@ -42665,7 +42782,9 @@
       "source": "rules",
       "status": "open",
       "company": "NVIDIA",
-      "sector": "AI datacenter semiconductors"
+      "sector": "AI datacenter semiconductors",
+      "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
+      "days_held": 14
     },
     {
       "signal_id": "5e0a62eb81f22b6a",
@@ -42688,7 +42807,9 @@
       "source": "rules",
       "status": "open",
       "company": "Advanced Micro Devices",
-      "sector": "AI and datacenter semiconductors"
+      "sector": "AI and datacenter semiconductors",
+      "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
+      "days_held": 14
     },
     {
       "signal_id": "f6a4cf05aa9507c0",
@@ -42711,7 +42832,9 @@
       "source": "rules",
       "status": "open",
       "company": "Arista Networks",
-      "sector": "datacenter networking"
+      "sector": "datacenter networking",
+      "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
+      "days_held": 14
     },
     {
       "signal_id": "60c6834f2ad70c24",
@@ -42734,7 +42857,9 @@
       "source": "rules",
       "status": "open",
       "company": "ServiceNow",
-      "sector": "enterprise automation software"
+      "sector": "enterprise automation software",
+      "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
+      "days_held": 14
     },
     {
       "signal_id": "27be9bed7e6d0682",
@@ -42755,12 +42880,29 @@
       "review_date": "2026-07-15",
       "source_report_id": "e57b97bceddef2fa",
       "source": "gpt",
-      "status": "open",
+      "status": "reviewed",
       "company": "Micron Technology",
       "sector": "semiconductors",
       "event_title": "Apple negotiates with blacklisted Chinese chipmakers amid AI-driven memory crunch",
       "source_url": "https://finance.yahoo.com/technology/ai/articles/apple-negotiates-blacklisted-chinese-chipmakers-203812381.html?.tsrc=rss",
-      "uncertainty_notes": "Geopolitical and supply chain risks."
+      "uncertainty_notes": "Geopolitical and supply chain risks.",
+      "reviewed_at": "2026-07-15T14:07:11.666202+00:00",
+      "current_price": 951.12,
+      "return_since_signal_pct": 8.13,
+      "benchmark_return_pct": 2.17,
+      "successful": true,
+      "outcome_label": "successful",
+      "outcome_notes": "Reviewed against benchmark; observe-only mode, no strategy auto-change.",
+      "days_held": 14,
+      "later_outcome": {
+        "status": "evaluated",
+        "as_of": "2026-07-15",
+        "days_elapsed": 14,
+        "current_price_at_evaluation": 951.12,
+        "return_pct": 8.13,
+        "benchmark_return_pct": 2.17,
+        "accurate": true
+      }
     },
     {
       "signal_id": "63ac3aeb8ecdf138",
@@ -42786,7 +42928,9 @@
       "sector": "enterprise automation software",
       "event_title": "DocuSign, Workiva, and DoubleVerify Stocks Trade Up, What You Need To Know",
       "source_url": "https://finance.yahoo.com/markets/stocks/articles/docusign-workiva-doubleverify-stocks-trade-205700976.html?.tsrc=rss",
-      "uncertainty_notes": "Watchlist item; not portfolio action."
+      "uncertainty_notes": "Watchlist item; not portfolio action.",
+      "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
+      "days_held": 14
     },
     {
       "signal_id": "6ae137f6bba26241",
@@ -42812,7 +42956,9 @@
       "sector": "enterprise automation software",
       "event_title": "Intuit, Palo Alto Networks, and BlackLine Stocks Trade Up, What You Need To Know",
       "source_url": "https://finance.yahoo.com/markets/stocks/articles/intuit-palo-alto-networks-blackline-204900009.html?.tsrc=rss",
-      "uncertainty_notes": "Similar to other upgrade-driven moves."
+      "uncertainty_notes": "Similar to other upgrade-driven moves.",
+      "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
+      "days_held": 14
     },
     {
       "signal_id": "1b271ca84c5d0829",
@@ -42838,7 +42984,9 @@
       "sector": "enterprise automation software",
       "event_title": "Zscaler, Freshworks, and Sprinklr Shares Skyrocket, What You Need To Know",
       "source_url": "https://finance.yahoo.com/markets/stocks/articles/zscaler-freshworks-sprinklr-shares-skyrocket-204100553.html?.tsrc=rss",
-      "uncertainty_notes": "Upgrade focus; not guaranteed."
+      "uncertainty_notes": "Upgrade focus; not guaranteed.",
+      "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
+      "days_held": 14
     },
     {
       "signal_id": "27cd5752bb48b153",
@@ -42864,7 +43012,9 @@
       "sector": "enterprise automation software",
       "event_title": "Box, HubSpot, and Toast Shares Are Soaring, What You Need To Know",
       "source_url": "https://finance.yahoo.com/markets/stocks/articles/box-hubspot-toast-shares-soaring-203300060.html?.tsrc=rss",
-      "uncertainty_notes": "Mixed signals; rely on manual review before decisions."
+      "uncertainty_notes": "Mixed signals; rely on manual review before decisions.",
+      "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
+      "days_held": 14
     },
     {
       "signal_id": "73b18368a0b69b49",
@@ -42890,7 +43040,9 @@
       "sector": "enterprise automation software",
       "event_title": "Guggenheim upgrades Salesforce, Check Point and ServiceNow, says AI fears overdone",
       "source_url": "https://finance.yahoo.com/technology/ai/articles/guggenheim-upgrades-salesforce-check-point-203240137.html?.tsrc=rss",
-      "uncertainty_notes": "Analyst view; not a price signal alone."
+      "uncertainty_notes": "Analyst view; not a price signal alone.",
+      "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
+      "days_held": 14
     },
     {
       "signal_id": "335a798cc81397d9",
@@ -42911,12 +43063,29 @@
       "review_date": "2026-07-15",
       "source_report_id": "e57b97bceddef2fa",
       "source": "gpt",
-      "status": "open",
+      "status": "reviewed",
       "company": "Lattice Semiconductor",
       "sector": "semiconductors",
       "event_title": "Lattice Wins 2026 Cybersecurity Stars Award by The Hacker News",
       "source_url": "https://finance.yahoo.com/technology/ai/articles/lattice-wins-2026-cybersecurity-stars-200000805.html?.tsrc=rss",
-      "uncertainty_notes": "Recognition; long horizon remains."
+      "uncertainty_notes": "Recognition; long horizon remains.",
+      "reviewed_at": "2026-07-15T14:07:11.666202+00:00",
+      "current_price": 134.31,
+      "return_since_signal_pct": 68.29,
+      "benchmark_return_pct": 2.17,
+      "successful": true,
+      "outcome_label": "successful",
+      "outcome_notes": "Reviewed against benchmark; observe-only mode, no strategy auto-change.",
+      "days_held": 14,
+      "later_outcome": {
+        "status": "evaluated",
+        "as_of": "2026-07-15",
+        "days_elapsed": 14,
+        "current_price_at_evaluation": 134.31,
+        "return_pct": 68.29,
+        "benchmark_return_pct": 2.17,
+        "accurate": true
+      }
     },
     {
       "signal_id": "dc350650e00a7f80",
@@ -42942,7 +43111,9 @@
       "sector": "AI automation software",
       "event_title": "Datadog Acquires Adaptive ML to Accelerate Its Investment in AI Research and Development",
       "source_url": "https://finance.yahoo.com/technology/ai/articles/datadog-acquires-adaptive-ml-accelerate-200500869.html?.tsrc=rss",
-      "uncertainty_notes": "Execution and integration risk; distant impact."
+      "uncertainty_notes": "Execution and integration risk; distant impact.",
+      "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
+      "days_held": 14
     },
     {
       "signal_id": "345cb23fe3283aff",
@@ -42963,12 +43134,29 @@
       "review_date": "2026-07-15",
       "source_report_id": "e57b97bceddef2fa",
       "source": "gpt",
-      "status": "open",
+      "status": "reviewed",
       "company": "Micron Technology",
       "sector": "semiconductors",
       "event_title": "Memory Prices Rose Again, but Micron Stock Is Slumping Hard",
       "source_url": "https://finance.yahoo.com/m/b223ae50-cbdc-3605-8aaa-5fe2542efe6c/memory-prices-rose-again%2C-but.html?.tsrc=rss",
-      "uncertainty_notes": "Stock decline may reflect broader risk rather than fundamentals."
+      "uncertainty_notes": "Stock decline may reflect broader risk rather than fundamentals.",
+      "reviewed_at": "2026-07-15T14:07:11.666202+00:00",
+      "current_price": 951.12,
+      "return_since_signal_pct": 8.13,
+      "benchmark_return_pct": 2.17,
+      "successful": true,
+      "outcome_label": "successful",
+      "outcome_notes": "Reviewed against benchmark; observe-only mode, no strategy auto-change.",
+      "days_held": 14,
+      "later_outcome": {
+        "status": "evaluated",
+        "as_of": "2026-07-15",
+        "days_elapsed": 14,
+        "current_price_at_evaluation": 951.12,
+        "return_pct": 8.13,
+        "benchmark_return_pct": 2.17,
+        "accurate": true
+      }
     },
     {
       "signal_id": "890f79e187f01adf",
@@ -42994,7 +43182,9 @@
       "sector": "AI automation software",
       "event_title": "Datadog (DDOG) Acquires Adaptive ML To Push Further Into AI Observability",
       "source_url": "https://finance.yahoo.com/technology/ai/articles/datadog-ddog-acquires-adaptive-ml-201535592.html?.tsrc=rss",
-      "uncertainty_notes": "Similar to other DDOG piece; integration risk."
+      "uncertainty_notes": "Similar to other DDOG piece; integration risk.",
+      "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
+      "days_held": 14
     },
     {
       "signal_id": "9b28685edd42c56d",
@@ -43020,7 +43210,9 @@
       "sector": "AI automation software",
       "event_title": "Meta Rips 10% to $619 as the Cloud Pivot Turns Its Capex Bet Into a Revenue Story",
       "source_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPT1pyT3libHIxTmNrWEJMUG1iQktJRHh6NVJpazRHWXEwbG5uMVp6RXNxS3RqS3JkRXZWWkFWM3lDUUw5RFRrd181bzItTENxeGJJWllacDhHcHdzRnRfVmJGSVVvcm1lQ0h6cFBYR2MtT2RhUFlaRnZQaVhxVkk0bWJCWU5KLWNFcGlUV2hZa2ktMDhkbFpxeHJSZmdrWFhKSFJxamRn?oc=5",
-      "uncertainty_notes": "One article; need corroboration and risk controls."
+      "uncertainty_notes": "One article; need corroboration and risk controls.",
+      "outcome_notes": "Review date arrived, but current or entry price was unavailable.",
+      "days_held": 14
     },
     {
       "signal_id": "fabd98a78ab55037",
@@ -56169,6 +56361,355 @@
       "event_title": "GraniteShares launches new SK Hynix ETFs",
       "source_url": "https://finance.yahoo.com/video/graniteshares-launches-new-sk-hynix-etfs-203436945.html?.tsrc=rss",
       "uncertainty_notes": "No GPT call was used, or a limit/API issue caused fallback analysis."
+    },
+    {
+      "signal_id": "088b6350d0c9dcc1",
+      "date_time": "2026-07-15T14:07:11.666202+00:00",
+      "date": "2026-07-15",
+      "run_session": "morning",
+      "ticker": "SPCX",
+      "signal_type": "research only",
+      "recommendation_label": "research only",
+      "confidence": 39.7,
+      "price_at_signal": 137.97,
+      "benchmark_ticker": "VOO",
+      "benchmark_price_at_signal": 694.11,
+      "reason": "Risk elevated or signal weak; thesis needs review before any action.",
+      "thesis_impact": "Risk elevated or signal weak; thesis needs review before any action.",
+      "time_horizon": "long",
+      "review_after_days": 14,
+      "review_date": "2026-07-29",
+      "source_report_id": "bddd21b6e6ddaab3",
+      "source": "rules",
+      "status": "open",
+      "company": "Space Exploration Technologies",
+      "sector": "private aerospace"
+    },
+    {
+      "signal_id": "b948de0f7cf0a47f",
+      "date_time": "2026-07-15T14:07:11.666202+00:00",
+      "date": "2026-07-15",
+      "run_session": "morning",
+      "ticker": "NVDA",
+      "signal_type": "research only",
+      "recommendation_label": "research only",
+      "confidence": 54.8,
+      "price_at_signal": 211.0,
+      "benchmark_ticker": "VOO",
+      "benchmark_price_at_signal": 694.11,
+      "reason": "Watchlist item only; review manually before any portfolio decision.",
+      "thesis_impact": "Watchlist item only; review manually before any portfolio decision.",
+      "time_horizon": "research",
+      "review_after_days": 14,
+      "review_date": "2026-07-29",
+      "source_report_id": "bddd21b6e6ddaab3",
+      "source": "rules",
+      "status": "open",
+      "company": "NVIDIA",
+      "sector": "AI datacenter semiconductors"
+    },
+    {
+      "signal_id": "f94e0b0baed62726",
+      "date_time": "2026-07-15T14:07:11.666202+00:00",
+      "date": "2026-07-15",
+      "run_session": "morning",
+      "ticker": "AMD",
+      "signal_type": "research only",
+      "recommendation_label": "research only",
+      "confidence": 56.9,
+      "price_at_signal": 545.14,
+      "benchmark_ticker": "VOO",
+      "benchmark_price_at_signal": 694.11,
+      "reason": "Watchlist item only; review manually before any portfolio decision.",
+      "thesis_impact": "Watchlist item only; review manually before any portfolio decision.",
+      "time_horizon": "research",
+      "review_after_days": 14,
+      "review_date": "2026-07-29",
+      "source_report_id": "bddd21b6e6ddaab3",
+      "source": "rules",
+      "status": "open",
+      "company": "Advanced Micro Devices",
+      "sector": "AI and datacenter semiconductors"
+    },
+    {
+      "signal_id": "b416e959b91d1d65",
+      "date_time": "2026-07-15T14:07:11.666202+00:00",
+      "date": "2026-07-15",
+      "run_session": "morning",
+      "ticker": "ANET",
+      "signal_type": "research only",
+      "recommendation_label": "research only",
+      "confidence": 55.8,
+      "price_at_signal": 178.19,
+      "benchmark_ticker": "VOO",
+      "benchmark_price_at_signal": 694.11,
+      "reason": "Watchlist item only; review manually before any portfolio decision.",
+      "thesis_impact": "Watchlist item only; review manually before any portfolio decision.",
+      "time_horizon": "research",
+      "review_after_days": 14,
+      "review_date": "2026-07-29",
+      "source_report_id": "bddd21b6e6ddaab3",
+      "source": "rules",
+      "status": "open",
+      "company": "Arista Networks",
+      "sector": "datacenter networking"
+    },
+    {
+      "signal_id": "b5e15cb779ab4b24",
+      "date_time": "2026-07-15T14:07:11.666202+00:00",
+      "date": "2026-07-15",
+      "run_session": "morning",
+      "ticker": "NOW",
+      "signal_type": "research only",
+      "recommendation_label": "research only",
+      "confidence": 53.7,
+      "price_at_signal": 107.58,
+      "benchmark_ticker": "VOO",
+      "benchmark_price_at_signal": 694.11,
+      "reason": "Watchlist item only; review manually before any portfolio decision.",
+      "thesis_impact": "Watchlist item only; review manually before any portfolio decision.",
+      "time_horizon": "research",
+      "review_after_days": 14,
+      "review_date": "2026-07-29",
+      "source_report_id": "bddd21b6e6ddaab3",
+      "source": "rules",
+      "status": "open",
+      "company": "ServiceNow",
+      "sector": "enterprise automation software"
+    },
+    {
+      "signal_id": "8ca4578e06017e1a",
+      "date_time": "2026-07-15T14:07:11.666202+00:00",
+      "date": "2026-07-15",
+      "run_session": "morning",
+      "ticker": "MU",
+      "signal_type": "hold thesis intact",
+      "recommendation_label": "hold thesis intact",
+      "confidence": 60,
+      "price_at_signal": 951.12,
+      "benchmark_ticker": "VOO",
+      "benchmark_price_at_signal": 694.11,
+      "reason": "AI datacenter demand and security in chips; partnership may affect risk profile.",
+      "thesis_impact": "No change; continue monitoring.",
+      "time_horizon": "long",
+      "review_after_days": 14,
+      "review_date": "2026-07-29",
+      "source_report_id": "bddd21b6e6ddaab3",
+      "source": "gpt",
+      "status": "open",
+      "company": "Micron Technology",
+      "sector": "semiconductors",
+      "event_title": "AI Chips Update - Arteris Arm Partnership Strengthens AI Chip Security",
+      "source_url": "https://finance.yahoo.com/technology/ai/articles/ai-chips-arteris-arm-partnership-113801991.html?.tsrc=rss",
+      "uncertainty_notes": "Long horizon; thesis remains intact with routine checks."
+    },
+    {
+      "signal_id": "d69db22fbbeca3c6",
+      "date_time": "2026-07-15T14:07:11.666202+00:00",
+      "date": "2026-07-15",
+      "run_session": "morning",
+      "ticker": "AVGO",
+      "signal_type": "hold thesis intact",
+      "recommendation_label": "hold thesis intact",
+      "confidence": 62,
+      "price_at_signal": 397.2,
+      "benchmark_ticker": "VOO",
+      "benchmark_price_at_signal": 694.11,
+      "reason": "Extended Apple chip partnership supports diversified revenue from custom silicon.",
+      "thesis_impact": "No material change; monitor partnership execution.",
+      "time_horizon": "long",
+      "review_after_days": 14,
+      "review_date": "2026-07-29",
+      "source_report_id": "bddd21b6e6ddaab3",
+      "source": "gpt",
+      "status": "open",
+      "company": "Broadcom",
+      "sector": "semiconductors",
+      "event_title": "Why Broadcom Is Reinforcing Its Long-Term Growth With an Extended Apple Chip Partnership Through 2031",
+      "source_url": "https://finance.yahoo.com/markets/stocks/articles/why-broadcom-avgo-reinforcing-long-120620454.html?.tsrc=rss",
+      "uncertainty_notes": "Long-term agreement; potential tech cycle shifts."
+    },
+    {
+      "signal_id": "c01fa59d7fc7f479",
+      "date_time": "2026-07-15T14:07:11.666202+00:00",
+      "date": "2026-07-15",
+      "run_session": "morning",
+      "ticker": "ANET",
+      "signal_type": "research opportunity",
+      "recommendation_label": "research opportunity",
+      "confidence": 55,
+      "price_at_signal": 178.19,
+      "benchmark_ticker": "VOO",
+      "benchmark_price_at_signal": 694.11,
+      "reason": "AI data center demand boosts revenue growth; execution risks exist.",
+      "thesis_impact": "Consider upgrading watchlist; assess margin and supply chain.",
+      "time_horizon": "research",
+      "review_after_days": 14,
+      "review_date": "2026-07-29",
+      "source_report_id": "bddd21b6e6ddaab3",
+      "source": "gpt",
+      "status": "open",
+      "company": "Arista Networks",
+      "sector": "datacenter networking",
+      "event_title": "Arista Networks Is Up 9.7% After Boosting 2024 Revenue Outlook On Surging AI Demand",
+      "source_url": "https://finance.yahoo.com/technology/ai/articles/arista-networks-anet-9-7-081305493.html?.tsrc=rss",
+      "uncertainty_notes": "Earnings note; supply chain constraints mentioned."
+    },
+    {
+      "signal_id": "48c2119be99233fe",
+      "date_time": "2026-07-15T14:07:11.666202+00:00",
+      "date": "2026-07-15",
+      "run_session": "morning",
+      "ticker": "AVGO",
+      "signal_type": "hold thesis intact",
+      "recommendation_label": "hold thesis intact",
+      "confidence": 50,
+      "price_at_signal": 397.2,
+      "benchmark_ticker": "VOO",
+      "benchmark_price_at_signal": 694.11,
+      "reason": "ETF launch may alter capital flows; broad exposure to AI-related themes.",
+      "thesis_impact": "No change; monitor capital allocation effects.",
+      "time_horizon": "long",
+      "review_after_days": 14,
+      "review_date": "2026-07-29",
+      "source_report_id": "bddd21b6e6ddaab3",
+      "source": "gpt",
+      "status": "open",
+      "company": "Broadcom",
+      "sector": "semiconductors",
+      "event_title": "TappAlpha Expands Growth + Income ETF Platform with TMGN",
+      "source_url": "https://finance.yahoo.com/markets/options/articles/tappalpha-expands-growth-income-etf-113000813.html?.tsrc=rss",
+      "uncertainty_notes": "Product launch, impact uncertain."
+    },
+    {
+      "signal_id": "bddfb20614f98726",
+      "date_time": "2026-07-15T14:07:11.666202+00:00",
+      "date": "2026-07-15",
+      "run_session": "morning",
+      "ticker": "MU",
+      "signal_type": "hold thesis intact",
+      "recommendation_label": "hold thesis intact",
+      "confidence": 62,
+      "price_at_signal": 951.12,
+      "benchmark_ticker": "VOO",
+      "benchmark_price_at_signal": 694.11,
+      "reason": "AI bottlenecks discussion supports monitoring AI demand cycles.",
+      "thesis_impact": "Thesis unchanged; maintain watch.",
+      "time_horizon": "long",
+      "review_after_days": 14,
+      "review_date": "2026-07-29",
+      "source_report_id": "bddd21b6e6ddaab3",
+      "source": "gpt",
+      "status": "open",
+      "company": "Micron Technology",
+      "sector": "semiconductors",
+      "event_title": "From bubbles to bottlenecks, what Wall Street is thinking about AI",
+      "source_url": "https://finance.yahoo.com/video/from-bubbles-to-bottlenecks-what-wall-street-is-thinking-about-ai-140133748.html?.tsrc=rss",
+      "uncertainty_notes": "Macro AI sentiment uncertainty; need data."
+    },
+    {
+      "signal_id": "173e03c271b7a06e",
+      "date_time": "2026-07-15T14:07:11.666202+00:00",
+      "date": "2026-07-15",
+      "run_session": "morning",
+      "ticker": "NVDA",
+      "signal_type": "research opportunity",
+      "recommendation_label": "research opportunity",
+      "confidence": 58,
+      "price_at_signal": 211.0,
+      "benchmark_ticker": "VOO",
+      "benchmark_price_at_signal": 694.11,
+      "reason": "Hyperscaler earnings impact Nvidia's AI platform demand.",
+      "thesis_impact": "Potential upside if hyperscalers reaffirm spending; otherwise watch.",
+      "time_horizon": "research",
+      "review_after_days": 14,
+      "review_date": "2026-07-29",
+      "source_report_id": "bddd21b6e6ddaab3",
+      "source": "gpt",
+      "status": "open",
+      "company": "NVIDIA",
+      "sector": "AI datacenter semiconductors",
+      "event_title": "One chart reveals why investors are concerned about earnings from Microsoft, Amazon, and other hyperscalers",
+      "source_url": "https://finance.yahoo.com/markets/article/one-chart-reveals-why-investors-are-concerned-about-earnings-from-microsoft-amazon-and-other-hyperscalers-133720503.html?.tsrc=rss",
+      "uncertainty_notes": "Earnings-driven volatility; need follow-up."
+    },
+    {
+      "signal_id": "0a261c8b64ea3aa7",
+      "date_time": "2026-07-15T14:07:11.666202+00:00",
+      "date": "2026-07-15",
+      "run_session": "morning",
+      "ticker": "MU",
+      "signal_type": "hold thesis intact",
+      "recommendation_label": "hold thesis intact",
+      "confidence": 60,
+      "price_at_signal": 951.12,
+      "benchmark_ticker": "VOO",
+      "benchmark_price_at_signal": 694.11,
+      "reason": "Profit-taking; signals demand/supply in memory market.",
+      "thesis_impact": "No immediate change; track memory cycle.",
+      "time_horizon": "long",
+      "review_after_days": 14,
+      "review_date": "2026-07-29",
+      "source_report_id": "bddd21b6e6ddaab3",
+      "source": "gpt",
+      "status": "open",
+      "company": "Micron Technology",
+      "sector": "semiconductors",
+      "event_title": "Why SK Hynix Stock Is Dropping Today After a 27% Surge",
+      "source_url": "https://finance.yahoo.com/m/b583df81-bcb0-3c6e-bf88-a685efec2ff8/why-sk-hynix-stock-is.html?.tsrc=rss",
+      "uncertainty_notes": "Single-name event; broader market context matters."
+    },
+    {
+      "signal_id": "5c6eedf1bda08172",
+      "date_time": "2026-07-15T14:07:11.666202+00:00",
+      "date": "2026-07-15",
+      "run_session": "morning",
+      "ticker": "TSLA",
+      "signal_type": "hold thesis intact",
+      "recommendation_label": "hold thesis intact",
+      "confidence": 60,
+      "price_at_signal": 400.14,
+      "benchmark_ticker": "VOO",
+      "benchmark_price_at_signal": 694.11,
+      "reason": "Earnings expectations imply routine monitoring of growth optionality",
+      "thesis_impact": "No change",
+      "time_horizon": "medium",
+      "review_after_days": 14,
+      "review_date": "2026-07-29",
+      "source_report_id": "bddd21b6e6ddaab3",
+      "source": "gpt",
+      "status": "open",
+      "company": "Tesla",
+      "sector": "high-growth tech",
+      "event_title": "Tesla Stock Is in the Calm Before the Storm",
+      "source_url": "https://finance.yahoo.com/m/8edb59ae-488e-39c6-83f8-c319e5b62f88/tesla-stock-is-in-the-calm.html?.tsrc=rss",
+      "uncertainty_notes": "Cautious on short-term volatility around earnings"
+    },
+    {
+      "signal_id": "98a2f7f6932a8ed0",
+      "date_time": "2026-07-15T14:07:11.666202+00:00",
+      "date": "2026-07-15",
+      "run_session": "morning",
+      "ticker": "LSCC",
+      "signal_type": "research opportunity",
+      "recommendation_label": "research opportunity",
+      "confidence": 58,
+      "price_at_signal": 134.31,
+      "benchmark_ticker": "VOO",
+      "benchmark_price_at_signal": 694.11,
+      "reason": "Recognition may reflect robust operations and AI edge growth potential",
+      "thesis_impact": "Upgraded emphasis on AI edge semiconductor opportunity",
+      "time_horizon": "long",
+      "review_after_days": 14,
+      "review_date": "2026-07-29",
+      "source_report_id": "bddd21b6e6ddaab3",
+      "source": "gpt",
+      "status": "open",
+      "company": "Lattice Semiconductor",
+      "sector": "semiconductors",
+      "event_title": "Lattice Named to TIME\u2019s America\u2019s Best Companies 2026 List",
+      "source_url": "https://finance.yahoo.com/markets/stocks/articles/lattice-named-time-america-best-200000439.html?.tsrc=rss",
+      "uncertainty_notes": "Longer-term relevance depends on execution and market demand"
     }
   ],
   "accuracy_stats": {
@@ -56181,25 +56722,25 @@
       "average_return_pct": null
     },
     "hold thesis intact": {
-      "total": 458,
-      "evaluated": 276,
-      "pending": 182,
-      "accurate": 179,
-      "accuracy_pct": 64.9,
-      "average_return_pct": -0.69
+      "total": 464,
+      "evaluated": 284,
+      "pending": 180,
+      "accurate": 187,
+      "accuracy_pct": 65.8,
+      "average_return_pct": -0.02
     },
     "research only": {
-      "total": 394,
+      "total": 399,
       "evaluated": 111,
-      "pending": 283,
+      "pending": 288,
       "accurate": 81,
       "accuracy_pct": 73.0,
       "average_return_pct": 3.6
     },
     "research opportunity": {
-      "total": 535,
+      "total": 538,
       "evaluated": 213,
-      "pending": 322,
+      "pending": 325,
       "accurate": 150,
       "accuracy_pct": 70.4,
       "average_return_pct": 0.87
@@ -56656,28 +57197,28 @@
     }
   ],
   "summary": {
-    "total_signals": 1678,
-    "new_signals_this_run": 16,
-    "reviewed_today": 0,
-    "reviewed_signals": 813,
-    "open_signals": 865
+    "total_signals": 1692,
+    "new_signals_this_run": 14,
+    "reviewed_today": 8,
+    "reviewed_signals": 821,
+    "open_signals": 871
   },
   "accuracy_by_run_session": {
     "afternoon": {
       "total": 846,
-      "evaluated": 479,
-      "pending": 367,
-      "accurate": 342,
-      "accuracy_pct": 71.4,
-      "average_return_pct": -1.9
+      "evaluated": 482,
+      "pending": 364,
+      "accurate": 345,
+      "accuracy_pct": 71.6,
+      "average_return_pct": -1.71
     },
     "morning": {
-      "total": 382,
-      "evaluated": 139,
-      "pending": 243,
-      "accurate": 104,
-      "accuracy_pct": 74.8,
-      "average_return_pct": 9.34
+      "total": 396,
+      "evaluated": 144,
+      "pending": 252,
+      "accurate": 109,
+      "accuracy_pct": 75.7,
+      "average_return_pct": 9.71
     },
     "off-hours": {
       "total": 93,
@@ -56713,5 +57254,350 @@
     }
   },
   "learning_mode": "observe_only",
-  "reviewed_today": []
+  "reviewed_today": [
+    {
+      "signal_id": "a45167fb082f98b0",
+      "date_time": "2026-07-01T15:11:21.888143+00:00",
+      "date": "2026-07-01",
+      "run_session": "morning",
+      "ticker": "MU",
+      "signal_type": "hold thesis intact",
+      "recommendation_label": "hold thesis intact",
+      "confidence": 62,
+      "price_at_signal": 879.62,
+      "benchmark_ticker": "VOO",
+      "benchmark_price_at_signal": 679.4,
+      "reason": "Antitrust suit could impact pricing and supply dynamics.",
+      "thesis_impact": "No change to AI memory demand thesis.",
+      "time_horizon": "long",
+      "review_after_days": 14,
+      "review_date": "2026-07-15",
+      "source_report_id": "1d900a8ad7c9eece",
+      "source": "gpt",
+      "status": "reviewed",
+      "company": "Micron Technology",
+      "sector": "semiconductors",
+      "event_title": "Samsung, Micron and SK Hynix accused of spiking memory chip prices by 700%",
+      "source_url": "https://finance.yahoo.com/technology/articles/samsung-micron-sk-hynix-accused-143000032.html?.tsrc=rss",
+      "uncertainty_notes": "Regulatory risk and outcome uncertain.",
+      "reviewed_at": "2026-07-15T14:07:11.666202+00:00",
+      "current_price": 951.12,
+      "return_since_signal_pct": 8.13,
+      "benchmark_return_pct": 2.17,
+      "successful": true,
+      "outcome_label": "successful",
+      "outcome_notes": "Reviewed against benchmark; observe-only mode, no strategy auto-change.",
+      "days_held": 14,
+      "later_outcome": {
+        "status": "evaluated",
+        "as_of": "2026-07-15",
+        "days_elapsed": 14,
+        "current_price_at_evaluation": 951.12,
+        "return_pct": 8.13,
+        "benchmark_return_pct": 2.17,
+        "accurate": true
+      }
+    },
+    {
+      "signal_id": "7f0e688579f2b4a8",
+      "date_time": "2026-07-01T15:11:21.888143+00:00",
+      "date": "2026-07-01",
+      "run_session": "morning",
+      "ticker": "MU",
+      "signal_type": "hold thesis intact",
+      "recommendation_label": "hold thesis intact",
+      "confidence": 51,
+      "price_at_signal": 879.62,
+      "benchmark_ticker": "VOO",
+      "benchmark_price_at_signal": 679.4,
+      "reason": "Macro/sector pullback may affect memory demand timing.",
+      "thesis_impact": "No change to AI memory demand thesis.",
+      "time_horizon": "long",
+      "review_after_days": 14,
+      "review_date": "2026-07-15",
+      "source_report_id": "1d900a8ad7c9eece",
+      "source": "gpt",
+      "status": "reviewed",
+      "company": "Micron Technology",
+      "sector": "semiconductors",
+      "event_title": "Dow falls 184 points as chip stocks pull back after record start to year",
+      "source_url": "https://qz.com/dow-chip-stocks-decline-184-points-first-half-070126?.tsrc=rss",
+      "uncertainty_notes": "Market-driven move, not company-specific.",
+      "reviewed_at": "2026-07-15T14:07:11.666202+00:00",
+      "current_price": 951.12,
+      "return_since_signal_pct": 8.13,
+      "benchmark_return_pct": 2.17,
+      "successful": true,
+      "outcome_label": "successful",
+      "outcome_notes": "Reviewed against benchmark; observe-only mode, no strategy auto-change.",
+      "days_held": 14,
+      "later_outcome": {
+        "status": "evaluated",
+        "as_of": "2026-07-15",
+        "days_elapsed": 14,
+        "current_price_at_evaluation": 951.12,
+        "return_pct": 8.13,
+        "benchmark_return_pct": 2.17,
+        "accurate": true
+      }
+    },
+    {
+      "signal_id": "2a2e389a4a978f2e",
+      "date_time": "2026-07-01T15:11:21.888143+00:00",
+      "date": "2026-07-01",
+      "run_session": "morning",
+      "ticker": "MU",
+      "signal_type": "hold thesis intact",
+      "recommendation_label": "hold thesis intact",
+      "confidence": 70,
+      "price_at_signal": 879.62,
+      "benchmark_ticker": "VOO",
+      "benchmark_price_at_signal": 679.4,
+      "reason": "Long-term chip supply supports AI/datacenter memory demand.",
+      "thesis_impact": "No change; steady supply supports AI memory cycle.",
+      "time_horizon": "long",
+      "review_after_days": 14,
+      "review_date": "2026-07-15",
+      "source_report_id": "1d900a8ad7c9eece",
+      "source": "gpt",
+      "status": "reviewed",
+      "company": "Micron Technology",
+      "sector": "semiconductors",
+      "event_title": "GM Secures Long-Term Supply Of Chips With Micron \u2013 Retail Paints A Broader Picture Of Cars Evolving Into Computing Platforms",
+      "source_url": "https://stocktwits.com/news-articles/markets/equity/gm-secures-long-term-supply-of-chips-with-micron-retail-paints-a-broader-picture-of-cars-evolving-into-computing-platforms/cZm3LhAR7Kz?.tsrc=rss",
+      "uncertainty_notes": "Thesis tied to auto/AI demand; monitor for shifts in GM deal scope.",
+      "reviewed_at": "2026-07-15T14:07:11.666202+00:00",
+      "current_price": 951.12,
+      "return_since_signal_pct": 8.13,
+      "benchmark_return_pct": 2.17,
+      "successful": true,
+      "outcome_label": "successful",
+      "outcome_notes": "Reviewed against benchmark; observe-only mode, no strategy auto-change.",
+      "days_held": 14,
+      "later_outcome": {
+        "status": "evaluated",
+        "as_of": "2026-07-15",
+        "days_elapsed": 14,
+        "current_price_at_evaluation": 951.12,
+        "return_pct": 8.13,
+        "benchmark_return_pct": 2.17,
+        "accurate": true
+      }
+    },
+    {
+      "signal_id": "5e7dcc9c0d7353a3",
+      "date_time": "2026-07-01T15:11:21.888143+00:00",
+      "date": "2026-07-01",
+      "run_session": "morning",
+      "ticker": "MU",
+      "signal_type": "hold thesis intact",
+      "recommendation_label": "hold thesis intact",
+      "confidence": 65,
+      "price_at_signal": 879.62,
+      "benchmark_ticker": "VOO",
+      "benchmark_price_at_signal": 679.4,
+      "reason": "Discusses AI cycle and memory demand relevant to semis.",
+      "thesis_impact": "Hold; monitor AI cycle recovery.",
+      "time_horizon": "long",
+      "review_after_days": 14,
+      "review_date": "2026-07-15",
+      "source_report_id": "1d900a8ad7c9eece",
+      "source": "gpt",
+      "status": "reviewed",
+      "company": "Micron Technology",
+      "sector": "semiconductors",
+      "event_title": "What's next for AI and Big Tech in the second half of 2026?",
+      "source_url": "https://finance.yahoo.com/video/whats-next-for-ai-and-big-tech-in-the-second-half-of-2026-141912104.html?.tsrc=rss",
+      "uncertainty_notes": "Long horizon; sentiment driven.",
+      "reviewed_at": "2026-07-15T14:07:11.666202+00:00",
+      "current_price": 951.12,
+      "return_since_signal_pct": 8.13,
+      "benchmark_return_pct": 2.17,
+      "successful": true,
+      "outcome_label": "successful",
+      "outcome_notes": "Reviewed against benchmark; observe-only mode, no strategy auto-change.",
+      "days_held": 14,
+      "later_outcome": {
+        "status": "evaluated",
+        "as_of": "2026-07-15",
+        "days_elapsed": 14,
+        "current_price_at_evaluation": 951.12,
+        "return_pct": 8.13,
+        "benchmark_return_pct": 2.17,
+        "accurate": true
+      }
+    },
+    {
+      "signal_id": "1af15e159a387320",
+      "date_time": "2026-07-01T15:11:21.888143+00:00",
+      "date": "2026-07-01",
+      "run_session": "morning",
+      "ticker": "LSCC",
+      "signal_type": "hold thesis intact",
+      "recommendation_label": "hold thesis intact",
+      "confidence": 62,
+      "price_at_signal": 79.81,
+      "benchmark_ticker": "VOO",
+      "benchmark_price_at_signal": 679.4,
+      "reason": "AI edge and low-power semis demand support Lattice prospects.",
+      "thesis_impact": "No material change; secular growth trend intact.",
+      "time_horizon": "long",
+      "review_after_days": 14,
+      "review_date": "2026-07-15",
+      "source_report_id": "1d900a8ad7c9eece",
+      "source": "gpt",
+      "status": "reviewed",
+      "company": "Lattice Semiconductor",
+      "sector": "semiconductors",
+      "event_title": "Lattice Wins 2026 AI Breakthrough Award",
+      "source_url": "https://finance.yahoo.com/technology/ai/articles/lattice-wins-2026-ai-breakthrough-200000326.html?.tsrc=rss",
+      "uncertainty_notes": "Awards risk is awards; fundamentals still key.",
+      "reviewed_at": "2026-07-15T14:07:11.666202+00:00",
+      "current_price": 134.31,
+      "return_since_signal_pct": 68.29,
+      "benchmark_return_pct": 2.17,
+      "successful": true,
+      "outcome_label": "successful",
+      "outcome_notes": "Reviewed against benchmark; observe-only mode, no strategy auto-change.",
+      "days_held": 14,
+      "later_outcome": {
+        "status": "evaluated",
+        "as_of": "2026-07-15",
+        "days_elapsed": 14,
+        "current_price_at_evaluation": 134.31,
+        "return_pct": 68.29,
+        "benchmark_return_pct": 2.17,
+        "accurate": true
+      }
+    },
+    {
+      "signal_id": "27be9bed7e6d0682",
+      "date_time": "2026-07-01T21:12:32.627861+00:00",
+      "date": "2026-07-01",
+      "run_session": "afternoon",
+      "ticker": "MU",
+      "signal_type": "hold thesis intact",
+      "recommendation_label": "hold thesis intact",
+      "confidence": 60,
+      "price_at_signal": 879.62,
+      "benchmark_ticker": "VOO",
+      "benchmark_price_at_signal": 679.4,
+      "reason": "AI memory demand supports memory suppliers; cycle recovery uncertain.",
+      "thesis_impact": "No change",
+      "time_horizon": "long",
+      "review_after_days": 14,
+      "review_date": "2026-07-15",
+      "source_report_id": "e57b97bceddef2fa",
+      "source": "gpt",
+      "status": "reviewed",
+      "company": "Micron Technology",
+      "sector": "semiconductors",
+      "event_title": "Apple negotiates with blacklisted Chinese chipmakers amid AI-driven memory crunch",
+      "source_url": "https://finance.yahoo.com/technology/ai/articles/apple-negotiates-blacklisted-chinese-chipmakers-203812381.html?.tsrc=rss",
+      "uncertainty_notes": "Geopolitical and supply chain risks.",
+      "reviewed_at": "2026-07-15T14:07:11.666202+00:00",
+      "current_price": 951.12,
+      "return_since_signal_pct": 8.13,
+      "benchmark_return_pct": 2.17,
+      "successful": true,
+      "outcome_label": "successful",
+      "outcome_notes": "Reviewed against benchmark; observe-only mode, no strategy auto-change.",
+      "days_held": 14,
+      "later_outcome": {
+        "status": "evaluated",
+        "as_of": "2026-07-15",
+        "days_elapsed": 14,
+        "current_price_at_evaluation": 951.12,
+        "return_pct": 8.13,
+        "benchmark_return_pct": 2.17,
+        "accurate": true
+      }
+    },
+    {
+      "signal_id": "335a798cc81397d9",
+      "date_time": "2026-07-01T21:12:32.627861+00:00",
+      "date": "2026-07-01",
+      "run_session": "afternoon",
+      "ticker": "LSCC",
+      "signal_type": "hold thesis intact",
+      "recommendation_label": "hold thesis intact",
+      "confidence": 70,
+      "price_at_signal": 79.81,
+      "benchmark_ticker": "VOO",
+      "benchmark_price_at_signal": 679.4,
+      "reason": "Award validates cybersecurity relevance of FPGA products.",
+      "thesis_impact": "No change to long-term growth thesis.",
+      "time_horizon": "long",
+      "review_after_days": 14,
+      "review_date": "2026-07-15",
+      "source_report_id": "e57b97bceddef2fa",
+      "source": "gpt",
+      "status": "reviewed",
+      "company": "Lattice Semiconductor",
+      "sector": "semiconductors",
+      "event_title": "Lattice Wins 2026 Cybersecurity Stars Award by The Hacker News",
+      "source_url": "https://finance.yahoo.com/technology/ai/articles/lattice-wins-2026-cybersecurity-stars-200000805.html?.tsrc=rss",
+      "uncertainty_notes": "Recognition; long horizon remains.",
+      "reviewed_at": "2026-07-15T14:07:11.666202+00:00",
+      "current_price": 134.31,
+      "return_since_signal_pct": 68.29,
+      "benchmark_return_pct": 2.17,
+      "successful": true,
+      "outcome_label": "successful",
+      "outcome_notes": "Reviewed against benchmark; observe-only mode, no strategy auto-change.",
+      "days_held": 14,
+      "later_outcome": {
+        "status": "evaluated",
+        "as_of": "2026-07-15",
+        "days_elapsed": 14,
+        "current_price_at_evaluation": 134.31,
+        "return_pct": 68.29,
+        "benchmark_return_pct": 2.17,
+        "accurate": true
+      }
+    },
+    {
+      "signal_id": "345cb23fe3283aff",
+      "date_time": "2026-07-01T21:12:32.627861+00:00",
+      "date": "2026-07-01",
+      "run_session": "afternoon",
+      "ticker": "MU",
+      "signal_type": "hold thesis intact",
+      "recommendation_label": "hold thesis intact",
+      "confidence": 65,
+      "price_at_signal": 879.62,
+      "benchmark_ticker": "VOO",
+      "benchmark_price_at_signal": 679.4,
+      "reason": "Memory demand trend supports AI/datacenter use; stock price action mixed.",
+      "thesis_impact": "No change; monitor memory cycle.",
+      "time_horizon": "long",
+      "review_after_days": 14,
+      "review_date": "2026-07-15",
+      "source_report_id": "e57b97bceddef2fa",
+      "source": "gpt",
+      "status": "reviewed",
+      "company": "Micron Technology",
+      "sector": "semiconductors",
+      "event_title": "Memory Prices Rose Again, but Micron Stock Is Slumping Hard",
+      "source_url": "https://finance.yahoo.com/m/b223ae50-cbdc-3605-8aaa-5fe2542efe6c/memory-prices-rose-again%2C-but.html?.tsrc=rss",
+      "uncertainty_notes": "Stock decline may reflect broader risk rather than fundamentals.",
+      "reviewed_at": "2026-07-15T14:07:11.666202+00:00",
+      "current_price": 951.12,
+      "return_since_signal_pct": 8.13,
+      "benchmark_return_pct": 2.17,
+      "successful": true,
+      "outcome_label": "successful",
+      "outcome_notes": "Reviewed against benchmark; observe-only mode, no strategy auto-change.",
+      "days_held": 14,
+      "later_outcome": {
+        "status": "evaluated",
+        "as_of": "2026-07-15",
+        "days_elapsed": 14,
+        "current_price_at_evaluation": 951.12,
+        "return_pct": 8.13,
+        "benchmark_return_pct": 2.17,
+        "accurate": true
+      }
+    }
+  ]
 }

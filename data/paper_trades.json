@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-07T17:44:32.608105+00:00",
+  "last_updated": "2026-09-07T22:17:04.590711+00:00",
   "notes": "Paper-trade records are simulated learning records only. The agent never executes real trades.",
   "paper_trades": [
     {
@@ -8533,6 +8533,48 @@
       "source": "gpt",
       "confidence": 65,
       "entry_price": 115.9,
+      "status": "open",
+      "notes": "Simulated paper record only. No real trade was executed.",
+      "latest_return_pct": 0.0,
+      "last_checked": "2026-09-07"
+    },
+    {
+      "opened_at": "2026-09-07",
+      "signal_id": "7ef3c656250b52ad",
+      "ticker": "MU",
+      "signal_type": "hold thesis intact",
+      "recommendation_label": "hold thesis intact",
+      "source": "gpt",
+      "confidence": 75,
+      "entry_price": 1016.59,
+      "status": "open",
+      "notes": "Simulated paper record only. No real trade was executed.",
+      "latest_return_pct": 0.0,
+      "last_checked": "2026-09-07"
+    },
+    {
+      "opened_at": "2026-09-07",
+      "signal_id": "dce384e8974a4a33",
+      "ticker": "TSLA",
+      "signal_type": "research opportunity",
+      "recommendation_label": "research opportunity",
+      "source": "gpt",
+      "confidence": 65,
+      "entry_price": 354.08,
+      "status": "open",
+      "notes": "Simulated paper record only. No real trade was executed.",
+      "latest_return_pct": 0.0,
+      "last_checked": "2026-09-07"
+    },
+    {
+      "opened_at": "2026-09-07",
+      "signal_id": "2f106c4285f3829e",
+      "ticker": "NVDA",
+      "signal_type": "research opportunity",
+      "recommendation_label": "research opportunity",
+      "source": "gpt",
+      "confidence": 66,
+      "entry_price": 230.36,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
       "latest_return_pct": 0.0,

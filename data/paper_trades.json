@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-26T02:27:44.657446+00:00",
+  "last_updated": "2026-11-26T21:26:45.178669+00:00",
   "notes": "Paper-trade records are simulated learning records only. The agent never executes real trades.",
   "paper_trades": [
     {
@@ -15239,6 +15239,48 @@
       "source": "gpt",
       "confidence": 58,
       "entry_price": 92.16,
+      "status": "open",
+      "notes": "Simulated paper record only. No real trade was executed.",
+      "latest_return_pct": 0.0,
+      "last_checked": "2026-11-26"
+    },
+    {
+      "opened_at": "2026-11-26",
+      "signal_id": "ceea512b1541d874",
+      "ticker": "LSCC",
+      "signal_type": "research opportunity",
+      "recommendation_label": "research opportunity",
+      "source": "gpt",
+      "confidence": 65,
+      "entry_price": 98.23,
+      "status": "open",
+      "notes": "Simulated paper record only. No real trade was executed.",
+      "latest_return_pct": 0.0,
+      "last_checked": "2026-11-26"
+    },
+    {
+      "opened_at": "2026-11-26",
+      "signal_id": "2df2f5a05d1023ca",
+      "ticker": "SPCX",
+      "signal_type": "research opportunity",
+      "recommendation_label": "research opportunity",
+      "source": "gpt",
+      "confidence": 65,
+      "entry_price": 127.44,
+      "status": "open",
+      "notes": "Simulated paper record only. No real trade was executed.",
+      "latest_return_pct": 0.0,
+      "last_checked": "2026-11-26"
+    },
+    {
+      "opened_at": "2026-11-26",
+      "signal_id": "4d6c8452d3f1be76",
+      "ticker": "MU",
+      "signal_type": "hold thesis intact",
+      "recommendation_label": "hold thesis intact",
+      "source": "gpt",
+      "confidence": 50,
+      "entry_price": 601.25,
       "status": "open",
       "notes": "Simulated paper record only. No real trade was executed.",
       "latest_return_pct": 0.0,
